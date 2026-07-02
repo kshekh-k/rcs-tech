@@ -1,0 +1,158 @@
+{
+  "name": "RCS Tech",
+  "tagline": "Smart IT Solutions for Modern Business",
+  "logo": "/images/logo.svg",
+  "logoWhite": "/images/logo-white.svg",
+  "nav": [
+    { "label": "Home", "href": "#home" },
+    { "label": "About", "href": "#about" },
+    { "label": "Services", "href": "#services" },
+    { "label": "Blog", "href": "#blog" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "consultationCta": "Get Consultation",
+  "hero": {
+    "headline": "Intelligent IT for Modern Business",
+    "subheadline": "Smart IT solutions for modern businesses.",
+    "primaryCta": "Get Free Consultation",
+    "secondaryCta": "Explore Services",
+    "highlights": [
+      "Enterprise IT Solutions",
+      "Secure & Scalable",
+      "Certified Tech Experts",
+      "End-to-End Support"
+    ]
+  },
+  "about": {
+  "badge": "ABOUT US",
+  "title": "Empowering Businesses with",
+  "highlight": "RCS Tech",
+  "description": "We help organizations modernize their infrastructure, secure critical assets, and build scalable digital solutions for long-term growth.",
+  "features": [
+    {
+      "title": "Trusted",
+      "description": "Reliable solutions with transparency and integrity."
+    },
+    {
+      "title": "Experienced",
+      "description": "Years of expertise across multiple IT domains."
+    },
+    {
+      "title": "Innovative",
+      "description": "Leveraging modern technology to create impact."
+    },
+    {
+      "title": "Dedicated",
+      "description": "Committed support for your business success."
+    }
+  ],
+  "stats": [
+    {
+      
+      "number": "500+",
+      "label": "Happy Clients"
+    },
+    {
+      "number": "1000+",
+      "label": "Projects Delivered"
+    },
+    {
+      "number": "24/7",
+      "label": "Expert Support"
+    },
+    {
+      "number": "99%",
+      "label": "Client Satisfaction"
+    }
+  ]
+},
+  "about2": {
+    "title": "Your Trusted Technology Partner",
+    "paragraphs": [
+      "We help businesses simplify technology, strengthen security, and accelerate growth through modern IT solutions. From cybersecurity and cloud infrastructure to software development and enterprise systems, we deliver reliable, scalable, and future-ready solutions tailored to your business needs.",
+      "With years of expertise and a customer-first approach, we support startups, SMEs, and enterprises in building secure, efficient, and high-performing digital ecosystems."
+    ],
+    "stats": [
+      { "label": "Clients", "value": "500+" },
+      { "label": "Projects", "value": "1000+" },
+      { "label": "Support", "value": "24/7" },
+      { "label": "Client Satisfaction", "value": "99%" }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Why Businesses Choose Us",
+    "items": [
+      {
+        "icon": "Layers",
+        "title": "End-to-End IT Solutions",
+        "description": "From consulting to deployment, we handle every stage of your technology journey."
+      },
+      {
+        "icon": "Users",
+        "title": "Expert Team",
+        "description": "Certified engineers and consultants with deep, cross-industry expertise."
+      },
+      {
+        "icon": "ShieldCheck",
+        "title": "Secure Infrastructure",
+        "description": "Enterprise-grade security built into every solution we deliver."
+      },
+      {
+        "icon": "SlidersHorizontal",
+        "title": "Customized Solutions",
+        "description": "Tailored technology strategies designed around your business goals."
+      },
+      {
+        "icon": "Zap",
+        "title": "Fast Support",
+        "description": "Responsive, round-the-clock support when you need it most."
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Scalable Systems",
+        "description": "Infrastructure and software that grows seamlessly with your business."
+      }
+    ]
+  },
+  "promotion": {
+    "title": "Ready to Upgrade Your IT Infrastructure?",
+    "text": "Let our experts help you choose the right technology solutions for your business.",
+    "cta": "Book Free Consultation"
+  },
+  "contact": {
+    "title": "Let's Build Your IT Infrastructure Together",
+    "text": "Connect with our experts and get a tailored solution for your business.",
+    "cta": "Send Inquiry"
+  },
+  "footer": {
+    "about": "RCS Tech delivers enterprise-grade cybersecurity, cloud, ERP, and IT infrastructure solutions that help businesses grow securely and efficiently.",
+    "quickLinks": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About", "href": "#about" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Blog", "href": "#blog" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "servicesLinks": [
+      "Cybersecurity Products",
+      "Web & App Development",
+      "ERP Solutions",
+      "Hardware Solutions",
+      "SaaS Products",
+      "Servers & Cloud",
+      "Networking & IT Infrastructure"
+    ],
+    "contact": {
+      "address": "402, Tech Park Tower, Andheri East, Mumbai, India 400069",
+      "phone": "+91 98765 43210",
+      "email": "info@rcstech.com"
+    },
+    "social": [
+      { "label": "LinkedIn", "href": "https://linkedin.com" },
+      { "label": "Twitter", "href": "https://twitter.com" },
+      { "label": "Facebook", "href": "https://facebook.com" },
+      { "label": "Instagram", "href": "https://instagram.com" }
+    ],
+    "copyright": "Copyright © 2026 RCS Tech. All Rights Reserved."
+  }
+}

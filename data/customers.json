@@ -1,0 +1,14 @@
+{
+  "title": "Trusted by Businesses Across Industries",
+  "subtitle": "Serving startups, SMEs, enterprises, education, healthcare, and government sectors.",
+  "logos": [
+    { "name": "Nimbus Logistics", "logo": "/images/customers/logo-1.svg" },
+    { "name": "Meridian Retail", "logo": "/images/customers/logo-2.svg" },
+    { "name": "Bright Path Healthcare", "logo": "/images/customers/logo-3.svg" },
+    { "name": "Vantage Financial", "logo": "/images/customers/logo-4.svg" },
+    { "name": "Orbit Education", "logo": "/images/customers/logo-5.svg" },
+    { "name": "Summit Manufacturing", "logo": "/images/customers/logo-6.svg" },
+    { "name": "Civic Systems", "logo": "/images/customers/logo-7.svg" },
+    { "name": "Pinnacle Realty", "logo": "/images/customers/logo-8.svg" }
+  ]
+}

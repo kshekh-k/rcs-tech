@@ -1,0 +1,622 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900"
+     xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+  <!-- ========================= -->
+  <!-- MAIN BACKGROUND -->
+  <!-- ========================= -->
+  <!-- <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#020817"/>
+    <stop offset="50%" stop-color="#071B3A"/>
+    <stop offset="100%" stop-color="#010A18"/>
+  </linearGradient> -->
+
+  <!-- CARD -->
+  <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0E214D"/>
+    <stop offset="100%" stop-color="#09142F"/>
+  </linearGradient>
+
+  <!-- SHIELD -->
+  <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#00E7FF"/>
+    <stop offset="100%" stop-color="#286CFF"/>
+  </linearGradient>
+
+  <!-- CYAN GLOW -->
+  <radialGradient id="cyanGlow">
+    <stop offset="0%" stop-color="#00EAFF" stop-opacity="0.65"/>
+    <stop offset="100%" stop-color="#00EAFF" stop-opacity="0"/>
+  </radialGradient>
+
+  <!-- SHIELD GLOW -->
+  <filter id="shieldGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="10" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <!-- CARD GLOW -->
+  <filter id="cardGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <!-- GLASS BLUR -->
+  <filter id="glassBlur">
+    <feGaussianBlur stdDeviation="8"/>
+  </filter>
+
+</defs>
+
+<style>
+  .pulse-glow {
+    animation: pulseGlow 3s ease-in-out infinite;
+  }
+
+  .float-card {
+    animation: floatCard 4s ease-in-out infinite;
+  }
+
+  .rotate-ring {
+    animation: rotateRing 20s linear infinite;
+    transform-origin: center;
+  }
+
+  .particle {
+    animation: particleMove 5s infinite alternate ease-in-out;
+  }
+
+  .network-dot {
+    animation: blinkDot 1.5s infinite;
+  }
+
+  @keyframes pulseGlow {
+    0% { opacity: 0.65; }
+    50% { opacity: 1; }
+    100% { opacity: 0.65; }
+  }
+
+  @keyframes floatCard {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+  }
+
+  @keyframes rotateRing {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  @keyframes particleMove {
+    from { transform: translateY(0px); opacity: 0.4; }
+    to { transform: translateY(-12px); opacity: 1; }
+  }
+
+  @keyframes blinkDot {
+    0% { opacity: 0.4; }
+    50% { opacity: 1; }
+    100% { opacity: 0.4; }
+  }
+</style>
+
+
+<!-- ========================= -->
+<!-- BACKGROUND -->
+<!-- ========================= -->
+<g id="background">
+  <rect width="1440" height="900" fill="url(#bgGradient)"/>
+
+  <!-- ambient glow -->
+  <circle cx="320" cy="180" r="220" fill="url(#cyanGlow)" opacity="0.25"/>
+  <circle cx="1120" cy="700" r="280" fill="url(#cyanGlow)" opacity="0.2"/>
+  <circle cx="720" cy="450" r="180" fill="url(#cyanGlow)" opacity="0.12"/>
+</g>
+
+<!-- ========================= -->
+<!-- HEX GRID -->
+<!-- ========================= -->
+<g id="hex-grid" opacity="0.15" stroke="#00EAFF" stroke-width="1" fill="none">
+
+  <!-- Row 1 -->
+  <polygon points="50,80 70,68 90,80 90,104 70,116 50,104"/>
+  <polygon points="110,80 130,68 150,80 150,104 130,116 110,104"/>
+  <polygon points="170,80 190,68 210,80 210,104 190,116 170,104"/>
+
+  <polygon points="1230,80 1250,68 1270,80 1270,104 1250,116 1230,104"/>
+  <polygon points="1290,80 1310,68 1330,80 1330,104 1310,116 1290,104"/>
+  <polygon points="1350,80 1370,68 1390,80 1390,104 1370,116 1350,104"/>
+
+  <!-- Row 2 -->
+  <polygon points="20,140 40,128 60,140 60,164 40,176 20,164"/>
+  <polygon points="80,140 100,128 120,140 120,164 100,176 80,164"/>
+  <polygon points="140,140 160,128 180,140 180,164 160,176 140,164"/>
+
+  <polygon points="1260,140 1280,128 1300,140 1300,164 1280,176 1260,164"/>
+  <polygon points="1320,140 1340,128 1360,140 1360,164 1340,176 1320,164"/>
+</g>
+
+<!-- ========================= -->
+<!-- FLOATING PARTICLES -->
+<!-- ========================= -->
+<g id="particles">
+
+  <circle class="particle" cx="140" cy="120" r="2" fill="#00EAFF"/>
+  <circle class="particle" cx="260" cy="200" r="3" fill="#00EAFF"/>
+  <circle class="particle" cx="380" cy="100" r="2" fill="#00EAFF"/>
+
+  <circle class="particle" cx="580" cy="220" r="3" fill="#00EAFF"/>
+  <circle class="particle" cx="720" cy="120" r="2" fill="#00EAFF"/>
+  <circle class="particle" cx="820" cy="170" r="3" fill="#00EAFF"/>
+
+  <circle class="particle" cx="980" cy="120" r="2" fill="#00EAFF"/>
+  <circle class="particle" cx="1150" cy="220" r="3" fill="#00EAFF"/>
+  <circle class="particle" cx="1320" cy="140" r="2" fill="#00EAFF"/>
+
+  <circle class="particle" cx="180" cy="700" r="2" fill="#00EAFF"/>
+  <circle class="particle" cx="420" cy="760" r="3" fill="#00EAFF"/>
+  <circle class="particle" cx="760" cy="780" r="2" fill="#00EAFF"/>
+
+  <circle class="particle" cx="1080" cy="760" r="3" fill="#00EAFF"/>
+  <circle class="particle" cx="1260" cy="680" r="2" fill="#00EAFF"/>
+
+</g>
+
+<!-- ========================= -->
+<!-- WORLD MAP DOTS -->
+<!-- ========================= -->
+<g id="map-dots" opacity="0.18" fill="#00EAFF">
+
+  <!-- left -->
+  <circle cx="180" cy="130" r="1"/>
+  <circle cx="190" cy="135" r="1"/>
+  <circle cx="200" cy="125" r="1"/>
+  <circle cx="210" cy="140" r="1"/>
+  <circle cx="220" cy="130" r="1"/>
+
+  <!-- right -->
+  <circle cx="1220" cy="130" r="1"/>
+  <circle cx="1230" cy="135" r="1"/>
+  <circle cx="1240" cy="125" r="1"/>
+  <circle cx="1250" cy="140" r="1"/>
+  <circle cx="1260" cy="130" r="1"/>
+
+</g>
+
+
+<!-- ========================= -->
+<!-- TOP STATUS CARDS -->
+<!-- ========================= -->
+<g id="top-cards" transform="translate(1080,50)">
+  <!-- Card 3 -->
+  <g class="float-card" transform="translate(790,50)">
+    <rect width="260" height="110" rx="20"
+          fill="url(#cardGradient)"
+          opacity="0.88"
+          stroke="#00EAFF"
+          stroke-width="1.5"
+          filter="url(#cardGlow)"/>
+
+    <text x="22" y="36" fill="#FFFFFF" font-size="18" font-family="Arial">
+      Data Protection
+    </text>
+
+    <text x="22" y="76" fill="#00EAFF" font-size="28" font-family="Arial" font-weight="bold">
+      99.8%
+    </text>
+  </g>
+</g>
+
+<g id="top-cards" transform="translate(760,50)">
+  <!-- Card 4 -->
+  <g class="float-card" transform="translate(1090,100)">
+    <rect width="260" height="110" rx="20"
+          fill="url(#cardGradient)"
+          opacity="0.88"
+          stroke="#00EAFF"
+          stroke-width="1.5"
+          filter="url(#cardGlow)"/>
+
+    <text x="22" y="36" fill="#FFFFFF" font-size="18" font-family="Arial">
+      Access Control
+    </text>
+
+    <text x="22" y="76" fill="#00EAFF" font-size="28" font-family="Arial" font-weight="bold">
+      Verified
+    </text>
+  </g>
+
+</g>
+
+<g id="top-cards" transform="translate(420,50)">
+  <!-- Card 2 -->
+  <g class="float-card" transform="translate(390,70)">
+    <rect width="260" height="110" rx="20"
+          fill="url(#cardGradient)"
+          opacity="0.88"
+          stroke="#00EAFF"
+          stroke-width="1.5"
+          filter="url(#cardGlow)"/>
+
+    <text x="22" y="36" fill="#FFFFFF" font-size="18" font-family="Arial">
+      Network
+    </text>
+
+    <text x="22" y="76" fill="#00EAFF" font-size="28" font-family="Arial" font-weight="bold">
+      Secured
+    </text>
+  </g>
+</g>
+
+<g id="top-cards" transform="translate(100,50)">
+  <!-- Card 1 -->
+  <g class="float-card" transform="translate(90,70)">
+    <rect width="260" height="110" rx="20"
+          fill="url(#cardGradient)"
+          opacity="0.88"
+          stroke="#00EAFF"
+          stroke-width="1.5"
+          filter="url(#cardGlow)"/>
+
+    <text x="22" y="36" fill="#FFFFFF" font-size="18" font-family="Arial">
+      Firewall
+    </text>
+
+    <text x="22" y="76" fill="#00EAFF" font-size="28" font-family="Arial" font-weight="bold">
+      Active
+    </text>
+  </g>
+</g>
+
+<!-- ========================= -->
+<!-- LEFT ANALYTICS -->
+<!-- ========================= -->
+<!-- Traffic -->
+<g id="left-cards" transform="translate(200,420)">
+  <g class="float-card" transform="translate(500,100)">
+    <rect width="230" height="110" rx="20"
+          fill="url(#cardGradient)"
+          stroke="#00EAFF"
+          stroke-width="1.4"/>
+
+    <text x="22" y="36" fill="#FFF" font-size="18" font-family="Arial">Traffic</text>
+
+    <text x="22" y="74" fill="#00EAFF" font-size="28" font-weight="bold" font-family="Arial">
+      4.2M
+    </text>
+  </g>
+</g>
+
+<g id="left-cards" transform="translate(170,230)">  
+  <!-- Threat Detection -->
+  <g class="float-card" transform="translate(250,280)">
+    <rect width="260" height="130" rx="22"
+          fill="url(#cardGradient)"
+          stroke="#00EAFF"
+          stroke-width="1.4"/>
+
+    <text x="22" y="36" fill="#FFF" font-size="18" font-family="Arial">Threat Detection</text>
+
+    <rect x="22" y="70" width="180" height="10" rx="5" fill="#0C1835"/>
+    <rect x="22" y="70" width="150" height="10" rx="5" fill="#00EAFF"/>
+
+    <text x="210" y="79" fill="#00EAFF" font-size="14" font-family="Arial">84%</text>
+  </g>
+
+  
+
+</g>
+
+<!-- ========================= -->
+<!-- RIGHT ANALYTICS -->
+<!-- ========================= -->
+<g id="right-cards" transform="translate(1020,230)">
+  <!-- Secure Nodes -->
+  <g class="float-card" transform="translate(1110,290)">
+    <rect width="250" height="120" rx="20"
+          fill="url(#cardGradient)"
+          stroke="#00EAFF"
+          stroke-width="1.4"/>
+
+    <text x="22" y="36" fill="#FFF" font-size="18" font-family="Arial">Secure Nodes</text>
+
+    <text x="22" y="78" fill="#00EAFF" font-size="30" font-weight="bold" font-family="Arial">
+      248
+    </text>
+  </g>
+</g>
+<g id="right-cards" transform="translate(1000,420)">
+  <!-- Firewall Requests -->
+  <g class="float-card" transform="translate(1100,460)">
+    <rect width="260" height="120" rx="20"
+          fill="url(#cardGradient)"
+          stroke="#00EAFF"
+          stroke-width="1.4"/>
+    <text x="22" y="36" fill="#FFF" font-size="18" font-family="Arial">Requests</text>
+    <text x="22" y="78" fill="#00EAFF" font-size="28" font-weight="bold" font-family="Arial">
+      8.4M
+    </text>
+  </g>
+</g>
+
+<!-- ========================= -->
+<!-- SHIELD CORE -->
+<!-- ========================= -->
+<g id="shield-core" transform="translate(720,460)">
+
+  <!-- Outer Pulse Glow -->
+  <circle class="pulse-glow" cx="0" cy="0" r="170"
+          fill="url(#cyanGlow)" opacity="0.25"/>
+
+  <!-- Rotating Ring 1 -->
+  <g class="rotate-ring">
+    <circle cx="0" cy="0" r="140"
+            fill="none"
+            stroke="#00EAFF"
+            stroke-width="2"
+            opacity="0.35"
+            stroke-dasharray="12 16"/>
+  </g>
+
+  <!-- Rotating Ring 2 -->
+  <g class="rotate-ring">
+    <circle cx="0" cy="0" r="110"
+            fill="none"
+            stroke="#00EAFF"
+            stroke-width="1.5"
+            opacity="0.25"
+            stroke-dasharray="8 12"/>
+  </g>
+
+  <!-- Main Shield Glow -->
+  <path d="
+    M 0 -130
+    L 95 -75
+    L 78 65
+    L 0 135
+    L -78 65
+    L -95 -75
+    Z"
+    fill="url(#shieldGradient)"
+    filter="url(#shieldGlow)"
+    opacity="0.95"/>
+
+  <!-- Inner Shield -->
+  <path d="
+    M 0 -100
+    L 72 -55
+    L 58 50
+    L 0 100
+    L -58 50
+    L -72 -55
+    Z"
+    fill="#081B3D"
+    stroke="#00EAFF"
+    stroke-width="2"/>
+
+  <!-- Lock Body -->
+  <rect x="-34" y="-10"
+        width="68"
+        height="62"
+        rx="12"
+        fill="#0D2C5A"
+        stroke="#00EAFF"
+        stroke-width="2"/>
+
+  <!-- Lock Top -->
+  <path d="
+    M -20 -10
+    L -20 -35
+    A 20 20 0 0 1 20 -35
+    L 20 -10"
+    fill="none"
+    stroke="#00EAFF"
+    stroke-width="8"/>
+
+  <!-- Keyhole -->
+  <circle cx="0" cy="14" r="8" fill="#00EAFF"/>
+  <rect x="-3" y="14" width="6" height="18" fill="#00EAFF"/>
+
+  <!-- Orbit Dots -->
+  <circle class="network-dot" cx="-140" cy="0" r="5" fill="#00EAFF"/>
+  <circle class="network-dot" cx="140" cy="0" r="5" fill="#00EAFF"/>
+  <circle class="network-dot" cx="0" cy="-140" r="5" fill="#00EAFF"/>
+  <circle class="network-dot" cx="0" cy="140" r="5" fill="#00EAFF"/>
+
+</g>
+
+<!-- ========================= -->
+<!-- SHIELD SIDE GLOWS -->
+<!-- ========================= -->
+<g id="shield-glows">
+
+  <circle cx="580" cy="460" r="80"
+          fill="url(#cyanGlow)"
+          opacity="0.15"/>
+
+  <circle cx="860" cy="460" r="80"
+          fill="url(#cyanGlow)"
+          opacity="0.15"/>
+
+</g>
+
+<!-- ========================= -->
+<!-- LEFT SERVER RACK -->
+<!-- ========================= -->
+<g id="server-left" transform="translate(180,610)">
+
+  <!-- server body -->
+  <rect width="140" height="180" rx="18"
+        fill="url(#cardGradient)"
+        stroke="#00EAFF"
+        stroke-width="2"
+        filter="url(#cardGlow)"/>
+
+  <!-- rows -->
+  <rect x="20" y="25" width="100" height="22" rx="5" fill="#081B3D"/>
+  <rect x="20" y="58" width="100" height="22" rx="5" fill="#081B3D"/>
+  <rect x="20" y="91" width="100" height="22" rx="5" fill="#081B3D"/>
+  <rect x="20" y="124" width="100" height="22" rx="5" fill="#081B3D"/>
+
+  <!-- indicators -->
+  <circle cx="35" cy="36" r="3" fill="#00EAFF"/>
+  <circle cx="35" cy="69" r="3" fill="#00EAFF"/>
+  <circle cx="35" cy="102" r="3" fill="#00EAFF"/>
+  <circle cx="35" cy="135" r="3" fill="#00EAFF"/>
+
+  <rect x="48" y="33" width="42" height="6" rx="3" fill="#00EAFF"/>
+  <rect x="48" y="66" width="42" height="6" rx="3" fill="#00EAFF"/>
+  <rect x="48" y="99" width="42" height="6" rx="3" fill="#00EAFF"/>
+  <rect x="48" y="132" width="42" height="6" rx="3" fill="#00EAFF"/>
+
+</g>
+
+<!-- ========================= -->
+<!-- RIGHT SERVER RACK -->
+<!-- ========================= -->
+<g id="server-right" transform="translate(1120,610)">
+
+  <rect width="140" height="180" rx="18"
+        fill="url(#cardGradient)"
+        stroke="#00EAFF"
+        stroke-width="2"
+        filter="url(#cardGlow)"/>
+
+  <rect x="20" y="25" width="100" height="22" rx="5" fill="#081B3D"/>
+  <rect x="20" y="58" width="100" height="22" rx="5" fill="#081B3D"/>
+  <rect x="20" y="91" width="100" height="22" rx="5" fill="#081B3D"/>
+  <rect x="20" y="124" width="100" height="22" rx="5" fill="#081B3D"/>
+
+  <circle cx="35" cy="36" r="3" fill="#00EAFF"/>
+  <circle cx="35" cy="69" r="3" fill="#00EAFF"/>
+  <circle cx="35" cy="102" r="3" fill="#00EAFF"/>
+  <circle cx="35" cy="135" r="3" fill="#00EAFF"/>
+
+  <rect x="48" y="33" width="42" height="6" rx="3" fill="#00EAFF"/>
+  <rect x="48" y="66" width="42" height="6" rx="3" fill="#00EAFF"/>
+  <rect x="48" y="99" width="42" height="6" rx="3" fill="#00EAFF"/>
+  <rect x="48" y="132" width="42" height="6" rx="3" fill="#00EAFF"/>
+
+</g>
+
+<!-- ========================= -->
+<!-- BOTTOM STATUS CARDS -->
+<!-- ========================= -->
+<g id="bottom-cards">
+
+  <!-- card 1 -->
+  <g transform="translate(460,760)">
+    <rect width="160" height="72" rx="18"
+          fill="url(#cardGradient)"
+          stroke="#00EAFF"
+          stroke-width="1.4"/>
+    <text x="20" y="30" fill="#FFF" font-size="14" font-family="Arial">Threats</text>
+    <text x="20" y="56" fill="#00EAFF" font-size="22" font-weight="bold" font-family="Arial">0</text>
+  </g>
+
+  <!-- card 2 -->
+  <g transform="translate(640,760)">
+    <rect width="160" height="72" rx="18"
+          fill="url(#cardGradient)"
+          stroke="#00EAFF"
+          stroke-width="1.4"/>
+    <text x="20" y="30" fill="#FFF" font-size="14" font-family="Arial">Nodes</text>
+    <text x="20" y="56" fill="#00EAFF" font-size="22" font-weight="bold" font-family="Arial">248</text>
+  </g>
+
+  <!-- card 3 -->
+  <g transform="translate(820,760)">
+    <rect width="160" height="72" rx="18"
+          fill="url(#cardGradient)"
+          stroke="#00EAFF"
+          stroke-width="1.4"/>
+    <text x="20" y="30" fill="#FFF" font-size="14" font-family="Arial">Status</text>
+    <text x="20" y="56" fill="#00EAFF" font-size="22" font-weight="bold" font-family="Arial">SAFE</text>
+  </g>
+
+</g>
+
+<!-- ========================= -->
+<!-- NETWORK LINES -->
+<!-- ========================= -->
+<g id="network-lines"
+   stroke="#00EAFF"
+   stroke-width="2"
+   opacity="0.4"
+   fill="none">
+
+  <!-- left connections -->
+  <line x1="320" y1="660" x2="580" y2="500"/>
+  <line x1="330" y1="720" x2="580" y2="540"/>
+
+  <!-- right connections -->
+  <line x1="1120" y1="660" x2="860" y2="500"/>
+  <line x1="1120" y1="720" x2="860" y2="540"/>
+
+  <!-- top connections -->
+  <line x1="720" y1="180" x2="720" y2="320"/>
+
+  <!-- bottom connections -->
+  <line x1="720" y1="610" x2="720" y2="760"/>
+
+</g>
+
+<!-- ========================= -->
+<!-- NETWORK NODES -->
+<!-- ========================= -->
+<g id="network-nodes">
+
+  <!-- left -->
+  <circle class="network-dot" cx="320" cy="660" r="5" fill="#00EAFF"/>
+  <circle class="network-dot" cx="330" cy="720" r="5" fill="#00EAFF"/>
+
+  <!-- right -->
+  <circle class="network-dot" cx="1120" cy="660" r="5" fill="#00EAFF"/>
+  <circle class="network-dot" cx="1120" cy="720" r="5" fill="#00EAFF"/>
+
+  <!-- top -->
+  <circle class="network-dot" cx="720" cy="180" r="5" fill="#00EAFF"/>
+
+  <!-- center -->
+  <circle class="network-dot" cx="580" cy="500" r="4" fill="#00EAFF"/>
+  <circle class="network-dot" cx="860" cy="500" r="4" fill="#00EAFF"/>
+  <circle class="network-dot" cx="720" cy="610" r="4" fill="#00EAFF"/>
+
+</g>
+
+<!-- ========================= -->
+<!-- MOVING DATA DOTS -->
+<!-- ========================= -->
+<g id="data-flow">
+
+  <circle r="4" fill="#FFFFFF">
+    <animateMotion dur="4s" repeatCount="indefinite"
+      path="M320,660 L580,500"/>
+  </circle>
+
+  <circle r="4" fill="#FFFFFF">
+    <animateMotion dur="4s" repeatCount="indefinite"
+      path="M1120,660 L860,500"/>
+  </circle>
+
+  <circle r="4" fill="#FFFFFF">
+    <animateMotion dur="3s" repeatCount="indefinite"
+      path="M720,180 L720,320"/>
+  </circle>
+
+</g>
+
+<!-- ========================= -->
+<!-- EXTRA GLOW -->
+<!-- ========================= -->
+<g opacity="0.2">
+  <circle cx="720" cy="460" r="250" fill="url(#cyanGlow)"/>
+</g>
+
+</svg>

@@ -1,0 +1,32 @@
+{
+  "title": "Latest Insights & Technology Updates",
+  "items": [
+    {
+      "id": "cybersecurity-trends",
+      "image": "/images/blog/blog-1.svg",
+      "category": "Cybersecurity",
+      "title": "Top Cybersecurity Trends Businesses Should Watch",
+      "excerpt": "From zero-trust architecture to AI-driven threat detection, discover the trends shaping enterprise security in the year ahead.",
+      "date": "2026-06-12",
+      "href": "#"
+    },
+    {
+      "id": "cloud-scalability",
+      "image": "/images/blog/blog-2.svg",
+      "category": "Cloud Infrastructure",
+      "title": "How Cloud Infrastructure Improves Scalability",
+      "excerpt": "Learn how migrating to the cloud helps businesses scale efficiently while reducing infrastructure overhead and downtime.",
+      "date": "2026-05-28",
+      "href": "#"
+    },
+    {
+      "id": "erp-best-practices",
+      "image": "/images/blog/blog-3.svg",
+      "category": "ERP Solutions",
+      "title": "ERP Implementation Best Practices",
+      "excerpt": "A practical guide to planning, deploying, and adopting ERP systems without disrupting day-to-day business operations.",
+      "date": "2026-05-10",
+      "href": "#"
+    }
+  ]
+}

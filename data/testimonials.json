@@ -1,0 +1,29 @@
+{
+  "title": "What Our Clients Say",
+  "items": [
+    {
+      "id": 1,
+      "name": "Ananya Verma",
+      "role": "COO, Meridian Retail Group",
+      "avatar": "/images/testimonials/client-1.svg",
+      "rating": 5,
+      "quote": "Their team transformed our IT infrastructure and improved operational efficiency significantly."
+    },
+    {
+      "id": 2,
+      "name": "Rohan Kapoor",
+      "role": "Founder, Nimbus Logistics",
+      "avatar": "/images/testimonials/client-2.svg",
+      "rating": 5,
+      "quote": "Excellent support, quick implementation, and highly professional service."
+    },
+    {
+      "id": 3,
+      "name": "Sara Thomas",
+      "role": "IT Director, Bright Path Healthcare",
+      "avatar": "/images/testimonials/client-3.svg",
+      "rating": 5,
+      "quote": "Reliable technology partner for all our software and infrastructure needs."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "badge": "ABOUT US",
+  "title": "Empowering Businesses with",
+  "highlight": "Technology",
+  "description": "We help organizations modernize their infrastructure, secure critical assets, and build scalable digital solutions for long-term growth.",
+  "features": [
+    {
+      "title": "Trusted",
+      "description": "Reliable solutions with transparency and integrity."
+    },
+    {
+      "title": "Experienced",
+      "description": "Years of expertise across multiple IT domains."
+    },
+    {
+      "title": "Innovative",
+      "description": "Leveraging modern technology to create impact."
+    },
+    {
+      "title": "Dedicated",
+      "description": "Committed support for your business success."
+    }
+  ],
+  "stats": [
+    {
+      "number": "500+",
+      "label": "Happy Clients"
+    },
+    {
+      "number": "1000+",
+      "label": "Projects Delivered"
+    },
+    {
+      "number": "24/7",
+      "label": "Expert Support"
+    },
+    {
+      "number": "99%",
+      "label": "Client Satisfaction"
+    }
+  ]
+}

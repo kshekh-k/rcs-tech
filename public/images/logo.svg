@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="40" viewBox="0 0 160 40" fill="none">
+  <rect width="40" height="40" rx="10" fill="url(#lg)"/>
+  <path d="M12 28V12H20.5C23.5376 12 26 14.4624 26 17.5C26 19.9153 24.4408 21.9662 22.2734 22.7003L26.5 28H22.3L18.5 23H15.5V28H12ZM15.5 20H20.2C21.4926 20 22.5 18.9926 22.5 17.7C22.5 16.4074 21.4926 15.4 20.2 15.4H15.5V20Z" fill="#0B1F3A"/>
+  <defs>
+    <linearGradient id="lg" x1="12" y1="12" x2="26.5" y2="28" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  <text x="48" y="26" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#0B1F3A">RCS<tspan fill="#2563EB"> Tech</tspan></text>
+</svg>

@@ -1,0 +1,97 @@
+{
+  "title": "Our Core Services",
+  "subtitle": "Complete IT solutions designed to optimize performance, enhance security, and accelerate business growth.",
+  "items": [
+    {
+      "id": "cybersecurity",
+      "icon": "ShieldCheck",
+      "title": "Cybersecurity Products",
+      "description": "Protect your business with enterprise-grade security solutions built to detect, prevent, and respond to threats.",
+      "subServices": [
+        "Firewall Solutions",
+        "Endpoint Security",
+        "Antivirus Solutions",
+        "Threat Detection",
+        "Security Audits"
+      ]
+    },
+    {
+      "id": "web-app-development",
+      "icon": "Code2",
+      "title": "Web & App Development",
+      "description": "Custom digital products engineered for performance, scalability, and seamless user experience.",
+      "subServices": [
+        "Business Websites",
+        "Enterprise Portals",
+        "eCommerce",
+        "Web Apps",
+        "Mobile Apps"
+      ]
+    },
+    {
+      "id": "erp-solutions",
+      "icon": "Boxes",
+      "title": "ERP Solutions",
+      "description": "Streamline operations and unify your business processes with end-to-end ERP and CRM systems.",
+      "subServices": [
+        "ERP Consulting",
+        "ERP Implementation",
+        "CRM Integration",
+        "Inventory Management",
+        "HR & Payroll"
+      ]
+    },
+    {
+      "id": "hardware-solutions",
+      "icon": "MonitorSmartphone",
+      "title": "Hardware Solutions",
+      "description": "Reliable enterprise hardware sourcing, deployment, and support for modern workplaces.",
+      "subServices": [
+        "Computers",
+        "Laptops",
+        "Interactive Panels",
+        "Projectors",
+        "Audio Systems"
+      ]
+    },
+    {
+      "id": "saas-products",
+      "icon": "AppWindow",
+      "title": "SaaS Products",
+      "description": "Licensing and deployment of the leading productivity and collaboration platforms for your team.",
+      "subServices": [
+        "Microsoft Azure",
+        "Microsoft Licensing",
+        "Google Workspace",
+        "Zoho Solutions",
+        "Productivity Tools"
+      ]
+    },
+    {
+      "id": "servers-cloud",
+      "icon": "Server",
+      "title": "Servers & Cloud",
+      "description": "Robust, scalable server and cloud infrastructure with migration and backup you can rely on.",
+      "subServices": [
+        "Cloud Hosting",
+        "Dedicated Servers",
+        "VPS",
+        "Cloud Migration",
+        "Backup Solutions"
+      ]
+    },
+    {
+      "id": "networking-infrastructure",
+      "icon": "Network",
+      "title": "Networking & IT Infrastructure",
+      "description": "Enterprise networking design and deployment for fast, secure, and dependable connectivity.",
+      "subServices": [
+        "Network Setup",
+        "Cabling",
+        "Wireless Solutions",
+        "Router & Switch Setup",
+        "Data Center Planning"
+      ]
+    }
+  ]
+}
