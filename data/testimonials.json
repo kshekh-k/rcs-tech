@@ -1,29 +1,68 @@
 {
-  "title": "What Our Clients Say",
+  "badge": "TESTIMONIALS",
+  "title": "What Our",
+  "highlight": "Clients Say",
+  "subtitle": "We’re proud to partner with amazing businesses and help them achieve their goals with reliable IT solutions.",
   "items": [
     {
-      "id": 1,
+      "id": "01",
       "name": "Ananya Verma",
-      "role": "COO, Meridian Retail Group",
-      "avatar": "/images/testimonials/client-1.svg",
+      "role": "COO",
+      "company": "Meridian Retail Group",
+      "review": "Their team transformed our IT infrastructure and improved operational efficiency significantly.",
       "rating": 5,
-      "quote": "Their team transformed our IT infrastructure and improved operational efficiency significantly."
+      "initials": "AV",
+      "color": "blue"
     },
     {
-      "id": 2,
+      "id": "02",
       "name": "Rohan Kapoor",
-      "role": "Founder, Nimbus Logistics",
-      "avatar": "/images/testimonials/client-2.svg",
+      "role": "Founder",
+      "company": "Nimbus Logistics",
+      "review": "Excellent support, quick implementation, and highly professional service.",
       "rating": 5,
-      "quote": "Excellent support, quick implementation, and highly professional service."
+      "initials": "RK",
+      "color": "purple"
     },
     {
-      "id": 3,
+      "id": "03",
       "name": "Sara Thomas",
-      "role": "IT Director, Bright Path Healthcare",
-      "avatar": "/images/testimonials/client-3.svg",
+      "role": "IT Director",
+      "company": "Bright Path Healthcare",
+      "review": "Reliable technology partner for all our software and infrastructure needs.",
       "rating": 5,
-      "quote": "Reliable technology partner for all our software and infrastructure needs."
+      "initials": "ST",
+      "color": "blueDark"
+    },
+    {
+      "id": "04",
+      "name": "Ananya Verma",
+      "role": "COO",
+      "company": "Meridian Retail Group",
+      "review": "Their team transformed our IT infrastructure and improved operational efficiency significantly.",
+      "rating": 5,
+      "initials": "AV",
+      "color": "blue"
+    },
+    {
+      "id": "05",
+      "name": "Rohan Kapoor",
+      "role": "Founder",
+      "company": "Nimbus Logistics",
+      "review": "Excellent support, quick implementation, and highly professional service.",
+      "rating": 5,
+      "initials": "RK",
+      "color": "purple"
+    },
+    {
+      "id": "06",
+      "name": "Sara Thomas",
+      "role": "IT Director",
+      "company": "Bright Path Healthcare",
+      "review": "Reliable technology partner for all our software and infrastructure needs.",
+      "rating": 5,
+      "initials": "ST",
+      "color": "blueDark"
     }
   ]
 }

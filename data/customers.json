@@ -2,13 +2,15 @@
   "title": "Trusted by Businesses Across Industries",
   "subtitle": "Serving startups, SMEs, enterprises, education, healthcare, and government sectors.",
   "logos": [
-    { "name": "Nimbus Logistics", "logo": "/images/customers/logo-1.svg" },
-    { "name": "Meridian Retail", "logo": "/images/customers/logo-2.svg" },
-    { "name": "Bright Path Healthcare", "logo": "/images/customers/logo-3.svg" },
-    { "name": "Vantage Financial", "logo": "/images/customers/logo-4.svg" },
-    { "name": "Orbit Education", "logo": "/images/customers/logo-5.svg" },
-    { "name": "Summit Manufacturing", "logo": "/images/customers/logo-6.svg" },
-    { "name": "Civic Systems", "logo": "/images/customers/logo-7.svg" },
-    { "name": "Pinnacle Realty", "logo": "/images/customers/logo-8.svg" }
+    { "name": "Google", "logo": "/images/customers/Google_2026_logo.svg" },
+    { "name": "Airtel", "logo": "/images/customers/Airtel_logo.svg" },
+    { "name": "Slack", "logo": "/images/customers/Slack_Technologies_Logo.svg" },
+    { "name": "Tata", "logo": "/images/customers/Tata_logo.svg" },
+    { "name": "Microsoft_logo", "logo": "/images/customers/Microsoft_logo.svg" },
+    { "name": "Jio", "logo": "/images/customers/Reliance_Jio_Logo.svg" },
+    { "name": "AWS", "logo": "/images/customers/Amazon_Web_Services_Logo.svg" },
+    { "name": "Act", "logo": "/images/customers/Atria_Convergence_Technologies_logo.svg" },
+    { "name": "Mahindra", "logo": "/images/customers/Mahindra_Auto.png" },
+    { "name": "DigitalOcean_logo", "logo": "/images/customers/DigitalOcean_logo.svg" }
   ]
 }

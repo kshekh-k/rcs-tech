@@ -9,6 +9,7 @@ import Promotion from "@/components/Promotion";
 import Blog from "@/components/Blog";
 import ContactCTA from "@/components/ContactCTA";
 import Footer from "@/components/Footer";
+import CTASection from "@/components/CTASection";
 
 export default function Home() {
   return (
@@ -19,9 +20,8 @@ export default function Home() {
         <About />
         <Services />
         <USP />
-        <Customers />
         <Testimonials />
-        <Promotion />
+        <CTASection />
         <Blog />
         <ContactCTA />
       </main>

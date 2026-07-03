@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-bg text-ink font-sans">
-        {children}
+        <div className="overflow-hidden min-h-screen">{children}</div>
       </body>
     </html>
   );

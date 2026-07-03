@@ -4,10 +4,27 @@ import Image from "next/image";
 import { Star, Quote } from "lucide-react";
 import { motion } from "framer-motion";
 import testimonialsData from "@/data/testimonials.json";
+import TestimonialCard from "./TestimonialCard";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 export default function Testimonials() {
   return (
-    <section className="bg-bg py-24 lg:py-32">
+    <section className="relative overflow-hidden py-28 border-y border-black/20 bg-white/20 z-10">
+      {/* Background Effects */}
+      
+      <div className="absolute -translate-x-1/2 -translate-y-1/2 top-0 left-0 w-96 h-96 rounded-full border border-blue-100"></div>
+
+      <div className="absolute right-20 top-20 grid grid-cols-4 gap-4 opacity-30">
+        {[...Array(16)].map((_, i) => (
+          <div key={i} className="w-2 h-2 bg-blue-300 rounded-full"></div>
+        ))}
+      </div>
+
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -16,54 +33,61 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-2xl text-center"
         >
-          <span className="text-sm font-semibold uppercase tracking-wide text-secondary">
-            Testimonials
+          <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
+            {testimonialsData.badge}
           </span>
-          <h2 className="mt-3 text-3xl font-bold text-primary sm:text-4xl">
-            {testimonialsData.title}
+          <h2 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-black leading-tight">
+            {testimonialsData.title}{" "}
+            <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent">
+              {testimonialsData.highlight}
+            </span>
           </h2>
+
+          <p className="mt-4 text-lg text-slate-500 leading-relaxed mx-auto max-w-2xl ">
+            {testimonialsData.subtitle}
+          </p>
         </motion.div>
 
-        <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3">
-          {testimonialsData.items.map((t, i) => (
-            <motion.div
-              key={t.id}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="relative rounded-2xl border border-primary/5 bg-white p-8 shadow-sm shadow-primary/5"
-            >
-              <Quote className="h-8 w-8 text-secondary/15" />
-              <div className="mt-3 flex gap-1">
-                {Array.from({ length: t.rating }).map((_, idx) => (
-                  <Star
-                    key={idx}
-                    className="h-4 w-4 fill-accent text-accent"
-                  />
-                ))}
-              </div>
-              <p className="mt-4 text-base leading-relaxed text-ink/70">
-                &ldquo;{t.quote}&rdquo;
-              </p>
-              <div className="mt-6 flex items-center gap-3">
-                <Image
-                  src={t.avatar}
-                  alt={t.name}
-                  width={44}
-                  height={44}
-                  className="rounded-full"
-                />
-                <div>
-                  <p className="text-sm font-semibold text-primary">
-                    {t.name}
-                  </p>
-                  <p className="text-xs text-ink/50">{t.role}</p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+        {/* Swiper */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+        >
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={30}
+            slidesPerView={1}
+            centeredSlides={true}
+            loop={true}
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            breakpoints={{
+              768: {
+                slidesPerView: 2,
+              },
+              1200: {
+                slidesPerView: 3,
+              },
+            }}
+            className="testimonial-swiper pb-10!"
+          >
+            {testimonialsData.items.map((item) => (
+              <SwiperSlide key={item.id}>
+                {({ isActive }) => (
+                  <TestimonialCard item={item} featured={isActive} />
+                )}
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </motion.div>
       </div>
     </section>
   );

@@ -11,6 +11,9 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import siteData from "@/data/site.json";
+import customersData from "@/data/customers.json";
+import WhyCard from "./WhyCard";
+import Image from "next/image";
 
 const iconMap: Record<string, LucideIcon> = {
   Layers,
@@ -21,53 +24,72 @@ const iconMap: Record<string, LucideIcon> = {
   TrendingUp,
 };
 
+
+
 export default function USP() {
   const { whyChooseUs } = siteData;
-
+const logos = [...customersData.logos, ...customersData.logos];
   return (
-    <section className="bg-bg py-24 lg:py-32">
+    <section className="relative py-28 bg-[#F8FAFC]  ">
+      {/* Background Effects */}
+      <div className="absolute -translate-x-1/4 -translate-y-1/4 top-0 left-0 size-96 bg-blue-500 rounded-full blur-3xl opacity-20"></div>
+      <div className="absolute translate-x-1/4 translate-y-1/4 bottom-0 right-0 size-96 bg-purple-500 rounded-full blur-3xl opacity-20"></div>
+      <div className="relative">
+
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
-          className="mx-auto max-w-2xl text-center"
+          className="text-center"
         >
-          <span className="text-sm font-semibold uppercase tracking-wide text-secondary">
-            Our Advantage
+           <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
+            {whyChooseUs.badge}
           </span>
-          <h2 className="mt-3 text-3xl font-bold text-primary sm:text-4xl">
-            {whyChooseUs.title}
+           <h2 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-black leading-tight">
+            {whyChooseUs.title}{" "}
+            <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent">
+               {whyChooseUs.highlight}
+            </span>
           </h2>
+           <p className="mt-4 text-lg text-slate-500 leading-relaxed mx-auto max-w-2xl ">
+            {whyChooseUs.subtitle}
+          </p>
         </motion.div>
 
-        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {whyChooseUs.items.map((item, i) => {
-            const Icon = iconMap[item.icon] ?? Layers;
-            return (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.5, delay: (i % 3) * 0.1 }}
-                className="rounded-2xl border border-primary/5 bg-white p-7 shadow-sm shadow-primary/5 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:shadow-secondary/10"
-              >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-secondary/10">
-                  <Icon className="h-6 w-6 text-secondary" />
-                </div>
-                <h3 className="mt-5 text-lg font-semibold text-primary">
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink/60">
-                  {item.description}
-                </p>
-              </motion.div>
-            );
-          })}
+         {/* Cards */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }} className="grid md:grid-cols-2 xl:grid-cols-3 gap-5 mt-10">
+          {whyChooseUs.items.map((item) => (
+            <WhyCard key={item.id} item={item} />
+          ))}
+        </motion.div>
+      </div>
+
+ <div className="relative mt-14 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+        <div className="flex w-max animate-marquee gap-6 xl:gap-10">
+          {logos.map((customer, i) => (
+            <div
+              key={`${customer.name}-${i}`}
+              className="flex shrink-0 w-40 h-20 items-center justify-center"
+            >
+              <Image
+                src={customer.logo}
+                alt={customer.name}
+                width={140}
+                height={48}
+                className="opacity-70 w-auto h-auto max-w-32 max-h-18 grayscale transition-all hover:opacity-100 hover:grayscale-0 object-cover"
+              />
+            </div>
+          ))}
         </div>
       </div>
+</div>
+
     </section>
   );
 }

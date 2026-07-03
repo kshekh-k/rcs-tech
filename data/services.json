@@ -1,13 +1,11 @@
 {
-  "title": "Our Core Services",
-  "subtitle": "Complete IT solutions designed to optimize performance, enhance security, and accelerate business growth.",
-  "items": [
+  "services": [
     {
-      "id": "cybersecurity",
-      "icon": "ShieldCheck",
+      "id": "01",
       "title": "Cybersecurity Products",
       "description": "Protect your business with enterprise-grade security solutions built to detect, prevent, and respond to threats.",
-      "subServices": [
+      "color": "blue",
+      "items": [
         "Firewall Solutions",
         "Endpoint Security",
         "Antivirus Solutions",
@@ -16,11 +14,11 @@
       ]
     },
     {
-      "id": "web-app-development",
-      "icon": "Code2",
+      "id": "02",
       "title": "Web & App Development",
       "description": "Custom digital products engineered for performance, scalability, and seamless user experience.",
-      "subServices": [
+      "color": "cyan",
+      "items": [
         "Business Websites",
         "Enterprise Portals",
         "eCommerce",
@@ -29,11 +27,11 @@
       ]
     },
     {
-      "id": "erp-solutions",
-      "icon": "Boxes",
+      "id": "03",
       "title": "ERP Solutions",
       "description": "Streamline operations and unify your business processes with end-to-end ERP and CRM systems.",
-      "subServices": [
+      "color": "purple",
+      "items": [
         "ERP Consulting",
         "ERP Implementation",
         "CRM Integration",
@@ -42,56 +40,61 @@
       ]
     },
     {
-      "id": "hardware-solutions",
-      "icon": "MonitorSmartphone",
+      "id": "04",
       "title": "Hardware Solutions",
       "description": "Reliable enterprise hardware sourcing, deployment, and support for modern workplaces.",
-      "subServices": [
+      "color": "pink",
+      "items": [
         "Computers",
         "Laptops",
         "Interactive Panels",
-        "Projectors",
-        "Audio Systems"
+        "Servers",
+        "Accessories"
       ]
     },
     {
-      "id": "saas-products",
-      "icon": "AppWindow",
+      "id": "05",
       "title": "SaaS Products",
-      "description": "Licensing and deployment of the leading productivity and collaboration platforms for your team.",
-      "subServices": [
+      "description": "Licensing and deployment of leading productivity and collaboration platforms for your team.",
+      "color": "teal",
+      "items": [
         "Microsoft Azure",
-        "Microsoft Licensing",
+        "Microsoft 365",
         "Google Workspace",
-        "Zoho Solutions",
-        "Productivity Tools"
+        "Cloud Solutions",
+        "Zoho"
       ]
     },
     {
-      "id": "servers-cloud",
-      "icon": "Server",
+      "id": "06",
       "title": "Servers & Cloud",
-      "description": "Robust, scalable server and cloud infrastructure with migration and backup you can rely on.",
-      "subServices": [
+      "description": "Robust, scalable server and cloud infrastructure with migration and backup solutions.",
+      "color": "orange",
+      "items": [
         "Cloud Hosting",
         "Dedicated Servers",
         "VPS",
         "Cloud Migration",
         "Backup Solutions"
       ]
+    }
+  ],
+  "bottomFeatures": [
+    {
+      "title": "Trusted & Secure",
+      "description": "Security & compliance you can trust"
     },
     {
-      "id": "networking-infrastructure",
-      "icon": "Network",
-      "title": "Networking & IT Infrastructure",
-      "description": "Enterprise networking design and deployment for fast, secure, and dependable connectivity.",
-      "subServices": [
-        "Network Setup",
-        "Cabling",
-        "Wireless Solutions",
-        "Router & Switch Setup",
-        "Data Center Planning"
-      ]
+      "title": "Performance Driven",
+      "description": "High-performance solutions for business"
+    },
+    {
+      "title": "24/7 Support",
+      "description": "Always here to support your success"
+    },
+    {
+      "title": "Scalable Solutions",
+      "description": "Built to grow with your business"
     }
   ]
 }

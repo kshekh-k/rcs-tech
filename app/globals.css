@@ -14,6 +14,12 @@
   --animate-fade-up: fade-up 0.6s ease-out both;
   --animate-float: float 5s ease-in-out infinite;
 
+  --shadow-1: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  --bg-grid-2: linear-gradient(to right,#73737320 1px,transparent 1px),linear-gradient(to bottom,#73737320 1px,transparent 1px);
+
+
+
   @keyframes marquee {
     from {
       transform: translateX(0);
@@ -35,11 +41,11 @@
   }
   @keyframes float {
   0%, 100% {
-    transform: translateY(0px);
+    transform: translateY(20px);
   }
 
   50% {
-    transform: translateY(-12px);
+    transform: translateY(-20px);
   }
 }
 }
@@ -92,3 +98,45 @@ body {
   background: #06b6d4;
   color: #ffffff;
 }
+
+.testimonial-swiper{ padding-bottom: 20px;}
+.testimonial-swiper .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.testimonial-swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #cbd5e1;
+  opacity: 1;
+}
+
+.testimonial-swiper .swiper-pagination-bullet-active {
+  background: #3b82f6;
+  width: 20px;
+  border-radius: 999px;
+}
+
+.testimonial-swiper .swiper-button-prev,
+.testimonial-swiper .swiper-button-next {
+  color: #2563eb;
+  width: 32px;
+  height: 32px;
+  background: white;
+  border-radius: 999px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  transition: all ease-in-out 3s;
+}
+
+.testimonial-swiper .swiper-button-prev::after,
+.testimonial-swiper .swiper-button-next::after {
+  font-size: 10px;
+  font-weight: bold;
+}
+.testimonial-swiper .swiper-navigation-icon{ width: 10px; height: 10x;}
+
+.testimonial-swiper .swiper-button-prev{left: -150% !important;}
+.testimonial-swiper .swiper-button-next {right: -150% !important;}
+
+.testimonial-swiper:hover .swiper-button-prev{left: 0 !important;}
+.testimonial-swiper:hover .swiper-button-next {right: 0 !important;}
