@@ -14,10 +14,7 @@ import "swiper/css/pagination";
 
 export default function Testimonials() {
   return (
-    <section className="relative overflow-hidden py-28 border-y border-black/20 bg-white/20 z-10">
-      {/* Background Effects */}
-      
-      <div className="absolute -translate-x-1/2 -translate-y-1/2 top-0 left-0 w-96 h-96 rounded-full border border-blue-100"></div>
+    <section className="relative overflow-hidden py-28 border-t border-slate-200 bg-white/20 z-10 before:absolute before:-translate-x-1/2 before:-translate-y-1/2 before:top-0 before:left-0 before:w-96 before:h-96 before:rounded-full before:border before:border-blue-100 "> 
 
       <div className="absolute right-20 top-20 grid grid-cols-4 gap-4 opacity-30">
         {[...Array(16)].map((_, i) => (
@@ -36,7 +33,7 @@ export default function Testimonials() {
           <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
             {testimonialsData.badge}
           </span>
-          <h2 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-black leading-tight">
+          <h2 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-slate-900 leading-tight">
             {testimonialsData.title}{" "}
             <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent">
               {testimonialsData.highlight}
@@ -55,16 +52,19 @@ export default function Testimonials() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
         >
+
+{/* {
+              delay: 3500,
+              disableOnInteraction: false,
+            } */}
+
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={30}
             slidesPerView={1}
             centeredSlides={true}
             loop={true}
-            autoplay={{
-              delay: 3500,
-              disableOnInteraction: false,
-            }}
+            autoplay={false}
             pagination={{
               clickable: true,
             }}

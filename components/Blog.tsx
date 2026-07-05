@@ -5,65 +5,69 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import blogsData from "@/data/blogs.json";
+import BlogCard from "./BlogCard";
 
 export default function Blog() {
   return (
-    <section id="blog" className="bg-bg py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="relative py-28 bg-[#F8FAFC] overflow-hidden before:absolute before:translate-x-1/2 before:-translate-y-1/2 before:top-0 before:right-0 before:w-96 before:h-96 before:rounded-full before:border before:border-blue-100">
+      {/* Background Effects */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-50"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-50 rounded-full blur-3xl opacity-50"></div>
+
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 relative ">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
-          className="mx-auto max-w-2xl text-center"
+          className="text-center"
         >
-          <span className="text-sm font-semibold uppercase tracking-wide text-secondary">
-            Insights
+          
+          <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
+            ⚡ {blogsData.badge}
           </span>
-          <h2 className="mt-3 text-3xl font-bold text-primary sm:text-4xl">
-            {blogsData.title}
+
+          <h2 className="text-4xl md:text-5xl xl:text-6xl/18 font-extrabold text-slate-900">
+            {blogsData.title}{" "}
+             <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent">
+              {blogsData.highlight1}
+            </span>
+            {" "}&{" "}
+            <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent">
+              {blogsData.highlight2}
+            </span>
+            {" "}{blogsData.titleEnd}
           </h2>
+
+         <p className="mt-4 text-lg text-slate-500 leading-relaxed mx-auto max-w-2xl ">
+            {blogsData.subtitle}
+          </p>
+          
         </motion.div>
 
-        <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
-          {blogsData.items.map((post, i) => (
-            <motion.article
-              key={post.id}
-              initial={{ opacity: 0, y: 24 }}
+
+
+
+ {/* Blog Cards */}
+        <motion.div 
+            initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group overflow-hidden rounded-2xl border border-primary/5 bg-white shadow-sm shadow-primary/5 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:shadow-secondary/10"
-            >
-              <div className="relative aspect-[16/10] overflow-hidden">
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <span className="rounded-full bg-secondary/10 px-3 py-1 text-xs font-semibold text-secondary">
-                  {post.category}
-                </span>
-                <h3 className="mt-4 text-lg font-semibold leading-snug text-primary">
-                  {post.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink/60">
-                  {post.excerpt}
-                </p>
-                <Link
-                  href={post.href}
-                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-secondary transition-all group-hover:gap-2.5"
-                >
-                  Read More
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
-              </div>
-            </motion.article>
+              transition={{ duration: 0.5}}
+             className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 mt-10">
+          {blogsData.blogs.map((blog) => (
+            <BlogCard key={blog.id} blog={blog} />
           ))}
+        </motion.div>
+
+         {/* CTA */}
+        <div className="mt-16 flex justify-center">
+          <button className="px-5 py-3 rounded bg-secondary font-semibold text-base transition flex items-center gap-3 text-white shadow-md shadow-primary/20 hover:bg-secondary hover:shadow-lg hover:shadow-secondary/30 cursor-pointer">
+            View All Articles →
+          </button>
         </div>
+
+ 
       </div>
     </section>
   );
