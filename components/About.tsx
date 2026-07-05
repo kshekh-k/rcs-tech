@@ -88,7 +88,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, delay: 0.15 }} className="mt-10 bg-linear-to-r from-[#081B44] to-[#0A2D6B] rounded p-4 md:p-6 relative">
-              <div className="absolute inset-0 opacity-80 bg-(image:--bg-grid-2) bg-[size:5px_5px]"></div>
+            <div className="absolute inset-0 opacity-80 bg-(image:--bg-grid-2) bg-[size:5px_5px]"></div>
           <div className="grid md:grid-cols-4 gap-8 text-left">
             {about.stats.map((stat, index) => {
               const Icon = statsIcons[index];

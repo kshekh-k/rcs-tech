@@ -5,11 +5,10 @@ import Services from "@/components/Services";
 import USP from "@/components/USP";
 import Customers from "@/components/Customers";
 import Testimonials from "@/components/Testimonials";
-import Promotion from "@/components/Promotion";
 import Blog from "@/components/Blog";
-import ContactCTA from "@/components/ContactCTA";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
+import ContactSection from "@/components/ContactSection";
 
 export default function Home() {
   return (
@@ -23,7 +22,7 @@ export default function Home() {
         <Testimonials />
         <CTASection />
         <Blog />
-        <ContactCTA />
+        <ContactSection />
       </main>
       <Footer />
     </>

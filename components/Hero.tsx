@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-primary pt-32 pb-24  "
+      className="relative overflow-hidden bg-primary pt-32 pb-24 min-h-screen flex items-center"
     >
       <div className="absolute inset-0 bg-grid opacity-15" />
       <div className="absolute -top-40 -right-40 h-130 w-130 rounded-full bg-secondary/30 blur-[120px]" />
@@ -30,7 +30,10 @@ export default function Hero() {
           </span>
 
           <h1 className="mt-5 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-            {hero.headline}
+            {hero.headline}{" "}
+            <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent">
+              {hero.highlight}
+            </span>
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/70">

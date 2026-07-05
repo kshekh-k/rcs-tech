@@ -47,7 +47,7 @@ export default function CTASection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6 }}
-            className="grid lg:grid-cols-12 gap-10 items-center p-5 xl:p-10"
+            className="grid lg:grid-cols-12 gap-10 items-center p-5 xl:p-10 relative"
           >
             {/* LEFT */}
             <div className="col-span-7">
@@ -56,9 +56,9 @@ export default function CTASection() {
               </span>
 
               <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
-                Ready to Upgrade{" "}
-                <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent block">
-                  Your IT Infrastructure?
+                Ready to Upgrade Your IT {" "}
+                <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent inline-block">
+                  Infrastructure?
                 </span>
               </h2>
 

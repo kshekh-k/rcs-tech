@@ -3,7 +3,7 @@ import { Quote, Star } from "lucide-react";
 const colors = {
   blue: "from-blue-500 to-blue-600",
   purple: "from-purple-500 to-purple-600",
-  blueDark: "from-slate-800 to-blue-900",
+  blueDark: "from-green-500 to-green-600",
 };
 
 

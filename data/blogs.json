@@ -1,32 +1,38 @@
 {
-  "title": "Latest Insights & Technology Updates",
-  "items": [
+  "badge": "INSIGHTS",
+  "title": "Latest",
+  "titleEnd": "Updates",
+  "highlight1": "Insights",
+  "highlight2": "Technology",
+
+  "subtitle": "Stay ahead with expert insights, trends, and best practices from the world of technology.",
+  "blogs": [
     {
-      "id": "cybersecurity-trends",
-      "image": "/images/blog/blog-1.svg",
+      "id": "01",
       "category": "Cybersecurity",
       "title": "Top Cybersecurity Trends Businesses Should Watch",
-      "excerpt": "From zero-trust architecture to AI-driven threat detection, discover the trends shaping enterprise security in the year ahead.",
-      "date": "2026-06-12",
-      "href": "#"
+      "description": "From zero-trust architecture to AI-driven threat detection, discover the trends shaping enterprise security in the year ahead.",
+      "date": "Jul 03, 2025",
+      "color": "blue",
+      "image": "/images/blog/cybersecurity.png"
     },
     {
-      "id": "cloud-scalability",
-      "image": "/images/blog/blog-2.svg",
+      "id": "02",
       "category": "Cloud Infrastructure",
       "title": "How Cloud Infrastructure Improves Scalability",
-      "excerpt": "Learn how migrating to the cloud helps businesses scale efficiently while reducing infrastructure overhead and downtime.",
-      "date": "2026-05-28",
-      "href": "#"
+      "description": "Learn how migrating to the cloud helps businesses scale efficiently while reducing infrastructure overhead and downtime.",
+      "date": "Jul 02, 2025",
+      "color": "cyan",
+      "image": "/images/blog/cloud.png"
     },
     {
-      "id": "erp-best-practices",
-      "image": "/images/blog/blog-3.svg",
+      "id": "03",
       "category": "ERP Solutions",
       "title": "ERP Implementation Best Practices",
-      "excerpt": "A practical guide to planning, deploying, and adopting ERP systems without disrupting day-to-day business operations.",
-      "date": "2026-05-10",
-      "href": "#"
+      "description": "A practical guide to planning, deploying, and adopting ERP systems without disrupting day-to-day business operations.",
+      "date": "Jul 01, 2025",
+      "color": "purple",
+      "image": "/images/blog/erp.png"
     }
   ]
 }

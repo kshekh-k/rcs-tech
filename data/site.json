@@ -4,15 +4,31 @@
   "logo": "/images/logo.svg",
   "logoWhite": "/images/logo-white.svg",
   "nav": [
-    { "label": "Home", "href": "#home" },
-    { "label": "About", "href": "#about" },
-    { "label": "Services", "href": "#services" },
-    { "label": "Blog", "href": "#blog" },
-    { "label": "Contact", "href": "#contact" }
+    {
+      "label": "Home",
+      "href": "#home"
+    },
+    {
+      "label": "About",
+      "href": "#about"
+    },
+    {
+      "label": "Services",
+      "href": "#services"
+    },
+    {
+      "label": "Blog",
+      "href": "#blog"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    }
   ],
   "consultationCta": "Get Consultation",
   "hero": {
-    "headline": "Intelligent IT for Modern Business",
+    "headline": "Intelligent IT for",
+    "highlight": "Modern Business",
     "subheadline": "Smart IT solutions for modern businesses.",
     "primaryCta": "Get Free Consultation",
     "secondaryCta": "Explore Services",
@@ -24,146 +40,252 @@
     ]
   },
   "about": {
-  "badge": "ABOUT US",
-  "title": "Empowering Businesses with",
-  "highlight": "RCS Tech",
-  "description": "We help organizations modernize their infrastructure, secure critical assets, and build scalable digital solutions for long-term growth.",
-  "features": [
-    {
-      "title": "Trusted",
-      "description": "Reliable. Transparent. Proven."
-    },
-    {
-      "title": "Experienced",
-      "description": "Expertise Across IT Domains."
-    },
-    {
-      "title": "Innovative",
-      "description": "Technology That Creates Impact."
-    },
-    {
-      "title": "Dedicated",
-      "description": "Committed to Your Success."
-    }
-  ],
-  "stats": [
-    {
-      
-      "number": "500+",
-      "label": "Happy Clients"
-    },
-    {
-      "number": "1000+",
-      "label": "Projects Delivered"
-    },
-    {
-      "number": "24/7",
-      "label": "Expert Support"
-    },
-    {
-      "number": "99%",
-      "label": "Client Satisfaction"
-    }
-  ]
-},
-
-
-  "about2": {
-    "title": "Your Trusted Technology Partner",
-    "paragraphs": [
-      "We help businesses simplify technology, strengthen security, and accelerate growth through modern IT solutions. From cybersecurity and cloud infrastructure to software development and enterprise systems, we deliver reliable, scalable, and future-ready solutions tailored to your business needs.",
-      "With years of expertise and a customer-first approach, we support startups, SMEs, and enterprises in building secure, efficient, and high-performing digital ecosystems."
+    "badge": "ABOUT US",
+    "title": "Empowering Businesses with",
+    "highlight": "RCS Infra Tech",
+    "description": "We help organizations modernize their infrastructure, secure critical assets, and build scalable digital solutions for long-term growth.",
+    "features": [
+      {
+        "title": "Trusted",
+        "description": "Reliable. Transparent. Proven."
+      },
+      {
+        "title": "Experienced",
+        "description": "Expertise Across IT Domains."
+      },
+      {
+        "title": "Innovative",
+        "description": "Technology That Creates Impact."
+      },
+      {
+        "title": "Dedicated",
+        "description": "Committed to Your Success."
+      }
     ],
     "stats": [
-      { "label": "Clients", "value": "500+" },
-      { "label": "Projects", "value": "1000+" },
-      { "label": "Support", "value": "24/7" },
-      { "label": "Client Satisfaction", "value": "99%" }
+      {
+        "number": "500+",
+        "label": "Happy Clients"
+      },
+      {
+        "number": "1000+",
+        "label": "Projects Delivered"
+      },
+      {
+        "number": "24/7",
+        "label": "Expert Support"
+      },
+      {
+        "number": "99%",
+        "label": "Client Satisfaction"
+      }
     ]
   },
   "whyChooseUs": {
-  "badge": "OUR ADVANTAGE",
-  "title": "Why Businesses",
-  "highlight": "Choose Us",
-  "subtitle": "We combine technology, expertise, and commitment to deliver IT solutions that drive real business success.",
-  "items": [
-    {
-      "id": "01",
-      "title": "End-to-End IT Solutions",
-      "description": "From consulting to deployment, we handle every stage of your technology journey.",
-      "color": "blue"
-    },
-    {
-      "id": "02",
-      "title": "Expert Team",
-      "description": "Certified engineers and consultants with deep, cross-industry expertise.",
-      "color": "purple"
-    },
-    {
-      "id": "03",
-      "title": "Secure Infrastructure",
-      "description": "Enterprise-grade security built into every solution we deliver.",
-      "color": "green"
-    },
-    {
-      "id": "04",
-      "title": "Customized Solutions",
-      "description": "Tailored technology strategies designed around your business goals.",
-      "color": "orange"
-    },
-    {
-      "id": "05",
-      "title": "Fast Support",
-      "description": "Responsive, round-the-clock support when you need it most.",
-      "color": "pink"
-    },
-    {
-      "id": "06",
-      "title": "Scalable Systems",
-      "description": "Infrastructure and software that grows seamlessly with your business.",
-      "color": "cyan"
-    }
-  ]
-},
-  "promotion": {
-    "title": "Ready to Upgrade Your IT Infrastructure?",
-    "text": "Let our experts help you choose the right technology solutions for your business.",
-    "cta": "Book Free Consultation"
+    "badge": "OUR ADVANTAGE",
+    "title": "Why Businesses",
+    "highlight": "Choose Us",
+    "subtitle": "We combine technology, expertise, and commitment to deliver IT solutions that drive real business success.",
+    "items": [
+      {
+        "id": "01",
+        "title": "End-to-End IT Solutions",
+        "description": "From consulting to deployment, we handle every stage of your technology journey.",
+        "color": "blue"
+      },
+      {
+        "id": "02",
+        "title": "Expert Team",
+        "description": "Certified engineers and consultants with deep, cross-industry expertise.",
+        "color": "purple"
+      },
+      {
+        "id": "03",
+        "title": "Secure Infrastructure",
+        "description": "Enterprise-grade security built into every solution we deliver.",
+        "color": "green"
+      },
+      {
+        "id": "04",
+        "title": "Customized Solutions",
+        "description": "Tailored technology strategies designed around your business goals.",
+        "color": "orange"
+      },
+      {
+        "id": "05",
+        "title": "Fast Support",
+        "description": "Responsive, round-the-clock support when you need it most.",
+        "color": "pink"
+      },
+      {
+        "id": "06",
+        "title": "Scalable Systems",
+        "description": "Infrastructure and software that grows seamlessly with your business.",
+        "color": "cyan"
+      }
+    ]
   },
   "contact": {
     "title": "Let's Build Your IT Infrastructure Together",
     "text": "Connect with our experts and get a tailored solution for your business.",
     "cta": "Send Inquiry"
   },
+  "contactInfo": {
+    "phone": "+91 98765 43210",
+    "whatsapp": "+91 98765 43212",
+    "email": "info@rcstech.com",
+    "address": "402, Tech Park Tower, Andheri East, Mumbai, India 400069",
+    "hours": "Mon-Sat 9AM – 7PM",
+    "social": [
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com",
+        "color": "--color-blue-600"
+      },
+      {
+        "label": "Twitter",
+        "href": "https://twitter.com",
+        "color": "--color-slate-900"
+      },
+      {
+        "label": "Facebook",
+        "href": "https://facebook.com",
+        "color": "--color-blue-500"
+      },
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com",
+        "color": "--color-pink-500"
+      },
+      {
+        "label": "WhatsApp",
+        "href": "",
+        "color": "--color-green-500"
+      }
+    ]
+  },
   "footer": {
-    "about": "RCS Tech delivers enterprise-grade cybersecurity, cloud, ERP, and IT infrastructure solutions that help businesses grow securely and efficiently.",
+    "about": "Enterprise-grade cybersecurity, cloud, ERP and IT infrastructure                solutions for modern businesses.",
+    "usp": [
+      {
+        "icon": "ShieldCheck",
+        "title": "Enterprise Security",
+        "description": "Your data is protected",
+        "color": "blue"
+      },
+      {
+        "icon": "BadgeCheck",
+        "title": "ISO Certified",
+        "description": "Quality you can trust",
+        "color": "purple"
+      },
+      {
+        "icon": "Clock3",
+        "title": "On-time Delivery",
+        "description": "We value your time",
+        "color": "orange"
+          
+      },
+      {
+        "icon": "Globe",
+        "title": "Global Support",
+        "description": "We're here to help",
+        "color": "green"
+         
+      }
+    ],
+    "legalLinks": [
+      {
+        "label": "Privacy Policy",
+        "href": "#"
+      },
+      {
+        "label": "Terms & Conditions",
+        "href": "#"
+      },
+      {
+        "label": "Sitemap",
+        "href": "#"
+      }
+    ],
+    "stats": [
+      {
+        "value": "500+",
+        "label": "Projects Delivered",
+        "color": "--color-blue-500"
+      },
+      {
+        "value": "98%",
+        "label": "Client Satisfaction",
+        "color": "--color-green-500"
+      },
+      {
+        "value": "10+",
+        "label": "Years Experience",
+        "color": "--color-purple-500"
+      },
+      {
+        "value": "24/7",
+        "label": "Export Support",
+        "color": "--color-orange-500"
+      }
+    ],
     "quickLinks": [
-      { "label": "Home", "href": "#home" },
-      { "label": "About", "href": "#about" },
-      { "label": "Services", "href": "#services" },
-      { "label": "Blog", "href": "#blog" },
-      { "label": "Contact", "href": "#contact" }
+      {
+        "label": "Home",
+        "href": "#home"
+      },
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "Services",
+        "href": "#services"
+      },
+      {
+        "label": "Blog",
+        "href": "#blog"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
     ],
     "servicesLinks": [
-      "Cybersecurity Products",
-      "Web & App Development",
-      "ERP Solutions",
-      "Hardware Solutions",
-      "SaaS Products",
-      "Servers & Cloud",
-      "Networking & IT Infrastructure"
+      {
+        "label": "Cybersecurity",
+        "href": "/"
+      },
+      {
+        "label": "Web Development",
+        "href": "/"
+      },
+      {
+        "label": "ERP Solutions",
+        "href": "/"
+      },
+      {
+        "label": "Hardware",
+        "href": "/"
+      },
+      {
+        "label": "SaaS Products",
+        "href": "/"
+      },
+      {
+        "label": "Servers & Cloud",
+        "href": "/"
+      },
+      {
+        "label": "Networking",
+        "href": "/"
+      }
     ],
-    "contact": {
-      "address": "402, Tech Park Tower, Andheri East, Mumbai, India 400069",
-      "phone": "+91 98765 43210",
-      "email": "info@rcstech.com"
+    "call": {
+      "title": "Speak to Our Experts",
+      "label": "Get instant help for your queries."
     },
-    "social": [
-      { "label": "LinkedIn", "href": "https://linkedin.com" },
-      { "label": "Twitter", "href": "https://twitter.com" },
-      { "label": "Facebook", "href": "https://facebook.com" },
-      { "label": "Instagram", "href": "https://instagram.com" }
-    ],
-    "copyright": "Copyright © 2026 RCS Tech. All Rights Reserved."
+    "copyright": "RCS Infra Tech. All Rights Reserved."
   }
 }
