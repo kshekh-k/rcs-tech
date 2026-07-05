@@ -108,6 +108,7 @@ export default function Footer() {
                 {footer.stats.map((item, index) => {
                   return (
                     <div
+                      key={item.label}
                       className={`px-3 py-2 ${index == 0 && "border-r border-white/5"} ${index == 2 && "border-r border-t border-white/5"} ${index == 3 && "border-t border-white/5"}`}
                       style={
                         {

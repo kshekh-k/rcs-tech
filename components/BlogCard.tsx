@@ -38,7 +38,17 @@ const useColors = {
   
 };
 
-export default function BlogCard({ blog }: { blog: any }) {
+interface Blog {
+  id: string;
+  category: string;
+  title: string;
+  description: string;
+  date: string;
+  color: string;
+  image: string;
+}
+
+export default function BlogCard({ blog }: { blog: Blog }) {
   const colors =
     colorClasses[blog.color as keyof typeof colorClasses];
     const useColor = useColors[blog.color as keyof typeof useColors];
