@@ -92,13 +92,13 @@ export default function ContactCard({
         </div>
       </div>
 
-      <p className="text-xs font-semibold text-slate-900 mt-2 break-all">
+      <p className="text-xs text-center sm:text-left font-semibold text-slate-900 sm:mt-2 break-all">
         {value}
       </p>
 
       {/* Arrow */}
       <span
-        className={`size-5 absolute right-2 bottom-2 rounded-full border border-(--this-color) bg-white flex items-center justify-center group-hover:bg-(--this-color) group-hover:text-white transition`}
+        className={`size-5 absolute right-2 bottom-2 rounded-full border border-(--this-color) bg-white hidden sm:flex items-center justify-center group-hover:bg-(--this-color) group-hover:text-white transition`}
       >
         <ChevronRight className="size-3" />
       </span>

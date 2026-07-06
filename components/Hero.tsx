@@ -23,7 +23,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="col-span-6 lg:col-span-5 max-w-sm mx-auto md:max-w-none"
+          className="col-span-6 lg:col-span-5 max-w-sm mx-auto md:max-w-none pt-5 md:pt-0"
         >
           <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
             Enterprise IT Solutions
@@ -77,7 +77,7 @@ export default function Hero() {
             width={640}
             height={560}
             priority
-            className="w-full drop-shadow-2xl"
+            className="w-full drop-shadow-2xl scale-115"
           />
         </motion.div>
       </div>

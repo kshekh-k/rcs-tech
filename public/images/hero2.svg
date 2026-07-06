@@ -206,18 +206,18 @@
 <g id="top-cards" transform="translate(1080,50)">
   <!-- Card 3 -->
   <g class="float-card" transform="translate(790,50)">
-    <rect width="260" height="110" rx="20"
+    <rect width="240" height="95" rx="20"
           fill="url(#cardGradient)"
           opacity="0.88"
           stroke="#00EAFF"
           stroke-width="1.5"
           filter="url(#cardGlow)"/>
 
-    <text x="22" y="36" fill="#FFFFFF" font-size="22" font-family="Arial">
+    <text x="22" y="36" fill="#FFFFFF" font-size="28" font-family="Arial">
       Data Protection
     </text>
 
-    <text x="22" y="76" fill="#00EAFF" font-size="32" font-family="Arial" font-weight="bold">
+    <text x="22" y="76" fill="#00EAFF" font-size="40" font-family="Arial" font-weight="bold">
       99.8%
     </text>
   </g>
@@ -226,18 +226,18 @@
 <g id="top-cards" transform="translate(760,50)">
   <!-- Card 4 -->
   <g class="float-card" transform="translate(1090,100)">
-    <rect width="260" height="110" rx="20"
+    <rect width="240" height="95" rx="20"
           fill="url(#cardGradient)"
           opacity="0.88"
           stroke="#00EAFF"
           stroke-width="1.5"
           filter="url(#cardGlow)"/>
 
-    <text x="22" y="36" fill="#FFFFFF" font-size="22" font-family="Arial">
+    <text x="22" y="36" fill="#FFFFFF" font-size="28" font-family="Arial">
       Access Control
     </text>
 
-    <text x="22" y="76" fill="#00EAFF" font-size="32" font-family="Arial" font-weight="bold">
+    <text x="22" y="76" fill="#00EAFF" font-size="40" font-family="Arial" font-weight="bold">
       Verified
     </text>
   </g>
@@ -247,18 +247,18 @@
 <g id="top-cards" transform="translate(420,50)">
   <!-- Card 2 -->
   <g class="float-card" transform="translate(390,70)">
-    <rect width="260" height="110" rx="20"
+    <rect width="240" height="95" rx="20"
           fill="url(#cardGradient)"
           opacity="0.88"
           stroke="#00EAFF"
           stroke-width="1.5"
           filter="url(#cardGlow)"/>
 
-    <text x="22" y="36" fill="#FFFFFF" font-size="22" font-family="Arial">
+    <text x="22" y="36" fill="#FFFFFF" font-size="28" font-family="Arial">
       Network
     </text>
 
-    <text x="22" y="76" fill="#00EAFF" font-size="32" font-family="Arial" font-weight="bold">
+    <text x="22" y="76" fill="#00EAFF" font-size="40" font-family="Arial" font-weight="bold">
       Secured
     </text>
   </g>
@@ -267,18 +267,18 @@
 <g id="top-cards" transform="translate(100,50)">
   <!-- Card 1 -->
   <g class="float-card" transform="translate(90,70)">
-    <rect width="260" height="110" rx="20"
+    <rect width="240" height="95" rx="20"
           fill="url(#cardGradient)"
           opacity="0.88"
           stroke="#00EAFF"
           stroke-width="1.5"
           filter="url(#cardGlow)"/>
 
-    <text x="22" y="36" fill="#FFFFFF" font-size="22" font-family="Arial">
+    <text x="22" y="36" fill="#FFFFFF" font-size="28" font-family="Arial">
       Firewall
     </text>
 
-    <text x="22" y="76" fill="#00EAFF" font-size="32" font-family="Arial" font-weight="bold">
+    <text x="22" y="76" fill="#00EAFF" font-size="40" font-family="Arial" font-weight="bold">
       Active
     </text>
   </g>
@@ -290,14 +290,14 @@
 <!-- Traffic -->
 <g id="left-cards" transform="translate(200,420)">
   <g class="float-card" transform="translate(500,100)">
-    <rect width="230" height="110" rx="20"
+    <rect width="200" height="95" rx="20"
           fill="url(#cardGradient)"
           stroke="#00EAFF"
           stroke-width="1.4"/>
 
-    <text x="22" y="36" fill="#FFF" font-size="22" font-family="Arial">Traffic</text>
+    <text x="22" y="36" fill="#FFF" font-size="28" font-family="Arial">Traffic</text>
 
-    <text x="22" y="74" fill="#00EAFF" font-size="32" font-weight="bold" font-family="Arial">
+    <text x="22" y="74" fill="#00EAFF" font-size="40" font-weight="bold" font-family="Arial">
       4.2M
     </text>
   </g>
@@ -306,17 +306,17 @@
 <g id="left-cards" transform="translate(170,230)">  
   <!-- Threat Detection -->
   <g class="float-card" transform="translate(250,280)">
-    <rect width="260" height="130" rx="22"
+    <rect width="260" height="110" rx="22"
           fill="url(#cardGradient)"
           stroke="#00EAFF"
           stroke-width="1.4"/>
 
-    <text x="22" y="36" fill="#FFF" font-size="22" font-family="Arial">Threat Detection</text>
+    <text x="22" y="36" fill="#FFF" font-size="28" font-family="Arial">Threat Detection</text>
 
     <rect x="22" y="70" width="180" height="10" rx="5" fill="#0C1835"/>
     <rect x="22" y="70" width="150" height="10" rx="5" fill="#00EAFF"/>
 
-    <text x="210" y="79" fill="#00EAFF" font-size="18" font-family="Arial">84%</text>
+    <text x="190" y="79" fill="#00EAFF" font-size="24" font-family="Arial">84%</text>
   </g>
 
   
@@ -329,14 +329,14 @@
 <g id="right-cards" transform="translate(1020,230)">
   <!-- Secure Nodes -->
   <g class="float-card" transform="translate(1110,290)">
-    <rect width="250" height="120" rx="20"
+    <rect width="250" height="110" rx="20"
           fill="url(#cardGradient)"
           stroke="#00EAFF"
           stroke-width="1.4"/>
 
-    <text x="22" y="36" fill="#FFF" font-size="22" font-family="Arial">Secure Nodes</text>
+    <text x="22" y="36" fill="#FFF" font-size="28" font-family="Arial">Secure Nodes</text>
 
-    <text x="22" y="78" fill="#00EAFF" font-size="32" font-weight="bold" font-family="Arial">
+    <text x="22" y="80" fill="#00EAFF" font-size="40" font-weight="bold" font-family="Arial">
       248
     </text>
   </g>
@@ -344,12 +344,12 @@
 <g id="right-cards" transform="translate(1000,420)">
   <!-- Firewall Requests -->
   <g class="float-card" transform="translate(1100,460)">
-    <rect width="260" height="120" rx="20"
+    <rect width="200" height="100" rx="20"
           fill="url(#cardGradient)"
           stroke="#00EAFF"
           stroke-width="1.4"/>
-    <text x="22" y="36" fill="#FFF" font-size="22" font-family="Arial">Requests</text>
-    <text x="22" y="78" fill="#00EAFF" font-size="32" font-weight="bold" font-family="Arial">
+    <text x="22" y="36" fill="#FFF" font-size="28" font-family="Arial">Requests</text>
+    <text x="22" y="78" fill="#00EAFF" font-size="40" font-weight="bold" font-family="Arial">
       8.4M
     </text>
   </g>
@@ -526,8 +526,8 @@
           fill="url(#cardGradient)"
           stroke="#00EAFF"
           stroke-width="1.4"/>
-    <text x="20" y="30" fill="#FFF" font-size="18" font-family="Arial">Threats</text>
-    <text x="20" y="56" fill="#00EAFF" font-size="22" font-weight="bold" font-family="Arial">0</text>
+    <text x="20" y="30" fill="#FFF" font-size="28" font-family="Arial">Threats</text>
+    <text x="20" y="60" fill="#00EAFF" font-size="32" font-weight="bold" font-family="Arial">0</text>
   </g>
 
   <!-- card 2 -->
@@ -536,8 +536,8 @@
           fill="url(#cardGradient)"
           stroke="#00EAFF"
           stroke-width="1.4"/>
-    <text x="20" y="30" fill="#FFF" font-size="18" font-family="Arial">Nodes</text>
-    <text x="20" y="56" fill="#00EAFF" font-size="22" font-weight="bold" font-family="Arial">248</text>
+    <text x="20" y="30" fill="#FFF" font-size="28" font-family="Arial">Nodes</text>
+    <text x="20" y="60" fill="#00EAFF" font-size="32" font-weight="bold" font-family="Arial">248</text>
   </g>
 
   <!-- card 3 -->
@@ -546,8 +546,8 @@
           fill="url(#cardGradient)"
           stroke="#00EAFF"
           stroke-width="1.4"/>
-    <text x="20" y="30" fill="#FFF" font-size="18" font-family="Arial">Status</text>
-    <text x="20" y="56" fill="#00EAFF" font-size="22" font-weight="bold" font-family="Arial">SAFE</text>
+    <text x="20" y="30" fill="#FFF" font-size="28" font-family="Arial">Status</text>
+    <text x="20" y="60" fill="#00EAFF" font-size="32" font-weight="bold" font-family="Arial">SAFE</text>
   </g>
 
 </g>
