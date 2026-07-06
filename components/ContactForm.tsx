@@ -85,7 +85,7 @@ export default function ContactForm() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.6, delay: 0.15 }}
-      className="relative col-span-6 lg:col-span-5"
+      className="relative w-full col-span-6 lg:col-span-5"
     >
       {/* Outer Glow */}
       <div className="absolute inset-0 bg-linear-to-r from-blue-500 to-purple-500 blur-3xl opacity-10 rounded-2xl" />
