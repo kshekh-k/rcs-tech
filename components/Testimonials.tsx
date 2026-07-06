@@ -16,9 +16,9 @@ export default function Testimonials() {
   return (
     <section className="relative overflow-hidden pt-16 pb-8 lg:py-24 xl:py-32 border-t border-slate-200 bg-white/20 z-10 before:absolute before:-translate-x-1/2 before:-translate-y-1/2 before:top-0 before:left-0 before:size-40 lg:before:size-96 before:rounded-full before:border before:border-blue-100 "> 
 
-      <div className="absolute right-20 top-20 grid grid-cols-4 gap-4 opacity-30">
+      <div className="absolute top-3 right-3 xl:right-20 xl:top-20 grid grid-cols-4 gap-4 opacity-30">
         {[...Array(16)].map((_, i) => (
-          <div key={i} className="w-2 h-2 bg-blue-300 rounded-full"></div>
+          <div key={i} className="size-1 bg-blue-300 rounded-full"></div>
         ))}
       </div>
 
