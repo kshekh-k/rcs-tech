@@ -16,42 +16,14 @@ export interface SubmitResult {
 export async function submitToSheet(
   data: ContactFormData
 ): Promise<SubmitResult> {
-  if (data.website) {
-    return { success: true, message: "Thank you! We'll be in touch shortly." };
-  }
-
-  const scriptUrl = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL;
-
-  if (!scriptUrl) {
-    console.error("NEXT_PUBLIC_GOOGLE_SCRIPT_URL is not configured.");
-    return {
-      success: false,
-      message: "Something went wrong. Please try again later.",
-    };
-  }
-
   try {
-    const response = await fetch(scriptUrl, {
+    const response = await fetch("/api/contact", {
       method: "POST",
-      headers: { "Content-Type": "text/plain;charset=utf-8" },
-      body: JSON.stringify({
-        name: data.name,
-        email: data.email,
-        phone: data.phone,
-        company: data.company,
-        message: data.message,
-        submittedAt: new Date().toISOString(),
-      }),
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
     });
 
-    if (!response.ok) {
-      throw new Error(`Request failed with status ${response.status}`);
-    }
-
-    return {
-      success: true,
-      message: "Thank you! Your inquiry has been submitted successfully.",
-    };
+    return (await response.json()) as SubmitResult;
   } catch (error) {
     console.error("Failed to submit contact form:", error);
     return {
