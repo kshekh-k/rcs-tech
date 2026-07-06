@@ -37,8 +37,9 @@ export default function FooterBottom() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6 }} className="border-y border-white/10 bg-white/0">
-        <div className="max-w-7xl mx-auto px-6 py-5">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="max-w-7xl mx-auto px-3 lg:px-6 ">
+          <div className="overflow-x-auto max-w-full py-5">
+          <div className="grid grid-cols-4 gap-6 min-w-5xl">
             {usp.map((item) => (
               <USPIconCard
                 key={item.title}
@@ -50,6 +51,7 @@ export default function FooterBottom() {
               />
             ))}
           </div>
+          </div>
         </div>
       </motion.div>
 
@@ -59,14 +61,14 @@ export default function FooterBottom() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6 }} className="relative">
-        <div className="max-w-7xl mx-auto px-6 py-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="max-w-7xl mx-auto px-3 lg:px-6 py-4 md:py-8 border-b border-white/10">
+          <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-3 md:gap-6">
 
             <p className="text-slate-500 text-xs">
               Copyright &copy; {new Date().getFullYear()} {copyright}
             </p>
 
-            <div className="flex items-center gap-8 text-xs text-slate-400">
+            <div className="flex items-center gap-4 md:gap-8 text-xs text-slate-400 md:pr-20 2xl:pr-0">
               {legalLinks.map((link) => (
                 <a
                   key={link.label}
@@ -86,7 +88,7 @@ export default function FooterBottom() {
           aria-label="Back to top"
           aria-hidden={!showBackToTop}
           tabIndex={showBackToTop ? 0 : -1}
-          className={`fixed bottom-8 right-8 cursor-pointer size-10 rounded-full bg-linear-to-r from-blue-600 to-cyan-500 shadow-xl flex items-center justify-center hover:scale-110 transition z-50 ${
+          className={`fixed bottom-22 right-3 cursor-pointer size-10 rounded-full bg-linear-to-r from-blue-600 to-cyan-500 shadow-xl flex items-center justify-center hover:scale-110 transition z-50 ${
             showBackToTop
               ? "opacity-100"
               : "opacity-0 pointer-events-none"

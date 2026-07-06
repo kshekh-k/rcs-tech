@@ -53,12 +53,12 @@ export default function WhyCard({ item }: { item: WhyItem }) {
         </span>
         <div className="flex gap-3 items-start mb-3">
           <div
-            className={`size-12 rounded bg-linear-to-br ${color} flex items-center justify-center shadow-lg relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44]/30 before:blur overflow-hidden`}
+            className={`size-12 shrink-0 rounded bg-linear-to-br ${color} flex items-center justify-center shadow-lg relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44]/30 before:blur overflow-hidden`}
           >
             <Icon className="sizw-6 text-white relative" />
           </div>
 
-          <h3 className="text-xl relative font-medium text-slate-900 after:w-8 after:h-0.5 after:bg-(--this-color) after:rounded after:absolute after:-bottom-3 after:left-0">
+          <h3 className="text-base sm:text-lg md:text-xl relative font-medium text-slate-900 after:w-8 after:h-0.5 after:bg-(--this-color) after:rounded after:absolute after:-bottom-3 after:left-0">
             {item.title}
           </h3>
         </div>

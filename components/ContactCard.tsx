@@ -77,7 +77,7 @@ export default function ContactCard({
       rel={type === "whatsapp" ? "noopener noreferrer" : undefined}
       aria-label={`${title}: ${value}`}
       className="group block bg-white rounded p-3 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-500 relative before:absolute before:-bottom-3 before:-right-3 before:w-24 before:h-18 before:opacity-20 before:bg-linear-to-tl before:from-(--this-color) before:to-transparent before:rounded-tl-full before:rounded-br before:blur-md overflow-hidden" style={{ "--this-color": `var(${useColor})` } as React.CSSProperties}>
-      <div className="flex gap-2">
+      <div className="flex flex-col sm:flex-row text-center sm:text-left items-center sm:items-start gap-2">
         {/* Icon */}
         <div
           className={`size-8 shrink-0 rounded bg-linear-to-br ${styles.bg} flex items-center justify-center shadow-lg relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44]/30 before:blur overflow-hidden`}

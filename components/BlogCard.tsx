@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CalendarDays } from "lucide-react";
+import { ArrowRight, CalendarDays } from "lucide-react";
 
 const colorClasses = {
   blue: {
@@ -74,22 +74,22 @@ export default function BlogCard({ blog }: { blog: Blog }) {
         </span>
 
         {/* Title */}
-        <h3 className="text-xl font-semibold text-slate-900 mb-2 leading-relaxed line-clamp-2">
+        <h3 className="text-lg md:text-xl font-semibold text-slate-900 mb-2 leading-relaxed line-clamp-2">
           {blog.title}
         </h3>
 
         {/* Description */}
-        <p className="text-slate-500 leading-relaxed line-clamp-3 mb-6">
+        <p className="text-slate-500 leading-relaxed line-clamp-3 text-sm md:text-base mb-6">
           {blog.description}
         </p>
 
         {/* Footer */}
         <div className="flex items-center justify-between pt-4 border-t border-slate-200">
-          <button className={`font-semibold cursor-pointer transition-all hover:text-slate-900 ${colors.text}`}>
-            Read More →
+          <button className={`font-semibold cursor-pointer flex items-center gap-1 text-sm sm:text-base transition-all hover:text-slate-900 ${colors.text}`}>
+            Read More <ArrowRight className="size-3" />
           </button>
 
-          <div className="flex items-center gap-2 text-slate-400 text-sm">
+          <div className="flex items-center gap-2 text-slate-400 text-xs sm:text-sm">
             <CalendarDays className="w-4 h-4" />
             {blog.date}
           </div>

@@ -3,9 +3,11 @@ export interface ContactFormData {
   email: string;
   phone: string;
   company: string;
+  service?: string;
   message: string;
   /** Honeypot field — must stay empty. Filled-in values indicate a bot. */
   website?: string;
+  recaptchaToken: string;
 }
 
 export interface SubmitResult {
