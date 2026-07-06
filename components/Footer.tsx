@@ -26,6 +26,7 @@ import {
   WhatsAppIcon,
 } from "./SocialIcons";
 import Link from "next/link";
+import Image from "next/image";
 
 const socialIconMap: Record<string, typeof LinkedInIcon> = {
   LinkedIn: LinkedInIcon,
@@ -57,21 +58,24 @@ export default function Footer() {
         <FooterCTA />
 
         <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6 }} className="max-w-7xl mx-auto px-6 pb-10 pt-12">
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+          className="max-w-7xl mx-auto px-6 pb-10 pt-12"
+        >
           <div className="grid lg:grid-cols-4 gap-5 divide-x divide-white/10">
             {/* Column 1 */}
             <div className="pr-5">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="size-10 rounded bg-linear-to-r from-secondary to-accent flex items-center justify-center text-2xl font-bold">
-                  R
-                </div>
-                <span className="text-3xl font-bold">
-                  RCS <span className="text-blue-400">Tech</span>
-                </span>
-              </div>
+              <Link href="#home" className="flex items-center">
+                <Image
+                  src={siteData.logoWhite}
+                  alt={siteData.name}
+                  width={150}
+                  height={38}
+                  priority className="w-48 h-auto mb-3"
+                />
+              </Link>
 
               <p className="text-slate-400 leading-relaxed mb-4 text-sm line-clamp-3">
                 {footer.about}
@@ -90,7 +94,7 @@ export default function Footer() {
                       href={href}
                       target="_blank"
                       rel="nofollow noopener noreferrer external"
-                      className="size-10 rounded bg-white/5 flex items-center justify-center hover:bg-(--this-color) transition hover:-translate-y-0.5"
+                      className="size-10 rounded bg-white/5 flex items-center justify-center hover:bg-(--this-color) transition hover:-translate-y-0.5 text-slate-300 hover:text-white"
                       style={
                         {
                           "--this-color": `var(${item.color})`,
@@ -209,7 +213,10 @@ export default function Footer() {
               </div>
 
               <div className="mt-3 px-3 py-2 relative rounded bg-white/3 backdrop-blur-xl hover:-translate-y-1 transition shadow-lg group hover:bg-green-500/5 before:absolute before:inset-0 before:bg-(image:--bg-grid-2) before:bg-[size:5px_5px] before:opacity-20 after:absolute after:inset-0 after:bg-linear-to-r after:from-blue-500/4 after:via-cyan-500/2 after:to-purple-500/4">
-                <a className="relative block cursor-pointer z-10" href={`tel:${contactInfo.phone}`}>
+                <a
+                  className="relative block cursor-pointer z-10"
+                  href={`tel:${contactInfo.phone}`}
+                >
                   <h4 className="text-sm font-semibold mb-1 transition group-hover:text-green-500">
                     {footer.call.title}
                   </h4>
@@ -217,9 +224,7 @@ export default function Footer() {
                     {footer.call.label}
                   </p>
                   <p>
-                    <span                      
-                      className="group-hover:text-green-500 transition flex gap-1 items-center text-sm"
-                    >
+                    <span className="group-hover:text-green-500 transition flex gap-1 items-center text-sm">
                       Call Now <ArrowRight className="size-4" />
                     </span>
                   </p>

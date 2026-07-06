@@ -1,8 +1,8 @@
 {
   "name": "RCS Tech",
   "tagline": "Smart IT Solutions for Modern Business",
-  "logo": "/images/logo.svg",
-  "logoWhite": "/images/logo-white.svg",
+  "logo": "/images/rcs-logo.svg",
+  "logoWhite": "/images/rcs-logo-white.svg",
   "nav": [
     {
       "label": "Home",

@@ -18,6 +18,13 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -69,36 +76,59 @@ export default function Header() {
 
       <AnimatePresence>
         {mobileOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.25 }}
-            className="overflow-hidden glass lg:hidden"
-          >
-            <ul className="flex flex-col gap-1 px-6 pb-6">
-              {siteData.nav.map((item) => (
-                <li key={item.href}>
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.25 }}
+              onClick={() => setMobileOpen(false)}
+              className="fixed inset-0 z-40 bg-black/50 lg:hidden"
+            />
+
+            <motion.div
+              initial={{ x: "-100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "-100%" }}
+              transition={{ type: "tween", duration: 0.3, ease: "easeInOut" }}
+              className="glass fixed inset-y-0 left-0 z-50 flex w-72 flex-col overflow-y-auto shadow-2xl lg:hidden"
+            >
+              <div className="flex items-center justify-between px-6 py-4">
+                <Image src={siteData.logo} alt={siteData.name} width={130} height={33} />
+                <button
+                  type="button"
+                  aria-label="Close menu"
+                  className="rounded p-2 text-primary"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  <X size={24} />
+                </button>
+              </div>
+
+              <ul className="flex flex-col gap-1 px-6 pb-6">
+                {siteData.nav.map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      onClick={() => setMobileOpen(false)}
+                      className="block rounded-lg px-3 py-3 text-sm font-medium text-ink/80 transition-colors hover:bg-secondary/10 hover:text-secondary"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+                <li className="pt-2">
                   <Link
-                    href={item.href}
+                    href="#contact"
                     onClick={() => setMobileOpen(false)}
-                    className="block rounded-lg px-3 py-3 text-sm font-medium text-ink/80 transition-colors hover:bg-secondary/10 hover:text-secondary"
+                    className="block rounded-full bg-primary px-6 py-3 text-center text-sm font-semibold text-white"
                   >
-                    {item.label}
+                    {siteData.consultationCta}
                   </Link>
                 </li>
-              ))}
-              <li className="pt-2">
-                <Link
-                  href="#contact"
-                  onClick={() => setMobileOpen(false)}
-                  className="block rounded-full bg-primary px-6 py-3 text-center text-sm font-semibold text-white"
-                >
-                  {siteData.consultationCta}
-                </Link>
-              </li>
-            </ul>
-          </motion.div>
+              </ul>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </header>
