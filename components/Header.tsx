@@ -28,7 +28,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass shadow-lg shadow-primary/5" : "bg-transparent"
+        scrolled ? "bg-white glass shadow-lg shadow-primary/5" : "bg-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between sm:py-4 p-3 lg:px-6">
@@ -126,7 +126,7 @@ export default function Header() {
                   >
                     {siteData.consultationCta} <ArrowRight className="size-4" />
                   </Link>
-                  <p className="py-2 text-sm text-slate-500">Text a message at WhatsApp
+                  <p className="py-2 text-sm text-slate-500 text-center">Text a message at WhatsApp
                   <a className="block text-white text-base font-semibold" href={`https://wa.me/${siteData.contactInfo.whatsapp.replace(/\D/g, "")}`}>
                   {siteData.contactInfo.whatsapp}
                   </a>
