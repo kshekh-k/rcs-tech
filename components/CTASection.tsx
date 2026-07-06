@@ -7,6 +7,7 @@ import {
   ChartNoAxesColumn,
   Wifi,
   type LucideIcon,
+  ArrowRight,
 } from "lucide-react";
 import FeaturePill from "./FeaturePill";
 import { motion } from "framer-motion";
@@ -28,16 +29,15 @@ function OrbitIcon({
 
 export default function CTASection() {
   return (
-    <section className="relative py-24 bg-[#030712]">
-      {/* Background */}
-      <div className="absolute inset-0 bg-linear-to-r from-[#020817] via-[#071A44] to-[#0B1120]" />
+    <section className="relative pt-16 pb-8 lg:py-24 xl:py-32 bg-[#030712] before:absolute before:inset-0 before:bg-linear-to-r before:from-[#020817] before:via-[#071A44] before:to-[#0B1120]">
+  
 
       {/* Glow Effects */}
       <div className="absolute top-0 left-0 size-125 bg-blue-500/10 rounded-full blur-[120px]" />
       <div className="absolute bottom-0 right-0 size-125 bg-purple-500/10 rounded-full blur-[120px]" />
       <div className="absolute -translate-x-1/2 -translate-y-1/2 top-0 left-0 size-96 bg-blue-500 rounded-full blur-3xl opacity-20"></div>
       {/* Border Glow */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-3 lg:px-6">
         <div className="relative rounded border border-blue-500/20 bg-white/2 backdrop-blur-xl overflow-hidden shadow-[0_0_60px_rgba(59,130,246,0.08)]">
           {/* Bottom Gradient Wave */}
           <div className="absolute bottom-0 left-0 w-full h-24 bg-linear-to-r from-blue-500 via-blue-600 to-purple-500 blur-2xl opacity-10"></div>
@@ -47,7 +47,7 @@ export default function CTASection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6 }}
-            className="grid lg:grid-cols-12 gap-10 items-center p-5 xl:p-10 relative"
+            className="grid lg:grid-cols-12 gap-10 items-center p-3 md:p-5 xl:p-10 relative"
           >
             {/* LEFT */}
             <div className="col-span-7">
@@ -55,14 +55,14 @@ export default function CTASection() {
                 ⚡ LET’S GROW TOGETHER
               </span>
 
-              <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
+              <h2 className="mt-2 sm:mt-0 text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight">
                 Ready to Upgrade Your IT {" "}
-                <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent inline-block">
+                <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent sm:inline-block">
                   Infrastructure?
                 </span>
               </h2>
 
-              <p className="mt-4 text-lg text-slate-400 leading-relaxed">
+              <p className="mt-2 lg:mt-4 text-sm md:text-base lg:text-lg text-slate-400 leading-relaxed">
                 Let our experts help you choose the right technology solutions
                 for your business and drive real growth.
               </p>
@@ -92,13 +92,13 @@ export default function CTASection() {
               </div>
 
               {/* CTA */}
-              <div className="flex flex-wrap items-center gap-4 mt-10">
-                <button className="rounded bg-linear-to-r from-secondary to-accent px-5 py-3 text-white font-semibold text-base shadow-[0_0_40px_rgba(59,130,246,0.35)] flex items-center gap-3 hover:scale-105 transition">
+              <div className="flex flex-wrap items-center gap-4 mt-5 sm:mt-10">
+                <button className="rounded bg-linear-to-r from-secondary to-accent px-5 py-3 text-white font-semibold text-base shadow-[0_0_40px_rgba(59,130,246,0.35)] flex items-center gap-2 hover:scale-105 transition">
                   <CalendarDays className="size-5" />
-                  Book Free Consultation →
+                  Book Free Consultation <ArrowRight className="size-4" />
                 </button>
 
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2 sm:gap-4">
                   <div className="flex -space-x-2 overflow-hidden p-2">
                     <img
                       alt=""
@@ -132,7 +132,7 @@ export default function CTASection() {
             </div>
 
             {/* RIGHT */}
-            <div className="relative flex items-center justify-center col-span-5">
+            <div className="relative hidden lg:flex items-center justify-center col-span-5">
               <Image
                 src={"/images/database-center.png"}
                 width={1080}

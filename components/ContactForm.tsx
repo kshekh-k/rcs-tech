@@ -10,10 +10,31 @@ import {
   Briefcase,
   ShieldCheck,
   ChevronDown,
+  ArrowRight,
 } from "lucide-react";
 import { submitToSheet } from "@/lib/submitToSheet";
 
 type Status = "idle" | "loading" | "success" | "error";
+
+const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA_ID;
+const RECAPTCHA_ACTION = "contact_form_submit";
+
+function getRecaptchaToken(): Promise<string> {
+  return new Promise((resolve, reject) => {
+    if (!RECAPTCHA_SITE_KEY || !window.grecaptcha?.enterprise) {
+      reject(new Error("reCAPTCHA is not ready"));
+      return;
+    }
+    window.grecaptcha.enterprise.ready(() => {
+      window
+        .grecaptcha!.enterprise.execute(RECAPTCHA_SITE_KEY, {
+          action: RECAPTCHA_ACTION,
+        })
+        .then(resolve)
+        .catch(reject);
+    });
+  });
+}
 
 export default function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
@@ -24,6 +45,18 @@ export default function ContactForm() {
     setStatus("loading");
     setMessage("");
 
+    let recaptchaToken: string;
+    try {
+      recaptchaToken = await getRecaptchaToken();
+    } catch (error) {
+      console.error("reCAPTCHA verification failed:", error);
+      setStatus("error");
+      setMessage(
+        "We couldn't verify you're human. Please refresh the page and try again.",
+      );
+      return;
+    }
+
     const form = e.currentTarget;
     const formData = new FormData(form);
 
@@ -32,8 +65,10 @@ export default function ContactForm() {
       email: String(formData.get("email") ?? ""),
       phone: String(formData.get("phone") ?? ""),
       company: String(formData.get("company") ?? ""),
-      website: String(formData.get("website") ?? ""),
+      service: String(formData.get("service") ?? ""),
       message: String(formData.get("message") ?? ""),
+      website: String(formData.get("bot-field") ?? ""),
+      recaptchaToken,
     });
 
     setStatus(result.success ? "success" : "error");
@@ -45,172 +80,170 @@ export default function ContactForm() {
   }
 
   return (
-     <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6, delay: 0.15 }} className="relative col-span-5">
+    <motion.div
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.6, delay: 0.15 }}
+      className="relative col-span-6 lg:col-span-5"
+    >
       {/* Outer Glow */}
       <div className="absolute inset-0 bg-linear-to-r from-blue-500 to-purple-500 blur-3xl opacity-10 rounded-2xl" />
 
       <div className="relative bg-white rounded shadow-md p-4 xl:p-8 overflow-hidden before:absolute before:-bottom-3 before:-right-3 before:w-40 before:h-28 before:opacity-20 before:bg-linear-to-tl before:from-purple-500 before:to-transparent before:rounded-tl-full before:rounded-br before:blur-md">
         <div className="relative">
-        {/* Header */}
+          {/* Header */}
           <div className="flex gap-3 items-start mb-3">
-          <div className="size-12 rounded bg-linear-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44]/30 before:blur overflow-hidden shrink-0">
-            <Mail className="sizw-6 text-white relative" />
+            <div className="size-12 rounded bg-linear-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44]/30 before:blur overflow-hidden shrink-0">
+              <Mail className="sizw-6 text-white relative" />
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-900">
+                Send Us a Message
+              </h3>
+
+              <p className="text-slate-500 text-sm">
+                Let’s discuss your project requirements
+              </p>
+            </div>
           </div>
-          <div>
-          <h3 className="text-xl font-bold text-slate-900">
-            Send Us a Message
-          </h3>
 
-          <p className="text-slate-500 text-sm">
-            Let’s discuss your project requirements
-          </p>
-          </div>
-        </div>
+          {/* Form */}
+          <form onSubmit={handleSubmit} className="space-y-2">
+            {/* Name */}
+            <div className="relative pt-2 mt-2">
+              <User className="absolute left-4 top-5.5 size-4 text-slate-400 z-10" />
+              <input
+                name="name"
+                type="text"
+                required
+                placeholder="Your full name"
+                className="peer w-full h-11 text-sm rounded border border-slate-300 bg-slate-50 pl-10 pr-4 outline-none focus:ring-1 focus:ring-green-500 focus:bg-white transition"
+              />
+              <label className="block font-medium text-slate-700 text-sm absolute bg-white top-0 left-3 z-10 px-2 opacity-0 invisible pointer-events-none transition-opacity duration-150 peer-focus:opacity-100 peer-focus:visible peer-not-placeholder-shown:opacity-100 peer-not-placeholder-shown:visible">
+                Full Name <em className="text-red-500 not-italic">*</em>
+              </label>
+            </div>
 
+            {/* Email */}
+            <div className="relative pt-2">
+              <Mail className="absolute left-4 top-5.5 size-4 text-slate-400 z-10" />
+              <input
+                name="email"
+                type="email"
+                required
+                placeholder="Enter your email"
+                className="peer w-full h-11 text-sm rounded border border-slate-300 bg-slate-50 pl-10 pr-4 outline-none focus:ring-1 focus:ring-green-500 focus:bg-white transition"
+              />
+              <label className="block font-medium text-slate-700 text-sm absolute bg-white top-0 left-3 z-10 px-2 opacity-0 invisible pointer-events-none transition-opacity duration-150 peer-focus:opacity-100 peer-focus:visible peer-not-placeholder-shown:opacity-100 peer-not-placeholder-shown:visible">
+                Email <em className="text-red-500 not-italic">*</em>
+              </label>
+            </div>
 
-        {/* Form */}
-        <form onSubmit={handleSubmit} className="space-y-2">
-          {/* Name */}
-          <div className="relative pt-2 mt-2">
-            <User className="absolute left-4 top-5.5 size-4 text-slate-400 z-10" />
+            {/* Phone + Company */}
+            <div className="grid md:grid-cols-2 gap-2 md:gap-5">
+              <div className="relative pt-2">
+                <Phone className="absolute left-4 top-5.5 size-4 text-slate-400 z-10" />
+                <input
+                  name="phone"
+                  type="text"
+                  placeholder="Enter your phone"
+                  className="peer w-full h-11 text-sm rounded border border-slate-300 bg-slate-50 pl-10 pr-4 outline-none focus:ring-1 focus:ring-green-500 focus:bg-white transition"
+                />
+                <label className="block font-medium text-slate-700 text-sm absolute bg-white top-0 left-3 z-10 px-2 opacity-0 invisible pointer-events-none transition-opacity duration-150 peer-focus:opacity-100 peer-focus:visible peer-not-placeholder-shown:opacity-100 peer-not-placeholder-shown:visible">
+                  Phone Number
+                </label>
+              </div>
+
+              <div className="relative pt-2">
+                <Building2 className="absolute left-4 top-5.5 size-4 text-slate-400 z-10" />
+                <input
+                  name="company"
+                  type="text"
+                  placeholder="Enter your company"
+                  className="peer w-full h-11 text-sm rounded border border-slate-300 bg-slate-50 pl-10 pr-4 outline-none focus:ring-1 focus:ring-green-500 focus:bg-white transition"
+                />
+                <label className="block font-medium text-slate-700 text-sm absolute bg-white top-0 left-3 z-10 px-2 opacity-0 invisible pointer-events-none transition-opacity duration-150 peer-focus:opacity-100 peer-focus:visible peer-not-placeholder-shown:opacity-100 peer-not-placeholder-shown:visible">
+                  Company Name
+                </label>
+              </div>
+            </div>
+
+            {/* Service */}
+            <div className="relative pt-2">
+              <Briefcase className="absolute left-4 top-5.5 size-4 text-slate-400 z-10" />
+              <select
+                name="service"
+                required
+                defaultValue=""
+                className="peer w-full h-11 text-sm rounded border border-slate-300 bg-slate-50 pl-10 pr-4 outline-none focus:ring-1 focus:ring-green-500 focus:bg-white transition appearance-none"
+              >
+                <option value="">Select a service</option>
+                <option>Cybersecurity</option>
+                <option>Web & App Development</option>
+                <option>ERP Solutions</option>
+                <option>Cloud Solutions</option>
+                <option>Networking & IT Infra</option>
+              </select>
+              <ChevronDown className="pointer-events-none absolute right-4 top-5.5 size-4 text-slate-400 peer-focus:rotate-180 transition" />
+              <label className="block font-medium text-slate-700 text-sm absolute bg-white top-0 left-3 z-10 px-2 opacity-0 invisible pointer-events-none transition-opacity duration-150 peer-focus:opacity-100 peer-focus:visible peer-valid:opacity-100 peer-valid:visible">
+                Service Interested In{" "}
+                <em className="text-red-500 not-italic">*</em>
+              </label>
+            </div>
+
+            {/* Message */}
+            <div className="relative pt-2">
+              <textarea
+                name="message"
+                rows={3}
+                required
+                placeholder="Tell us about your project or requirements..."
+                className="peer w-full text-sm rounded border border-slate-300 bg-slate-50 py-3 px-4 outline-none focus:ring-1 focus:ring-green-500 focus:bg-white transition resize-none"
+              />
+              <label className="block font-medium text-slate-700 text-sm absolute bg-white top-0 left-3 z-10 px-2 opacity-0 invisible pointer-events-none transition-opacity duration-150 peer-focus:opacity-100 peer-focus:visible peer-not-placeholder-shown:opacity-100 peer-not-placeholder-shown:visible">
+                Your Message <em className="text-red-500 not-italic">*</em>
+              </label>
+            </div>
+
+            {/* Honeypot Anti-spam */}
             <input
-              name="name"
               type="text"
-              required
-              placeholder="Your full name"
-              className="peer w-full h-11 text-sm rounded border border-slate-300 bg-slate-50 pl-10 pr-4 outline-none focus:ring-1 focus:ring-green-500 focus:bg-white transition"
+              name="bot-field"
+              className="hidden"
+              tabIndex={-1}
+              autoComplete="off"
             />
-            <label className="block font-medium text-slate-700 text-sm absolute bg-white top-0 left-3 z-10 px-2 opacity-0 invisible pointer-events-none transition-opacity duration-150 peer-focus:opacity-100 peer-focus:visible peer-not-placeholder-shown:opacity-100 peer-not-placeholder-shown:visible">
-              Full Name <em className="text-red-500 not-italic">*</em>
-            </label>
-          </div>
 
-          {/* Email */}
-          <div className="relative pt-2">
-            <Mail className="absolute left-4 top-5.5 size-4 text-slate-400 z-10" />
-            <input
-              name="email"
-              type="email"
-              required
-              placeholder="Enter your email"
-              className="peer w-full h-11 text-sm rounded border border-slate-300 bg-slate-50 pl-10 pr-4 outline-none focus:ring-1 focus:ring-green-500 focus:bg-white transition"
-            />
-            <label className="block font-medium text-slate-700 text-sm absolute bg-white top-0 left-3 z-10 px-2 opacity-0 invisible pointer-events-none transition-opacity duration-150 peer-focus:opacity-100 peer-focus:visible peer-not-placeholder-shown:opacity-100 peer-not-placeholder-shown:visible">
-              Email <em className="text-red-500 not-italic">*</em>
-            </label>
-          </div>
-
-          {/* Phone + Company */}
-          <div className="grid md:grid-cols-2 gap-5">
-            <div className="relative pt-2">
-              <Phone className="absolute left-4 top-5.5 size-4 text-slate-400 z-10" />
-              <input
-                name="phone"
-                type="text"
-                required
-                placeholder="Enter your phone"
-                className="peer w-full h-11 text-sm rounded border border-slate-300 bg-slate-50 pl-10 pr-4 outline-none focus:ring-1 focus:ring-green-500 focus:bg-white transition"
-              />
-              <label className="block font-medium text-slate-700 text-sm absolute bg-white top-0 left-3 z-10 px-2 opacity-0 invisible pointer-events-none transition-opacity duration-150 peer-focus:opacity-100 peer-focus:visible peer-not-placeholder-shown:opacity-100 peer-not-placeholder-shown:visible">
-                Phone Number
-              </label>
-            </div>
-
-            <div className="relative pt-2">
-              <Building2 className="absolute left-4 top-5.5 size-4 text-slate-400 z-10" />
-              <input
-                name="company"
-                type="text"
-                required
-                placeholder="Enter your company"
-                className="peer w-full h-11 text-sm rounded border border-slate-300 bg-slate-50 pl-10 pr-4 outline-none focus:ring-1 focus:ring-green-500 focus:bg-white transition"
-              />
-              <label className="block font-medium text-slate-700 text-sm absolute bg-white top-0 left-3 z-10 px-2 opacity-0 invisible pointer-events-none transition-opacity duration-150 peer-focus:opacity-100 peer-focus:visible peer-not-placeholder-shown:opacity-100 peer-not-placeholder-shown:visible">
-                Company Name
-              </label>
-            </div>
-          </div>
-
-          {/* Service */}
-          <div className="relative pt-2">
-            <Briefcase className="absolute left-4 top-5.5 size-4 text-slate-400 z-10" />
-            <select
-              name="website"
-              required
-              defaultValue=""
-              className="peer w-full h-11 text-sm rounded border border-slate-300 bg-slate-50 pl-10 pr-4 outline-none focus:ring-1 focus:ring-green-500 focus:bg-white transition appearance-none"
+            {/* CTA */}
+            <button
+              type="submit"
+              disabled={status === "loading"}
+              className="rounded bg-linear-to-r from-secondary to-accent px-5 py-3 text-white font-semibold text-base shadow-[0_0_40px_rgba(59,130,246,0.35)] flex items-center gap-3 hover:scale-105 transition w-full justify-center"
             >
-              <option value="">Select a service</option>
-              <option>Cybersecurity</option>
-              <option>Web & App Development</option>
-              <option>ERP Solutions</option>
-              <option>Cloud Solutions</option>
-              <option>Networking & IT Infra</option>
-            </select>
-            <ChevronDown className="pointer-events-none absolute right-4 top-5.5 size-4 text-slate-400 peer-focus:rotate-180 transition" />
-            <label className="block font-medium text-slate-700 text-sm absolute bg-white top-0 left-3 z-10 px-2 opacity-0 invisible pointer-events-none transition-opacity duration-150 peer-focus:opacity-100 peer-focus:visible peer-valid:opacity-100 peer-valid:visible">
-              Service Interested In <em className="text-red-500 not-italic">*</em>
-            </label>
-          </div>
+              {status === "loading"
+                ? "Submitting..."
+                : <span className="flex gap-1 items-center">Book Free Consultation <ArrowRight className="size-4" /></span>}
+            </button>
 
-          {/* Message */}
-          <div className="relative pt-2">
-            <textarea
-              name="message"
-              rows={3}
-              required
-              placeholder="Tell us about your project or requirements..."
-              className="peer w-full text-sm rounded border border-slate-300 bg-slate-50 py-3 px-4 outline-none focus:ring-1 focus:ring-green-500 focus:bg-white transition resize-none"
-            />
-            <label className="block font-medium text-slate-700 text-sm absolute bg-white top-0 left-3 z-10 px-2 opacity-0 invisible pointer-events-none transition-opacity duration-150 peer-focus:opacity-100 peer-focus:visible peer-not-placeholder-shown:opacity-100 peer-not-placeholder-shown:visible">
-              Your Message <em className="text-red-500 not-italic">*</em>
-            </label>
-          </div>
+            {/* Message */}
+            {message && (
+              <p
+                className={`text-center font-medium ${
+                  status === "success" ? "text-green-500" : "text-red-500"
+                }`}
+              >
+                {message}
+              </p>
+            )}
 
-          {/* Honeypot Anti-spam */}
-          <input
-            type="text"
-            name="bot-field"
-            className="hidden"
-            tabIndex={-1}
-            autoComplete="off"
-          />
-
-          {/* CTA */}
-          <button
-            type="submit"
-            disabled={status === "loading"}
-            className="rounded bg-linear-to-r from-secondary to-accent px-5 py-3 text-white font-semibold text-base shadow-[0_0_40px_rgba(59,130,246,0.35)] flex items-center gap-3 hover:scale-105 transition w-full justify-center"
-          >
-            {status === "loading"
-              ? "Submitting..."
-              : "Book Free Consultation →"}
-          </button>
-
-          {/* Message */}
-          {message && (
-            <p
-              className={`text-center font-medium ${
-                status === "success"
-                  ? "text-green-500"
-                  : "text-red-500"
-              }`}
-            >
-              {message}
-            </p>
-          )}
-
-          {/* Footer */}
-          <div className="flex justify-center items-center gap-2 text-slate-400 text-sm pt-2">
-            <ShieldCheck className="w-4 h-4" />
-            Your information is secure and confidential.
-          </div>
-        </form>
-      </div>
+            {/* Footer */}
+            <div className="flex justify-center items-center gap-2 text-slate-400 text-sm pt-2">
+              <ShieldCheck className="w-4 h-4" />
+              Your information is secure and confidential.
+            </div>
+          </form>
+        </div>
       </div>
     </motion.div>
   );

@@ -49,7 +49,7 @@ const serviceIcons: (typeof Shield)[] = [
 export default function Footer() {
   const { footer, contactInfo } = siteData;
   return (
-    <footer className="relative bg-[#020817] text-white overflow-hidden">
+    <footer className="relative bg-[#020817] text-white overflow-hidden pb-24 lg:pb-0">
       {/* Background */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(59,130,246,0.18),transparent_35%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_rgba(139,92,246,0.12),transparent_35%)]" />
@@ -62,76 +62,80 @@ export default function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
-          className="max-w-7xl mx-auto px-6 pb-10 pt-12"
+          className="max-w-7xl mx-auto px-3 lg:px-6 py-8 lg:pb-10 lg:pt-12"
         >
-          <div className="grid lg:grid-cols-4 gap-5 divide-x divide-white/10">
+          <div className="grid grid-cols-12 gap-5 divide-x divide-white/10">
             {/* Column 1 */}
-            <div className="pr-5">
-              <Link href="#home" className="flex items-center">
-                <Image
-                  src={siteData.logoWhite}
-                  alt={siteData.name}
-                  width={150}
-                  height={38}
-                  priority className="w-48 h-auto mb-3"
-                />
-              </Link>
+            <div className="lg:pr-5 col-span-12 lg:col-span-3 border-none! lg:border-r!">
+              <div className="flex flex-col sm:flex-row lg:flex-col justify-between items-start">
+                <div className="max-w-sm">
+                  <Link href="#home" className="flex items-center">
+                    <Image
+                      src={siteData.logoWhite}
+                      alt={siteData.name}
+                      width={150}
+                      height={38}
+                      priority
+                      className="w-48 h-auto mb-3"
+                    />
+                  </Link>
 
-              <p className="text-slate-400 leading-relaxed mb-4 text-sm line-clamp-3">
-                {footer.about}
-              </p>
+                  <p className="text-slate-400 leading-relaxed mb-4 text-sm line-clamp-3">
+                    {footer.about}
+                  </p>
+                  <div className="flex lg:justify-between gap-4 mb-5">
+                    {contactInfo.social.map((item) => {
+                      const Icon = socialIconMap[item.label] ?? LinkedInIcon;
+                      const href =
+                        item.label === "WhatsApp"
+                          ? `https://wa.me/${contactInfo.whatsapp.replace(/\D/g, "")}`
+                          : item.href;
+                      return (
+                        <a
+                          key={item.label}
+                          href={href}
+                          target="_blank"
+                          rel="nofollow noopener noreferrer external"
+                          className="size-10 rounded bg-white/5 flex items-center justify-center hover:bg-(--this-color) transition hover:-translate-y-0.5 text-slate-300 hover:text-white"
+                          style={
+                            {
+                              "--this-color": `var(${item.color})`,
+                            } as React.CSSProperties
+                          }
+                        >
+                          <Icon className="size-5" />
+                        </a>
+                      );
+                    })}
+                  </div>
+                </div>
 
-              <div className="flex justify-between gap-4 mb-5">
-                {contactInfo.social.map((item) => {
-                  const Icon = socialIconMap[item.label] ?? LinkedInIcon;
-                  const href =
-                    item.label === "WhatsApp"
-                      ? `https://wa.me/${contactInfo.whatsapp.replace(/\D/g, "")}`
-                      : item.href;
-                  return (
-                    <a
-                      key={item.label}
-                      href={href}
-                      target="_blank"
-                      rel="nofollow noopener noreferrer external"
-                      className="size-10 rounded bg-white/5 flex items-center justify-center hover:bg-(--this-color) transition hover:-translate-y-0.5 text-slate-300 hover:text-white"
-                      style={
-                        {
-                          "--this-color": `var(${item.color})`,
-                        } as React.CSSProperties
-                      }
-                    >
-                      <Icon className="size-5" />
-                    </a>
-                  );
-                })}
-              </div>
-
-              {/* Stats */}
-              <div className="grid grid-cols-2 bg-white/5 rounded">
-                {footer.stats.map((item, index) => {
-                  return (
-                    <div
-                      key={item.label}
-                      className={`px-3 py-2 ${index == 0 && "border-r border-white/5"} ${index == 2 && "border-r border-t border-white/5"} ${index == 3 && "border-t border-white/5"}`}
-                      style={
-                        {
-                          "--this-color": `var(${item.color})`,
-                        } as React.CSSProperties
-                      }
-                    >
-                      <h4 className="text-xl font-semibold text-(--this-color)">
-                        {item.value}
-                      </h4>
-                      <p className="text-slate-400 text-xs">{item.label}</p>
-                    </div>
-                  );
-                })}
+                 {/* Stats */}
+                <div className="grid grid-cols-2 bg-white/5 rounded w-full">
+                  {footer.stats.map((item, index) => {
+                    return (
+                      <div
+                        key={item.label}
+                        className={`px-3 py-2 ${index == 0 && "border-r border-white/5"} ${index == 2 && "border-r border-t border-white/5"} ${index == 3 && "border-t border-white/5"}`}
+                        style={
+                          {
+                            "--this-color": `var(${item.color})`,
+                          } as React.CSSProperties
+                        }
+                      >
+                        <h4 className="text-xl font-semibold text-(--this-color)">
+                          {item.value}
+                        </h4>
+                        <p className="text-slate-400 text-xs">{item.label}</p>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
 
             {/* Quick Links */}
-            <div className="pr-5">
+            <div className="pr-5 col-span-6 lg:col-span-3">
               <h3 className="text-lg font-semibold mb-5 relative after:w-8 after:h-0.5 after:bg-blue-500 after:rounded after:absolute after:-bottom-2 after:left-0">
                 Quick Links
               </h3>
@@ -142,7 +146,7 @@ export default function Footer() {
                       href={item.href}
                       className="hover:text-blue-400 cursor-pointer transition text-sm flex gap-1 items-center py-3 hover:translate-x-1 hover:bg-blue-500/2"
                     >
-                      <ChevronRight className="size-4 text-blue-400" />{" "}
+                      <ChevronRight className="size-4 shrink-0 text-blue-400" />{" "}
                       {item.label}
                     </Link>
                   </li>
@@ -151,7 +155,7 @@ export default function Footer() {
             </div>
 
             {/* Services */}
-            <div className="pr-5">
+            <div className="lg:pr-5 col-span-6 lg:col-span-3 border-none! lg:border-r!">
               <h3 className="text-lg font-semibold mb-5 relative after:w-8 after:h-0.5 after:bg-purple-500 after:rounded after:absolute after:-bottom-2 after:left-0">
                 Services
               </h3>
@@ -164,7 +168,7 @@ export default function Footer() {
                         href={item.href}
                         className="hover:text-purple-400 cursor-pointer transition text-sm flex gap-2 items-center py-3 hover:translate-x-1 hover:bg-purple-500/2"
                       >
-                        <Icon className="size-3.5 text-purple-500" />{" "}
+                        <Icon className="size-3.5 shrink-0 text-purple-500" />{" "}
                         {item.label}
                       </Link>
                     </li>
@@ -174,7 +178,7 @@ export default function Footer() {
             </div>
 
             {/* Contact */}
-            <div>
+            <div className="col-span-12 lg:col-span-3">
               <h3 className="text-lg font-semibold mb-5 relative after:w-8 after:h-0.5 after:bg-green-500 after:rounded after:absolute after:-bottom-2 after:left-0">
                 Contact Info
               </h3>

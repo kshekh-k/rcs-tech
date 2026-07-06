@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { ArrowRight, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import siteData from "@/data/site.json";
 
@@ -31,7 +31,7 @@ export default function Header() {
         scrolled ? "glass shadow-lg shadow-primary/5" : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between sm:py-4 p-3 lg:px-6">
         <Link href="#home" className="flex items-center">
           <Image
             src={scrolled ? siteData.logo : siteData.logoWhite}
@@ -67,7 +67,7 @@ export default function Header() {
         <button
           type="button"
           aria-label="Toggle menu"
-          className="rounded p-2 text-primary lg:hidden"
+          className={`rounded p-2 lg:hidden ${scrolled ? 'text-primary' : 'text-white'}`}
           onClick={() => setMobileOpen((v) => !v)}
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -83,7 +83,7 @@ export default function Header() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.25 }}
               onClick={() => setMobileOpen(false)}
-              className="fixed inset-0 z-40 bg-black/50 lg:hidden"
+              className="fixed min-h-screen min-w-screen inset-0 z-40 bg-black/80 lg:hidden"
             />
 
             <motion.div
@@ -91,42 +91,47 @@ export default function Header() {
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ type: "tween", duration: 0.3, ease: "easeInOut" }}
-              className="glass fixed inset-y-0 left-0 z-50 flex w-72 flex-col overflow-y-auto shadow-2xl lg:hidden"
+              className="bg-primary flex flex-col fixed min-h-screen inset-y-0 left-0 z-50 gap-2 w-72 shadow-2xl lg:hidden"
             >
-              <div className="flex items-center justify-between px-6 py-4">
-                <Image src={siteData.logo} alt={siteData.name} width={130} height={33} />
+              <div className="flex items-center justify-between px-3 py-4 border-b border-white/10">
+                <Image src={siteData.logoWhite} alt={siteData.name} width={130} height={33} />
                 <button
                   type="button"
                   aria-label="Close menu"
-                  className="rounded p-2 text-primary"
+                  className="rounded p-2 text-white"
                   onClick={() => setMobileOpen(false)}
                 >
                   <X size={24} />
                 </button>
               </div>
 
-              <ul className="flex flex-col gap-1 px-6 pb-6">
+              <ul className="flex flex-col px-3 divide-y divide-white/10 flex-1 overflow-y-auto max-h-full">
                 {siteData.nav.map((item) => (
                   <li key={item.href}>
                     <Link
                       href={item.href}
                       onClick={() => setMobileOpen(false)}
-                      className="block rounded-lg px-3 py-3 text-sm font-medium text-ink/80 transition-colors hover:bg-secondary/10 hover:text-secondary"
+                      className="block py-3.5 text-sm font-medium text-slate-400 transition-colors hover:bg-secondary/10 hover:text-secondary"
                     >
                       {item.label}
                     </Link>
                   </li>
-                ))}
-                <li className="pt-2">
-                  <Link
+                ))}                
+              </ul>
+              <div className="px-3 flex flex-col">
+                <Link
                     href="#contact"
                     onClick={() => setMobileOpen(false)}
-                    className="block rounded-full bg-primary px-6 py-3 text-center text-sm font-semibold text-white"
+                    className="rounded bg-secondary uppercase justify-center flex gap-1 items-center px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-primary/20 transition-all hover:bg-secondary hover:shadow-lg hover:shadow-secondary/30"
                   >
-                    {siteData.consultationCta}
+                    {siteData.consultationCta} <ArrowRight className="size-4" />
                   </Link>
-                </li>
-              </ul>
+                  <p className="py-2 text-sm text-slate-500">Text a message at WhatsApp
+                  <a className="block text-white text-base font-semibold" href={`https://wa.me/${siteData.contactInfo.whatsapp.replace(/\D/g, "")}`}>
+                  {siteData.contactInfo.whatsapp}
+                  </a>
+                  </p>
+              </div>
             </motion.div>
           </>
         )}

@@ -140,3 +140,5 @@ body {
 
 .testimonial-swiper:hover .swiper-button-prev{left: 0 !important;}
 .testimonial-swiper:hover .swiper-button-next {right: 0 !important;}
+
+.grecaptcha-badge{z-index: 999;}

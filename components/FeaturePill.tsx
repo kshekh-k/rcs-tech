@@ -60,10 +60,10 @@ export default function FeaturePill({
 
       {/* Text */}
       <div>
-        <h4 className="text-slate-400 font-semibold text-base">
+        <h4 className="text-slate-400 font-semibold text-sm sm:text-base">
           {title}
         </h4>
-        <p className="text-slate-400 text-sm">
+        <p className="text-slate-400 text-xs sm:text-sm">
           {desc}
         </p>
       </div>
