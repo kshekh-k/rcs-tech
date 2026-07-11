@@ -40,44 +40,61 @@ export default function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState("");
 
-  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setStatus("loading");
-    setMessage("");
+async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  e.preventDefault();
 
-    let recaptchaToken: string;
-    try {
-      recaptchaToken = await getRecaptchaToken();
-    } catch (error) {
-      console.error("reCAPTCHA verification failed:", error);
-      setStatus("error");
-      setMessage(
-        "We couldn't verify you're human. Please refresh the page and try again.",
-      );
-      return;
-    }
+  const form = e.currentTarget;
 
-    const form = e.currentTarget;
-    const formData = new FormData(form);
+  const payload = {
+    name: (form.elements.namedItem("name") as HTMLInputElement).value.trim(),
+    email: (form.elements.namedItem("email") as HTMLInputElement).value.trim(),
+    phone: (form.elements.namedItem("phone") as HTMLInputElement).value.trim(),
+    company: (form.elements.namedItem("company") as HTMLInputElement).value.trim(),
+    service: (form.elements.namedItem("service") as HTMLSelectElement).value,
+    message: (
+      form.elements.namedItem("message") as HTMLTextAreaElement
+    ).value.trim(),
+    honeypot: (
+      form.elements.namedItem("bot-field") as HTMLInputElement
+    )?.value,
+  };
 
-    const result = await submitToSheet({
-      name: String(formData.get("name") ?? ""),
-      email: String(formData.get("email") ?? ""),
-      phone: String(formData.get("phone") ?? ""),
-      company: String(formData.get("company") ?? ""),
-      service: String(formData.get("service") ?? ""),
-      message: String(formData.get("message") ?? ""),
-      website: String(formData.get("bot-field") ?? ""),
-      recaptchaToken,
-    });
+  setStatus("loading");
+  setMessage("");
 
-    setStatus(result.success ? "success" : "error");
-    setMessage(result.message);
+  let recaptchaToken: string;
 
-    if (result.success) {
-      form.reset();
-    }
+  try {
+    recaptchaToken = await getRecaptchaToken();
+  } catch (error) {
+    console.error("reCAPTCHA verification failed:", error);
+
+    setStatus("error");
+    setMessage(
+      "We couldn't verify you're human. Please refresh the page and try again."
+    );
+
+    return;
   }
+
+  const result = await submitToSheet({
+    name: payload.name,
+    email: payload.email,
+    phone: payload.phone,
+    company: payload.company,
+    service: payload.service,
+    message: payload.message,
+    website: payload.honeypot ?? "",
+    recaptchaToken,
+  });
+
+  setStatus(result.success ? "success" : "error");
+  setMessage(result.message);
+
+  if (result.success) {
+    form.reset();
+  }
+}
 
   return (
     <motion.div

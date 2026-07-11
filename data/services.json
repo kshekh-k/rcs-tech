@@ -2,80 +2,88 @@
   "services": [
     {
       "id": "01",
-      "title": "Cybersecurity Products",
-      "description": "Protect your business with enterprise-grade security solutions built to detect, prevent, and respond to threats.",
+      "title": "Cybersecurity Services",
+      "description": "Safeguard your business with advanced cybersecurity solutions that proactively detect, prevent, and respond to evolving digital threats.",
       "color": "blue",
       "items": [
-        "Firewall Solutions",
+        "Firewall Management",
+        "Data Loss Prevention (DLP)",
         "Endpoint Security",
-        "Antivirus Solutions",
-        "Threat Detection",
-        "Security Audits"
+        "Email Security",
+        "IOT Security",
+        "Penetration Testing (VAPT)",
+        "Identity & Access Management (IAM)",
+        "SOC Room"
       ]
     },
     {
       "id": "02",
-      "title": "Web & App Development",
-      "description": "Custom digital products engineered for performance, scalability, and seamless user experience.",
+      "title": "Network Solutions",
+      "description": "Build a secure, scalable, and high-performance network infrastructure with end-to-end networking solutions designed to ensure seamless connectivity, reliability, and business continuity.",
       "color": "cyan",
       "items": [
-        "Business Websites",
-        "Enterprise Portals",
-        "eCommerce",
-        "Web Apps",
-        "Mobile Apps"
+        "Network Setup & Deployment",
+        "WiFi & LAN Solutions",
+        "Switch & Router Configuration",
+        "VPN Solutions",
+        "Unified Communications",
+        "Network Automation",
+        "NOC Room"
       ]
     },
     {
       "id": "03",
-      "title": "ERP Solutions",
-      "description": "Streamline operations and unify your business processes with end-to-end ERP and CRM systems.",
+      "title": "Server  & Cloud Solutions",
+      "description": "Modernize your IT infrastructure with secure, scalable, and high-performance server and cloud solutions that improve agility, optimize workloads, and ensure business continuity.",
       "color": "purple",
       "items": [
-        "ERP Consulting",
-        "ERP Implementation",
-        "CRM Integration",
-        "Inventory Management",
-        "HR & Payroll"
+        "Cloud Automation",
+        "Cloud Management",
+        "Cloud Migration",
+        "DevOps Integration",
+        "Cloud Security",
+        "Private Cloud",
+        "DC-DR"
       ]
     },
     {
       "id": "04",
-      "title": "Hardware Solutions",
-      "description": "Reliable enterprise hardware sourcing, deployment, and support for modern workplaces.",
+      "title": "Web & App Development",
+      "description": "Transform your ideas into powerful digital experiences with custom web and mobile applications designed for performance, scalability, and long-term business growth.",
       "color": "pink",
+      "items": [
+        "Web Development",
+        "Mobile Application",
+        "SaaS Application",
+        "SEO Services",
+        "Digital Marketing"
+      ]
+    },
+    {
+      "id": "05",
+      "title": "SaaS Products",
+      "description": "Empower your workforce with trusted SaaS solutions that enhance collaboration, productivity, and business efficiency through secure cloud-based applications and enterprise software.",
+      "color": "teal",
+      "items": [
+        "Microsoft Azure",
+        "Microsoft 365",
+        "Google Workspace",
+        "Zoho",
+        "Tally",
+        "ERP/CRM Solutions"
+      ]
+    },
+    {
+      "id": "06",
+      "title": "Hardware Solutions",
+      "description": "Equip your business with reliable, high-performance IT hardware solutions designed to enhance productivity, ensure operational efficiency, and support long-term business growth.",
+      "color": "orange",
       "items": [
         "Computers",
         "Laptops",
         "Interactive Panels",
         "Servers",
         "Accessories"
-      ]
-    },
-    {
-      "id": "05",
-      "title": "SaaS Products",
-      "description": "Licensing and deployment of leading productivity and collaboration platforms for your team.",
-      "color": "teal",
-      "items": [
-        "Microsoft Azure",
-        "Microsoft 365",
-        "Google Workspace",
-        "Cloud Solutions",
-        "Zoho"
-      ]
-    },
-    {
-      "id": "06",
-      "title": "Servers & Cloud",
-      "description": "Robust, scalable server and cloud infrastructure with migration and backup solutions.",
-      "color": "orange",
-      "items": [
-        "Cloud Hosting",
-        "Dedicated Servers",
-        "VPS",
-        "Cloud Migration",
-        "Backup Solutions"
       ]
     }
   ],
