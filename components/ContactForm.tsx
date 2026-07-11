@@ -196,11 +196,11 @@ async function handleSubmit(e: FormEvent<HTMLFormElement>) {
                 className="peer w-full h-11 text-sm rounded border border-slate-300 bg-slate-50 pl-10 pr-4 outline-none focus:ring-1 focus:ring-green-500 focus:bg-white transition appearance-none"
               >
                 <option value="">Select a service</option>
-                <option>Cybersecurity</option>
-                <option>Web & App Development</option>
-                <option>ERP Solutions</option>
-                <option>Cloud Solutions</option>
-                <option>Networking & IT Infra</option>
+                <option value={'Cybersecurity'}>Cybersecurity</option>
+                <option value={'Web & App Development'}>Web & App Development</option>
+                <option value={'ERP Solutions'}>ERP Solutions</option>
+                <option value={'Cloud Solutions'}>Cloud Solutions</option>
+                <option value={'Networking & IT Infra'}>Networking & IT Infra</option>
               </select>
               <ChevronDown className="pointer-events-none absolute right-4 top-5.5 size-4 text-slate-400 peer-focus:rotate-180 transition" />
               <label className="block font-medium text-slate-700 text-sm absolute bg-white top-0 left-3 z-10 px-2 opacity-0 invisible pointer-events-none transition-opacity duration-150 peer-focus:opacity-100 peer-focus:visible peer-valid:opacity-100 peer-valid:visible">

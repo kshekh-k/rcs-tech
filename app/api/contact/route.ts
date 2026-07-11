@@ -11,6 +11,11 @@ async function isHuman(token: string): Promise<boolean> {
     return false;
   }
 
+  if (process.env.NODE_ENV === "development") {
+    console.log("⚡ Bypassing reCAPTCHA verification in development environment.");
+    return true;
+  }
+
   if (!token) {
     return false;
   }
@@ -43,8 +48,16 @@ async function isHuman(token: string): Promise<boolean> {
 }
 
 export async function POST(request: NextRequest) {
-  const data = await request.json();
+  console.log("🔥 API /api/contact called");
+  const raw = await request.text();
 
+  console.log("===== RAW REQUEST =====");
+  console.log(raw);
+
+  const data = JSON.parse(raw);
+
+  console.log("===== PARSED DATA =====");
+  console.log(JSON.stringify(data, null, 2));
   // Honeypot field — bots fill it in, real users never see it.
   if (data.website) {
     return NextResponse.json({
@@ -72,32 +85,63 @@ export async function POST(request: NextRequest) {
   }
 
   try {
+
+    // console.log("Incoming Contact Data:");
+    // console.log(JSON.stringify(data, null, 2));
+
+
+    const payload = {
+      token,
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      company: data.company,
+      service: data.service,
+      message: data.message,
+      submittedAt: new Date().toLocaleString("en-IN", {
+        dateStyle: "medium",
+        timeStyle: "short",
+        timeZone: "Asia/Kolkata",
+      }),
+    };
+
+    console.log("===== GOOGLE PAYLOAD =====");
+    console.log(JSON.stringify(payload, null, 2));
+
+    // const response = await fetch(scriptUrl, {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/json", },
+    //   body: JSON.stringify(payload),
+    // });
+
+    // if (!response.ok) {
+    //   throw new Error(`Request failed with status ${response.status}`);
+    // }
+
     const response = await fetch(scriptUrl, {
       method: "POST",
-      headers: { "Content-Type": "text/plain;charset=utf-8" },
-      body: JSON.stringify({
-        token,
-        name: data.name,
-        email: data.email,
-        phone: data.phone,
-        company: data.company,
-        service: data.service,
-        message: data.message,
-        submittedAt: new Date().toLocaleString("en-IN", {
-          dateStyle: "medium",
-          timeStyle: "short",
-          timeZone: "Asia/Kolkata",
-        }),
-      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
     });
 
-    if (!response.ok) {
-      throw new Error(`Request failed with status ${response.status}`);
-    }
+    //const responseText = await response.text();
+    const result = await response.json();
+
+    console.log("========== GOOGLE RESPONSE ==========");
+    console.log(result);
+    // console.log(responseText);
+
+    // if (!response.ok) {
+    //   throw new Error(responseText);
+    // }
 
     return NextResponse.json({
       success: true,
-      message: "Thank you! Your inquiry has been submitted successfully.",
+      message: result.message || "Thank you! Your inquiry has been submitted successfully.",
+      googleResponse: result,
+      payload,
     });
   } catch (error) {
     console.error("Failed to submit contact form:", error);

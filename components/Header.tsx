@@ -31,7 +31,7 @@ export default function Header() {
         scrolled ? "bg-white glass shadow-lg shadow-primary/5" : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between sm:py-4 p-3 lg:px-6">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between py-2 px-3 lg:px-6">
         <Link href="#home" className="flex items-center">
           <Image
             src={scrolled ? siteData.logo : siteData.logoWhite}
