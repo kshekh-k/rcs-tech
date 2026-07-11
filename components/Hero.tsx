@@ -5,6 +5,7 @@ import Link from "next/link";
 import { CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 import siteData from "@/data/site.json";
+ 
 
 export default function Hero() {
   const { hero } = siteData;
@@ -79,6 +80,10 @@ export default function Hero() {
             priority
             className="w-full drop-shadow-2xl scale-115"
           />
+
+          {/* <NetworkDiagram /> */}
+
+
         </motion.div>
       </div>
     </section>

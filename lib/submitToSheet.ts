@@ -27,6 +27,7 @@ export async function submitToSheet(
   data: ContactFormData
 ): Promise<SubmitResult> {
   try {
+    console.log("Submitting to /api/contact", data);
     const response = await fetch("/api/contact", {
       method: "POST",
       headers: {
