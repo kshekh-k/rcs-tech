@@ -5,7 +5,7 @@ import Link from "next/link";
 import { CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 import siteData from "@/data/site.json";
-import NetworkDiagram from "./NetworkDiagram";
+ 
 
 export default function Hero() {
   const { hero } = siteData;
