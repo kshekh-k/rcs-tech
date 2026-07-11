@@ -101,7 +101,7 @@ export default function ServiceCard({
       </div>
 
       {/* Description */}
-      <p className="text-slate-400 mb-3 text-sm leading-snug">
+      <p className="text-slate-400 mb-3 text-sm leading-snug line-clamp-3">
         {service.description}
       </p>
 
@@ -110,9 +110,9 @@ export default function ServiceCard({
         {service.items.map((item, index) => (
           <li
             key={index}
-            className="flex items-center gap-2 text-sm text-slate-4 text-slate-400"
+            className="flex items-start gap-2 text-sm text-slate-4 text-slate-400"
           >
-            <div className={`size-2 rounded-full ${colors.text} bg-current`} />
+            <div className={`size-2 rounded-full ${colors.text} bg-current shrink-0 relative top-1.75`} />
             <span>{item}</span>
           </li>
         ))}
