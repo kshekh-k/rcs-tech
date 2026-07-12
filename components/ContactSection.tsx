@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import siteData from "@/data/site.json";
 
 export default function ContactSection() {
-  const { contactInfo } = siteData;
+  const { contactInfo, contact } = siteData;
   return (
     <section id="contact" className="relative pt-16 pb-8 lg:py-24 xl:py-32 bg-slate-100/50 border-t border-slate-200 before:absolute before:-translate-x-1/2 before:translate-y-1/2 before:bottom-0 before:left-0 before:w-96 before:h-96 before:rounded-full before:border before:border-blue-100">
       {/* Background Effects */}
@@ -25,19 +25,18 @@ export default function ContactSection() {
             className="col-span-6 lg:col-span-7"
           >
             <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
-              CONTACT US
+              {contact.badge}
             </span>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-slate-900 leading-tight">
-              Let’s Build Your IT
+              {contact.title}{" "}
               <span className="bg-linear-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent inline-block">
-                Infrastructure
+               {contact.highlight}
               </span>
             </h2>
 
             <p className="mt-2 lg:mt-4 text-sm md:text-base lg:text-lg text-slate-500 leading-relaxed ">
-              Connect with our experts and discover tailored IT solutions that
-              accelerate growth, improve security, and optimize operations.
+              {contact.subtitle}
             </p>
 
             {/* Trust Pills */}

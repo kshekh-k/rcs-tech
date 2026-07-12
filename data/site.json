@@ -35,22 +35,23 @@
   ],
   "consultationCta": "Get Consultation",
   "hero": {
-    "badge": "Enterprise IT Infrastructure & Digital Solutions",
-    "headline": "Reliable Technology",
-    "highlight": "Modern Enterprises",
-    "subheadline": "Transforming businesses through secure IT infrastructure, cloud, networking, and enterprise technology solutions.",
+    "badge": "Intelligent IT Solutions",
+    "headline": "Smarter IT Infrastructure for",
+    "highlight": "Growing Businesses",
+    "subheadline": "Design, deploy, and manage enterprise IT infrastructure, cybersecurity, cloud platforms, networking, and business applications that keep your organization secure, connected, and future-ready.",
     "primaryCta": "Get Free Consultation",
     "secondaryCta": "Explore Services"
      
   },
   "about": {
     "badge": "ABOUT: RCS Infra Tech",
-    "title": "Technology Powers",
-    "highlight": "Business Growth",
-    "description": "RCS Infra Tech is an end-to-end technology partner helping organizations modernize their IT infrastructure through secure, scalable, and business-focused solutions. Our multidisciplinary team combines expertise in networking, cybersecurity, cloud, enterprise software, and digital transformation to simplify complex technology challenges and deliver measurable business outcomes.",
+    "title": "Your Trusted ",
+    "highlight": "Enterprise Innovation",
+    "titletail": "Partner",
+    "description": "Every project follows a proven methodology that ensures efficient planning, secure implementation, and continuous optimization.",
     "features": [
   {
-    "title": "Secure",
+    "title": "Resilient",
     "description": "Cyber Protection"
   },
   {
@@ -89,7 +90,7 @@
     "badge": "OUR ADVANTAGE",
     "title": "Why",
     "highlight": "Choose Us",
-    "subtitle": "Delivering reliable technology solutions that strengthen security, improve efficiency, and support long-term business growth.",
+    "subtitle": "We combine technical expertise, strategic planning, and enterprise-grade solutions to help businesses achieve long-term operational success.",
     "items": [
       {
         "id": "01",
@@ -111,19 +112,19 @@
       },
       {
         "id": "04",
-        "title": "Tailored Solutions",
+        "title": "Business-Centric Solutions",
         "description": "Customized technology strategies aligned with your business goals and operational needs.",
         "color": "orange"
       },
       {
         "id": "05",
-        "title": "Trusted Partnership",
+        "title": "Long-Term Partnership",
         "description": "Building long-term relationships through transparency, reliability, and dedicated service.",
         "color": "pink"
       },
       {
         "id": "06",
-        "title": "Future-Ready",
+        "title": "Innovation Focused",
         "description": "Scalable infrastructure designed to support growth, innovation, and digital transformation.",
         "color": "cyan"
       }
@@ -136,16 +137,25 @@
     "subtitle": "Whether you're modernizing your infrastructure, migrating to the cloud, strengthening cybersecurity, or developing custom business applications, we provide integrated technology solutions tailored to your operational goals."
   },
 
+  "cta":{
+    "badge": "⚡ LET’S GROW TOGETHER",
+    "title": "Ready to Transform Your IT",
+    "highlight": "Business Technology?",
+    "subtitle": "Let our experts help you choose the right technology solutions for your business and drive real growth."
+  },
+
   "contact": {
-    "title": "Let's Build Your IT Infrastructure Together",
-    "text": "Connect with our experts and get a tailored solution for your business.",
+    "badge": "Contact us",
+    "title": "Start Your Next",
+    "highlight": "IT Project",
+    "subtitle": "Tell us about your business goals. Our experts will help you identify the right technology solution for your organization.",
     "cta": "Send Inquiry"
   },
   "contactInfo": {
     "phone": "+91 91221 16041",
     "whatsapp": "0091 91221 16041",
     "email": "info@rcsinfratech.com",
-    "address": "402, Tech Park Tower, Andheri East, Mumbai, India 400069",
+    "address": " E-695, Behind Gupta Stores, Vaishali Nagar, Jaipur, (Raj.) India 302021",
     "hours": "Mon-Sat 9AM – 7PM",
     "social": [
       {
@@ -176,7 +186,7 @@
     ]
   },
   "footer": {
-    "about": "Enterprise-grade cybersecurity, cloud, ERP and IT infrastructure                solutions for modern businesses.",
+    "about": "Enterprise IT Solutions for Modern Businesses.",
     "usp": [
       {
         "icon": "ShieldCheck",

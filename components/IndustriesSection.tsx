@@ -16,25 +16,23 @@ export default function IndustriesSection() {
         <div className="absolute translate-x-1/4 -translate-y-1/4 top-0 right-0 size-40 lg:size-96 bg-purple-500 rounded-full blur-3xl opacity-20"></div>
       </div>
 
-      <div className="mx-auto max-w-7xl px-3 lg:px-6">
+      <div className="mx-auto max-w-7xl px-3 lg:px-6 relative">
         {/* Header */}
 
         <div className="mx-auto mb-5 sm:mb-10 md:mb-20 max-w-3xl text-center">
           <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
-            Industries We Serve
+            {industries.badge}
           </span>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold text-slate-900 leading-tight">
-            Technology Solutions for {" "}
-           <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent">
-              Every Industry
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+            {industries.title}{" "}
+           <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent block">
+              {industries.highlight}
             </span>
           </h2>
 
            <p className="mt-2 lg:mt-4 text-sm md:text-base lg:text-lg text-slate-500 leading-relaxed mx-auto max-w-3xl ">
-            Delivering secure infrastructure, cloud platforms, networking,
-            enterprise software and cybersecurity solutions tailored to the
-            unique needs of every industry.
+             {industries.description}
           </p>
         </div>
 
@@ -60,7 +58,7 @@ export default function IndustriesSection() {
           <div className="">
             {/* Industry Cards */}
 
-            {industries.map((industry) => (
+            {industries.industry.map((industry) => (
               <IndustryCard key={industry.id} industry={industry} />
             ))}
           </div>

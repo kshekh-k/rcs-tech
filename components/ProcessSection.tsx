@@ -25,7 +25,7 @@ export default function ProcessSection() {
             {data.badge}
           </span>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold text-slate-900 leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
             {data.title}{" "}
             <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent">
               {data.highlight}

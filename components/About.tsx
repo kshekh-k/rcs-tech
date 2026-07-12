@@ -34,11 +34,10 @@ export default function About() {
             <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
               {about.badge}
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold leading-tight sm:mb-3 after:w-10 after:h-0.5 after:bg-linear-to-r after:from-secondary after:to-accent after:rounded after:mb-3 sm:after:mb-6 after:block">
-              
+            <h2 className="text-3xl sm:text-4xl md:text-5xl text-slate-900 font-extrabold leading-tight sm:mb-3 after:w-10 after:h-0.5 after:bg-linear-to-r after:from-secondary after:to-accent after:rounded after:mb-3 sm:after:mb-6 after:block">              
               {about.title}{" "}<span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent ">
                 {about.highlight}
-              </span>
+              </span>{" "}{about.titletail}
             </h2>
              
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-3 md:mb-10">
