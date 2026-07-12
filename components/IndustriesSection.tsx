@@ -16,7 +16,7 @@ export default function IndustriesSection() {
         <div className="absolute translate-x-1/4 -translate-y-1/4 top-0 right-0 size-40 lg:size-96 bg-purple-500 rounded-full blur-3xl opacity-20"></div>
       </div>
 
-      <div className="mx-auto max-w-7xl px-3 lg:px-6">
+      <div className="mx-auto max-w-7xl px-3 lg:px-6 relative">
         {/* Header */}
 
         <div className="mx-auto mb-5 sm:mb-10 md:mb-20 max-w-3xl text-center">
@@ -24,9 +24,9 @@ export default function IndustriesSection() {
             {industries.badge}
           </span>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold text-slate-900 leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
             {industries.title}{" "}
-           <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent">
+           <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent block">
               {industries.highlight}
             </span>
           </h2>

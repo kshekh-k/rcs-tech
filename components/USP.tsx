@@ -28,7 +28,7 @@ export default function USP() {
             <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
               {whyChooseUs.badge}
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold text-slate-900 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
               {whyChooseUs.title}{" "}
               <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent">
                 {whyChooseUs.highlight}
