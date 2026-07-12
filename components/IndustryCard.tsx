@@ -10,7 +10,7 @@ import {
   ShoppingBag,
   Building2,
   Truck,
-  Cloud,
+  PiggyBank,
 } from "lucide-react";
 interface Industry {
   id: number;
@@ -28,7 +28,7 @@ interface Industry {
 interface Props {
   industry: Industry;
 }
-const icons = [Hospital, Landmark, Factory, GraduationCap, ShoppingBag, Building2, Truck, Cloud];
+const icons = [Hospital, PiggyBank, Factory, GraduationCap, ShoppingBag, Building2, Truck, Landmark];
 
 export default function IndustryCard({ industry }: Props) {
  const Icon = icons[Number(industry.id) - 1];

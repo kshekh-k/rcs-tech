@@ -7,9 +7,11 @@ import {
 } from "lucide-react";
 import FeaturePill from "./FeaturePill";
 import { motion } from "framer-motion";
- 
+import siteData from "@/data/site.json";
+import Link from "next/link";
 
 export default function CTASection() {
+   const { cta } = siteData;
   return (
     <section className="relative pt-16 pb-8 lg:py-24 xl:py-32 bg-[#030712] before:absolute before:inset-0 before:bg-linear-to-r before:from-[#020817] before:via-[#071A44] before:to-[#0B1120]">
   
@@ -34,19 +36,18 @@ export default function CTASection() {
             {/* LEFT */}
             <div className="col-span-7">
               <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
-                ⚡ LET’S GROW TOGETHER
+                {cta.badge}
               </span>
 
               <h2 className="mt-2 sm:mt-0 text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight">
-                Ready to Upgrade Your IT {" "}
+                {cta.title}{" "}
                 <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent sm:inline-block">
-                  Infrastructure?
+                 {cta.highlight}
                 </span>
               </h2>
 
               <p className="mt-2 lg:mt-4 text-sm md:text-base lg:text-lg text-slate-400 leading-relaxed">
-                Let our experts help you choose the right technology solutions
-                for your business and drive real growth.
+                {cta.subtitle}
               </p>
 
               {/* Features */}
@@ -75,12 +76,12 @@ export default function CTASection() {
 
               {/* CTA */}
               <div className="flex flex-wrap items-center gap-4 mt-5 sm:mt-10">
-                <button className="rounded bg-linear-to-r from-secondary to-accent px-5 py-3 text-white font-semibold text-base shadow-[0_0_40px_rgba(59,130,246,0.35)] flex items-center gap-2 hover:scale-105 transition">
+                <Link href="#contact" className="rounded bg-linear-to-r from-secondary to-accent px-5 py-3 text-white font-semibold text-base shadow-[0_0_40px_rgba(59,130,246,0.35)] flex items-center gap-2 transition hover:to-accent/80">
                   <CalendarDays className="size-5" />
                   Book Free Consultation <ArrowRight className="size-4" />
-                </button>
+                </Link>
 
-                <div className="flex items-center gap-2 sm:gap-4">
+                <div className="flex items-center gap-2">
                   <div className="flex -space-x-2 overflow-hidden p-2">
                     <img width={28} height={28}
                       alt=""

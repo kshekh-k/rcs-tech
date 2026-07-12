@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
- 
 import siteData from "@/data/site.json";
 import customersData from "@/data/customers.json";
 import WhyCard from "./WhyCard";

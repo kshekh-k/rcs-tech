@@ -24,15 +24,10 @@ export default function Blog() {
           </span>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl/18 font-extrabold text-slate-900">
-            {blogsData.title}{" "}
+            {blogsData.title}{" "}&{" "}
             <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent">
-              {blogsData.highlight1}
-            </span>{" "}
-            &{" "}
-            <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent">
-              {blogsData.highlight2}
-            </span>{" "}
-            {blogsData.titleEnd}
+              {blogsData.highlight}
+            </span>                     
           </h2>
 
           <p className="mt-2 lg:mt-4 text-sm md:text-base lg:text-lg text-slate-500 leading-relaxed mx-auto max-w-2xl ">

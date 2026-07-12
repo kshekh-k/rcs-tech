@@ -42,7 +42,7 @@ export default function Hero() {
           <div className="mt-2 lg:mt-4 xl:mt-9 flex flex-wrap gap-4">
             <Link
               href="#contact"
-              className="rounded bg-linear-to-r from-secondary to-accent text-xs sm:text-sm px-3 py-2 sm:px-5 sm:py-3 font-semibold text-white shadow-lg shadow-secondary/30 transition-transform hover:scale-105"
+              className="rounded bg-secondary bg-linear-to-r from-secondary to-accent text-xs sm:text-sm px-3 py-2 sm:px-5 sm:py-3 font-semibold text-white shadow-lg shadow-secondary/30 transition hover:to-transparent"
             >
               {hero.primaryCta}
             </Link>

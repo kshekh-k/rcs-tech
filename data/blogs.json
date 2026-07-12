@@ -1,9 +1,7 @@
 {
   "badge": "INSIGHTS",
-  "title": "Latest",
-  "titleEnd": "Updates",
-  "highlight1": "Insights",
-  "highlight2": "Technology",
+  "title": "Insights",   
+  "highlight": "Resources",
 
   "subtitle": "Stay ahead with expert insights, trends, and best practices from the world of technology.",
   "blogs": [

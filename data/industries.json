@@ -1,4 +1,9 @@
-[
+{
+  "badge": "OUR PROCESS",
+  "title": "Structured Approach to",
+  "highlight": "Successful IT Delivery",
+  "description": "Every project follows a proven methodology that ensures efficient planning, secure implementation, and continuous optimization.",
+  "industry":[
   {
     "id": 1,
     "title": "Healthcare",
@@ -15,7 +20,7 @@
     "id": 2,
     "title": "Banking",
     "subtitle": "Financial Security",
-    "icon": "Landmark",
+    "icon": "CircleEuro",
     "gradient": "linear-gradient(45deg, #fa61da 0.000%, #ff8891 50.000%, #ffcd5a 100.000%)",
     "line":"left-1/3 sm:left-auto sm:right-full top-1/2 w-20 sm:w-37 md:w-46 scale-x-[-1] scale-y-[-1] -rotate-45 translate-y-18 translate-x-5",
     "color":"--color-purple-500",
@@ -91,9 +96,9 @@
   },
   {
     "id": 8,
-    "title": "SaaS",
-    "subtitle": "Cloud Platforms",
-    "icon": "Cloud",
+    "title": "Goverment",
+    "subtitle": "Govt Platforms",
+    "icon": "Landmark",
     "gradient": "linear-gradient(135deg,#0ea5e9,#38bdf8)",
     "line":"right-full top-1/2 w-38 md:w-48 scale-x-[-1] scale-y-[-1] rotate-45 -translate-y-14 md:-translate-y-15 translate-x-5",
      "color":"--color-red-500",
@@ -103,3 +108,4 @@
      
   }
 ]
+}
