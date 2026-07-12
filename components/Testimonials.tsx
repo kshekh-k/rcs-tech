@@ -1,7 +1,4 @@
 "use client";
-
-import Image from "next/image";
-import { Star, Quote } from "lucide-react";
 import { motion } from "framer-motion";
 import testimonialsData from "@/data/testimonials.json";
 import TestimonialCard from "./TestimonialCard";

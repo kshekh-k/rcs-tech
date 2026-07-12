@@ -148,7 +148,7 @@ export default function ProcessCard({ step}: ProcessCardProps) {
         {/* Features */}
 
         <ul className="space-y-2">
-          {step.features.map((feature:any) => (
+          {step.features.map((feature) => (
             <li key={feature} className="flex items-center gap-1 text-white/80">
               <CheckCircle2 className="size-3 sm:size-4 shrink-0 text-(--this-color)" />
 

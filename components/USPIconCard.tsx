@@ -2,25 +2,21 @@ import type { LucideIcon } from "lucide-react";
 
 type Color = "blue" | "purple" | "green" | "orange";
 
-const COLOR_STYLES: Record<Color, { badge: string; glow: string; icon: string }> = {
+const COLOR_STYLES: Record<Color, { badge: string;  icon: string }> = {
   blue: {
-    badge: "bg-blue-500/10",
-    glow: "bg-[#081B44]",
+    badge: "bg-blue-500/10", 
     icon: "text-blue-400",
   },
   purple: {
-    badge: "bg-purple-500/10",
-    glow: "bg-[#081B44]",
+    badge: "bg-purple-500/10", 
     icon: "text-purple-400",
   },
   green: {
-    badge: "bg-green-500/10",
-    glow: "bg-[#081B44]",
+    badge: "bg-green-500/10", 
     icon: "text-green-400",
   },
   orange: {
-    badge: "bg-orange-500/10",
-    glow: "bg-[#081B44]",
+    badge: "bg-orange-500/10", 
     icon: "text-orange-400",
   },
 };

@@ -5,7 +5,7 @@ import {
   SlidersHorizontal,
   Zap,
   TrendingUp,
-  ChevronRight,
+ 
 } from "lucide-react";
 
 const icons = [Layers3, Users, ShieldCheck, SlidersHorizontal, Zap, TrendingUp];

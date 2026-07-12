@@ -1,28 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
- Layers3,
-  BadgeCheck,
-  ShieldCheck,
-  Settings2,
-  Handshake,
-  TrendingUp,
-  type LucideIcon,
-} from "lucide-react";
+ 
 import siteData from "@/data/site.json";
 import customersData from "@/data/customers.json";
 import WhyCard from "./WhyCard";
 import Image from "next/image";
 
-const iconMap: Record<string, LucideIcon> = {
-  Layers3,
-  BadgeCheck,
-  ShieldCheck,
-  Settings2,
-  Handshake,
-  TrendingUp,
-};
+ 
 
 export default function USP() {
   const { whyChooseUs } = siteData;

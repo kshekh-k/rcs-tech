@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { CheckCircle2 } from "lucide-react";
+import Link from "next/link"; 
 import { motion } from "framer-motion";
 import siteData from "@/data/site.json";
  

@@ -1,8 +1,7 @@
 "use client";
 
 import industries from "@/data/industries.json";
-import IndustryCard from "./IndustryCard";
-import WorldMap from "./WorldMap";
+import IndustryCard from "./IndustryCard"; 
 import Image from "next/image";
 
 export default function IndustriesSection() {
