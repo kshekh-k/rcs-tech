@@ -1,6 +1,7 @@
 "use client";
 import { ArrowRight, Send } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 export default function FooterCTA() {
   return (
     <motion.div
@@ -36,9 +37,9 @@ export default function FooterCTA() {
 
           {/* Right */}
           <div className="flex justify-end">
-          <button className="rounded md:min-w-52 shrink-0 bg-linear-to-r from-secondary to-accent px-5 py-3 text-white font-semibold text-base shadow-[0_0_40px_rgba(59,130,246,0.35)] flex items-center gap-2 hover:scale-105 transition justify-center">
+          <Link href="#contact" className="rounded md:min-w-52 shrink-0 bg-linear-to-r from-secondary to-accent px-5 py-3 text-white font-semibold text-base shadow-[0_0_40px_rgba(59,130,246,0.35)] flex items-center gap-2 hover:scale-105 transition justify-center">
             Get Free Consultation <ArrowRight className="size-4" />
-          </button>
+          </Link>
           </div>
         </div>
       </div>

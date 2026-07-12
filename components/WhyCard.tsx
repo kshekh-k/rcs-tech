@@ -5,7 +5,7 @@ import {
   SlidersHorizontal,
   Zap,
   TrendingUp,
-  ChevronRight,
+ 
 } from "lucide-react";
 
 const icons = [Layers3, Users, ShieldCheck, SlidersHorizontal, Zap, TrendingUp];
@@ -47,7 +47,7 @@ export default function WhyCard({ item }: { item: WhyItem }) {
     >
       {/* Decorative Wave */}
       <div className="absolute -bottom-3 -right-3 w-32 h-24 opacity-20 bg-linear-to-tl from-(--this-color) to-transparent rounded-tl-full rounded-br blur-md"></div>
-      <div className="relative p-4 pr-12 ">
+      <div className="relative p-4 ">
         <span className="text-sm font-bold text-(--this-color) absolute top-3 right-3">
           {item.id}
         </span>
@@ -67,9 +67,9 @@ export default function WhyCard({ item }: { item: WhyItem }) {
           {item.description}
         </p>
 
-        <button className="size-6 absolute right-3 bottom-3 rounded-full border border-(--this-color) bg-white flex items-center justify-center group-hover:bg-(--this-color) group-hover:text-white transition cursor-pointer">
+        {/* <button className="size-6 absolute right-3 bottom-3 rounded-full border border-(--this-color) bg-white flex items-center justify-center group-hover:bg-(--this-color) group-hover:text-white transition cursor-pointer">
           <ChevronRight className="size-3" />
-        </button>
+        </button> */}
       </div>
     </div>
   );

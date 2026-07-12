@@ -2,30 +2,12 @@
 import Image from "next/image";
 import {
   CalendarDays,
-  Code2,
-  Database,
-  ChartNoAxesColumn,
-  Wifi,
-  type LucideIcon,
+   
   ArrowRight,
 } from "lucide-react";
 import FeaturePill from "./FeaturePill";
 import { motion } from "framer-motion";
-function OrbitIcon({
-  icon: Icon,
-  className,
-}: {
-  icon: LucideIcon;
-  className?: string;
-}) {
-  return (
-    <div
-      className={`absolute w-20 h-20 rounded-full bg-[#08142B] border border-blue-500/20 flex items-center justify-center shadow-[0_0_30px_rgba(59,130,246,0.12)] ${className}`}
-    >
-      <Icon className="w-9 h-9 text-blue-400" />
-    </div>
-  );
-}
+ 
 
 export default function CTASection() {
   return (
@@ -100,22 +82,22 @@ export default function CTASection() {
 
                 <div className="flex items-center gap-2 sm:gap-4">
                   <div className="flex -space-x-2 overflow-hidden p-2">
-                    <img
+                    <img width={28} height={28}
                       alt=""
                       src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                       className="inline-block size-8 rounded-full ring-2 ring-white outline -outline-offset-1 outline-black/5"
                     />
-                    <img
+                    <img width={28} height={28}
                       alt=""
                       src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                       className="inline-block size-8 rounded-full ring-2 ring-white outline -outline-offset-1 outline-black/5"
                     />
-                    <img
+                    <img width={28} height={28}
                       alt=""
                       src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
                       className="inline-block size-8 rounded-full ring-2 ring-white outline -outline-offset-1 outline-black/5"
                     />
-                    <img
+                    <img width={28} height={28}
                       alt=""
                       src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                       className="inline-block size-8 rounded-full ring-2 ring-white outline -outline-offset-1 outline-black/5"

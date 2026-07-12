@@ -1,0 +1,80 @@
+{
+  "badge": "OUR PROCESS",
+  "title": "A Proven Process for Reliable",
+  "highlight": "IT Solutions",
+  "description": "We follow a structured approach that transforms your business requirements into secure, scalable, and future-ready technology solutions.",
+
+  "steps": [
+    {
+      "id": 1,
+      "number": "01",
+      "title": "Consult",
+      "subtitle": "Discover & Assess",
+      "description": "Understand business objectives, existing infrastructure, and technical requirements before recommending the right solution.",
+
+      "icon": "Users",
+
+      "color": "blue",
+
+      "features": [
+        "Business Discovery",
+        "IT Assessment",
+        "Requirement Analysis"
+      ]
+    },
+
+    {
+      "id": 2,
+      "number": "02",
+      "title": "Design",
+      "subtitle": "Plan & Architect",
+      "description": "Create secure, scalable architecture and implementation strategies tailored to your business needs.",
+
+      "icon": "DraftingCompass",
+
+      "color": "cyan",
+
+      "features": [
+        "Architecture Design",
+        "Security Planning",
+        "Technology Selection"
+      ]
+    },
+
+    {
+      "id": 3,
+      "number": "03",
+      "title": "Deploy",
+      "subtitle": "Implement & Integrate",
+      "description": "Deploy and configure infrastructure with minimal downtime while ensuring security and reliability.",
+
+      "icon": "Rocket",
+
+      "color": "indigo",
+
+      "features": [
+        "Implementation",
+        "Migration",
+        "System Integration"
+      ]
+    },
+
+    {
+      "id": 4,
+      "number": "04",
+      "title": "Optimize",
+      "subtitle": "Monitor & Improve",
+      "description": "Continuously monitor, maintain, and optimize systems to maximize performance and business continuity.",
+
+      "icon": "Gauge",
+
+      "color": "teal",
+
+      "features": [
+        "Performance Monitoring",
+        "Security Updates",
+        "Continuous Improvement"
+      ]
+    }
+  ]
+}

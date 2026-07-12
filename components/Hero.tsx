@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { CheckCircle2 } from "lucide-react";
+import Link from "next/link"; 
 import { motion } from "framer-motion";
 import siteData from "@/data/site.json";
  
@@ -13,21 +12,20 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-primary pb-8 pt-20 lg:pt-32 lg:pb-24 lg:min-h-screen flex items-center before:absolute before:inset-0 before:bg-grid before:opacity-15"
+      className="relative overflow-hidden bg-primary pb-8 pt-16 lg:pt-24 lg:pb-24 lg:min-h-screen flex items-center before:absolute before:inset-0 before:bg-grid before:opacity-15"
     >
       
-      <div className="absolute -top-40 -right-40 h-130 w-130 rounded-full bg-secondary/30 blur-[120px]" />
-      <div className="absolute -bottom-40 -left-40 h-105 w-105 rounded-full bg-accent/20 blur-[120px]" />
+ 
 
       <div className="relative mx-auto max-w-7xl items-center lg:gap-5 px-3 lg:px-6 flex flex-col-reverse md:grid md:grid-cols-12 ">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="col-span-6 lg:col-span-5 max-w-sm mx-auto md:max-w-none pt-5 md:pt-0"
+          className="col-span-6 lg:col-span-5 max-w-sm mx-auto md:max-w-none pt-5 md:pt-0 relative z-10"
         >
           <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
-            Enterprise IT Solutions
+            {hero.badge}
           </span>
 
           <h1 className="mt-2 lg:mt-5 text-3xl font-bold leading-tight text-white sm:text-4xl xl:text-5xl">
@@ -56,14 +54,7 @@ export default function Hero() {
             </Link>
           </div>
 
-          <ul className="mt-5 xl:mt-10 grid gap-3 grid-cols-2">
-            {hero.highlights.map((item) => (
-              <li key={item} className="flex items-center gap-1.5 lg:gap-2.5 text-xs sm:text-sm text-white/80">
-                <CheckCircle2 className="size-3 sm:size-5 shrink-0 text-accent" />
-                {item}
-              </li>
-            ))}
-          </ul>
+          
         </motion.div>
 
         <motion.div
@@ -73,12 +64,12 @@ export default function Hero() {
           className="relative mx-auto w-full max-w-md lg:max-w-none col-span-6 lg:col-span-7"
         >
           <Image
-            src="/images/hero2.svg"
+            src="/images/hero-section-map.svg"
             alt="Modern IT infrastructure dashboard"
-            width={640}
-            height={560}
+            width={1000}
+            height={1000}
             priority
-            className="w-full drop-shadow-2xl scale-115"
+            className="sm:min-w-xl xl:min-w-4xl h-auto sm:-translate-x-1/5 xl:-translate-x-1/7"
           />
 
           {/* <NetworkDiagram /> */}

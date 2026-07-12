@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import servicesData from "@/data/services.json";
 import ServiceCard from "./ServiceCard";
 import BottomFeatures from "./BottomFeatures";
-
+import siteData from "@/data/site.json";
 import {
   ShieldCheck,
   Code2,
@@ -17,7 +17,7 @@ const icons = [ShieldCheck, Code2, Boxes, MonitorSmartphone, CloudCog, Server];
 
 export default function Services() {
   const { services, bottomFeatures } = servicesData;
-
+const { servicesHome } = siteData;
   return (
     <section
       id="services"
@@ -47,22 +47,21 @@ export default function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
-          className="mx-auto max-w-2xl text-center"
+          className="mx-auto max-w-3xl text-center"
         >
           <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
-            OUR SERVICES
+            {servicesHome.badge}
           </span>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold text-white leading-tight">
-            Our Core{" "}
+            {servicesHome.title}{" "}
             <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent">
-              Services
+              {servicesHome.highlight}
             </span>
           </h2>
 
-          <p className="mt-2 md:mt-4 text-sm sm:text-base lg:text-lg text-slate-400 leading-relaxed">
-            Complete IT solutions designed to optimize performance, strengthen
-            security, and accelerate business growth.
+          <p className="mt-2 md:mt-4 text-sm sm:text-base lg:text-lg text-slate-400 leading-relaxed line-clamp-2">
+           {servicesHome.subtitle}
           </p>
         </motion.div>
 
