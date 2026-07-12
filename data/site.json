@@ -17,6 +17,14 @@
       "href": "#services"
     },
     {
+      "label": "Industries",
+      "href": "#industries"
+    },
+    {
+      "label": "Process",
+      "href": "#process"
+    },
+    {
       "label": "Blog",
       "href": "#blog"
     },
@@ -27,113 +35,116 @@
   ],
   "consultationCta": "Get Consultation",
   "hero": {
-    "headline": "Intelligent IT for",
-    "highlight": "Modern Business",
-    "subheadline": "Smart IT solutions for modern businesses.",
+    "badge": "Enterprise IT Infrastructure & Digital Solutions",
+    "headline": "Reliable Technology",
+    "highlight": "Modern Enterprises",
+    "subheadline": "Transforming businesses through secure IT infrastructure, cloud, networking, and enterprise technology solutions.",
     "primaryCta": "Get Free Consultation",
-    "secondaryCta": "Explore Services",
-    "highlights": [
-      "Enterprise IT Solutions",
-      "Secure & Scalable",
-      "Certified Tech Experts",
-      "End-to-End Support"
-    ]
+    "secondaryCta": "Explore Services"
+     
   },
   "about": {
-    "badge": "ABOUT US",
-    "title": "Empowering Businesses with",
-    "highlight": "RCS Infra Tech",
-    "description": "We help organizations modernize their infrastructure, secure critical assets, and build scalable digital solutions for long-term growth.",
+    "badge": "ABOUT: RCS Infra Tech",
+    "title": "Technology Powers",
+    "highlight": "Business Growth",
+    "description": "RCS Infra Tech is an end-to-end technology partner helping organizations modernize their IT infrastructure through secure, scalable, and business-focused solutions. Our multidisciplinary team combines expertise in networking, cybersecurity, cloud, enterprise software, and digital transformation to simplify complex technology challenges and deliver measurable business outcomes.",
     "features": [
-      {
-        "title": "Trusted",
-        "description": "Reliable. Transparent. Proven."
-      },
-      {
-        "title": "Experienced",
-        "description": "Expertise Across IT Domains."
-      },
-      {
-        "title": "Innovative",
-        "description": "Technology That Creates Impact."
-      },
-      {
-        "title": "Dedicated",
-        "description": "Committed to Your Success."
-      }
-    ],
+  {
+    "title": "Secure",
+    "description": "Cyber Protection"
+  },
+  {
+    "title": "Connected",
+    "description": "Network & Cloud"
+  },
+  {
+    "title": "Scalable",
+    "description": "Growth Ready"
+  },
+  {
+    "title": "Supported",
+    "description": "24×7 Assistance"
+  }
+],
     "stats": [
       {
-        "number": "500+",
-        "label": "Happy Clients"
+        "number": "Consult",
+        "label": "Understand"
       },
       {
-        "number": "1000+",
-        "label": "Projects Delivered"
+        "number": "Design",
+        "label": "Architect"
       },
       {
-        "number": "24/7",
-        "label": "Expert Support"
+        "number": "Deploy",
+        "label": "Implement"
       },
       {
-        "number": "99%",
-        "label": "Client Satisfaction"
+        "number": "Optimize",
+        "label": "Continuously Improve"
       }
     ]
   },
   "whyChooseUs": {
     "badge": "OUR ADVANTAGE",
-    "title": "Why Businesses",
+    "title": "Why",
     "highlight": "Choose Us",
-    "subtitle": "We combine technology, expertise, and commitment to deliver IT solutions that drive real business success.",
+    "subtitle": "Delivering reliable technology solutions that strengthen security, improve efficiency, and support long-term business growth.",
     "items": [
       {
         "id": "01",
         "title": "End-to-End IT Solutions",
-        "description": "From consulting to deployment, we handle every stage of your technology journey.",
+        "description": "Complete IT services from planning and deployment to optimization and ongoing management.",
         "color": "blue"
       },
       {
         "id": "02",
-        "title": "Expert Team",
-        "description": "Certified engineers and consultants with deep, cross-industry expertise.",
+        "title": "Certified Experts",
+        "description": "Experienced professionals delivering enterprise-grade technology with industry best practices.",
         "color": "purple"
       },
       {
         "id": "03",
-        "title": "Secure Infrastructure",
-        "description": "Enterprise-grade security built into every solution we deliver.",
+        "title": "Security First",
+        "description": "Cybersecurity integrated into every solution to protect your business and critical data.",
         "color": "green"
       },
       {
         "id": "04",
-        "title": "Customized Solutions",
-        "description": "Tailored technology strategies designed around your business goals.",
+        "title": "Tailored Solutions",
+        "description": "Customized technology strategies aligned with your business goals and operational needs.",
         "color": "orange"
       },
       {
         "id": "05",
-        "title": "Fast Support",
-        "description": "Responsive, round-the-clock support when you need it most.",
+        "title": "Trusted Partnership",
+        "description": "Building long-term relationships through transparency, reliability, and dedicated service.",
         "color": "pink"
       },
       {
         "id": "06",
-        "title": "Scalable Systems",
-        "description": "Infrastructure and software that grows seamlessly with your business.",
+        "title": "Future-Ready",
+        "description": "Scalable infrastructure designed to support growth, innovation, and digital transformation.",
         "color": "cyan"
       }
     ]
   },
+  "servicesHome":{
+    "badge": "OUR SERVICES",
+    "title": "What you",
+    "highlight": "Get here",
+    "subtitle": "Whether you're modernizing your infrastructure, migrating to the cloud, strengthening cybersecurity, or developing custom business applications, we provide integrated technology solutions tailored to your operational goals."
+  },
+
   "contact": {
     "title": "Let's Build Your IT Infrastructure Together",
     "text": "Connect with our experts and get a tailored solution for your business.",
     "cta": "Send Inquiry"
   },
   "contactInfo": {
-    "phone": "+91 98765 43210",
-    "whatsapp": "+91 98765 43212",
-    "email": "info@rcstech.com",
+    "phone": "+91 91221 16041",
+    "whatsapp": "0091 91221 16041",
+    "email": "info@rcsinfratech.com",
     "address": "402, Tech Park Tower, Andheri East, Mumbai, India 400069",
     "hours": "Mon-Sat 9AM – 7PM",
     "social": [
@@ -230,28 +241,7 @@
         "color": "--color-orange-500"
       }
     ],
-    "quickLinks": [
-      {
-        "label": "Home",
-        "href": "#home"
-      },
-      {
-        "label": "About",
-        "href": "#about"
-      },
-      {
-        "label": "Services",
-        "href": "#services"
-      },
-      {
-        "label": "Blog",
-        "href": "#blog"
-      },
-      {
-        "label": "Contact",
-        "href": "#contact"
-      }
-    ],
+     
     "servicesLinks": [
       {
         "label": "Cybersecurity",

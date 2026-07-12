@@ -2,10 +2,6 @@
 import Image from "next/image";
 import {
   CalendarDays,
-  Code2,
-  Database,
-  ChartNoAxesColumn,
-  Wifi,
   type LucideIcon,
   ArrowRight,
 } from "lucide-react";

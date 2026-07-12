@@ -6,13 +6,16 @@ import {
   Users,
   Lightbulb,
   Headphones,
-  BriefcaseBusiness,
-  Star,
+   
+  Search,
+  DraftingCompass,
+  Cog,
+  ChartNoAxesColumn
 } from "lucide-react";
 import Image from "next/image";
 
 const icons = [ShieldCheck, Users, Lightbulb, Headphones];
-const statsIcons = [Users, BriefcaseBusiness, Headphones, Star];
+const statsIcons = [Search, DraftingCompass, Cog, ChartNoAxesColumn];
 
 export default function About() {
   const { about } = siteData;
@@ -32,7 +35,8 @@ export default function About() {
               {about.badge}
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold leading-tight sm:mb-3 after:w-10 after:h-0.5 after:bg-linear-to-r after:from-secondary after:to-accent after:rounded after:mb-3 sm:after:mb-6 after:block">
-              <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent ">
+              
+              {about.title}{" "}<span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent ">
                 {about.highlight}
               </span>
             </h2>
@@ -111,7 +115,7 @@ export default function About() {
                     <Icon className="size-7 text-white relative z-10" />
                   </div>
                   <div>
-                    <h3 className="text-base lg:text-xl xl:text-2xl font-medium text-white">
+                    <h3 className="text-base lg:text-xl font-medium text-white">
                       {stat.number}
                     </h3>
                     <p className="text-sm xl:text-base text-blue-100">{stat.label}</p>

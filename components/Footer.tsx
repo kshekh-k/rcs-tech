@@ -47,7 +47,7 @@ const serviceIcons: (typeof Shield)[] = [
 ];
 
 export default function Footer() {
-  const { footer, contactInfo } = siteData;
+  const { footer, contactInfo, nav } = siteData;
   return (
     <footer className="relative bg-[#020817] text-white overflow-hidden pb-24 lg:pb-0">
       {/* Background */}
@@ -140,7 +140,7 @@ export default function Footer() {
                 Quick Links
               </h3>
               <ul className="text-slate-400 divide-y divide-white/10">
-                {footer.quickLinks.map((item, index) => (
+                {nav.map((item, index) => (
                   <li key={index}>
                     <Link
                       href={item.href}

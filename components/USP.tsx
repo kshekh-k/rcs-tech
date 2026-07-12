@@ -2,11 +2,11 @@
 
 import { motion } from "framer-motion";
 import {
-  Layers,
-  Users,
+ Layers3,
+  BadgeCheck,
   ShieldCheck,
-  SlidersHorizontal,
-  Zap,
+  Settings2,
+  Handshake,
   TrendingUp,
   type LucideIcon,
 } from "lucide-react";
@@ -16,11 +16,11 @@ import WhyCard from "./WhyCard";
 import Image from "next/image";
 
 const iconMap: Record<string, LucideIcon> = {
-  Layers,
-  Users,
+  Layers3,
+  BadgeCheck,
   ShieldCheck,
-  SlidersHorizontal,
-  Zap,
+  Settings2,
+  Handshake,
   TrendingUp,
 };
 
@@ -28,7 +28,7 @@ export default function USP() {
   const { whyChooseUs } = siteData;
   const logos = [...customersData.logos, ...customersData.logos];
   return (
-    <section className="relative pt-16 pb-8 lg:py-24 xl:py-32 bg-[#F8FAFC]">
+    <section className="relative pt-16 pb-8 lg:py-24 xl:py-32 bg-slate-100">
       {/* Background Effects */}
       <div className="absolute -translate-x-1/4 -translate-y-1/4 top-0 left-0 size-40 lg:size-96 bg-blue-500 rounded-full blur-3xl opacity-20"></div>
       <div className="absolute translate-x-1/4 translate-y-1/4 bottom-0 right-0 size-40 lg:size-96 bg-purple-500 rounded-full blur-3xl opacity-20"></div>
@@ -61,7 +61,7 @@ export default function USP() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6 }}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 md:mt-10"
+            className="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 md:mt-10"
           >
             {whyChooseUs.items.map((item) => (
               <WhyCard key={item.id} item={item} />
