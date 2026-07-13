@@ -2,14 +2,19 @@
 
 import ContactCard from "./ContactCard";
 import ContactForm from "./ContactForm";
-import { BadgeCheck, Clock3, Users } from "lucide-react";
+import { Compass, BadgeCheck, Clock3, Users, ShieldCheck } from "lucide-react";
 import { motion } from "framer-motion";
 import siteData from "@/data/site.json";
+
+const iconcta = [Compass, Clock3, ShieldCheck];
 
 export default function ContactSection() {
   const { contactInfo, contact } = siteData;
   return (
-    <section id="contact" className="relative pt-16 pb-8 lg:py-24 xl:py-32 bg-slate-100/50 border-t border-slate-200 before:absolute before:-translate-x-1/2 before:translate-y-1/2 before:bottom-0 before:left-0 before:w-96 before:h-96 before:rounded-full before:border before:border-blue-100">
+    <section
+      id="contact"
+      className="relative pt-16 pb-8 lg:py-24 xl:py-32 bg-slate-100/50 border-t border-slate-200 before:absolute before:-translate-x-1/2 before:translate-y-1/2 before:bottom-0 before:left-0 before:w-96 before:h-96 before:rounded-full before:border before:border-blue-100"
+    >
       {/* Background Effects */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-50" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-100 rounded-full blur-3xl opacity-50" />
@@ -31,7 +36,7 @@ export default function ContactSection() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-slate-900 leading-tight">
               {contact.title}{" "}
               <span className="bg-linear-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent inline-block">
-               {contact.highlight}
+                {contact.highlight}
               </span>
             </h2>
 
@@ -41,45 +46,28 @@ export default function ContactSection() {
 
             {/* Trust Pills */}
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 mt-5">
-              <div className="bg-white rounded p-3 shadow-md flex flex-col sm:flex-row text-center sm:text-left gap-2 items-center">
-                <span className="size-8 shrink-0 rounded bg-linear-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44]/30 before:blur overflow-hidden">
-                  <BadgeCheck className="size-4 text-white relative" />
-                </span>
-                <div>
-                  <h4 className="font-semibold text-slate-900 text-sm">
-                    Free Consultation
-                  </h4>
-                  <p className="text-xs text-slate-500">No obligation</p>
+              {contact.contactHighlights.map((item, index) => {
+                const Icon = iconcta[index] 
+                return(
+                <div key={item.id} className="bg-white rounded p-3 shadow-md flex flex-col sm:flex-row text-center sm:text-left gap-2 items-center">
+                  <span
+                    className={`size-8 shrink-0 rounded bg-linear-to-br flex items-center justify-center shadow-lg relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44]/30 before:blur overflow-hidden ${item.color}`}
+                  >
+                    <Icon className="size-4 text-white relative" />
+                  </span>
+                  <div>
+                    <h4 className="font-semibold text-slate-900 text-sm">
+                      {item.title}
+                    </h4>
+                    <p className="text-xs text-slate-500">{item.description}</p>
+                  </div>
                 </div>
-              </div>
+              )})}
 
-              <div className="bg-white rounded p-3 shadow-md flex flex-col sm:flex-row text-center sm:text-left gap-2 items-center">
-                <span className="size-8 shrink-0 rounded bg-linear-to-br from-cyan-500 to-cyan-600 flex items-center justify-center shadow-lg relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44]/30 before:blur overflow-hidden">
-                  <Clock3 className="size-4 text-white relative" />
-                </span>
-                <div>
-                  <h4 className="font-semibold text-slate-900 text-sm">
-                    Response in 24h
-                  </h4>
-                  <p className="text-xs text-slate-500">We value your time</p>
-                </div>
-              </div>
+              
 
-              <div className="bg-white rounded p-3 shadow-md flex flex-col sm:flex-row text-center sm:text-left gap-2 items-center">
-                <span className="size-8 shrink-0 rounded bg-linear-to-br from-pink-500 to-pink-600 flex items-center justify-center shadow-lg relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44]/30 before:blur overflow-hidden">
-                  <Users className="size-4 text-white relative" />
-                </span>
-                <div>
-                  <h4 className="font-semibold text-slate-900 text-sm">
-                    Expert Guidance
-                  </h4>
-                  <p className="text-xs text-slate-500">Professionals</p>
-                </div>
-              </div>
-             
+              {/* Contact Cards */}
 
-            {/* Contact Cards */}
-            
               <ContactCard
                 type="call"
                 title="Call Us"

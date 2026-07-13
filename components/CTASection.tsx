@@ -9,7 +9,7 @@ import FeaturePill from "./FeaturePill";
 import { motion } from "framer-motion";
 import siteData from "@/data/site.json";
 import Link from "next/link";
-
+const ctaColor = ["blue" , "purple" , "green" , "orange"]
 export default function CTASection() {
    const { cta } = siteData;
   return (
@@ -52,26 +52,22 @@ export default function CTASection() {
 
               {/* Features */}
               <div className="grid md:grid-cols-2 gap-5 mt-5">
-                <FeaturePill
-                  title="Secure & Reliable"
-                  desc="Enterprise-grade security"
-                  color="blue"
+
+
+ {cta.ctaHighlights.map((item, index) =>{
+                  const color = ctaColor[index]
+                  return(
+                     <FeaturePill
+                  key={item.id}
+                  title={item.title}
+                  desc={item.description}
+                  color={color}
                 />
-                <FeaturePill
-                  title="Scalable Solutions"
-                  desc="Built to grow with business"
-                  color="purple"
-                />
-                <FeaturePill
-                  title="24/7 Support"
-                  desc="Always here when needed"
-                  color="green"
-                />
-                <FeaturePill
-                  title="Proven Expertise"
-                  desc="Years of experience"
-                  color="orange"
-                />
+                  )
+                })}
+
+
+ 
               </div>
 
               {/* CTA */}

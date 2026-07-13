@@ -3,73 +3,57 @@
   "title": "Structured Approach to",
   "highlight": "Successful IT Delivery",
   "description": "Every project follows a proven methodology that ensures efficient planning, secure implementation, and continuous optimization.",
-
   "steps": [
     {
       "id": 1,
       "number": "01",
       "title": "Consult",
-      "subtitle": "Discover & Assess",
-      "description": "Understand business objectives, existing infrastructure, and technical requirements before recommending the right solution.",
-
+      "subtitle": "Assess Requirements",
+      "description": "Analyze business objectives, evaluate the current environment, and define a clear technology roadmap.",
       "icon": "Users",
-
       "color": "blue",
-
       "features": [
         "Business Discovery",
         "IT Assessment",
         "Requirement Analysis"
       ]
     },
-
     {
       "id": 2,
       "number": "02",
       "title": "Design",
-      "subtitle": "Plan & Architect",
-      "description": "Create secure, scalable architecture and implementation strategies tailored to your business needs.",
-
+      "subtitle": "Solution Blueprint",
+      "description": "Develop secure, efficient, and scalable solution architectures tailored to operational needs.",
       "icon": "DraftingCompass",
-
       "color": "cyan",
-
       "features": [
         "Architecture Design",
         "Security Planning",
         "Technology Selection"
       ]
     },
-
     {
       "id": 3,
       "number": "03",
       "title": "Deploy",
-      "subtitle": "Implement & Integrate",
-      "description": "Deploy and configure infrastructure with minimal downtime while ensuring security and reliability.",
-
+      "subtitle": "Seamless Execution",
+      "description": "Implement and integrate solutions with minimal disruption and maximum reliability.",
       "icon": "Rocket",
-
       "color": "indigo",
-
       "features": [
         "Implementation",
         "Migration",
         "System Integration"
       ]
     },
-
     {
       "id": 4,
       "number": "04",
       "title": "Optimize",
-      "subtitle": "Monitor & Improve",
-      "description": "Continuously monitor, maintain, and optimize systems to maximize performance and business continuity.",
-
+      "subtitle": "Continuous Improvement",
+      "description": "Continuously monitor, refine, and improve systems for sustained performance.",
       "icon": "Gauge",
-
       "color": "teal",
-
       "features": [
         "Performance Monitoring",
         "Security Updates",

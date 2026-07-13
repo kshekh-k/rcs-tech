@@ -1,0 +1,96 @@
+{
+  "badge": "Terms & Conditions",
+  "title": "Terms of Use",
+  "subtitle": "These Terms & Conditions govern your use of the RCS Infra Tech website and the professional services we provide.",
+  "lastUpdated": "July 2026",
+
+  "sections": [
+    {
+      "id": "acceptance",
+      "title": "Acceptance of Terms",
+      "content": [
+        "By accessing or using this website, you agree to comply with these Terms & Conditions. If you do not agree, please discontinue use of the website."
+      ]
+    },
+
+    {
+      "id": "services",
+      "title": "Services",
+      "content": [
+        "RCS Infra Tech provides enterprise technology solutions including cybersecurity, cloud solutions, networking, server infrastructure, SaaS products, ERP solutions, managed IT services, web development, mobile application development, and technology consulting."
+      ]
+    },
+
+    {
+      "id": "website-use",
+      "title": "Acceptable Use",
+      "content": [
+        "You agree not to misuse this website, attempt unauthorized access, interfere with website functionality, distribute malicious software, or engage in unlawful activities."
+      ]
+    },
+
+    {
+      "id": "intellectual-property",
+      "title": "Intellectual Property",
+      "content": [
+        "All content, branding, graphics, designs, logos, source code, documentation, and materials published on this website are the intellectual property of RCS Infra Tech unless otherwise stated."
+      ]
+    },
+
+    {
+      "id": "projects",
+      "title": "Projects & Deliverables",
+      "content": [
+        "Project scope, pricing, timelines, deliverables, and support terms are governed by individual quotations, proposals, contracts, or service agreements."
+      ]
+    },
+
+    {
+      "id": "liability",
+      "title": "Limitation of Liability",
+      "content": [
+        "RCS Infra Tech shall not be liable for indirect, incidental, consequential, or special damages arising from the use of this website or our professional services except where required by applicable law."
+      ]
+    },
+
+    {
+      "id": "third-party-links",
+      "title": "Third-Party Links",
+      "content": [
+        "Our website may contain links to third-party websites for convenience. We are not responsible for their content, security, or privacy practices."
+      ]
+    },
+
+    {
+      "id": "confidentiality",
+      "title": "Confidentiality",
+      "content": [
+        "Information shared during consultations, proposals, and project discussions will be handled professionally and treated as confidential unless disclosure is required by law."
+      ]
+    },
+
+    {
+      "id": "updates",
+      "title": "Changes to Terms",
+      "content": [
+        "These Terms & Conditions may be revised periodically. Continued use of the website after updates constitutes acceptance of the revised Terms."
+      ]
+    },
+
+    {
+      "id": "governing-law",
+      "title": "Governing Law",
+      "content": [
+        "These Terms & Conditions are governed by the laws of India. Any disputes shall be subject to the jurisdiction of the competent courts of Rajasthan, India."
+      ]
+    },
+
+    {
+      "id": "contact",
+      "title": "Contact Information",
+      "content": [
+        "For questions regarding these Terms & Conditions, please contact RCS Infra Tech using the contact details available on our website."
+      ]
+    }
+  ]
+}

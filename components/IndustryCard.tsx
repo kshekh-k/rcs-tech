@@ -40,7 +40,7 @@ export default function IndustryCard({ industry }: Props) {
         duration: 0.35,
       }}
       viewport={{ once: true }}
-      className={`absolute ${industry.position}`}
+      className={`absolute sm:w-56 ${industry.position}`}
        
     >
       {/*  */}

@@ -35,54 +35,53 @@
   ],
   "consultationCta": "Get Consultation",
   "hero": {
-    "badge": "Intelligent IT Solutions",
+    "badge": "Digital Excellence",
     "headline": "Smarter IT Infrastructure for",
     "highlight": "Growing Businesses",
     "subheadline": "Design, deploy, and manage enterprise IT infrastructure, cybersecurity, cloud platforms, networking, and business applications that keep your organization secure, connected, and future-ready.",
     "primaryCta": "Get Free Consultation",
     "secondaryCta": "Explore Services"
-     
   },
   "about": {
     "badge": "ABOUT: RCS Infra Tech",
-    "title": "Your Trusted ",
-    "highlight": "Enterprise Innovation",
+    "title": "Long-Term",
+    "highlight": "Technology",
     "titletail": "Partner",
-    "description": "Every project follows a proven methodology that ensures efficient planning, secure implementation, and continuous optimization.",
+    "description": "RCS Infra Tech helps organizations modernize their IT operations through integrated cybersecurity, cloud, networking, software, and infrastructure solutions. Our focus is on solving real business challenges with practical technology.",
     "features": [
-  {
-    "title": "Resilient",
-    "description": "Cyber Protection"
-  },
-  {
-    "title": "Connected",
-    "description": "Network & Cloud"
-  },
-  {
-    "title": "Scalable",
-    "description": "Growth Ready"
-  },
-  {
-    "title": "Supported",
-    "description": "24×7 Assistance"
-  }
-],
+      {
+        "title": "Resilient",
+        "description": "Cyber Defense"
+      },
+      {
+        "title": "Connected",
+        "description": "Cloud & Networks"
+      },
+      {
+        "title": "Optimized",
+        "description": "Peak Performance"
+      },
+      {
+        "title": "Responsive",
+        "description": "Expert Support"
+      }
+    ],
     "stats": [
       {
         "number": "Consult",
-        "label": "Understand"
+        "label": "Assess Requirements"
       },
       {
         "number": "Design",
-        "label": "Architect"
+        "label": "Solution Blueprint"
       },
       {
         "number": "Deploy",
-        "label": "Implement"
+        "label": "Seamless Execution"
       },
       {
         "number": "Optimize",
-        "label": "Continuously Improve"
+        "label": "Continuous Improvement"
       }
     ]
   },
@@ -94,68 +93,108 @@
     "items": [
       {
         "id": "01",
-        "title": "End-to-End IT Solutions",
-        "description": "Complete IT services from planning and deployment to optimization and ongoing management.",
+        "title": "Integrated Expertise",
+        "description": "Unified solutions across cybersecurity, cloud, networking, infrastructure, and software.",
         "color": "blue"
       },
       {
         "id": "02",
-        "title": "Certified Experts",
-        "description": "Experienced professionals delivering enterprise-grade technology with industry best practices.",
+        "title": "Strategic Consulting",
+        "description": "Technology decisions aligned with operational priorities and long-term objectives.",
         "color": "purple"
       },
       {
         "id": "03",
-        "title": "Security First",
-        "description": "Cybersecurity integrated into every solution to protect your business and critical data.",
+        "title": "Security by Design",
+        "description": "Protection built into every layer—from planning and deployment to ongoing operations.",
         "color": "green"
       },
       {
         "id": "04",
-        "title": "Business-Centric Solutions",
-        "description": "Customized technology strategies aligned with your business goals and operational needs.",
+        "title": "Tailored Delivery",
+        "description": "Every solution is designed around your environment, challenges, and goals.",
         "color": "orange"
       },
       {
         "id": "05",
-        "title": "Long-Term Partnership",
-        "description": "Building long-term relationships through transparency, reliability, and dedicated service.",
+        "title": "Trusted Partnership",
+        "description": "Long-term collaboration backed by transparency, accountability, and responsive service.",
         "color": "pink"
       },
       {
         "id": "06",
-        "title": "Innovation Focused",
-        "description": "Scalable infrastructure designed to support growth, innovation, and digital transformation.",
+        "title": "Future-Ready Platforms",
+        "description": "Modern architectures designed to adapt, scale, and evolve with your organization.",
         "color": "cyan"
       }
     ]
   },
-  "servicesHome":{
+  "servicesHome": {
     "badge": "OUR SERVICES",
     "title": "What you",
     "highlight": "Get here",
     "subtitle": "Whether you're modernizing your infrastructure, migrating to the cloud, strengthening cybersecurity, or developing custom business applications, we provide integrated technology solutions tailored to your operational goals."
   },
-
-  "cta":{
+  "cta": {
     "badge": "⚡ LET’S GROW TOGETHER",
     "title": "Ready to Transform Your IT",
     "highlight": "Business Technology?",
-    "subtitle": "Let our experts help you choose the right technology solutions for your business and drive real growth."
+    "subtitle": "Let our experts help you choose the right technology solutions for your business and drive real growth.",
+    "ctaHighlights": [
+      {
+        "id": "01",
+        "title": "Integrated Expertise",
+        "description": "Unified digital solutions"
+      },
+      {
+        "id": "02",
+        "title": "Security First",
+        "description": "Protection by design"
+      },
+      {
+        "id": "03",
+        "title": "Reliable Delivery",
+        "description": "Consistent execution"
+      },
+      {
+        "id": "04",
+        "title": "Trusted Partnership",
+        "description": "Built for long-term success"
+      }
+    ]
   },
-
   "contact": {
     "badge": "Contact us",
     "title": "Start Your Next",
     "highlight": "IT Project",
     "subtitle": "Tell us about your business goals. Our experts will help you identify the right technology solution for your organization.",
-    "cta": "Send Inquiry"
+    "cta": "Send Inquiry",
+    "contactHighlights": [
+      {
+        "id": "01",
+        "title": "Strategic Guidance",
+        "description": "Technology aligned",
+        "color": "from-blue-500 to-blue-600"
+      },
+      {
+        "id": "02",
+        "title": "Rapid Response",
+        "description": "Quick assistance",
+        "color": "from-cyan-500 to-cyan-600"
+      },
+      {
+        "id": "03",
+        "title": "Certified Professionals",
+        "description": "Industry expertise",
+        "color": "from-pink-500 to-pink-600"
+      }
+    ]
   },
   "contactInfo": {
     "phone": "+91 91221 16041",
     "whatsapp": "0091 91221 16041",
     "email": "info@rcsinfratech.com",
-    "address": " E-695, Behind Gupta Stores, Vaishali Nagar, Jaipur, (Raj.) India 302021",
+    "address": "E-695, Behind Gupta Stores, Vaishali Nagar, Jaipur, (Raj.) India 302021",
     "hours": "Mon-Sat 9AM – 7PM",
     "social": [
       {
@@ -190,43 +229,41 @@
     "usp": [
       {
         "icon": "ShieldCheck",
-        "title": "Enterprise Security",
-        "description": "Your data is protected",
+        "title": "Security First",
+        "description": "Protection at every layer",
         "color": "blue"
       },
       {
         "icon": "BadgeCheck",
-        "title": "ISO Certified",
-        "description": "Quality you can trust",
+        "title": "Certified Expertise",
+        "description": "Industry best practices",
         "color": "purple"
       },
       {
         "icon": "Clock3",
-        "title": "On-time Delivery",
-        "description": "We value your time",
+        "title": "Reliable Delivery",
+        "description": "On time, every time",
         "color": "orange"
-          
       },
       {
         "icon": "Globe",
-        "title": "Global Support",
-        "description": "We're here to help",
+        "title": "Continuous Support",
+        "description": "Always within reach",
         "color": "green"
-         
       }
     ],
     "legalLinks": [
       {
         "label": "Privacy Policy",
-        "href": "#"
+        "href": "/privacy-policy"
       },
       {
         "label": "Terms & Conditions",
-        "href": "#"
+        "href": "/terms-and-conditions"
       },
       {
         "label": "Sitemap",
-        "href": "#"
+        "href": "/sitemap.html"
       }
     ],
     "stats": [
@@ -246,12 +283,11 @@
         "color": "--color-purple-500"
       },
       {
-        "value": "24/7",
-        "label": "Export Support",
+        "value": "24×7",
+        "label": "Expert Assistance",
         "color": "--color-orange-500"
       }
     ],
-     
     "servicesLinks": [
       {
         "label": "Cybersecurity",

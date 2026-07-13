@@ -1,0 +1,103 @@
+{
+  "badge": "Privacy Policy",
+  "title": "Your Privacy Matters",
+  "subtitle": "Learn how RCS Infra Tech collects, uses, protects, and manages your information while providing enterprise technology solutions.",
+  "lastUpdated": "July 2026",
+
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "Introduction",
+      "content": [
+        "Welcome to RCS Infra Tech. We value your privacy and are committed to protecting the personal information you share with us.",
+        "This Privacy Policy explains how we collect, use, store, and protect information when you visit our website or interact with our services.",
+        "By using this website, you agree to the practices described in this Privacy Policy."
+      ]
+    },
+
+    {
+      "id": "information-we-collect",
+      "title": "Information We Collect",
+      "content": [
+        "We may collect personal information such as your name, company name, email address, phone number, and project requirements when you submit forms or contact us.",
+        "Technical information including browser type, operating system, IP address, device information, and pages visited may also be collected automatically to improve website performance."
+      ]
+    },
+
+    {
+      "id": "how-we-use-information",
+      "title": "How We Use Your Information",
+      "content": [
+        "Information collected through our website is used to respond to enquiries, provide requested services, improve user experience, communicate project updates, and enhance our solutions.",
+        "We may also use anonymous analytics data to understand website performance and optimize content."
+      ]
+    },
+
+    {
+      "id": "cookies",
+      "title": "Cookies & Analytics",
+      "content": [
+        "Our website uses cookies and similar technologies to improve functionality, analyze traffic, remember preferences, and measure website performance.",
+        "Analytics tools such as Google Analytics, Google Tag Manager, and Microsoft Clarity may collect anonymous usage data."
+      ]
+    },
+
+    {
+      "id": "third-party-services",
+      "title": "Third-Party Services",
+      "content": [
+        "We may use trusted third-party services including Google Analytics, Google Tag Manager, Google Search Console, Google reCAPTCHA, Microsoft Clarity, cloud hosting providers, and email communication platforms.",
+        "These providers maintain their own privacy practices and policies."
+      ]
+    },
+
+    {
+      "id": "data-security",
+      "title": "Data Security",
+      "content": [
+        "We implement appropriate administrative, technical, and organizational safeguards to protect your information against unauthorized access, alteration, disclosure, or destruction.",
+        "Although we follow industry best practices, no internet transmission or storage system can be guaranteed to be completely secure."
+      ]
+    },
+
+    {
+      "id": "data-retention",
+      "title": "Data Retention",
+      "content": [
+        "Personal information is retained only as long as necessary to provide services, comply with legal obligations, resolve disputes, and maintain business records."
+      ]
+    },
+
+    {
+      "id": "your-rights",
+      "title": "Your Rights",
+      "content": [
+        "Depending on applicable laws, you may request access to your personal information, request corrections, request deletion where legally permitted, or withdraw consent for specific processing activities."
+      ]
+    },
+
+    {
+      "id": "external-links",
+      "title": "External Links",
+      "content": [
+        "Our website may contain links to external websites operated by third parties. We are not responsible for the privacy practices or content of those websites."
+      ]
+    },
+
+    {
+      "id": "policy-updates",
+      "title": "Changes to This Policy",
+      "content": [
+        "This Privacy Policy may be updated periodically to reflect changes in legal requirements, technologies, or our business practices. Updates become effective immediately upon publication."
+      ]
+    },
+
+    {
+      "id": "contact",
+      "title": "Contact Us",
+      "content": [
+        "If you have any questions regarding this Privacy Policy or how your information is handled, please contact RCS Infra Tech through our website or official email address."
+      ]
+    }
+  ]
+}
