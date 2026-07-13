@@ -74,7 +74,7 @@ export default function About() {
             <div className="relative w-full max-h-125 flex justify-center">
               <div className="relative lg:max-w-md">
                 <Image
-                  src="/images/about-building-new-2.png"
+                  src="/images/about-building-new.png"
                   alt="About"
                   width={1000}
                   height={500}
