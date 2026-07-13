@@ -1,14 +1,14 @@
 import {
   Layers3,
-  Users,
+  Compass,
   ShieldCheck,
-  SlidersHorizontal,
-  Zap,
-  TrendingUp,
+  Workflow,
+  Handshake,
+  Sparkles,
  
 } from "lucide-react";
 
-const icons = [Layers3, Users, ShieldCheck, SlidersHorizontal, Zap, TrendingUp];
+const icons = [Layers3, Compass, ShieldCheck, Workflow, Handshake, Sparkles];
 
 const colors = {
   blue: "from-blue-500 to-blue-600",

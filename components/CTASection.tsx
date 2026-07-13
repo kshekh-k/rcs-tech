@@ -1,21 +1,15 @@
 "use client";
 import Image from "next/image";
-import {
-  CalendarDays,
-   
-  ArrowRight,
-} from "lucide-react";
+import { CalendarDays, ArrowRight } from "lucide-react";
 import FeaturePill from "./FeaturePill";
 import { motion } from "framer-motion";
 import siteData from "@/data/site.json";
 import Link from "next/link";
-
+const ctaColor = ["blue", "purple", "green", "orange"] as const;
 export default function CTASection() {
-   const { cta } = siteData;
+  const { cta } = siteData;
   return (
     <section className="relative pt-16 pb-8 lg:py-24 xl:py-32 bg-[#030712] before:absolute before:inset-0 before:bg-linear-to-r before:from-[#020817] before:via-[#071A44] before:to-[#0B1120]">
-  
-
       {/* Glow Effects */}
       <div className="absolute top-0 left-0 size-125 bg-blue-500/10 rounded-full blur-[120px]" />
       <div className="absolute bottom-0 right-0 size-125 bg-purple-500/10 rounded-full blur-[120px]" />
@@ -42,7 +36,7 @@ export default function CTASection() {
               <h2 className="mt-2 sm:mt-0 text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight">
                 {cta.title}{" "}
                 <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent sm:inline-block">
-                 {cta.highlight}
+                  {cta.highlight}
                 </span>
               </h2>
 
@@ -52,53 +46,55 @@ export default function CTASection() {
 
               {/* Features */}
               <div className="grid md:grid-cols-2 gap-5 mt-5">
-                <FeaturePill
-                  title="Secure & Reliable"
-                  desc="Enterprise-grade security"
-                  color="blue"
-                />
-                <FeaturePill
-                  title="Scalable Solutions"
-                  desc="Built to grow with business"
-                  color="purple"
-                />
-                <FeaturePill
-                  title="24/7 Support"
-                  desc="Always here when needed"
-                  color="green"
-                />
-                <FeaturePill
-                  title="Proven Expertise"
-                  desc="Years of experience"
-                  color="orange"
-                />
+                {cta.ctaHighlights.map((item, index) => {
+                  const color = ctaColor[index];
+                  return (
+                    <FeaturePill
+                      key={item.id}
+                      title={item.title}
+                      desc={item.description}
+                      color={color}
+                    />
+                  );
+                })}
               </div>
 
               {/* CTA */}
               <div className="flex flex-wrap items-center gap-4 mt-5 sm:mt-10">
-                <Link href="#contact" className="rounded bg-linear-to-r from-secondary to-accent px-5 py-3 text-white font-semibold text-base shadow-[0_0_40px_rgba(59,130,246,0.35)] flex items-center gap-2 transition hover:to-accent/80">
+                <Link
+                  href="#contact"
+                  className="rounded bg-linear-to-r from-secondary to-accent px-5 py-3 text-white font-semibold text-base shadow-[0_0_40px_rgba(59,130,246,0.35)] flex items-center gap-2 transition hover:to-accent/80"
+                >
                   <CalendarDays className="size-5" />
                   Book Free Consultation <ArrowRight className="size-4" />
                 </Link>
 
                 <div className="flex items-center gap-2">
                   <div className="flex -space-x-2 overflow-hidden p-2">
-                    <img width={28} height={28}
+                    <img
+                      width={28}
+                      height={28}
                       alt=""
                       src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                       className="inline-block size-8 rounded-full ring-2 ring-white outline -outline-offset-1 outline-black/5"
                     />
-                    <img width={28} height={28}
+                    <img
+                      width={28}
+                      height={28}
                       alt=""
                       src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                       className="inline-block size-8 rounded-full ring-2 ring-white outline -outline-offset-1 outline-black/5"
                     />
-                    <img width={28} height={28}
+                    <img
+                      width={28}
+                      height={28}
                       alt=""
                       src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
                       className="inline-block size-8 rounded-full ring-2 ring-white outline -outline-offset-1 outline-black/5"
                     />
-                    <img width={28} height={28}
+                    <img
+                      width={28}
+                      height={28}
                       alt=""
                       src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                       className="inline-block size-8 rounded-full ring-2 ring-white outline -outline-offset-1 outline-black/5"

@@ -1,15 +1,15 @@
 import {
+  Layers3,
   ShieldCheck,
-  Rocket,
-  Headphones,
-  Award,
+  CircleCheckBig,
+  Handshake,
 } from "lucide-react";
 
 const iconMap = {
-  blue: ShieldCheck,
-  purple: Rocket,
-  green: Headphones,
-  orange: Award,
+  blue: Layers3,
+  purple: ShieldCheck,
+  green: CircleCheckBig,
+  orange: Handshake,
 };
 
 const colorMap = {
@@ -53,7 +53,7 @@ export default function FeaturePill({
     <div className="flex items-center gap-4">
       {/* Icon */}
       <div
-        className={`size-12 rounded flex items-center justify-center ${styles.bg}  relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-10 before:rounded-full before:bg-white/5 before:blur overflow-hidden`}
+        className={`size-12 rounded flex items-center justify-center ${styles.bg} relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-10 before:rounded-full before:bg-white/5 before:blur overflow-hidden`}
       >
         <Icon className={`size-6 relative ${styles.icon}`} />
       </div>

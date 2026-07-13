@@ -1,6 +1,6 @@
 "use client";
 import {
-  Users,
+  SearchCheck,
   DraftingCompass,
   Rocket,
   Gauge,
@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { ProcessStep } from "@/lib/process";
-const icons = [Users, DraftingCompass, Rocket, Gauge];
+const icons = [SearchCheck, DraftingCompass, Rocket, Gauge];
 interface ProcessCardProps {
   step: ProcessStep;
 }

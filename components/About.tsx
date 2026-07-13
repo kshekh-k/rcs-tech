@@ -3,19 +3,18 @@ import siteData from "@/data/site.json";
 import { motion } from "framer-motion";
 import {
   ShieldCheck,
-  Users,
-  Lightbulb,
-  Headphones,
-   
-  Search,
+  CloudCog,
+  Gauge,
+  Headset,
+  Users,   
+  SearchCheck,
   DraftingCompass,
-  Cog,
-  ChartNoAxesColumn
+  Rocket, 
 } from "lucide-react";
 import Image from "next/image";
 
-const icons = [ShieldCheck, Users, Lightbulb, Headphones];
-const statsIcons = [Search, DraftingCompass, Cog, ChartNoAxesColumn];
+const icons = [ShieldCheck, CloudCog, Gauge, Headset];
+const statsIcons = [SearchCheck, DraftingCompass, Rocket, Gauge];
 
 export default function About() {
   const { about } = siteData;

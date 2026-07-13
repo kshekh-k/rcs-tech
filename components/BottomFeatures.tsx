@@ -1,13 +1,13 @@
 "use client";
 
-import { Shield, Rocket, Headphones, TrendingUp } from "lucide-react";
+import { BriefcaseBusiness, Lightbulb, Target, Handshake } from "lucide-react";
 
 type Feature = {
   title: string;
   description: string;
 };
 
-const icons = [Shield, Rocket, Headphones, TrendingUp];
+const icons = [BriefcaseBusiness, Lightbulb, Target, Handshake];
 
 export default function BottomFeatures({ features }: { features: Feature[] }) {
   return (

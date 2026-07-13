@@ -1,22 +1,18 @@
 import { MetadataRoute } from "next";
-
-const SITE_URL = "https://www.rcsinfratech.com";
+import { SITE_URL, routes } from "@/lib/routes";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = [
-    "",
-    "/about",
-    "/services",
-    "/contact",
-    "/blog",
-    "/privacy-policy",
-    "/terms-and-conditions",
-  ];
-
   return routes.map((route) => ({
-    url: `${SITE_URL}${route}`,
+    url: `${SITE_URL}${route.path}`,
     lastModified: new Date(),
-    changeFrequency: route === "" ? "weekly" : "monthly",
-    priority: route === "" ? 1.0 : 0.8,
+    changeFrequency: route.changeFrequency as
+      | "always"
+      | "hourly"
+      | "daily"
+      | "weekly"
+      | "monthly"
+      | "yearly"
+      | "never",
+    priority: route.priority,
   }));
 }
