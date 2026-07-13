@@ -32,7 +32,7 @@ export default function Header() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between py-2 px-3 lg:px-6">
-        <Link href="#home" className="flex items-center">
+        <Link href="/" className="flex items-center">
           <Image
             src={scrolled ? siteData.logo : siteData.logoWhite}
             alt={siteData.name}
