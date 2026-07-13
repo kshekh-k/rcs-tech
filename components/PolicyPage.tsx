@@ -2,7 +2,7 @@
 
 import { ShieldCheck, CalendarDays } from "lucide-react";
 import Link from "next/link";
-import { PolicyData } from "@/types/policy";
+import { PolicyData } from "@/lib/policy";
 import PolicySidebar from "./PolicySidebar";
 import PolicyCard from "./PolicyCard";
  
