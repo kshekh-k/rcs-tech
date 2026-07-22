@@ -38,12 +38,11 @@ export default function ProcessSection() {
         </div>
 
         {/* Desktop */}
-        <div className="max-w-full overflow-auto xl:overflow-visible px-3 xl:px-0 pb-3">
+        <div className="max-w-full overflow-x-auto xl:overflow-visible px-3 xl:px-0 pb-3">
           <div className="grid grid-cols-4 gap-14 min-w-6xl">
             {data.steps.map((step, index) => (
               <div key={step.id} className="relative">
                 <ProcessCard step={step} />
-
                 {index < data.steps.length - 1 && <ProcessConnector />}
               </div>
             ))}

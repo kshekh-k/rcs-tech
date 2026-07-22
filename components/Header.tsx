@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white glass shadow-lg shadow-primary/5" : "bg-transparent"
+        scrolled ? "bg-white/70 backdrop-blur-xl border border-white/40 shadow-lg shadow-primary/5" : "bg-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between py-2 px-3 lg:px-6">
@@ -119,7 +119,7 @@ export default function Header() {
                   </li>
                 ))}                
               </ul>
-              <div className="px-3 flex flex-col">
+              <div className={`px-3 flex flex-col ${scrolled ? 'pb-0' : 'pb-4'}`}>
                 <Link
                     href="#contact"
                     onClick={() => setMobileOpen(false)}
