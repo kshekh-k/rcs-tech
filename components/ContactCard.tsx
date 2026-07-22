@@ -55,7 +55,7 @@ function getHref(type: ContactType, value: string) {
     case "email":
       return `mailto:${value}`;
     case "whatsapp":
-      return `https://wa.me/${digits.replace(/^\+/, "")}`;
+      return `https://wa.me/91${digits.replace(/^\+/, "")}`;
   }
 }
 
@@ -93,7 +93,7 @@ export default function ContactCard({
       </div>
 
       <p className="text-xs text-center sm:text-left font-semibold text-slate-900 sm:mt-2 break-all">
-        {value}
+        {type === "whatsapp" ? "+91" : ""} {value}
       </p>
 
       {/* Arrow */}

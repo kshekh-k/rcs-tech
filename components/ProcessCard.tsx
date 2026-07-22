@@ -15,10 +15,10 @@ interface ProcessCardProps {
 
 const colorClasses = {
   blue: {
-    color: "--color-blue-500",
-    from: "--color-blue-500",
-    to: "--color-blue-600",     
-    text: "--color-blue-600",
+    color: "--color-orange-500",
+    from: "--color-orange-500",
+    to: "--color-orange-600",    
+    text: "--color-orange-600",
     badge: "bg-blue-50",
   },
   cyan: {
@@ -29,17 +29,17 @@ const colorClasses = {
     badge: "bg-cyan-50",
   },
   indigo: {
-     color: "--color-green-500",
+    color: "--color-blue-500",
+    from: "--color-blue-500",
+    to: "--color-blue-600",     
+    text: "--color-blue-600",
+    badge: "bg-indigo-50",
+  },
+  teal: {    
+    color: "--color-green-500",
     from: "--color-green-500",
     to: "--color-green-600",     
     text: "--color-green-600",
-    badge: "bg-indigo-50",
-  },
-  teal: {
-     color: "--color-orange-500",
-    from: "--color-orange-500",
-    to: "--color-orange-600",    
-    text: "--color-orange-600",
     badge: "bg-teal-50",
   },
 };
