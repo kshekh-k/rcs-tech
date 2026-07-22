@@ -10,6 +10,7 @@ import siteData from "@/data/site.json";
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const whatsappNumber = `${siteData.contactInfo.whatsapp.replace(/\D/g, "")}`;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -37,7 +38,7 @@ export default function Header() {
             src={scrolled ? siteData.logo : siteData.logoWhite}
             alt={siteData.name}
             width={150}
-            height={38}
+            height={38} className="w-48"
             priority
           />
         </Link>
@@ -127,8 +128,8 @@ export default function Header() {
                     {siteData.consultationCta} <ArrowRight className="size-4" />
                   </Link>
                   <p className="py-2 text-sm text-slate-500 text-center">Text a message at WhatsApp
-                  <a className="block text-white text-base font-semibold" href={`https://wa.me/${siteData.contactInfo.whatsapp.replace(/\D/g, "")}`}>
-                  {siteData.contactInfo.whatsapp}
+                  <a className="block text-white text-base font-semibold" href={`https://wa.me/91${whatsappNumber}`}>
+                  +91{whatsappNumber}
                   </a>
                   </p>
               </div>

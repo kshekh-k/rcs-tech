@@ -88,7 +88,7 @@ export default function Footer() {
                       const Icon = socialIconMap[item.label] ?? LinkedInIcon;
                       const href =
                         item.label === "WhatsApp"
-                          ? `https://wa.me/${contactInfo.whatsapp.replace(/\D/g, "")}`
+                          ? `https://wa.me/91${contactInfo.whatsapp.replace(/\D/g, "")}`
                           : item.href;
                       return (
                         <a
