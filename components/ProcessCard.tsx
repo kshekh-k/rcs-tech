@@ -62,10 +62,7 @@ export default function ProcessCard({ step}: ProcessCardProps) {
       viewport={{
         once: true,
       }}
-      whileHover={{
-        y: -10,
-         
-      }}
+       
       transition={{
         duration: 0.35,
       }}
@@ -114,8 +111,7 @@ export default function ProcessCard({ step}: ProcessCardProps) {
 
           <div
             className={`
-         size-12 shrink-0 rounded bg-linear-to-br flex items-center justify-center shadow-lg relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44]/30 before:blur overflow-hidden from-(--this-from) to-(--this-to)
-         
+         size-12 shrink-0 rounded bg-linear-to-br flex items-center justify-center shadow-lg relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44]/30 before:blur overflow-hidden from-(--this-from) to-(--this-to)        
           
         `}
           >

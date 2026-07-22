@@ -86,78 +86,80 @@ body {
 }
 
 .glass {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+ @apply bg-white/70 backdrop-blur-xl border border-white/40;
 }
 
 .glass-dark {
-  background: rgba(11, 31, 58, 0.6);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  @apply bg-[#0b1f3a]/60 backdrop-blur-xl border border-white/[0.08];
 }
-
+/* Text Gradient */
 .text-gradient {
-  background: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  @apply bg-gradient-to-br from-blue-600 to-cyan-500 bg-clip-text text-transparent;
 }
 
+/* Background Grid Pattern */
 .bg-grid {
+  @apply bg-[length:40px_40px];
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
-  background-size: 40px 40px;
 }
 
+/* Text Selection */
 ::selection {
-  background: #06b6d4;
-  color: #ffffff;
+  @apply bg-cyan-500 text-white;
 }
 
-.testimonial-swiper{ padding-bottom: 20px;}
+/* Swiper Container & Pagination */
+.testimonial-swiper {
+  @apply pb-5;
+}
+
 .testimonial-swiper .swiper-pagination {
-  bottom: 0 !important;
+  @apply !bottom-0;
 }
 
 .testimonial-swiper .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
-  background: #cbd5e1;
-  opacity: 1;
+  @apply w-2 h-2 bg-slate-300 opacity-100;
 }
 
 .testimonial-swiper .swiper-pagination-bullet-active {
-  background: #3b82f6;
-  width: 20px;
-  border-radius: 999px;
+  @apply bg-blue-500 w-[20px] rounded-full;
 }
 
+/* Swiper Navigation Buttons */
 .testimonial-swiper .swiper-button-prev,
 .testimonial-swiper .swiper-button-next {
-  color: #2563eb;
-  width: 32px;
-  height: 32px;
-  background: white;
-  border-radius: 999px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-  transition: all ease-in-out 3s;
+  @apply text-blue-600 w-8 h-8 bg-white rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all ease-in-out duration-[3000ms];
 }
 
 .testimonial-swiper .swiper-button-prev::after,
 .testimonial-swiper .swiper-button-next::after {
-  font-size: 10px;
-  font-weight: bold;
+  @apply text-[10px] font-bold;
 }
-.testimonial-swiper .swiper-navigation-icon{ width: 10px; height: 10x;}
 
-.testimonial-swiper .swiper-button-prev{left: -150% !important;}
-.testimonial-swiper .swiper-button-next {right: -150% !important;}
+.testimonial-swiper .swiper-navigation-icon {
+  @apply w-[10px] h-[10px];
+}
 
-.testimonial-swiper:hover .swiper-button-prev{left: 0 !important;}
-.testimonial-swiper:hover .swiper-button-next {right: 0 !important;}
+/* Navigation Hover Animations & Positioning */
+.testimonial-swiper .swiper-button-prev {
+  @apply !-left-[150%];
+}
 
-.grecaptcha-badge{z-index: 999;}
+.testimonial-swiper .swiper-button-next {
+  @apply !-right-[150%];
+}
+
+.testimonial-swiper:hover .swiper-button-prev {
+  @apply !left-0;
+}
+
+.testimonial-swiper:hover .swiper-button-next {
+  @apply !right-0;
+}
+
+/* reCAPTCHA Badge */
+.grecaptcha-badge {
+  @apply z-[999];
+}
