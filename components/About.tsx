@@ -6,12 +6,13 @@ import {
   CloudCog,
   Gauge,
   Headset,
-  Users,   
+  Users,
   SearchCheck,
   DraftingCompass,
-  Rocket, 
+  Rocket,
 } from "lucide-react";
 import Image from "next/image";
+import Upliner from "./ui/upliner";
 
 const icons = [ShieldCheck, CloudCog, Gauge, Headset];
 const statsIcons = [SearchCheck, DraftingCompass, Rocket, Gauge];
@@ -20,8 +21,13 @@ export default function About() {
   const { about } = siteData;
 
   return (
-    <section id="about" className="bg-white pt-16 pb-8 lg:py-24 xl:py-32">
-      <div className="mx-auto max-w-7xl px-3 lg:px-6">
+    <section
+      id="about"
+      className="bg-white pt-16 pb-8 lg:py-24 xl:py-32 relative"
+    >
+      <div className="absolute -translate-x-1/4 -translate-y-1/4 bottom-0 left-0 size-40 lg:size-96 bg-purple-500 rounded-full blur-3xl opacity-20"></div>
+
+      <div className="mx-auto max-w-7xl px-3 lg:px-6 relative">
         <div className="flex flex-col-reverse md:grid items-start gap-5 lg:gap-10 md:grid-cols-12">
           <motion.div
             initial={{ opacity: 0.5, y: 6 }}
@@ -30,15 +36,16 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="col-span-7 xl:col-span-6"
           >
-            <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
-              {about.badge}
-            </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl text-slate-900 font-extrabold leading-tight sm:mb-3 after:w-10 after:h-0.5 after:bg-linear-to-r after:from-secondary after:to-accent after:rounded after:mb-3 sm:after:mb-6 after:block">              
-              {about.title}{" "}<span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent ">
+            <Upliner upline={about.badge} />
+
+            <h2 className="text-3xl sm:text-4xl md:text-5xl text-slate-900 font-extrabold leading-tight sm:mb-3 after:w-10 after:h-0.5 after:bg-linear-to-r after:from-secondary after:to-accent after:rounded after:mb-3 sm:after:mb-6 after:block">
+              {about.title}{" "}
+              <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent ">
                 {about.highlight}
-              </span>{" "}{about.titletail}
+              </span>{" "}
+              {about.titletail}
             </h2>
-             
+
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-3 md:mb-10">
               {about.description}
             </p>
@@ -48,7 +55,7 @@ export default function About() {
                 return (
                   <div
                     key={index}
-                    className="text-center shadow-1 rounded px-1 py-2 lg:py-3"
+                    className="text-center shadow-1 rounded px-1 py-2 lg:py-3 bg-white"
                   >
                     <div className="size-10 flex items-center justify-center mx-auto">
                       <Icon className="size-8 text-blue-600" />
@@ -104,23 +111,25 @@ export default function About() {
           className="mt-5 md:mt-10 bg-linear-to-r from-[#081B44] to-[#0A2D6B] rounded  relative before:absolute before:inset-0 before:opacity-80 before:bg-(image:--bg-grid-2) before:bg-[size:5px_5px]"
         >
           <div className="overflow-x-auto max-w-full p-4 md:p-6 relative">
-          <div className="grid grid-cols-4 gap-4 lg:gap-8 text-left min-w-5xl">
-            {about.stats.map((stat, index) => {
-              const Icon = statsIcons[index];
-              return (
-                <div key={index} className="flex gap-2 items-center">
-                  <div className="relative flex items-center justify-center size-14 rounded-full bg-radial from-blue-500 to-blue-900 shadow-xl before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded-full before:bg-[#081B44] before:blur shrink-0">
-                    <Icon className="size-7 text-white relative z-10" />
+            <div className="grid grid-cols-4 gap-4 lg:gap-8 text-left min-w-5xl">
+              {about.stats.map((stat, index) => {
+                const Icon = statsIcons[index];
+                return (
+                  <div key={index} className="flex gap-2 items-center">
+                    <div className="relative flex items-center justify-center size-14 rounded-full bg-radial from-blue-500 to-blue-900 shadow-xl before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded-full before:bg-[#081B44] before:blur shrink-0">
+                      <Icon className="size-7 text-white relative z-10" />
+                    </div>
+                    <div>
+                      <h3 className="text-base lg:text-xl font-medium text-white">
+                        {stat.number}
+                      </h3>
+                      <p className="text-sm xl:text-base text-blue-100">
+                        {stat.label}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-base lg:text-xl font-medium text-white">
-                      {stat.number}
-                    </h3>
-                    <p className="text-sm xl:text-base text-blue-100">{stat.label}</p>
-                  </div>
-                </div>
-              );
-            })}
+                );
+              })}
             </div>
           </div>
         </motion.div>

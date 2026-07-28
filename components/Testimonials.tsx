@@ -8,6 +8,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Upliner from "./ui/upliner";
 
 export default function Testimonials() {
   return (
@@ -27,9 +28,8 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-2xl text-center"
         >
-          <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
-            {testimonialsData.badge}
-          </span>
+          
+          <Upliner upline={`${testimonialsData.badge}`} />
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
             {testimonialsData.title}{" "}
             <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent">

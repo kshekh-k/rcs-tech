@@ -4,6 +4,7 @@ import processData from "@/data/process.json";
 import { ProcessSectionData } from "@/lib/process";
 import ProcessCard from "./ProcessCard";
 import ProcessConnector from "./ProcessConnector";
+import Upliner from "./ui/upliner";
 
 const data = processData as ProcessSectionData;
 
@@ -21,9 +22,8 @@ export default function ProcessSection() {
         {/* Header */}
 
         <div className="mx-auto mb-5 sm:mb-10 md:mb-20 max-w-3xl text-center">
-          <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
-            {data.badge}
-          </span>
+          
+          <Upliner upline={`${data.badge}`} />
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
             {data.title}{" "}

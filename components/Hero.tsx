@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link"; 
 import { motion } from "framer-motion";
 import siteData from "@/data/site.json";
+import Upliner from "./ui/upliner";
  
 
 export default function Hero() {
@@ -12,10 +13,12 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-primary pb-8 pt-16 lg:pt-24 lg:pb-24 lg:min-h-screen flex items-center before:absolute before:inset-0 before:bg-grid before:opacity-15"
+      className="relative overflow-hidden bg-primary pb-8 pt-16 lg:pt-24 lg:pb-24 lg:min-h-screen flex items-center before:absolute before:inset-0 before:bg-(image:--bg-grid-2) before:bg-[size:20px_20px] before:opacity-20"
     >
       
- 
+ <div className="absolute -left-20 top-20 size-96 rounded-full bg-blue-500/20 blur-[120px] hidden lg:block" />
+ <div className="absolute -right-20 -bottom-20 size-112 rounded-full bg-dark blur-[140px] hidden lg:block" />
+
 
       <div className="relative mx-auto max-w-7xl items-center lg:gap-5 px-3 lg:px-6 flex flex-col-reverse md:grid md:grid-cols-12 ">
         <motion.div
@@ -24,9 +27,8 @@ export default function Hero() {
           transition={{ duration: 0.7 }}
           className="col-span-6 lg:col-span-5 max-w-sm mx-auto md:max-w-none pt-5 md:pt-0 relative z-10"
         >
-          <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
-            {hero.badge}
-          </span>
+          
+          <Upliner upline={`${hero.badge}`} />
 
           <h1 className="mt-2 lg:mt-5 text-3xl font-bold leading-tight text-white sm:text-4xl xl:text-5xl">
             {hero.headline}{" "}

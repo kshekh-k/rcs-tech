@@ -12,6 +12,7 @@ import {
   CloudCog,
   Server,
 } from "lucide-react";
+import Upliner from "./ui/upliner";
 
 const icons = [ShieldCheck, Code2, Boxes, MonitorSmartphone, CloudCog, Server];
 
@@ -21,7 +22,7 @@ const { servicesHome } = siteData;
   return (
     <section
       id="services"
-      className="relative z-10 bg-primary pt-16 pb-8 lg:py-24 xl:py-32 before:absolute before:inset-0 before:bg-[#030712]"
+      className="relative z-10 bg-primary pt-16 pb-8 lg:py-24 xl:py-32 before:absolute before:inset-0 before:bg-dark"
     >
        
       {/* Main Background */}
@@ -49,9 +50,8 @@ const { servicesHome } = siteData;
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
-            {servicesHome.badge}
-          </span>
+          <Upliner upline={servicesHome.badge} />
+           
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight">
             {servicesHome.title}{" "}

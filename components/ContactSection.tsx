@@ -5,6 +5,7 @@ import ContactForm from "./ContactForm";
 import { Compass, BadgeCheck, Clock3, Users, ShieldCheck } from "lucide-react";
 import { motion } from "framer-motion";
 import siteData from "@/data/site.json";
+import Upliner from "./ui/upliner";
 
 const iconcta = [Compass, Clock3, ShieldCheck];
 
@@ -29,9 +30,8 @@ export default function ContactSection() {
             transition={{ duration: 0.6 }}
             className="col-span-6 lg:col-span-7"
           >
-            <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
-              {contact.badge}
-            </span>
+            
+             <Upliner upline={`${contact.badge}`} />
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-slate-900 leading-tight">
               {contact.title}{" "}

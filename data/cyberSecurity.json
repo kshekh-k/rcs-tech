@@ -1,0 +1,303 @@
+{
+    "seo": {
+        "title": "Cybersecurity Services | Firewall, VAPT, SOC & Endpoint Protection | RCS Infra Tech",
+        "description": "Strengthen your organisation's security with enterprise cybersecurity services including Firewall Management, Endpoint Security, Email Security, VAPT, IAM, DLP, IoT Security and 24×7 Security Operations Center.",
+        "keywords": [
+            "Cybersecurity Services",
+            "Enterprise Security",
+            "Firewall Management",
+            "Endpoint Security",
+            "Email Security",
+            "Data Loss Prevention",
+            "Penetration Testing",
+            "VAPT",
+            "SOC Services",
+            "Identity Access Management",
+            "IoT Security"
+        ]
+    },
+    "hero": {
+        "badge": "Cybersecurity Services",
+        "title": "Secure Every Layer of",
+        "highlight": "Digital Assets",
+        "description": "Safeguard your organisation with proactive cybersecurity solutions that identify vulnerabilities, reduce cyber risks, strengthen resilience, and ensure continuous protection across your entire digital environment.",
+        "primaryButton": "Schedule Security Assessment",
+        "secondaryButton": "Talk to a Security Expert",
+        "highlights": [
+            "24×7 Threat Monitoring",
+            "Enterprise Security",
+            "Compliance Ready",
+            "Certified Professionals"
+        ]
+    },
+    "overview": {
+        "badge": "Overview",
+        "title": "Cybersecurity Built for",
+        "highlight": "Modern Organisations",
+        "description": "Cyber threats continue to evolve in complexity and frequency. Our cybersecurity services combine advanced technologies, industry best practices, and experienced security professionals to protect your infrastructure, applications, users, and critical business data against modern threats.",
+        "cyberRiskReduction": [
+            "Advanced Threat Protection",
+            "Zero Trust Security",
+            "Business Continuity",
+            "Compliance & Governance",
+            
+            "Real-Time Threat Detection",
+            "Identity & Access Management",
+            "Endpoint Detection & Response",
+             
+            "Data Loss Prevention",
+            "Security Operations Center",
+            "Incident Response & Recovery"
+        ],
+        "features": [
+            "Proactive Threat Prevention",
+            "Continuous Monitoring",
+            "Rapid Incident Response",
+            "Risk & Compliance Management"
+        ]
+    },
+    "services": [
+        {
+            "id": 1,
+            "icon": "Shield",
+            "title": "Firewall Management",
+            "description": "Secure your network perimeter through expert firewall configuration, policy optimisation, intrusion prevention, traffic monitoring, and continuous rule management.",
+            "features": [
+                "Next-Generation Firewall",
+                "Access Control Policies",
+                "Intrusion Prevention",
+                "Network Traffic Monitoring"
+            ]
+        },
+        {
+            "id": 2,
+            "icon": "DatabaseZap",
+            "title": "Data Loss Prevention (DLP)",
+            "description": "Protect confidential business information from accidental exposure, insider threats, and unauthorised data transfers across endpoints, cloud services, and email.",
+            "features": [
+                "Sensitive Data Protection",
+                "Policy Enforcement",
+                "File Monitoring",
+                "Cloud Data Security"
+            ]
+        },
+        {
+            "id": 3,
+            "icon": "Laptop",
+            "title": "Endpoint Security",
+            "description": "Defend laptops, desktops, mobile devices, and servers against malware, ransomware, zero-day exploits, and advanced cyber attacks.",
+            "features": [
+                "Anti-Malware Protection",
+                "Ransomware Defence",
+                "Device Monitoring",
+                "Endpoint Detection & Response"
+            ]
+        },
+        {
+            "id": 4,
+            "icon": "MailCheck",
+            "title": "Email Security",
+            "description": "Reduce phishing, spam, malware, spoofing, and business email compromise through intelligent email filtering and advanced threat protection.",
+            "features": [
+                "Anti-Phishing",
+                "Spam Filtering",
+                "Attachment Protection",
+                "Email Encryption"
+            ]
+        },
+        {
+            "id": 5,
+            "icon": "Cpu",
+            "title": "IoT Security",
+            "description": "Secure connected devices, industrial equipment, and smart infrastructure by identifying vulnerabilities and monitoring device communications.",
+            "features": [
+                "Device Authentication",
+                "Network Segmentation",
+                "IoT Risk Assessment",
+                "Continuous Monitoring"
+            ]
+        },
+        {
+            "id": 6,
+            "icon": "Bug",
+            "title": "Penetration Testing (VAPT)",
+            "description": "Identify security weaknesses before attackers do through structured vulnerability assessments and controlled penetration testing.",
+            "features": [
+                "Web Application Testing",
+                "Network Assessment",
+                "Cloud Security Testing",
+                "Detailed Security Reports"
+            ]
+        },
+        {
+            "id": 7,
+            "icon": "Fingerprint",
+            "title": "Identity & Access Management",
+            "description": "Protect user identities through secure authentication, access governance, role-based permissions, and multi-factor authentication.",
+            "features": [
+                "Multi-Factor Authentication",
+                "Role-Based Access",
+                "Single Sign-On",
+                "Privileged Access Control"
+            ]
+        },
+        {
+            "id": 8,
+            "icon": "Radar",
+            "title": "Security Operations Center (SOC)",
+            "description": "24×7 security monitoring, threat intelligence, incident detection, investigation, and rapid response to minimise cyber risks.",
+            "features": [
+                "24×7 Monitoring",
+                "Threat Intelligence",
+                "Incident Response",
+                "Security Analytics"
+            ]
+        }
+    ],
+    "benefits": {
+        "badge": "Why Choose Us",
+        "title": "Why Organisations Trust",
+        "highlight": "RCS Infra Tech",
+        "subtitle": "Our cybersecurity specialists combine proven expertise, enterprise technologies and strategic guidance to help organisations strengthen resilience against evolving cyber threats.",
+        "items": [
+            {
+                "icon": "ShieldCheck",
+                "title": "Security-First Approach",
+                "description": "Protection integrated into every solution from planning to deployment."
+            },
+            {
+                "icon": "Users",
+                "title": "Experienced Specialists",
+                "description": "Certified professionals delivering practical, enterprise-grade security solutions."
+            },
+            {
+                "icon": "Eye",
+                "title": "Continuous Visibility",
+                "description": "Real-time monitoring and actionable insights across your digital environment."
+            },
+            {
+                "icon": "BadgeCheck",
+                "title": "Compliance Ready",
+                "description": "Support for industry standards, governance, and regulatory requirements."
+            },
+            {
+                "icon": "Clock3",
+                "title": "Rapid Response",
+                "description": "Fast identification, containment, and remediation of security incidents."
+            },
+            {
+                "icon": "TrendingUp",
+                "title": "Future-Ready Security",
+                "description": "Scalable cybersecurity strategies that evolve with your organisation."
+            }
+        ],
+        "stats":[
+            {
+                "number":"500+",
+                "label":"Projects Delivered"
+            },
+            {
+                "number":"98%",
+                "label":"Client Satisfaction"
+            },
+            {
+                "number":"10+",
+                "label":"Years Experience"
+            },
+            {
+                "number":"24×7",
+                "label":"Expert Assistance"
+            }
+        ]
+    },
+    "process": {
+        "badge": "Our Approach",
+        "title": "Our Cybersecurity Framework",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Assess",
+                "description": "Evaluate risks, infrastructure, assets, and existing security posture."
+            },
+            {
+                "number": "02",
+                "title": "Protect",
+                "description": "Deploy layered security controls to reduce vulnerabilities and strengthen defence."
+            },
+            {
+                "number": "03",
+                "title": "Monitor",
+                "description": "Continuously monitor systems, users, and networks for suspicious activities."
+            },
+            {
+                "number": "04",
+                "title": "Respond",
+                "description": "Rapidly detect, investigate, contain, and recover from security incidents."
+            }
+        ]
+    },
+    "industries": {
+        "badge": "Industries",
+        "title": "Cybersecurity Solutions",
+        "highlight": "Across Industries",
+        "subtitle": "Every industry faces unique cybersecurity challenges. Our solutions are tailored to protect critical infrastructure, sensitive data, operational continuity, and regulatory compliance.",
+        "items": [
+            "Healthcare",
+            "Banking & Financial Services",
+            "Manufacturing",
+            "Government",
+            "Retail",
+            "Education",
+            "Logistics",
+            "Enterprise"
+        ]
+    },
+    "faqSection": {
+        "badge": "Frequently Asked Questions",
+        "title": "Cybersecurity",
+        "subtitle": "Answers to common questions about enterprise cybersecurity services.",
+        "items": [
+            {
+                "question": "Why is cybersecurity important?",
+                "answer": "Cybersecurity protects business systems, sensitive information and digital infrastructure from cyber threats while ensuring business continuity."
+            },
+            {
+                "question": "Do you provide SOC services?",
+                "answer": "Yes. We provide 24×7 Security Operations Centre (SOC) monitoring, incident detection and rapid response."
+            }
+        ]
+    },
+    "timeline": {
+        "badge": "Our Process",
+        "title": "Our",
+        "highlight": "Cybersecurity",
+        "titleend": "Framework",
+        "subtitle": "A structured approach that helps organisations reduce cyber risk while strengthening resilience.",
+        "items": [
+            {
+                "number": "01",
+                "title": "Assess",
+                "description": "Evaluate infrastructure, assets and security posture.",
+                "icon": "Search"
+            },
+            {
+                "number": "02",
+                "title": "Protect",
+                "description": "Deploy layered security controls.",
+                "icon": "ShieldCheck"
+            },
+            {
+                "number": "03",
+                "title": "Monitor",
+                "description": "Continuously detect suspicious activities.",
+                "icon": "Activity"
+            },
+            {
+                "number": "04",
+                "title": "Respond",
+                "description": "Rapidly contain and recover from incidents.",
+                "icon": "ShieldAlert"
+            }
+        ]
+    }
+}
