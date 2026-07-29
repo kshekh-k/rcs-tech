@@ -17,7 +17,11 @@ export interface Hero {
 export interface Overview {
   badge: string;
   title: string;
+  highlight: string;
   description: string;
+  titleRight: string;
+  DescRight: string;
+  cyberRiskReduction: string[];
   features: string[];
 }
 
@@ -28,18 +32,48 @@ export interface ServiceFeature {
   description: string;
   features: string[];
 }
+export interface ServiceCTA {
+  badge: string;
+  title: string;
+  highlight: string;
+  subtitle: string;
+  checks: string[];
+}
 
-export interface BenefitItem {
+export interface ServiceSection {
+  title: string;
+  highlight: string;
+  titleend: string;
+  subtitle: string;
+  service: ServiceFeature[];
+  cta: ServiceCTA;
+}
+
+export interface WhychooseItem {
   icon: string;
   title: string;
   description: string;
+}
+
+export interface Whychoosestat {
+  number: string;
+  label: string;
+}
+
+export interface Whychoose {
+  badge: string;
+  title: string;
+  highlight: string;
+  subtitle: string;
+  items: WhychooseItem[];
+  stats: Whychoosestat[];
 }
 
 interface Props {
   badge?: string;
   title: string;
   subtitle?: string;
-  items: BenefitItem[];
+  items: WhychooseItem[];
 }
 
 export interface ProcessStep {
@@ -54,10 +88,28 @@ export interface Process {
   steps: ProcessStep[];
 }
 
+export interface IndustryItem {
+  icon: string;
+  title: string;
+  desc: string;
+  color: string;
+  from: string;
+  to: string;
+}
+
+export interface IndustryCTA {
+  title: string;
+  highlight: string;
+  subtitle: string;
+}
+
 export interface Industries {
   badge: string;
   title: string;
-  items: string[];
+  highlight: string;
+  subtitle: string;
+  items: IndustryItem[];
+  cta: IndustryCTA;
 }
 
 export interface FAQItem {
@@ -83,8 +135,8 @@ export interface ServicePage {
   seo: SEO;
   hero: Hero;
   overview: Overview;
-  services: ServiceFeature[];
-  benefits: Benefits;
+  services: ServiceSection;
+  Whychoose: Whychoose;
   process: Process;
   industries: Industries;
   faq: FAQItem[];

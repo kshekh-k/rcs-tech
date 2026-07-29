@@ -14,12 +14,12 @@ import {
   ShieldCheck 
 } from "lucide-react";
 
-import { Benefits } from "@/types/service";
+import { Whychoose } from "@/types/service";
 import Upliner from "./ui/upliner";
 import Link from "next/link";
 
 interface Props {
-  benefits: Benefits;
+  whychoose: Whychoose;
 }
 
 const iconMap = {
@@ -61,7 +61,7 @@ const useColors = [
   "--color-orange-500",
 ];
 
-export default function WhyChoose({ benefits }: Props) {
+export default function WhyChoose({ whychoose }: Props) {
   return (
     <section className="relative pt-16 pb-8 lg:py-24 xl:py-32 bg-white/20 border-t border-slate-200">
       {/* Background */}
@@ -77,24 +77,24 @@ export default function WhyChoose({ benefits }: Props) {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-4xl text-center"
         >
-          <Upliner upline={benefits.badge} />
+          <Upliner upline={whychoose.badge} />
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl text-slate-900 font-extrabold leading-tight sm:mb-3">
-            {benefits.title}{" "}
+            {whychoose.title}{" "}
             <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent ">
-              {benefits.highlight}
+              {whychoose.highlight}
             </span>
           </h2>
 
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed mt-3">
-            {benefits.subtitle}
+            {whychoose.subtitle}
           </p>
         </motion.div>
 
         {/* Grid */}
 
         <div className="grid gap-4 lg:gap-8 md:grid-cols-2 xl:grid-cols-3 mt-5 md:mt-10">
-          {benefits.items.map((item, index) => {
+          {whychoose.items.map((item, index) => {
             const Icon = iconMap[item.icon as keyof typeof iconMap];
             const useColor = useColors[index % useColors.length];
             const color = colors[index % colors.length];
@@ -165,7 +165,7 @@ export default function WhyChoose({ benefits }: Props) {
         >
           <div className="overflow-x-auto max-w-full p-4 md:p-6 relative">
             <div className="grid grid-cols-4 gap-4 lg:gap-8 text-left min-w-5xl">
-              {benefits.stats.map((stat, index) => {
+              {whychoose.stats.map((stat, index) => {
                 const Icon = statsIcons[index];
                 return (
                   <div key={index} className="flex gap-2 items-center">

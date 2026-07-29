@@ -17,6 +17,7 @@ import {
 import { Industries } from "@/types/service";
 import Upliner from "./ui/upliner";
 import Link from "next/link";
+ 
 
 interface Props {
   industries: Industries;
@@ -32,60 +33,7 @@ const industryMap = {
   Truck,
   Landmark,
 } as const;
-
-const colors = [
-  {
-    from: "from-blue-600",
-    to: "to-cyan-500",
-    bg: "bg-blue-50",
-  },
-  {
-    from: "from-purple-600",
-    to: "to-pink-500",
-    bg: "bg-purple-50",
-  },
-  {
-    from: "from-emerald-600",
-    to: "to-green-500",
-    bg: "bg-green-50",
-  },
-  {
-    from: "from-orange-600",
-    to: "to-amber-500",
-    bg: "bg-orange-50",
-  },
-  {
-    from: "from-indigo-600",
-    to: "to-blue-500",
-    bg: "bg-indigo-50",
-  },
-  {
-    from: "from-cyan-600",
-    to: "to-sky-500",
-    bg: "bg-cyan-50",
-  },
-  {
-    from: "from-rose-600",
-    to: "to-orange-500",
-    bg: "bg-rose-50",
-  },
-  {
-    from: "from-slate-600",
-    to: "to-slate-900",
-    bg: "bg-slate-50",
-  },
-];
-
-const useColors = [
-  "--color-blue-500",
-  "--color-purple-500",
-  "--color-green-500",
-  "--color-orange-500",
-  "--color-indigo-500",
-  "--color-cyan-500",
-  "--color-rose-500",
-  "--color-slate-500",
-];
+ 
 export default function IndustriesSection({ industries }: Props) {
   return (
     <section className="relative pt-16 pb-8 lg:py-24 xl:py-32 bg-white/20 border-t border-slate-200">

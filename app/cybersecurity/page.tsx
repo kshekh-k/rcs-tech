@@ -18,7 +18,7 @@ const data = cyberSecurity
       <ServiceHero hero={data.hero} />
       <ServiceOverview overview={data.overview} />
       <ServiceFeatures services={data.services} />
-      <WhyChoose benefits={data.benefits} />
+      <WhyChoose whychoose={data.whychoose} />
       <Timeline {...data.timeline} />
       <IndustriesSection industries={data.industries} />
       <FAQ {...data.faqSection} />

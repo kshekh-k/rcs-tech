@@ -16,13 +16,16 @@ import {
   Check,
 } from "lucide-react";
 
-import { ServiceFeature } from "@/types/service";
+import { ServiceFeature, ServiceSection } from "@/types/service";
 import Upliner from "./ui/upliner";
 import Image from "next/image";
+ 
 
 interface Props {
-  services: ServiceFeature[];
+  services: ServiceSection;
 }
+
+
 const iconMap = {
   ShieldCheck,
   DatabaseBackup,
@@ -34,39 +37,10 @@ const iconMap = {
   Radar,
   CloudCog,
 } as const;
+ 
 
-const colorMapasdsada = [
-  {
-    from: "from-blue-600",
-    to: "to-cyan-500",
-    border: "hover:border-blue-300",
-    glow: "group-hover:shadow-blue-200/50",
-  },
-  {
-    from: "from-purple-600",
-    to: "to-pink-500",
-    border: "hover:border-purple-300",
-    glow: "group-hover:shadow-purple-200/50",
-  },
-  {
-    from: "from-green-600",
-    to: "to-emerald-500",
-    border: "hover:border-green-300",
-    glow: "group-hover:shadow-green-200/50",
-  },
-  {
-    from: "from-orange-500",
-    to: "to-amber-500",
-    border: "hover:border-orange-300",
-    glow: "group-hover:shadow-orange-200/50",
-  },
-  {
-    from: "from-orange-500",
-    to: "to-amber-500",
-    border: "hover:border-orange-300",
-    glow: "group-hover:shadow-orange-200/50",
-  },
-];
+
+
 
 const colorMap = [
   {
