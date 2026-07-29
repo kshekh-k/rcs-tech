@@ -267,7 +267,7 @@ export default function ServiceFeatures({ services }: Props) {
                   </div>
                   <div className="flex flex-wrap gap-4 items-center justify-start mt-5 relative">
                     <Link
-                      href="/contact"
+                      href="/#contact"
                       className="rounded bg-secondary bg-linear-to-r from-secondary to-accent text-xs sm:text-sm px-3 py-2 sm:px-5 sm:py-3 font-semibold text-white shadow-lg shadow-secondary/30 transition hover:to-transparent flex justify-center gap-2 items-center w-full sm:w-auto"
                     >
                       Request Security Assessment
@@ -275,7 +275,7 @@ export default function ServiceFeatures({ services }: Props) {
                     </Link>
 
                     <Link
-                      href="tel:+919122116041"
+                      href="https://wa.me/919122116041"
                       className="rounded bg-white/5 hover:bg-secondary text-xs sm:text-sm px-3 py-2 sm:px-5 sm:py-3 font-semibold text-white backdrop-blur transition-colors text-center w-full sm:w-auto flex justify-center"
                     >
                       Talk to a Security Expert

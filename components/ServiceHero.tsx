@@ -57,7 +57,7 @@ export default function ServiceHero({ hero }: Props) {
 
               <div className="mt-4 xl:mt-9 flex flex-wrap gap-4">
                 <Link
-                  href="/contact"
+                  href="/#contact"
                   className="rounded bg-secondary bg-linear-to-r from-secondary to-accent text-xs sm:text-sm px-3 py-2 sm:px-5 sm:py-3 font-semibold text-white shadow-lg shadow-secondary/30 transition hover:to-transparent gap-2 w-full sm:w-auto justify-center flex"
                 >
                   {hero.primaryButton}
@@ -66,7 +66,7 @@ export default function ServiceHero({ hero }: Props) {
                 </Link>
 
                 <Link
-                  href="/contact"
+                  href="https://wa.me/919122116041"
                   className="rounded bg-white/5 hover:bg-secondary text-xs sm:text-sm px-3 py-2 sm:px-5 sm:py-3 font-semibold text-white backdrop-blur transition-colors w-full sm:w-auto justify-center flex"
                 >
                   {hero.secondaryButton}
