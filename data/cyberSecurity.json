@@ -1,0 +1,411 @@
+{
+    "seo": {
+        "title": "Cybersecurity Services | Firewall, VAPT, SOC & Endpoint Protection | RCS Infra Tech",
+        "description": "Strengthen your organisation's security with enterprise cybersecurity services including Firewall Management, Endpoint Security, Email Security, VAPT, IAM, DLP, IoT Security and 24×7 Security Operations Center.",
+        "keywords": [
+            "Cybersecurity Services",
+            "Enterprise Security",
+            "Firewall Management",
+            "Endpoint Security",
+            "Email Security",
+            "Data Loss Prevention",
+            "Penetration Testing",
+            "VAPT",
+            "SOC Services",
+            "Identity Access Management",
+            "IoT Security"
+        ]
+    },
+    "hero": {
+        "badge": "Cybersecurity Services",
+        "title": "Secure Every Layer of",
+        "highlight": "Digital Assets",
+        "description": "Protect your business with enterprise cybersecurity solutions that proactively identify vulnerabilities, defend critical infrastructure, and ensure operational resilience against evolving cyber threats.",
+        "primaryButton": "Schedule Security Assessment",
+        "secondaryButton": "Talk to a Security Expert",
+        "highlights": [
+            "Enterprise Security",
+            "Certified Specialists",
+            "Compliance Ready",
+            "Rapid Incident Response"
+        ]
+    },
+    "overview": {
+        "badge": "Overview",
+        "title": "Cybersecurity Built for",
+        "highlight": "Modern Organisations",
+        "description": "Cyber threats are becoming more sophisticated, targeting businesses of every size and industry. RCS Infra Tech delivers comprehensive cybersecurity solutions that secure networks, cloud environments, endpoints, applications, and sensitive business data. Our proactive, security-first approach helps organisations minimise risk, maintain compliance, and operate with confidence in an increasingly connected world.",
+        "titleRight": "Enterprise Security Capabilities",
+        "DescRight": "Modern cyberattacks evolve rapidly. Building a resilient cybersecurity strategy requires continuous visibility, proactive defence, and rapid response to minimise business disruption and protect critical assets.",
+        "cyberRiskReduction": [
+            "Advanced Threat Protection",
+            "Zero Trust Architecture",
+            "Identity & Access Management",
+            "Endpoint Detection & Response",
+            "Cloud Security",
+            "Security Operations Center",
+            "Business Continuity Planning",
+            "Incident Response",
+            "Data Protection",
+            "Compliance & Governance",
+            "Threat Intelligence",
+            "Risk Assessment"
+        ],
+        "features": [
+            "Proactive Threat Prevention",
+            "Continuous Monitoring",
+            "Rapid Incident Response",
+            "Risk & Compliance Management"
+        ]
+    },
+    "services": {
+        "title": "Comprehensive",
+        "highlight": "Cybersecurity",
+        "titleend": "Services",
+        "subtitle": "Comprehensive cybersecurity services designed to secure your infrastructure, users, applications, cloud environments, and business-critical data through proactive protection, continuous monitoring, and expert incident response.",
+        "service": [
+            {
+                "id": 1,
+                "icon": "ShieldCheck",
+                "title": "Firewall Management",
+                "description": "Secure your network perimeter through expert firewall configuration, policy optimisation, intrusion prevention, traffic monitoring, and continuous rule management.",
+                "features": [
+                    "Next-Generation Firewall",
+                    "Access Control Policies",
+                    "Intrusion Prevention",
+                    "Network Traffic Monitoring"
+                ]
+            },
+            {
+                "id": 2,
+                "icon": "DatabaseBackup",
+                "title": "Data Loss Prevention (DLP)",
+                "description": "Protect confidential business information from accidental exposure, insider threats, and unauthorised data transfers across endpoints, cloud services, and email.",
+                "features": [
+                    "Sensitive Data Protection",
+                    "Policy Enforcement",
+                    "File Monitoring",
+                    "Cloud Data Security"
+                ]
+            },
+            {
+                "id": 3,
+                "icon": "LaptopMinimalCheck",
+                "title": "Endpoint Security",
+                "description": "Defend laptops, desktops, mobile devices, and servers against malware, ransomware, zero-day exploits, and advanced cyber attacks.",
+                "features": [
+                    "Anti-Malware Protection",
+                    "Ransomware Defence",
+                    "Device Monitoring",
+                    "Endpoint Detection & Response"
+                ]
+            },
+            {
+                "id": 4,
+                "icon": "MailCheck",
+                "title": "Email Security",
+                "description": "Reduce phishing, spam, malware, spoofing, and business email compromise through intelligent email filtering and advanced threat protection.",
+                "features": [
+                    "Anti-Phishing",
+                    "Spam Filtering",
+                    "Attachment Protection",
+                    "Email Encryption"
+                ]
+            },
+            {
+                "id": 5,
+                "icon": "Cpu",
+                "title": "IoT Security",
+                "description": "Secure connected devices, industrial equipment, and smart infrastructure by identifying vulnerabilities and monitoring device communications.",
+                "features": [
+                    "Device Authentication",
+                    "Network Segmentation",
+                    "IoT Risk Assessment",
+                    "Continuous Monitoring"
+                ]
+            },
+            {
+                "id": 6,
+                "icon": "Bug",
+                "title": "Penetration Testing (VAPT)",
+                "description": "Identify security weaknesses before attackers do through structured vulnerability assessments and controlled penetration testing.",
+                "features": [
+                    "Web Application Testing",
+                    "Network Assessment",
+                    "Cloud Security Testing",
+                    "Detailed Security Reports"
+                ]
+            },
+            {
+                "id": 7,
+                "icon": "Fingerprint",
+                "title": "Identity & Access Management",
+                "description": "Protect user identities through secure authentication, access governance, role-based permissions, and multi-factor authentication.",
+                "features": [
+                    "Multi-Factor Authentication",
+                    "Role-Based Access",
+                    "Single Sign-On",
+                    "Privileged Access Control"
+                ]
+            },
+            {
+                "id": 8,
+                "icon": "Radar",
+                "title": "Security Operations Center (SOC)",
+                "description": "24×7 security monitoring, threat intelligence, incident detection, investigation, and rapid response to minimise cyber risks.",
+                "features": [
+                    "Security Event Monitoring",
+                    "Threat Intelligence",
+                    "Incident Investigation",
+                    "Security Analytics"
+                ]
+            },
+            {
+                "id": 9,
+                "icon": "CloudCog",
+                "title": "Cloud Security",
+                "description": "Secure cloud infrastructure, workloads, identities, and business data across public, private, and hybrid cloud environments.",
+                "features": [
+                    "Cloud Security Posture Management",
+                    "Identity Protection",
+                    "Workload Security",
+                    "Secure Configuration"
+                ]
+            }
+        ],
+        "cta": {
+            "badge": "Tailored Security Solutions",
+            "title": "Need a Custom",
+            "highlight": "Cybersecurity Strategy?",
+            "subtitle": "Every organisation faces unique security challenges. Our cybersecurity specialists evaluate your current environment, identify security gaps, assess business risks, and develop a tailored security strategy aligned with your operational objectives, compliance requirements, and long-term growth.",
+            "checks": [
+                "Security Assessment",
+                "Risk Analysis",
+                "Compliance Planning"
+            ]
+        }
+    },
+    "whychoose": {
+        "badge": "Why Choose Us",
+        "title": "Why Clients Choose",
+        "highlight": "RCS Infra Tech",
+        "subtitle": "Our cybersecurity specialists combine proven expertise, enterprise technologies and strategic guidance to help organisations strengthen resilience against evolving cyber threats.",
+        "items": [
+            {
+                "icon": "Compass",
+                "title": "Strategic Security Consulting",
+                "description": "Security is embedded into every solution—from strategy and architecture to deployment and ongoing management."
+            },
+            {
+                "icon": "BadgeCheck",
+                "title": "Experienced Specialists",
+                "description": "Certified cybersecurity professionals delivering practical expertise across enterprise security environments."
+            },
+            {
+                "icon": "Activity",
+                "title": "Continuous Visibility",
+                "description": "Continuous visibility across your IT environment enables early threat detection, informed decision-making, and stronger operational resilience."
+            },
+            {
+                "icon": "FileCheck2",
+                "title": "Compliance Ready",
+                "description": "Align your security posture with industry regulations, governance standards, and compliance requirements."
+            },
+            {
+                "icon": "Zap",
+                "title": "Rapid Response",
+                "description": "Fast identification, containment, and recovery minimise disruption during security incidents."
+            },
+            {
+                "icon": "Handshake",
+                "title": "Long-Term Partnership",
+                "description": "We work as your trusted technology partner, continuously improving your cybersecurity posture as your business evolves."
+            }
+        ],
+        "stats": [
+            {
+                "number": "500+",
+                "label": "Projects Delivered"
+            },
+            {
+                "number": "98%",
+                "label": "Client Satisfaction"
+            },
+            {
+                "number": "10+",
+                "label": "Years Experience"
+            },
+            {
+                "number": "24×7",
+                "label": "Dedicated Security"
+            }
+        ]
+    },
+    "process": {
+        "badge": "Our Approach",
+        "title": "Our Cybersecurity Framework",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Assess",
+                "description": "Evaluate risks, infrastructure, assets, and existing security posture."
+            },
+            {
+                "number": "02",
+                "title": "Protect",
+                "description": "Deploy layered security controls to reduce vulnerabilities and strengthen defence."
+            },
+            {
+                "number": "03",
+                "title": "Monitor",
+                "description": "Continuously monitor systems, users, and networks for suspicious activities."
+            },
+            {
+                "number": "04",
+                "title": "Respond",
+                "description": "Rapidly detect, investigate, contain, and recover from security incidents."
+            }
+        ]
+    },
+    "industries": {
+        "badge": "Industries",
+        "title": "Cybersecurity Solutions",
+        "highlight": "Across Industries",
+        "subtitle": "We deliver industry-specific cybersecurity solutions that address operational challenges, regulatory requirements, and evolving cyber threats across critical business sectors.",
+        "items": [
+            {
+                "icon": "HeartPulse",
+                "title": "Healthcare",
+                "desc": "Protect patient records, connected medical devices, and healthcare systems while maintaining regulatory compliance.",
+                "color": "--color-blue-500",
+                "from": "--color-blue-500",
+                "to": "--color-blue-600"
+            },
+            {
+                "icon": "PiggyBank",
+                "title": "Banking & Finance",
+                "desc": "Secure financial transactions, digital banking platforms, and sensitive customer information.",
+                "color": "--color-purple-500",
+                "from": "--color-purple-500",
+                "to": "--color-purple-600"
+            },
+            {
+                "icon": "Factory",
+                "title": "Manufacturing",
+                "desc": "Safeguard industrial systems, production environments, and operational technology from cyber threats.",
+                "color": "--color-green-500",
+                "from": "--color-green-500",
+                "to": "--color-green-600"
+            },
+            {
+                "icon": "GraduationCap",
+                "title": "Education",
+                "desc": "Secure payment systems, customer data, and omnichannel retail operations.",
+                "color": "--color-orange-500",
+                "from": "--color-orange-500",
+                "to": "--color-orange-600"
+            },
+            {
+                "icon": "ShoppingBag",
+                "title": "Retail",
+                "desc": "Secure payment systems, customer data, and omnichannel retail operations.",
+                "color": "--color-pink-500",
+                "from": "--color-pink-500",
+                "to": "--color-pink-600"
+            },
+            {
+                "icon": "Building2",
+                "title": "Enterprise",
+                "desc": "Deliver scalable cybersecurity strategies tailored to complex enterprise IT environments.",
+                "color": "--color-cyan-500",
+                "from": "--color-cyan-500",
+                "to": "--color-cyan-600"
+            },
+            {
+                "icon": "Truck",
+                "title": "Logistics",
+                "desc": "Secure transportation networks, warehouse systems, and supply chain operations.",
+                "color": "--color-indigo-500",
+                "from": "--color-indigo-500",
+                "to": "--color-indigo-600"
+            },
+            {
+                "icon": "Landmark",
+                "title": "Government",
+                "desc": "Protect critical infrastructure, public services, and confidential government information.",
+                "color": "--color-red-500",
+                "from": "--color-red-500",
+                "to": "--color-red-600"
+            }
+        ],
+        "cta": {
+            "title": "Protect Every Industry with",
+            "highlight": "Confidence",
+            "subtitle": "From healthcare and finance to manufacturing and government, our cybersecurity specialists design tailored security strategies that reduce risk, strengthen resilience, and support business continuity across every industry."
+        }
+    },
+    "faqSection": {
+        "badge": "Frequently Asked Questions",
+        "title": "Cybersecurity",
+        "subtitle": "Answers to common questions about enterprise cybersecurity services.",
+        "items": [
+            {
+                "question": "Why is cybersecurity important?",
+                "answer": "Cybersecurity protects business systems, sensitive information and digital infrastructure from cyber threats while ensuring business continuity."
+            },
+            {
+                "question": "Do you provide SOC services?",
+                "answer": "Yes. We provide 24×7 Security Operations Centre (SOC) monitoring, incident detection and rapid response."
+            },
+            {
+                "question": "Which industries do you support?",
+                "answer": "We deliver cybersecurity solutions for healthcare, banking and financial services, manufacturing, government, education, retail, logistics, and enterprise organisations, tailoring our approach to each industry's unique security and compliance requirements."
+            },
+            {
+                "question": "Do you provide compliance and regulatory support?",
+                "answer": "Yes. We help organisations align their cybersecurity strategy with industry regulations and compliance frameworks through security assessments, governance, risk management, policy development, and continuous monitoring."
+            },
+            {
+                "question": "Can small and medium-sized businesses benefit from enterprise cybersecurity?",
+                "answer": "Absolutely. Cyber threats affect organisations of all sizes. We offer scalable cybersecurity solutions that provide enterprise-grade protection while aligning with the budget, infrastructure, and operational needs of small and medium-sized businesses."
+            },
+            {
+                "question": "How do I get started with your cybersecurity services?",
+                "answer": "Getting started is simple. Contact our cybersecurity specialists to schedule a consultation. We'll assess your current security posture, understand your business requirements, identify potential risks, and recommend a tailored cybersecurity strategy that supports your goals."
+            }
+        ]
+    },
+    "timeline": {
+        "badge": "Our Process",
+        "title": "Our",
+        "highlight": "Cybersecurity",
+        "titleend": "Framework",
+        "subtitle": "Our proven methodology helps organisations identify vulnerabilities, implement effective security controls, continuously monitor threats, and respond rapidly to minimise cyber risk.",
+        "items": [
+            {
+                "number": "01",
+                "title": "Assess",
+                "description": "Evaluate infrastructure, applications, cloud environments, users, and existing security controls to identify vulnerabilities and business risks.",
+                "icon": "SearchCheck"
+            },
+            {
+                "number": "02",
+                "title": "Protect",
+                "description": "Implement layered security technologies, policies, identity controls, and best practices to strengthen your security posture.",
+                "icon": "ShieldCheck"
+            },
+            {
+                "number": "03",
+                "title": "Monitor",
+                "description": "Continuously monitor networks, endpoints, and cloud environments to detect suspicious activity and emerging threats in real time.",
+                "icon": "Radar"
+            },
+            {
+                "number": "04",
+                "title": "Respond",
+                "description": "Rapidly investigate, contain, recover, and strengthen defences following security incidents to minimise business disruption.",
+                "icon": "Siren"
+            }
+        ]
+    }
+}

@@ -3,6 +3,7 @@
 import industries from "@/data/industries.json";
 import IndustryCard from "./IndustryCard"; 
 import Image from "next/image";
+import Upliner from "./ui/upliner";
 
 export default function IndustriesSection() {
   return (
@@ -19,10 +20,9 @@ export default function IndustriesSection() {
       <div className="mx-auto max-w-7xl px-3 lg:px-6 relative">
         {/* Header */}
 
-        <div className="mx-auto mb-5 sm:mb-10 md:mb-20 max-w-3xl text-center">
-          <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
-            {industries.badge}
-          </span>
+        <div className="mx-auto max-w-3xl text-center">
+          
+          <Upliner upline={`${industries.badge}`} />
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
             {industries.title}{" "}
@@ -36,7 +36,7 @@ export default function IndustriesSection() {
           </p>
         </div>
 
-        <div className="relative flex justify-center">
+        <div className="relative flex justify-center mt-5 md:mt-10">
           <Image
             src="/images/world-map.svg"
             alt="world map"

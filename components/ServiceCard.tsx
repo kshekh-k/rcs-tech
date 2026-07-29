@@ -1,6 +1,7 @@
 "use client";
 
-import type { LucideIcon } from "lucide-react";
+import { ArrowRight, type LucideIcon } from "lucide-react";
+import Link from "next/link";
 
 type Service = {
   id: string;
@@ -8,6 +9,7 @@ type Service = {
   description: string;
   color: string;
   items: string[];
+  url: string;
 };
 
 const colorClasses = {
@@ -119,11 +121,12 @@ export default function ServiceCard({
       </ul>
 
       {/* Button */}
-      <button
+      <span 
         className={`font-semibold ${colors.text} text-sm flex cursor-pointer items-center gap-2 transition-all group-hover:translate-x-1`}
       >
-        Learn More →
-      </button>
+        Learn More <ArrowRight className="size-4" />
+      </span>
+      <Link href={service.url} className="absolute inset-0 opacity-0"><span className="sr-only">Go to Services</span></Link>
       </div>
     </div>
   );

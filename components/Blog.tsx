@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import blogsData from "@/data/blogs.json";
 import BlogCard from "./BlogCard";
+import Upliner from "./ui/upliner";
 
 export default function Blog() {
   return (
@@ -19,9 +20,8 @@ export default function Blog() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
-            ⚡ {blogsData.badge}
-          </span>
+           
+          <Upliner upline={`⚡ ${blogsData.badge}`} />
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl/18 font-extrabold text-slate-900">
             {blogsData.title}{" "}&{" "}

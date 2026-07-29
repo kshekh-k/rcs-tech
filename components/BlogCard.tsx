@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ArrowRight, CalendarDays } from "lucide-react";
+import Upliner from "./ui/upliner";
 
 const colorClasses = {
   blue: {
@@ -69,9 +70,8 @@ export default function BlogCard({ blog }: { blog: Blog }) {
       <div className="p-4">
         {/* Category */}
         
-        <span className={`inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide uppercase mb-2 ${colors.badge}`}>
-          {blog.category}
-        </span>
+        
+        <Upliner upline={`${blog.category}`} />
 
         {/* Title */}
         <h3 className="text-lg md:text-xl font-semibold text-slate-900 mb-2 leading-relaxed line-clamp-2">

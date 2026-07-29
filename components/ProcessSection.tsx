@@ -4,6 +4,7 @@ import processData from "@/data/process.json";
 import { ProcessSectionData } from "@/lib/process";
 import ProcessCard from "./ProcessCard";
 import ProcessConnector from "./ProcessConnector";
+import Upliner from "./ui/upliner";
 
 const data = processData as ProcessSectionData;
 
@@ -20,10 +21,9 @@ export default function ProcessSection() {
       <div className="relative mx-auto max-w-7xl px-6">
         {/* Header */}
 
-        <div className="mx-auto mb-5 sm:mb-10 md:mb-20 max-w-3xl text-center">
-          <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
-            {data.badge}
-          </span>
+        <div className="mx-auto max-w-3xl text-center">
+          
+          <Upliner upline={`${data.badge}`} />
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
             {data.title}{" "}
@@ -38,7 +38,7 @@ export default function ProcessSection() {
         </div>
 
         {/* Desktop */}
-        <div className="max-w-full overflow-x-auto xl:overflow-visible px-3 xl:px-0 pb-3">
+        <div className="max-w-full overflow-x-auto xl:overflow-visible px-3 xl:px-0 pb-3 mt-5 md:mt-10">
           <div className="grid grid-cols-4 gap-14 min-w-6xl">
             {data.steps.map((step, index) => (
               <div key={step.id} className="relative">

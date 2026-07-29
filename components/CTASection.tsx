@@ -5,11 +5,12 @@ import FeaturePill from "./FeaturePill";
 import { motion } from "framer-motion";
 import siteData from "@/data/site.json";
 import Link from "next/link";
+import Upliner from "./ui/upliner";
 const ctaColor = ["blue", "purple", "green", "orange"] as const;
 export default function CTASection() {
   const { cta } = siteData;
   return (
-    <section className="relative pt-16 pb-8 lg:py-24 xl:py-32 bg-[#030712] before:absolute before:inset-0 before:bg-linear-to-r before:from-[#020817] before:via-[#071A44] before:to-[#0B1120]">
+    <section className="relative pt-16 pb-8 lg:py-24 xl:py-32 bg-dark before:absolute before:inset-0 before:bg-linear-to-r before:from-[#020817] before:via-[#071A44] before:to-[#0B1120]">
       {/* Glow Effects */}
       <div className="absolute top-0 left-0 size-125 bg-blue-500/10 rounded-full blur-[120px]" />
       <div className="absolute bottom-0 right-0 size-125 bg-purple-500/10 rounded-full blur-[120px]" />
@@ -29,9 +30,8 @@ export default function CTASection() {
           >
             {/* LEFT */}
             <div className="col-span-7">
-              <span className="inline-block rounded bg-accent/5 px-3 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
-                {cta.badge}
-              </span>
+             
+               <Upliner upline={`${cta.badge}`} />
 
               <h2 className="mt-2 sm:mt-0 text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight">
                 {cta.title}{" "}
