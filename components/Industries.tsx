@@ -161,7 +161,7 @@ export default function IndustriesSection({ industries }: Props) {
                 </p>
                 <div className="flex flex-wrap mt-5 gap-4 items-center justify-center relative">
                   <Link
-                    href="/contact"
+                    href="/#contact"
                     className="rounded bg-secondary bg-linear-to-r from-secondary to-accent text-xs sm:text-sm px-3 py-2 sm:px-5 sm:py-3 font-semibold text-white shadow-lg shadow-secondary/30 transition hover:to-transparent flex w-full sm:w-auto justify-center gap-2 items-center "
                   >
                     Request Security Assessment
@@ -169,7 +169,7 @@ export default function IndustriesSection({ industries }: Props) {
                   </Link>
 
                   <Link
-                    href="tel:+919122116041"
+                    href="https://wa.me/919122116041"
                     className="rounded bg-white/20 hover:bg-secondary text-xs sm:text-sm px-3 py-2 sm:px-5 sm:py-3 font-semibold text-white backdrop-blur transition-colors text-center flex w-full sm:w-auto justify-center"
                   >
                     Talk to a Security Expert
