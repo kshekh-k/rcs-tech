@@ -2,14 +2,15 @@
 
 import { motion } from "framer-motion";
 import {
-  Hospital,
+  HeartPulse,
   Landmark,
   Factory,
   GraduationCap,
   ShoppingBag,
   Building2,
+  Building,
   Truck,
-  Briefcase,
+  PiggyBank,
   ArrowRight,
 } from "lucide-react";
 
@@ -22,14 +23,14 @@ interface Props {
 }
 
 const industryMap = {
-  Healthcare: Hospital,
-  "Banking & Financial Services": Landmark,
-  Manufacturing: Factory,
-  Government: Building2,
-  Retail: ShoppingBag,
-  Education: GraduationCap,
-  Logistics: Truck,
-  Enterprise: Briefcase,
+  HeartPulse,
+  PiggyBank,
+  Factory,
+  GraduationCap,
+  ShoppingBag,
+  Building2,
+  Truck,
+  Landmark,
 } as const;
 
 const colors = [
@@ -87,7 +88,7 @@ const useColors = [
 ];
 export default function IndustriesSection({ industries }: Props) {
   return (
-    <section className="relative py-20 lg:py-28 bg-white/20 border-t border-slate-200">
+    <section className="relative pt-16 pb-8 lg:py-24 xl:py-32 bg-white/20 border-t border-slate-200">
       {/* Background */}
 
       <div className="absolute right-0 bottom-0 translate-x-1/2 translate-y-1/2 size-140 rounded-full bg-purple-500 opacity-20 blur-3xl" />
@@ -99,7 +100,7 @@ export default function IndustriesSection({ industries }: Props) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mx-auto mb-16 max-w-3xl text-center"
+          className="mx-auto max-w-3xl text-center"
         >
           <Upliner upline={industries.badge} />
 
@@ -117,15 +118,14 @@ export default function IndustriesSection({ industries }: Props) {
 
         {/* Grid */}
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-4 lg:gap-8 sm:grid-cols-2 lg:grid-cols-4 mt-5 md:mt-10">
           {industries.items.map((item, index) => {
-            const Icon = industryMap[item as keyof typeof industryMap];
-            const useColor = useColors[index % useColors.length];
-            const color = colors[index % colors.length];
+            const Icon = industryMap[item.icon as keyof typeof industryMap];
+             
 
             return (
               <motion.div
-                key={item}
+                key={index}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -135,7 +135,9 @@ export default function IndustriesSection({ industries }: Props) {
                 }}
                 className={`group relative bg-white rounded shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden `}
                 style={
-                  { "--this-color": `var(${useColor})` } as React.CSSProperties
+                  { "--this-from": `var(${item.from})`,
+            "--this-to": `var(${item.to})`,
+            "--this-color": `var(${item.color})`, } as React.CSSProperties
                 }
               >
                 {/* Glow */}
@@ -144,10 +146,10 @@ export default function IndustriesSection({ industries }: Props) {
                 <div className="relative p-4 ">
                   {/* Icon */}
 
-                  <div className="flex gap-3 items-start mb-3">
+                  <div className="flex gap-3 items-start mb-2 pb-3 border-b border-slate-200">
                     {/* Icon */}
                     <div
-                      className={`size-12 shrink-0 rounded bg-linear-to-br ${color.from} ${color.to} flex items-center justify-center shadow-lg relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44]/30 before:blur overflow-hidden`}
+                      className={`size-12 shrink-0 rounded bg-linear-to-br from-(--this-from) to-(--this-to) flex items-center justify-center shadow-lg relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44]/30 before:blur overflow-hidden`}
                     >
                       <Icon className="sizw-6 text-white relative" />
                     </div>
@@ -155,19 +157,17 @@ export default function IndustriesSection({ industries }: Props) {
                     {/* Title */}
 
                     <h3 className="text-base sm:text-lg md:text-xl relative font-medium text-slate-900 after:w-8 after:h-0.5 after:bg-(--this-color) after:rounded after:absolute after:-bottom-2 after:left-0">
-                      {item}
+                      {item.title}
                     </h3>
                   </div>
                   {/* Description */}
 
-                  <p className="mt-4 leading-7 text-slate-600">
-                    Secure infrastructure, protect sensitive information, and
-                    maintain resilient operations tailored for the{" "}
-                    {item.toLowerCase()} sector.
+                  <p className="leading-7 text-slate-600 line-clamp-3 text-sm">
+                    {item.desc}
                   </p>
 
-                  <div className="mt-4 h-px bg-slate-200" />
-                  {/* Link */}
+                  {/* <div className="mt-4 h-px bg-slate-200" />
+                   
                   <div className="pt-4">
                     <Link
                       href="/contact"
@@ -176,7 +176,7 @@ export default function IndustriesSection({ industries }: Props) {
                       Learn More
                       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </motion.div>
             );
@@ -201,33 +201,32 @@ export default function IndustriesSection({ industries }: Props) {
               <div className="absolute -translate-x-1/2 -translate-y-1/2 top-0 left-0 size-96 bg-blue-500 rounded-full blur-3xl opacity-20"></div>
 
               <div className="relative flex flex-col items-center justify-between p-4 xl:p-10 ">
-                 <h3 className="text-3xl sm:text-4xl md:text-5xl text-white font-extrabold leading-tight sm:mb-3">
-                  Protect Every Industry with{" "}
-                    <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent ">Confidence</span>
+                <h3 className="text-3xl sm:text-4xl md:text-5xl text-white font-extrabold leading-tight sm:mb-3 text-center">
+                  {industries.cta.title}{" "}
+                  <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent ">
+                    {industries.cta.highlight}
+                  </span>
                 </h3>
 
                 <p className="mt-2 lg:mt-4 text-sm md:text-base text-center text-slate-400 leading-relaxed max-w-4xl mx-auto">
-                    
-                  From healthcare and finance to manufacturing and government,
-                  we deliver cybersecurity strategies designed around your
-                  industry's unique operational and compliance requirements.
+                  {industries.cta.subtitle}
                 </p>
-                 <div className="flex flex-wrap mt-5 gap-4 items-center justify-center relative">
-                      <Link
-                        href="/contact"
-                        className="rounded bg-secondary bg-linear-to-r from-secondary to-accent text-xs sm:text-sm px-3 py-2 sm:px-5 sm:py-3 font-semibold text-white shadow-lg shadow-secondary/30 transition hover:to-transparent flex gap-2 items-center "
-                      >
-                        Request Security Assessment
-                        <ArrowRight className="size-4" />
-                      </Link>
+                <div className="flex flex-wrap mt-5 gap-4 items-center justify-center relative">
+                  <Link
+                    href="/contact"
+                    className="rounded bg-secondary bg-linear-to-r from-secondary to-accent text-xs sm:text-sm px-3 py-2 sm:px-5 sm:py-3 font-semibold text-white shadow-lg shadow-secondary/30 transition hover:to-transparent flex w-full sm:w-auto justify-center gap-2 items-center "
+                  >
+                    Request Security Assessment
+                    <ArrowRight className="size-4" />
+                  </Link>
 
-                      <Link
-                        href="tel:+919122116041"
-                        className="rounded bg-white/20 hover:bg-secondary text-xs sm:text-sm px-3 py-2 sm:px-5 sm:py-3 font-semibold text-white backdrop-blur transition-colors text-center "
-                      >
-                        Talk to a Security Expert
-                      </Link>
-                    </div>
+                  <Link
+                    href="tel:+919122116041"
+                    className="rounded bg-white/20 hover:bg-secondary text-xs sm:text-sm px-3 py-2 sm:px-5 sm:py-3 font-semibold text-white backdrop-blur transition-colors text-center flex w-full sm:w-auto justify-center"
+                  >
+                    Talk to a Security Expert
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

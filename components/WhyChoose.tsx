@@ -2,17 +2,16 @@
 
 import { motion } from "framer-motion";
 import {
-  ShieldCheck,
-  Users,
-  Eye,
+  Compass,
+  Activity,
+  FileCheck2,
   BadgeCheck,
-  Clock3,
-  TrendingUp,
+  Award,
+  Zap,
+  Handshake,
   ArrowRight,
-  SearchCheck,
-  DraftingCompass,
-  Rocket,
-  Gauge,
+  BriefcaseBusiness,
+  ShieldCheck 
 } from "lucide-react";
 
 import { Benefits } from "@/types/service";
@@ -24,12 +23,12 @@ interface Props {
 }
 
 const iconMap = {
-  ShieldCheck,
-  Users,
-  Eye,
+  Compass,
   BadgeCheck,
-  Clock3,
-  TrendingUp,
+  Activity,
+  FileCheck2,
+  Zap,
+  Handshake,
 } as const;
 
 const colors = [
@@ -54,7 +53,7 @@ const colors = [
     bg: "bg-orange-50",
   },
 ];
-const statsIcons = [SearchCheck, DraftingCompass, Rocket, Gauge];
+const statsIcons = [BriefcaseBusiness, Handshake, Award, ShieldCheck];
 const useColors = [
   "--color-blue-500",
   "--color-purple-500",
@@ -64,7 +63,7 @@ const useColors = [
 
 export default function WhyChoose({ benefits }: Props) {
   return (
-    <section className="relative py-20 lg:py-28 bg-white/20 border-t border-slate-200">
+    <section className="relative pt-16 pb-8 lg:py-24 xl:py-32 bg-white/20 border-t border-slate-200">
       {/* Background */}
 
       <div className="absolute -translate-x-1/2 translate-y-1/2 left-0 bottom-0 size-140 rounded-full bg-cyan-100/50 blur-3xl" />
@@ -76,7 +75,7 @@ export default function WhyChoose({ benefits }: Props) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mx-auto mb-16 max-w-4xl text-center"
+          className="mx-auto max-w-4xl text-center"
         >
           <Upliner upline={benefits.badge} />
 
@@ -87,14 +86,14 @@ export default function WhyChoose({ benefits }: Props) {
             </span>
           </h2>
 
-          <p className="text-sm sm:text-base text-slate-600 leading-relaxed mt-3 mb-3 md:mb-5">
+          <p className="text-sm sm:text-base text-slate-600 leading-relaxed mt-3">
             {benefits.subtitle}
           </p>
         </motion.div>
 
         {/* Grid */}
 
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-4 lg:gap-8 md:grid-cols-2 xl:grid-cols-3 mt-5 md:mt-10">
           {benefits.items.map((item, index) => {
             const Icon = iconMap[item.icon as keyof typeof iconMap];
             const useColor = useColors[index % useColors.length];
@@ -121,7 +120,7 @@ export default function WhyChoose({ benefits }: Props) {
                   <span className="absolute right-2 top- text-xl font-black text-slate-200">
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <div className="flex gap-3 items-start mb-3">
+                  <div className="flex gap-3 items-start mb-2 pb-3 border-b border-slate-200">
                     {/* Icon */}
                     <div
                       className={`size-12 shrink-0 rounded bg-linear-to-br ${color.from} ${color.to} flex items-center justify-center shadow-lg relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44]/30 before:blur overflow-hidden`}
@@ -138,8 +137,8 @@ export default function WhyChoose({ benefits }: Props) {
                   <p className="text-slate-500 leading-relaxed text-sm line-clamp-3">
                     {item.description}
                   </p>
-                  <div className="mt-4 h-px bg-slate-200" />
-                  {/* Link */}
+                  {/* <div className="mt-4 h-px bg-slate-200" />
+              
                   <div className="pt-4">
                     <Link
                       href="/contact"
@@ -148,7 +147,7 @@ export default function WhyChoose({ benefits }: Props) {
                       Learn More
                       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </motion.div>
             );

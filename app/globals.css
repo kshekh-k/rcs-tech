@@ -25,9 +25,9 @@
     linear-gradient(to bottom, #73737320 1px, transparent 1px);
   --bg-timeline: linear-gradient(
     180deg,
-    rgba(43, 127, 255, 1) 0%,
-    rgba(173, 70, 255, 1) 33%,
-    rgba(0, 201, 81, 1) 66%,
+    rgba(0, 201, 81, 1) 0%,
+    rgba(43, 127, 255, 1) 33%,    
+    rgba(173, 70, 255, 1) 66%,    
     rgba(255, 105, 0, 1) 100%
   );
 

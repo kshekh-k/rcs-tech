@@ -21,7 +21,7 @@ export default function ProcessSection() {
       <div className="relative mx-auto max-w-7xl px-6">
         {/* Header */}
 
-        <div className="mx-auto mb-5 sm:mb-10 md:mb-20 max-w-3xl text-center">
+        <div className="mx-auto max-w-3xl text-center">
           
           <Upliner upline={`${data.badge}`} />
 
@@ -38,7 +38,7 @@ export default function ProcessSection() {
         </div>
 
         {/* Desktop */}
-        <div className="max-w-full overflow-x-auto xl:overflow-visible px-3 xl:px-0 pb-3">
+        <div className="max-w-full overflow-x-auto xl:overflow-visible px-3 xl:px-0 pb-3 mt-5 md:mt-10">
           <div className="grid grid-cols-4 gap-14 min-w-6xl">
             {data.steps.map((step, index) => (
               <div key={step.id} className="relative">

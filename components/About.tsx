@@ -46,10 +46,10 @@ export default function About() {
               {about.titletail}
             </h2>
 
-            <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-3 md:mb-10">
+            <p className="text-sm sm:text-base text-slate-600 leading-relaxed ">
               {about.description}
             </p>
-            <div className="grid grid-cols-2 xl:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 xl:grid-cols-4 gap-3 mt-5 md:mt-10">
               {about.features.map((feature, index) => {
                 const Icon = icons[index];
                 return (

@@ -4,36 +4,38 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import {
   ArrowRight,
-  Shield,
-  DatabaseZap,
-  Laptop,
+  ShieldCheck,
+  DatabaseBackup,
+  LaptopMinimalCheck,
   MailCheck,
   Cpu,
   Bug,
   Fingerprint,
   Radar,
-  CheckCircle2,
+  CloudCog,
   Check,
 } from "lucide-react";
 
 import { ServiceFeature } from "@/types/service";
 import Upliner from "./ui/upliner";
+import Image from "next/image";
 
 interface Props {
   services: ServiceFeature[];
 }
 const iconMap = {
-  Shield,
-  DatabaseZap,
-  Laptop,
+  ShieldCheck,
+  DatabaseBackup,
+  LaptopMinimalCheck,
   MailCheck,
   Cpu,
   Bug,
   Fingerprint,
   Radar,
+  CloudCog,
 } as const;
 
-const colorMap = [
+const colorMapasdsada = [
   {
     from: "from-blue-600",
     to: "to-cyan-500",
@@ -58,21 +60,81 @@ const colorMap = [
     border: "hover:border-orange-300",
     glow: "group-hover:shadow-orange-200/50",
   },
+  {
+    from: "from-orange-500",
+    to: "to-amber-500",
+    border: "hover:border-orange-300",
+    glow: "group-hover:shadow-orange-200/50",
+  },
+];
+
+const colorMap = [
+  {
+    from: "from-blue-600",
+    to: "to-cyan-500",
+    bg: "bg-blue-50",
+  },
+  {
+    from: "from-purple-600",
+    to: "to-pink-500",
+    bg: "bg-purple-50",
+  },
+  {
+    from: "from-emerald-600",
+    to: "to-green-500",
+    bg: "bg-green-50",
+  },
+
+  {
+    from: "from-indigo-600",
+    to: "to-blue-500",
+    bg: "bg-indigo-50",
+  },
+  {
+    from: "from-orange-600",
+    to: "to-amber-500",
+    bg: "bg-orange-50",
+  },
+  {
+    from: "from-cyan-600",
+    to: "to-sky-500",
+    bg: "bg-cyan-50",
+  },
+  {
+    from: "from-rose-600",
+    to: "to-orange-500",
+    bg: "bg-rose-50",
+  },
+  {
+    from: "from-yellow-600",
+    to: "to-yellow-500",
+    bg: "bg-pink-50",
+  },
+  {
+    from: "from-slate-600",
+    to: "to-slate-900",
+    bg: "bg-slate-50",
+  },
 ];
 
 const useColors = [
-  "--color-blue-500",
-  "--color-purple-500",
-  "--color-green-500",
-  "--color-orange-500",
+  "--color-blue-600",
+  "--color-purple-600",
+  "--color-green-600",
+  "--color-indigo-600",
+  "--color-orange-600",
+  "--color-cyan-600",
+  "--color-rose-600",
+  "--color-yellow-600",
+  "--color-slate-600",
 ];
 
 export default function ServiceFeatures({ services }: Props) {
   return (
-    <section className="relative bg-slate-300/20 py-20 lg:py-28">
+    <section className="relative bg-slate-300/20 pt-16 pb-8 lg:py-24 xl:py-32">
       {/* Background */}
 
-      <div className="absolute translate-x-1/4 translate-y-1/4 bottom-0 right-0 size-40 lg:size-96 bg-purple-500 rounded-full blur-3xl opacity-20" />
+      <div className="absolute translRadarate-x-1/4 translate-y-1/4 bottom-0 right-0 size-40 lg:size-96 bg-purple-500 rounded-full blur-3xl opacity-20" />
 
       <div className="relative mx-auto max-w-7xl px-4 lg:px-8">
         <motion.div
@@ -80,24 +142,22 @@ export default function ServiceFeatures({ services }: Props) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mx-auto mb-16 max-w-3xl text-center"
+          className="mx-auto max-w-3xl text-center"
         >
           <Upliner upline={"Security Solutions"} />
           <h2 className="text-3xl sm:text-4xl md:text-5xl text-slate-900 font-extrabold leading-tight sm:mb-3">
-            Comprehensive{" "}
+            {services.title}{" "}
             <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent ">
-              Cybersecurity
+              {services.highlight}
             </span>{" "}
-            Services
+            {services.titleend}
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed mt-3 mb-3 md:mb-5">
-            From proactive threat prevention to continuous monitoring and rapid
-            incident response, our cybersecurity solutions help organisations
-            strengthen resilience and protect critical business assets.
+            {services.subtitle}
           </p>
         </motion.div>
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-          {services.map((service, index) => {
+        <div className="grid gap-4 lg:gap-8 md:grid-cols-2 xl:grid-cols-3 mt-5 md:mt-10">
+          {services.service.map((service, index) => {
             const Icon = iconMap[service.icon as keyof typeof iconMap];
 
             const color = useColors[index % useColors.length];
@@ -173,10 +233,10 @@ export default function ServiceFeatures({ services }: Props) {
 
                   <div className="pt-4">
                     <Link
-                      href="/contact"
+                      href="#contact"
                       className="font-semibold text-(--this-color) text-sm flex cursor-pointer items-center gap-2 transition-all group-hover:translate-x-1"
                     >
-                      Learn More
+                      Contact now
                       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Link>
                   </div>
@@ -204,67 +264,70 @@ export default function ServiceFeatures({ services }: Props) {
               <div className="absolute tranlate-x-1/4  tranlate-y-1/4 bottom-0 right-0 size-48 bg-purple-500/50 rounded-full blur-[120px]" />
               <div className="absolute -translate-x-1/2 -translate-y-1/2 top-0 left-0 size-96 bg-blue-500 rounded-full blur-3xl opacity-20"></div>
 
-              <div className="relative flex flex-col items-center justify-between gap-10 lg:flex-row p-4 xl:p-10 ">
+              <div className="relative flex flex-col-reverse items-center justify-between gap-10 lg:flex-row p-4 xl:p-10 ">
                 {/* Left */}
 
                 <div className="max-w-2xl">
-                  <Upliner upline="Tailored Security Solutions" />
+                  <Upliner upline={services.cta.badge} />
 
                   <h3 className="text-3xl sm:text-4xl md:text-5xl text-white font-extrabold leading-tight sm:mb-3">
-                    Need a Custom{" "}
+                    {services.cta.title}{" "}
                     <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent ">
-                      Cybersecurity Strategy?
+                      {services.cta.highlight}
                     </span>
                   </h3>
 
                   <p className="mt-2 lg:mt-4 text-sm md:text-base  text-slate-400 leading-relaxed">
-                    Every organisation has unique security challenges. Our
-                    specialists assess your existing environment, identify
-                    potential risks, and design a cybersecurity roadmap aligned
-                    with your operational goals, compliance requirements, and
-                    future growth.
+                    {services.cta.subtitle}
                   </p>
 
                   <div className="mt-2 lg:mt-4 flex flex-wrap gap-4">
-                    <div className="rounded bg-white/5 px-4 py-3 text-sm font-medium backdrop-blur flex gap-2 items-center text-slate-400 ">
-                      <Check className="size-4 shrink-0" /> Security Assessment
-                    </div>
+                    {services.cta.checks.map((item, index) => (
+                      <div
+                        key={index}
+                        className="rounded bg-white/5 px-2 py-1.5 md:px-4 md:py-3 text-sm font-medium backdrop-blur flex gap-2 items-center text-slate-400 w-full sm:w-auto"
+                      >
+                        <Check className="size-4 shrink-0" /> {item}
+                      </div>
+                    ))}
+                  </div>
+                  <div className="flex flex-wrap gap-4 items-center justify-start mt-5 relative">
+                    <Link
+                      href="/contact"
+                      className="rounded bg-secondary bg-linear-to-r from-secondary to-accent text-xs sm:text-sm px-3 py-2 sm:px-5 sm:py-3 font-semibold text-white shadow-lg shadow-secondary/30 transition hover:to-transparent flex justify-center gap-2 items-center w-full sm:w-auto"
+                    >
+                      Request Security Assessment
+                      <ArrowRight className="size-4" />
+                    </Link>
 
-                    <div className="rounded bg-white/5 px-4 py-3 text-sm font-medium backdrop-blur flex gap-2 items-center text-slate-400 ">
-                      <Check className="size-4 shrink-0" /> Risk Analysis
-                    </div>
-
-                    <div className="rounded bg-white/5 px-4 py-3 text-sm font-medium backdrop-blur flex gap-2 items-center text-slate-400 ">
-                      <Check className="size-4 shrink-0" /> Compliance Planning
-                    </div>
+                    <Link
+                      href="tel:+919122116041"
+                      className="rounded bg-white/5 hover:bg-secondary text-xs sm:text-sm px-3 py-2 sm:px-5 sm:py-3 font-semibold text-white backdrop-blur transition-colors text-center w-full sm:w-auto flex justify-center"
+                    >
+                      Talk to a Security Expert
+                    </Link>
                   </div>
                 </div>
 
                 {/* Right */}
 
-                <div className="flex items-center justify-center xl:w-96">
-                  <div className="relative flex justify-center items-center shrink-0 size-100 ">
+                <div className="flex items-center justify-center w-full xl:w-96">
+                  <div className="relative">
                     {/* Ring */}
 
                     <div className="absolute inset-0 size-100 items-center justify-center rounded-full bg-purple-500/10 blur opacity-40" />
                     <div className="absolute inset-10 rounded-full bg-dark/20 opacity-40 border border-white/15" />
 
                     <div className="absolute inset-20 rounded-full border border-white/15 bg-purple-500/5 opacity-40" />
-                    <div className="flex flex-col gap-4 items-center justify-center relative">
-                      <Link
-                        href="/contact"
-                        className="rounded bg-secondary bg-linear-to-r from-secondary to-accent text-xs sm:text-sm px-3 py-2 sm:px-5 sm:py-3 font-semibold text-white shadow-lg shadow-secondary/30 transition hover:to-transparent flex gap-2 items-center w-full"
-                      >
-                        Request Security Assessment
-                        <ArrowRight className="size-4" />
-                      </Link>
 
-                      <Link
-                        href="tel:+919122116041"
-                        className="rounded bg-white/5 hover:bg-secondary text-xs sm:text-sm px-3 py-2 sm:px-5 sm:py-3 font-semibold text-white backdrop-blur transition-colors text-center w-full"
-                      >
-                        Talk to a Security Expert
-                      </Link>
+                    <div className="relative max-w-full">
+                      <Image
+                        src={"/images/tailored-security-solutions-2.png"}
+                        alt=""
+                        width={500}
+                        height={500}
+                        className="w-auto sm:w-full h-auto border-8 border-white "
+                      />
                     </div>
                   </div>
                 </div>

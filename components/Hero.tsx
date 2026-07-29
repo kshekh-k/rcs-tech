@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-primary pb-8 pt-16 lg:pt-24 lg:pb-24 lg:min-h-screen flex items-center before:absolute before:inset-0 before:bg-(image:--bg-grid-2) before:bg-[size:20px_20px] before:opacity-20"
+      className="relative overflow-hidden bg-primary pb-8 pt-18 lg:py-24 lg:min-h-screen flex items-center before:absolute before:inset-0 before:bg-(image:--bg-grid-2) before:bg-[size:20px_20px] before:opacity-20"
     >
       
  <div className="absolute -left-20 top-20 size-96 rounded-full bg-blue-500/20 blur-[120px] hidden lg:block" />

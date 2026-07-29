@@ -2,10 +2,10 @@
 
 import { motion } from "framer-motion";
 import {
-  Search,
+  SearchCheck,
   ShieldCheck,
-  Activity,
-  ShieldAlert,
+  Radar,
+  Siren,
   ArrowRight,
 } from "lucide-react";
 import Upliner from "./ui/upliner";
@@ -28,24 +28,26 @@ interface Props {
 }
 
 const iconMap = {
-  Search,
+  SearchCheck,
   ShieldCheck,
-  Activity,
-  ShieldAlert,
+  Radar,
+  Siren,
 } as const;
 
 const colors = [
   {
+    from: "from-green-600",
+    to: "to-emerald-500",
+  },
+  {
     from: "from-blue-600",
     to: "to-cyan-500",
   },
+
+  
   {
     from: "from-purple-600",
     to: "to-pink-500",
-  },
-  {
-    from: "from-green-600",
-    to: "to-emerald-500",
   },
   {
     from: "from-orange-500",
@@ -54,9 +56,9 @@ const colors = [
 ];
 
 const useColors = [
-  "--color-blue-500",
-  "--color-purple-500",
   "--color-green-500",
+  "--color-blue-500",  
+  "--color-purple-500",
   "--color-orange-500",
 ];
 export default function Timeline({
@@ -68,7 +70,7 @@ export default function Timeline({
   items,
 }: Props) {
   return (
-    <section className="relative bg-slate-300/20 border-t border-slate-200 py-20 lg:py-28">
+    <section className="relative bg-slate-300/20 border-t border-slate-200 pt-16 pb-8 lg:py-24 xl:py-32">
       {/* Background */}
 
       <div className="absolute translate-x-1/2 translate-y-1/2 right-0 bottom-0 size-140 rounded-full bg-orange-500/10 blur-3xl" />
@@ -81,7 +83,7 @@ export default function Timeline({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mx-auto mb-20 max-w-3xl text-center"
+          className="mx-auto max-w-3xl text-center"
         >
           {badge && <Upliner upline={badge} />}
 
@@ -102,10 +104,10 @@ export default function Timeline({
 
         {/* Timeline */}
 
-        <div className="relative">
-          <div className="absolute left-1/2 top-22 hidden h-[calc(100%-150px)] w-1 -translate-x-1/2 rounded-full bg-(image:--bg-timeline) lg:block" />
+        <div className="relative mt-5 md:mt-10">
+          <div className="absolute left-1/2 top-20 hidden h-[calc(100%-150px)] w-1 -translate-x-1/2 rounded-full bg-(image:--bg-timeline) lg:block" />
 
-          <div className="space-y-14">
+          <div className="gap-4 lg:gap-8 lg:gap-y-14 flex flex-col sm:grid sm:grid-cols-2 lg:flex lg:flex-col">
             {items.map((item, index) => {
               const Icon = iconMap[item.icon as keyof typeof iconMap];
               const useColor = useColors[index % useColors.length];
@@ -131,7 +133,7 @@ export default function Timeline({
                   }
                 >
                   <div
-                    className={`relative w-1/2 ${index % 2 !== 0 ? "pl-20" : "pr-20"}`}
+                    className={`relative lg:w-1/2 ${index % 2 !== 0 ? "lg:pl-20" : "lg:pr-20"}`}
                   >
                     <div
                       className={`group relative bg-white rounded  shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden `}
@@ -141,7 +143,7 @@ export default function Timeline({
                         <span className="absolute right-2 top- text-xl font-black text-slate-200">
                           {item.number}
                         </span>
-                        <div className="flex gap-3 items-start mb-3">
+                        <div className="flex gap-3 items-start mb-2 pb-3 border-b border-slate-200">
                           <div
                             className={`size-12 shrink-0 rounded bg-linear-to-br ${color.from} ${color.to} flex items-center justify-center shadow-lg relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44]/30 before:blur overflow-hidden`}
                           >
@@ -156,22 +158,12 @@ export default function Timeline({
                           {item.description}
                         </p>
 
-                        <div className="mt-4 h-px bg-slate-200" />
-                        {/* Link */}
-                        <div className="pt-4">
-                          <Link
-                            href="/contact"
-                            className="font-semibold text-(--this-color) text-sm flex cursor-pointer items-center gap-2 transition-all group-hover:translate-x-1"
-                          >
-                            Learn More
-                            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                          </Link>
-                        </div>
+                         
                       </div>
                     </div>
 
                     <div
-                      className={`size-14 shrink-0 rounded-full bg-linear-to-br ${color.from} ${color.to} flex items-center justify-center shadow-lg before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44]/30 before:blur overflow-hidden absolute top-1/2 -translate-y-1/2 ${index % 2 !== 0 ? "left-0 -translate-x-1/2" : "right-0 translate-x-1/2"}`}
+                      className={`size-14 shrink-0 rounded-full bg-linear-to-br ${color.from} ${color.to} hidden lg:flex items-center justify-center shadow-lg before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44]/30 before:blur overflow-hidden absolute top-1/2 -translate-y-1/2 ${index % 2 !== 0 ? "left-0 -translate-x-1/2" : "right-0 translate-x-1/2"}`}
                     >
                       <Icon className="sizw-6 text-white relative" />
                     </div>

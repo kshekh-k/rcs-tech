@@ -20,7 +20,7 @@ export default function IndustriesSection() {
       <div className="mx-auto max-w-7xl px-3 lg:px-6 relative">
         {/* Header */}
 
-        <div className="mx-auto mb-5 sm:mb-10 md:mb-20 max-w-3xl text-center">
+        <div className="mx-auto max-w-3xl text-center">
           
           <Upliner upline={`${industries.badge}`} />
 
@@ -36,7 +36,7 @@ export default function IndustriesSection() {
           </p>
         </div>
 
-        <div className="relative flex justify-center">
+        <div className="relative flex justify-center mt-5 md:mt-10">
           <Image
             src="/images/world-map.svg"
             alt="world map"

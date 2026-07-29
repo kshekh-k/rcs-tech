@@ -3,7 +3,7 @@
 // import * as Icons from "lucide-react";
 import { motion } from "framer-motion";
 import {
-  Hospital,
+  HeartPulse,
   Landmark,
   Factory,
   GraduationCap,
@@ -28,7 +28,7 @@ interface Industry {
 interface Props {
   industry: Industry;
 }
-const icons = [Hospital, PiggyBank, Factory, GraduationCap, ShoppingBag, Building2, Truck, Landmark];
+const icons = [HeartPulse, PiggyBank, Factory, GraduationCap, ShoppingBag, Building2, Truck, Landmark];
 
 export default function IndustryCard({ industry }: Props) {
  const Icon = icons[Number(industry.id) - 1];

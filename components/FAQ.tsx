@@ -53,13 +53,13 @@ export default function FAQ({ badge, title, subtitle, items }: Props) {
   const [active, setActive] = useState<number>(0);
 
   return (
-    <section className="relative overflow-hidden bg-slate-300/20 border-t border-slate-200 py-20 lg:py-28">
+    <section className="relative overflow-hidden bg-slate-300/20 border-t border-slate-200 pt-16 pb-8 lg:py-24 xl:py-32">
       {/* Background */}
 
       <div className="relative mx-auto max-w-5xl px-4">
         {/* Heading */}
 
-        <div className="mx-auto mb-16 max-w-3xl text-center">
+        <div className="mx-auto max-w-3xl text-center">
           {badge && <Upliner upline={badge} />}
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl text-slate-900 font-extrabold leading-tight sm:mb-3">
@@ -78,7 +78,7 @@ export default function FAQ({ badge, title, subtitle, items }: Props) {
 
         {/* Accordion */}
 
-        <div className="space-y-5">
+        <div className="space-y-5 mt-5 md:mt-10">
           {items.map((faq, index) => {
             const isOpen = active === index;
             const color = useColors[index % useColors.length];
@@ -97,14 +97,14 @@ export default function FAQ({ badge, title, subtitle, items }: Props) {
                   onClick={() => setActive(isOpen ? -1 : index)}
                   className="flex relative w-full items-center justify-between gap-6 p-4 text-left"
                 >
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-2 xl:gap-4">
                    <div
-                      className={`size-12 shrink-0 rounded bg-linear-to-br ${colors.from} ${colors.to} flex items-center justify-center shadow-lg relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44]/30 before:blur overflow-hidden`}
+                      className={`size-8 lg:size-10 xl:size-12 shrink-0 rounded bg-linear-to-br ${colors.from} ${colors.to} flex items-center justify-center shadow-lg relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44]/30 before:blur overflow-hidden`}
                     >
-                      <span className="font-semibold text-white relative">{String(index + 1).padStart(2, "0")}</span>
+                      <span className="text-sm xl:text-base font-semibold text-white relative">{String(index + 1).padStart(2, "0")}</span>
                     </div>
 
-                    <h3 className="text-lg font-semibold text-slate-900">
+                    <h3 className="text-sm lg:text-base xl:text-lg font-semibold text-slate-900">
                       {faq.question}
                     </h3>
                   </div>

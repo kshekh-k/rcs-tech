@@ -14,7 +14,8 @@
         "Penetration Testing (VAPT)",
         "Identity & Access Management (IAM)",
         "SOC Room"
-      ]
+      ],
+      "url":"/cybersecurity"
     },
     {
       "id": "02",
@@ -29,7 +30,8 @@
         "Unified Communications",
         "Network Automation",
         "NOC Room"
-      ]
+      ],
+      "url":"/cybersecurity"
     },
     {
       "id": "03",
@@ -44,7 +46,8 @@
         "Cloud Security",
         "Private Cloud",
         "DC-DR"
-      ]
+      ],
+      "url":"/cybersecurity"
     },
     {
       "id": "04",
@@ -57,7 +60,8 @@
         "SaaS Application",
         "SEO Services",
         "Digital Marketing"
-      ]
+      ],
+      "url":"/cybersecurity"
     },
     {
       "id": "05",
@@ -71,7 +75,8 @@
         "Zoho",
         "Tally",
         "ERP/CRM Solutions"
-      ]
+      ],
+      "url":"/cybersecurity"
     },
     {
       "id": "06",
@@ -84,7 +89,8 @@
         "Interactive Panels",
         "Servers",
         "Accessories"
-      ]
+      ],
+       "url":"/cybersecurity"
     }
   ],
   "bottomFeatures": [
