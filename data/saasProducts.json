@@ -1,0 +1,355 @@
+{
+  "seo": {
+    "title": "Enterprise SaaS & Cloud Products | Azure, M365, Google Workspace & Zoho | RCS Infra Tech",
+    "description": "Streamline your business operations with certified SaaS and Cloud solutions. We specialize in Microsoft Azure, Microsoft 365, Google Workspace migration, Zoho CRM setup, and secure Tally on Cloud hosting.",
+    "keywords": [
+      "SaaS Products",
+      "Microsoft Azure Cloud",
+      "Microsoft 365 business setup",
+      "Google Workspace migration",
+      "Zoho CRM solutions",
+      "Tally on Cloud hosting",
+      "Enterprise ERP CRM solutions",
+      "Cloud administration services"
+    ]
+  },
+  "hero": {
+    "badge": "SaaS Products",
+    "title": "Unify and Secure Your Business with Modern",
+    "highlight": "SaaS & Cloud Solutions",
+    "description": "Integrate and manage enterprise applications like Microsoft Azure, M365, Google Workspace, Zoho, and remote Tally cloud hosts to enhance staff productivity and safeguard business data.",
+    "primaryButton": "Talk to a Cloud Architect",
+    "secondaryButton": "Request Workspace Audit",
+    "highlights": [
+      "Microsoft Azure & M365 Support",
+      "Seamless Workspace Migrations",
+      "Zoho CRM Workflow Automation",
+      "Secure Tally Cloud Hosting"
+    ],
+    "image": "/images/saas-products-hero.png"
+  },
+  "overview": {
+    "badge": "Overview",
+    "title": "Empower Your Workforce with Trusted",
+    "highlight": "Cloud-Based Applications",
+    "description": "Managing multiple software licenses, employee mailboxes, and cloud databases can create security vulnerabilities and operational bottlenecks. RCS Infra Tech specializes in deploying, migrating, and audit-securing market-leading SaaS suites. Whether you require Azure server setups, Google Workspace productivity tools, Zoho automation, or secure cloud-hosted Tally databases, our certified architects ensure high uptime, complete security compliance, and optimized software licensing costs.",
+    "titleRight": "Centralized SaaS Administration",
+    "DescRight": "Transforming your company's software footprint requires proper DNS setup, Multi-Factor Authentication (MFA), automated data backups, and cost optimization audits to eliminate unused licenses.",
+    "cyberRiskReduction": [
+      "Microsoft Azure Setup",
+      "Microsoft 365 Administration",
+      "Google Workspace Migration",
+      "Zoho CRM Integrations",
+      "Tally Prime Cloud Hosting",
+      "Custom ERP/CRM Deployments",
+      "Single Sign-On (SSO) Config",
+      "Data Backup & Archive Setup",
+      "Licensing & Cost Optimization",
+      "Multi-Factor Auth (MFA)",
+      "24/7 Cloud Support Operations",
+      "Security Audit & Policy Mapping"
+    ],
+    "features": [
+      "Certified Cloud Architects",
+      "Zero-Downtime Data Migration",
+      "Unified Identity Controls",
+      "Optimized Licensing Plans"
+    ],
+    "iconRight": "CloudCog",
+    "descRightCard": "Enterprise SaaS and cloud setup managed by certified engineers to ensure zero email downtime, secure user authentication, and optimized platform expenses."
+  },
+  "services": {
+    "title": "Enterprise SaaS",
+    "highlight": "Solutions",
+    "titleend": "& Integrations",
+    "upline": "SaaS Products",
+    "subtitle": "Unify your team's tools, improve collaboration, and protect company intelligence with our custom cloud deployment and subscription management services.",
+    "service": [
+      {
+        "id": 1,
+        "icon": "CloudCog",
+        "title": "Microsoft Azure",
+        "description": "Design and manage Azure virtual machines, database systems, and secure active directories customized for your corporate applications.",
+        "features": [
+          "Azure VM Provisioning",
+          "Azure Active Directory (AD)",
+          "Cloud Storage & Backup Plans",
+          "Virtual Private Networks (VPN)"
+        ]
+      },
+      {
+        "id": 2,
+        "icon": "MailCheck",
+        "title": "Microsoft 365",
+        "description": "Deploy M365 Business Suites, customize Exchange mail flow, optimize SharePoint drives, and enforce Teams security controls.",
+        "features": [
+          "Enterprise Exchange Setup",
+          "SharePoint & OneDrive Security",
+          "Microsoft Teams Collaboration",
+          "Advanced Threat Protection"
+        ]
+      },
+      {
+        "id": 3,
+        "icon": "LaptopMinimalCheck",
+        "title": "Google Workspace",
+        "description": "Migrate files and mailboxes to Google Workspace, configure DNS verification, and manage users in the Google Admin Console.",
+        "features": [
+          "DNS & MX Record Verification",
+          "Zero-Downtime Mail Migrations",
+          "Drive Permissions Auditing",
+          "Google Admin Panel Controls"
+        ]
+      },
+      {
+        "id": 4,
+        "icon": "Settings",
+        "title": "Zoho Suite",
+        "description": "Automate sales processes and lead assignments in Zoho CRM, and set up custom workflows in Zoho Books and Creator apps.",
+        "features": [
+          "Zoho CRM Optimization",
+          "Zoho Books Accounting Sync",
+          "Custom Dashboard Setups",
+          "Workflow Action Automation"
+        ]
+      },
+      {
+        "id": 5,
+        "icon": "DatabaseBackup",
+        "title": "Tally on Cloud",
+        "description": "Securely host Tally Prime on virtual clouds to enable accounting teams to access financial data remotely with automatic syncs.",
+        "features": [
+          "Remote Multi-User Hosting",
+          "Automatic Nightly Backups",
+          "Data Synchronization Controls",
+          "Highly Encrypted Access Ports"
+        ]
+      },
+      {
+        "id": 6,
+        "icon": "Boxes",
+        "title": "ERP & CRM Solutions",
+        "description": "Implement custom Enterprise Resource Planning (ERP) databases and Customer Relationship Management integrations to unify department records.",
+        "features": [
+          "Workflow Database Mapping",
+          "Role-based Access Profiles",
+          "Sales and Inventory Tracking",
+          "Third-party API Connector Bridges"
+        ]
+      }
+    ],
+    "cta": {
+      "badge": "Custom Workspace Audit",
+      "title": "Ready to Optimize Your",
+      "highlight": "SaaS Infrastructure?",
+      "subtitle": "Unmanaged SaaS setups result in overlapping subscriptions and open security ports. Our certified architects conduct comprehensive audits of your active licenses, file directories, and identity controls.",
+      "checks": [
+        "SaaS Cost Allocation Audits",
+        "Domain Spam-Protection Configuration",
+        "SSO and MFA Policy Setup"
+      ],
+      "primaryButton": "Request Cloud Infrastructure Review",
+      "secondaryButton": "Speak to an Expert",
+      "imageSrc": "/images/tailored-saas-solutions.png"
+    }
+  },
+  "whychoose": {
+    "badge": "Why Partner With Us",
+    "title": "Why Businesses Trust Our",
+    "highlight": "SaaS Administrators",
+    "subtitle": "We combine certified administration expertise with security auditing to streamline your digital workspace operations.",
+    "items": [
+      {
+        "icon": "Compass",
+        "title": "Optimized License Costing",
+        "description": "We analyze active workspace use to cut redundant subscriptions, saving clients up to 30% in monthly software bills."
+      },
+      {
+        "icon": "BadgeCheck",
+        "title": "Certified Microsoft & Google Experts",
+        "description": "Our administrators hold expert certifications in Azure, M365 Security, and Google Workspace Deployment."
+      },
+      {
+        "icon": "Activity",
+        "title": "Safe Data Migration Processes",
+        "description": "We migrate corporate emails, document libraries, and archives with absolute zero data loss or communication delays."
+      },
+      {
+        "icon": "FileCheck2",
+        "title": "Compliance & Security Auditing",
+        "description": "Configure Data Loss Prevention (DLP) parameters, Mobile Device Management (MDM), and detailed audit logs."
+      },
+      {
+        "icon": "Zap",
+        "title": "Centralized Identity Management",
+        "description": "Enable Single Sign-On (SSO) setups, password syncs, and multi-factor logins across all your SaaS apps."
+      },
+      {
+        "icon": "Handshake",
+        "title": "24/7 Helpdesk & Ticket SLAs",
+        "description": "Gain peace of mind with round-the-clock helpdesk services for password resets, email additions, and data recovery."
+      }
+    ],
+    "stats": [
+      {
+        "number": "500+",
+        "label": "Workspaces Managed"
+      },
+      {
+        "number": "100%",
+        "label": "Migration Accuracy"
+      },
+      {
+        "number": "30%",
+        "label": "Average License Cost Saved"
+      },
+      {
+        "number": "99.99%",
+        "label": "Uptime Guarantee SLA"
+      }
+    ]
+  },
+  "timeline": {
+    "badge": "Our Integration Flow",
+    "title": "Our SaaS",
+    "highlight": "Onboarding & Setup",
+    "titleend": "Lifecycle",
+    "subtitle": "Our migration blueprint guarantees secure user profile setups, clean domain mappings, and strict data leakage controls.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Discovery & Cost Audit",
+        "description": "Review current software tools, analyze user licenses, identify security gaps, and design the deployment architecture.",
+        "icon": "SearchCheck"
+      },
+      {
+        "number": "02",
+        "title": "Setup & Configuration",
+        "description": "Configure DNS records (MX, SPF, DKIM, DMARC), define user policies, set up storage partitions, and apply MFA rules.",
+        "icon": "ShieldCheck"
+      },
+      {
+        "number": "03",
+        "title": "Safe Data Migration",
+        "description": "Execute secure transfer of current mailboxes, files, contacts, and calendar schedules into the unified SaaS dashboard.",
+        "icon": "Radar"
+      },
+      {
+        "number": "04",
+        "title": "Training & Handover",
+        "description": "Provide training documentation for team leaders, optimize system configurations, and hand over administrator control.",
+        "icon": "Siren"
+      }
+    ]
+  },
+  "industries": {
+    "badge": "Industries We Serve",
+    "title": "SaaS Configurations",
+    "highlight": "Tailored for Every Sector",
+    "subtitle": "We design industry-specific workspace settings to guarantee operations efficiency, records organization, and strict compliance.",
+    "items": [
+      {
+        "icon": "HeartPulse",
+        "title": "Healthcare",
+        "desc": "HIPAA-compliant document sharing, secure email configurations, and Microsoft Teams telehealth room setups.",
+        "color": "--color-blue-500",
+        "from": "--color-blue-500",
+        "to": "--color-blue-600"
+      },
+      {
+        "icon": "PiggyBank",
+        "title": "Banking & Finance",
+        "desc": "Secure cloud-hosted Tally databases, customized CRM client dashboards, and advanced data loss prevention policies.",
+        "color": "--color-purple-500",
+        "from": "--color-purple-500",
+        "to": "--color-purple-600"
+      },
+      {
+        "icon": "Factory",
+        "title": "Manufacturing",
+        "desc": "Google Workspace file organization for factory operations, and integrated Zoho CRM dashboards for sales reps.",
+        "color": "--color-green-500",
+        "from": "--color-green-500",
+        "to": "--color-green-600"
+      },
+      {
+        "icon": "GraduationCap",
+        "title": "Education",
+        "desc": "Google Classroom setups, large-scale Gmail additions, student user groups management, and OneDrive structures.",
+        "color": "--color-orange-500",
+        "from": "--color-orange-500",
+        "to": "--color-orange-600"
+      },
+      {
+        "icon": "ShoppingBag",
+        "title": "Retail",
+        "desc": "Customer service Zoho Desk setups, cloud data backups, and Microsoft 365 licensing for branch managers.",
+        "color": "--color-pink-500",
+        "from": "--color-pink-500",
+        "to": "--color-pink-600"
+      },
+      {
+        "icon": "Building2",
+        "title": "Enterprise",
+        "desc": "Single Sign-On integration, custom CRM platform deployments, and Azure virtualization setups for massive teams.",
+        "color": "--color-cyan-500",
+        "from": "--color-cyan-500",
+        "to": "--color-cyan-600"
+      },
+      {
+        "icon": "Truck",
+        "title": "Logistics",
+        "desc": "Real-time dispatch Zoho forms, shared drive coordination, and mobile M365 authentication for drivers.",
+        "color": "--color-indigo-500",
+        "from": "--color-indigo-500",
+        "to": "--color-indigo-600"
+      },
+      {
+        "icon": "Landmark",
+        "title": "Government",
+        "desc": "Governing data archives, secure identity directories, and highly audited intranet collaboration solutions.",
+        "color": "--color-red-500",
+        "from": "--color-red-500",
+        "to": "--color-red-600"
+      }
+    ],
+    "cta": {
+      "title": "Optimize and Protect Your",
+      "highlight": "Cloud Workspaces",
+      "subtitle": "From multi-office M365 setups and secure remote Tally databases to complex Azure server management, our engineers configure systems that boost collaboration and security.",
+      "primaryButton": "Book Workspace Assessment",
+      "secondaryButton": "Speak to an Expert"
+    }
+  },
+  "faqSection": {
+    "badge": "Frequently Asked Questions",
+    "title": "SaaS Products & Cloud setups",
+    "subtitle": "Common answers regarding email migration timelines, pricing plans, CRM automation, and data protection policies.",
+    "items": [
+      {
+        "question": "Will we experience downtime during Google Workspace or M365 migration?",
+        "answer": "No. We implement a dual-delivery routing process during migrations. This ensures all your active email accounts remain operational, and zero messages are missed while files and archives transfer in the background."
+      },
+      {
+        "question": "Can you host Tally Prime on Cloud for remote multi-user access?",
+        "answer": "Yes. We host Tally on a highly secure cloud virtual server. This permits your accounting and audit staff to access real-time financial records from anywhere via remote login protocols, with automatic backups."
+      },
+      {
+        "question": "How do you help optimize our monthly SaaS licensing costs?",
+        "answer": "Our specialists audit your user list to identify inactive, suspended, or overlapping accounts. We also align your requirements with the most cost-effective Microsoft, Google, or Zoho subscription tiers, eliminating waste."
+      },
+      {
+        "question": "What is the difference between Google Workspace and Microsoft 365?",
+        "answer": "Google Workspace is highly optimized for web-native, real-time collaboration via Google Drive, Docs, and Gmail. Microsoft 365 offers robust desktop-installable software like Word, Excel, and advanced enterprise device security controls (Intune)."
+      },
+      {
+        "question": "What security policies do you configure during onboarding?",
+        "answer": "We enforce Multi-Factor Authentication (MFA), configure secure DNS setups (SPF, DKIM, DMARC) to prevent domain phishing, establish email spam-blocking thresholds, and structure Data Loss Prevention (DLP) rules."
+      },
+      {
+        "question": "Do you provide ongoing helpdesk support for password resets and employee onboarding?",
+        "answer": "Yes. We offer monthly Service Level Agreements (SLAs) that act as an outsourced IT helpdesk. Our ticketing system handles immediate user additions, access changes, license assignments, and security audits."
+      }
+    ]
+  }
+}

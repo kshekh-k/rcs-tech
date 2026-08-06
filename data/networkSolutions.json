@@ -1,0 +1,367 @@
+{
+  "seo": {
+    "title": "Enterprise Network Solutions | WiFi, LAN, VPN & NOC Services | RCS Infra Tech",
+    "description": "Build a secure, scalable, and high-performance network infrastructure with end-to-end networking solutions including Setup & Deployment, WiFi & LAN, Switch & Router configuration, VPN, and 24×7 NOC monitoring.",
+    "keywords": [
+      "Network Solutions",
+      "Enterprise Networking",
+      "WiFi and LAN Setup",
+      "Switch and Router Configuration",
+      "VPN Solutions",
+      "Network Automation",
+      "NOC Services",
+      "Unified Communications"
+    ]
+  },
+  "hero": {
+    "badge": "Network Solutions",
+    "title": "Connect and Scale Your",
+    "highlight": "Business Infrastructure",
+    "description": "Build high-speed, secure, and resilient network architectures that ensure seamless collaboration, peak performance, and zero-downtime business continuity.",
+    "primaryButton": "Schedule Network Audit",
+    "secondaryButton": "Speak to a Network Engineer",
+    "highlights": [
+      "High Availability",
+      "Certified Engineers",
+      "Secure VPN Access",
+      "Proactive NOC Monitoring"
+    ],
+    "image": "/images/network-solutions-hero.png"
+  },
+  "overview": {
+    "badge": "Overview",
+    "title": "Networking Designed for",
+    "highlight": "Maximum Uptime",
+    "description": "Modern business operations rely entirely on fast, secure, and uninterrupted connectivity. RCS Infra Tech designs and deploys next-generation networking architectures that support data, voice, and video traffic. From initial design to active switch configuration and continuous NOC monitoring, our end-to-end solutions keep your employees connected, your applications responsive, and your critical business operations running smoothly.",
+    "titleRight": "Enterprise Networking Capabilities",
+    "DescRight": "A robust network is the backbone of digital transformation. Creating a scalable networking environment requires expert path configuration, hardware optimization, and continuous monitoring to eliminate bottlenecks and protect business communications.",
+    "cyberRiskReduction": [
+      "LAN/WAN Optimization",
+      "High-Density WiFi",
+      "Redundant Link Setup",
+      "Virtual Private Networks (VPN)",
+      "VLAN Segmentation",
+      "Network Operations Center (NOC)",
+      "Bandwidth Management",
+      "SD-WAN Deployment",
+      "Structured Cabling",
+      "Firewall Routing integration",
+      "Load Balancing",
+      "Hardware Lifecyle Management"
+    ],
+    "features": [
+      "Zero-Downtime Migration",
+      "Continuous NOC Audits",
+      "Scalable Architectures",
+      "Industrial Connectivity"
+    ],
+    "iconRight": "Network",
+    "descRightCard": "Comprehensive networking capabilities designed to ensure speed, security, and peak performance for your infrastructure."
+  },
+  "services": {
+    "title": "End-to-End",
+    "highlight": "Networking",
+    "titleend": "Solutions",
+    "upline": "Network Solutions",
+    "subtitle": "Comprehensive enterprise networking services designed to support seamless communication, secure data transfer, hardware reliability, and automated system management.",
+    "service": [
+      {
+        "id": 1,
+        "icon": "Server",
+        "title": "Network Setup & Deployment",
+        "description": "Design and build your physical and logical network infrastructure from scratch, including structured cabling, server room setup, and network segmentation.",
+        "features": [
+          "Structured Cabling (Cat6/Fiber)",
+          "Server & Rack Installation",
+          "VLAN Setup & IP Schema",
+          "Hardware Rack Integration"
+        ]
+      },
+      {
+        "id": 2,
+        "icon": "Wifi",
+        "title": "WiFi & LAN Solutions",
+        "description": "Implement high-speed, secure wireless networks and local area network connectivity for offices, warehouses, and multi-floor buildings.",
+        "features": [
+          "High-Density AP Setup",
+          "Guest Portal Config",
+          "Signal Coverage Heatmaps",
+          "Interference Mitigation"
+        ]
+      },
+      {
+        "id": 3,
+        "icon": "Router",
+        "title": "Switch & Router Configuration",
+        "description": "Optimize traffic routing, policy enforcement, and bandwidth controls using enterprise switches and routers from Cisco, Sophos, Ubiquiti, and Aruba.",
+        "features": [
+          "L2/L3 Routing Configuration",
+          "Quality of Service (QoS)",
+          "Link Aggregation",
+          "Firmware & Security Updates"
+        ]
+      },
+      {
+        "id": 4,
+        "icon": "Lock",
+        "title": "VPN Solutions",
+        "description": "Provide secure, encrypted remote access to corporate resources for hybrid workers and establish site-to-site VPN tunnels for branch offices.",
+        "features": [
+          "SSL/IPSec VPN Tunnels",
+          "Multi-Factor Authentication",
+          "Branch-to-HQ Connectivity",
+          "End-to-End Encryption"
+        ]
+      },
+      {
+        "id": 5,
+        "icon": "PhoneCall",
+        "title": "Unified Communications",
+        "description": "Integrate IP telephony, video conferencing, and collaboration tools to streamline organizational communication under a single network.",
+        "features": [
+          "VoIP System Deployment",
+          "SIP Trunk Configuration",
+          "Video Room Integration",
+          "Bandwidth Allocation for Voice"
+        ]
+      },
+      {
+        "id": 6,
+        "icon": "Settings",
+        "title": "Network Automation",
+        "description": "Improve deployment speeds and decrease configuration errors by implementing script-based network configuration and automated policy changes.",
+        "features": [
+          "Infrastructure as Code",
+          "Config Backup & Rollback",
+          "Bulk Settings Management",
+          "Compliance Rules Audits"
+        ]
+      },
+      {
+        "id": 7,
+        "icon": "Network",
+        "title": "Network Operations Center (NOC)",
+        "description": "Continuous 24×7 monitoring of latency, uptime, resource utilization, and link status to proactively detect and repair connectivity issues.",
+        "features": [
+          "Uptime & Link Monitoring",
+          "Proactive Incident Alerting",
+          "Bandwidth Usage Metrics",
+          "SLA & Performance Reporting"
+        ]
+      }
+    ],
+    "cta": {
+      "badge": "Tailored Networking Strategies",
+      "title": "Need a Custom",
+      "highlight": "Networking Solution?",
+      "subtitle": "Different organizations require different bandwidth, hardware, and security tolerances. Our network engineers evaluate your site layout, count active devices, assess application needs, and construct a custom blueprint tailored to your needs.",
+      "checks": [
+        "Infrastructure Audit",
+        "Site Coverage Heatmap",
+        "Traffic Scaling Strategy"
+      ],
+      "primaryButton": "Request Network Consultation",
+      "secondaryButton": "Talk to a Network Engineer",
+      "imageSrc": "/images/tailored-network-solutions.png"
+    }
+  },
+  "whychoose": {
+    "badge": "Why Choose Us",
+    "title": "Why Clients Trust Our",
+    "highlight": "Networking Team",
+    "subtitle": "Our network engineers blend hardware experience with modern SD-WAN and automated tooling to create reliable network foundations.",
+    "items": [
+      {
+        "icon": "Compass",
+        "title": "Strategic Architecture Planning",
+        "description": "We don't just plug in wires—we plan route redundancy, capacity growth, and security layers from day one."
+      },
+      {
+        "icon": "BadgeCheck",
+        "title": "Certified Hardware Specialists",
+        "description": "Certified professionals with deep expertise across Cisco, Fortinet, Ubiquiti, Sophos, and HPE Aruba."
+      },
+      {
+        "icon": "Activity",
+        "title": "Proactive Link Monitoring",
+        "description": "Continuous visibility of latency, packets, and hardware loads to solve issues before they impact staff."
+      },
+      {
+        "icon": "FileCheck2",
+        "title": "Industry Standard Compliance",
+        "description": "Structured cabling and configurations designed to comply with building codes and enterprise IT standards."
+      },
+      {
+        "icon": "Zap",
+        "title": "Rapid SLA Troubleshooting",
+        "description": "Guaranteed response times and remote support to restore connectivity rapidly in case of outages."
+      },
+      {
+        "icon": "Handshake",
+        "title": "Dedicated Support Partner",
+        "description": "Ongoing support agreements to assist with moves, additions, and updates as your physical workspace scales."
+      }
+    ],
+    "stats": [
+      {
+        "number": "500+",
+        "label": "Networks Engineered"
+      },
+      {
+        "number": "98%",
+        "label": "Uptime Maintained"
+      },
+      {
+        "number": "10+",
+        "label": "Years Experience"
+      },
+      {
+        "number": "24×7",
+        "label": "NOC Operations Support"
+      }
+    ]
+  },
+  "timeline": {
+    "badge": "Our Process",
+    "title": "Our",
+    "highlight": "Network Solutions",
+    "titleend": "Framework",
+    "subtitle": "Our structured lifecycle approach ensures your network is planned properly, deployed securely, and managed continuously for peak performance.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Assess & Design",
+        "description": "Audit existing cabling, active users, and architectural bottlenecks to design the network layout, IP schema, and hardware checklist.",
+        "icon": "SearchCheck"
+      },
+      {
+        "number": "02",
+        "title": "Deploy & Configure",
+        "description": "Run structured cabling, mount switches/APs, configure routing tables, set QoS priorities, and deploy security rules.",
+        "icon": "ShieldCheck"
+      },
+      {
+        "number": "03",
+        "title": "Audit & Optimize",
+        "description": "Verify signal coverage using RF heatmaps, test bandwidth limits under simulated stress, and ensure redundancy links activate correctly.",
+        "icon": "Radar"
+      },
+      {
+        "number": "04",
+        "title": "Monitor & Scale",
+        "description": "Connect systems to our 24×7 NOC monitoring console, apply automated backups, and plan capacity expansions.",
+        "icon": "Siren"
+      }
+    ]
+  },
+  "industries": {
+    "badge": "Industries",
+    "title": "Networking Frameworks",
+    "highlight": "Across Industries",
+    "subtitle": "We deploy network structures optimized for the operational layouts, device densities, and remote access requirements of critical sectors.",
+    "items": [
+      {
+        "icon": "HeartPulse",
+        "title": "Healthcare",
+        "desc": "Deploy low-latency networks for real-time patient charts, secure medical equipment, and reliable hospital campus WiFi.",
+        "color": "--color-blue-500",
+        "from": "--color-blue-500",
+        "to": "--color-blue-600"
+      },
+      {
+        "icon": "PiggyBank",
+        "title": "Banking & Finance",
+        "desc": "Establish highly secure site-to-site VPNs, redundant WAN links, and compliant firewall segmentation.",
+        "color": "--color-purple-500",
+        "from": "--color-purple-500",
+        "to": "--color-purple-600"
+      },
+      {
+        "icon": "Factory",
+        "title": "Manufacturing",
+        "desc": "Provide industrial-grade outdoor WiFi, OT/IT network isolation, and low-latency SCADA communication links.",
+        "color": "--color-green-500",
+        "from": "--color-green-500",
+        "to": "--color-green-600"
+      },
+      {
+        "icon": "GraduationCap",
+        "title": "Education",
+        "desc": "Support high-density campus WiFi, student web filtering, virtual labs, and administrative network partitions.",
+        "color": "--color-orange-500",
+        "from": "--color-orange-500",
+        "to": "--color-orange-600"
+      },
+      {
+        "icon": "ShoppingBag",
+        "title": "Retail",
+        "desc": "Secure PCI-compliant point-of-sale (POS) systems, guest WiFi, and inventory scanner connections.",
+        "color": "--color-pink-500",
+        "from": "--color-pink-500",
+        "to": "--color-pink-600"
+      },
+      {
+        "icon": "Building2",
+        "title": "Enterprise",
+        "desc": "Deploy SD-WAN for branch communication, high-speed office LAN, and unified VoIP setups.",
+        "color": "--color-cyan-500",
+        "from": "--color-cyan-500",
+        "to": "--color-cyan-600"
+      },
+      {
+        "icon": "Truck",
+        "title": "Logistics",
+        "desc": "Ensure continuous coverage across warehouses, barcode scanner networks, and freight tracking databases.",
+        "color": "--color-indigo-500",
+        "from": "--color-indigo-500",
+        "to": "--color-indigo-600"
+      },
+      {
+        "icon": "Landmark",
+        "title": "Government",
+        "desc": "Deploy secure, air-gapped physical networks and compliant encryption schemes for government offices.",
+        "color": "--color-red-500",
+        "from": "--color-red-500",
+        "to": "--color-red-600"
+      }
+    ],
+    "cta": {
+      "title": "Connect Every Facility with",
+      "highlight": "Absolute Reliability",
+      "subtitle": "From warehouses and factories to corporate headquarters and clinics, our network architects design custom environments that enhance speed, resilience, and operational efficiency.",
+      "primaryButton": "Schedule Site Network Survey",
+      "secondaryButton": "Speak to an Engineer"
+    }
+  },
+  "faqSection": {
+    "badge": "Frequently Asked Questions",
+    "title": "Network Solutions",
+    "subtitle": "Answers to common questions regarding enterprise networking services.",
+    "items": [
+      {
+        "question": "What brands of network hardware do you configure?",
+        "answer": "We work with top-tier hardware brands including Cisco, Ubiquiti UniFi, Sophos, Aruba, Ruckus, and TP-Link, depending on your company's performance needs and budget."
+      },
+      {
+        "question": "What is included in a network audit?",
+        "answer": "A network audit evaluates physical cable integrity, switch configuration efficiency, RF wireless interference, packet loss metrics, routing security, and potential hardware bottlenecks."
+      },
+      {
+        "question": "Do you provide site-to-site connectivity for branch offices?",
+        "answer": "Yes. We configure site-to-site VPNs, MPLS connections, and SD-WAN (Software-Defined WAN) architectures to securely connect remote offices, branches, and cloud hosting together."
+      },
+      {
+        "question": "How do you ensure WiFi coverage in large offices or warehouses?",
+        "answer": "We perform active wireless site surveys using heatmapping software to measure radio frequency interference, wall attenuation, and device density, then place Access Points strategically to eliminate dead zones."
+      },
+      {
+        "question": "What is the difference between a NOC and SOC?",
+        "answer": "A NOC (Network Operations Center) focuses on bandwidth, latency, uptime, and network availability. A SOC (Security Operations Center) focuses on analyzing security alerts, detecting malware, and containing cybersecurity attacks."
+      },
+      {
+        "question": "How do we get started with your networking services?",
+        "answer": "Simply fill out our contact form or contact our team directly. We will schedule a consultation to map your office layouts, understand your device count, audit your current connectivity, and design a custom network solution."
+      }
+    ]
+  }
+}

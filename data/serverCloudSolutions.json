@@ -1,0 +1,367 @@
+{
+  "seo": {
+    "title": "Enterprise Server & Cloud Solutions | AWS, Azure & DevOps | RCS Infra Tech",
+    "description": "Modernize your IT infrastructure with secure, scalable, and high-performance server and cloud solutions including Cloud Migration, DevOps Integration, Private Cloud, and DC-DR.",
+    "keywords": [
+      "Cloud Solutions",
+      "Server Management",
+      "AWS and Azure Setup",
+      "Cloud Migration Services",
+      "DevOps Integration",
+      "Private Cloud Infrastructure",
+      "Disaster Recovery (DR)",
+      "Datacenter Setup"
+    ]
+  },
+  "hero": {
+    "badge": "Server & Cloud Solutions",
+    "title": "Modernize and Scale Your",
+    "highlight": "Cloud Infrastructure",
+    "description": "Deploy secure, high-performance virtual environments and automated server architectures to accelerate application deployment and reduce infrastructure overhead.",
+    "primaryButton": "Request Cloud Assessment",
+    "secondaryButton": "Speak to a Cloud Architect",
+    "highlights": [
+      "99.99% Uptime SLA",
+      "Certified Cloud Architects",
+      "Automated DevOps Pipelines",
+      "Robust Disaster Recovery"
+    ],
+    "image": "/images/server-cloud-solutions-hero.png"
+  },
+  "overview": {
+    "badge": "Overview",
+    "title": "Cloud Architectures Built for",
+    "highlight": "Scale and Agility",
+    "description": "In the modern digital economy, legacy hardware limits speed and scalability. RCS Infra Tech designs, deploys, and optimizes enterprise-grade server and cloud architectures. We migrate your legacy workloads to hybrid or public clouds (AWS, Microsoft Azure, Google Cloud), configure continuous integration/deployment (CI/CD) pipelines, and implement robust disaster recovery blueprints. Our mission is to make your infrastructure flexible, cost-efficient, and highly resilient.",
+    "titleRight": "Server & Cloud Capabilities",
+    "DescRight": "Building a resilient cloud infrastructure requires strategic virtualization, cost optimization, automated scripting, and geo-redundant backups to keep your core business databases available and protected under all circumstances.",
+    "cyberRiskReduction": [
+      "AWS/Azure Administration",
+      "Kubernetes & Docker Setup",
+      "CI/CD Pipeline Automation",
+      "Database Replication & Clustering",
+      "Server Virtualization (VMware/Hyper-V)",
+      "Cloud Cost Optimization",
+      "Disaster Recovery (DC-DR)",
+      "Infrastructure as Code (IaC)",
+      "Virtual Desktop Infrastructure",
+      "Active Directory & IAM Sync",
+      "Continuous Compliance Audits",
+      "Hybrid Cloud Integration"
+    ],
+    "features": [
+      "Zero-Downtime Migration",
+      "Automated Scalability",
+      "Cost Control Strategies",
+      "Secure Encrypted Backups"
+    ],
+    "iconRight": "Server",
+    "descRightCard": "Comprehensive server and cloud capabilities designed to ensure scalability, security, and peak workload performance."
+  },
+  "services": {
+    "title": "Next-Generation",
+    "highlight": "Cloud & Server",
+    "titleend": "Solutions",
+    "upline": "Server & Cloud Solutions",
+    "subtitle": "Maximize speed, minimize costs, and secure your database with our enterprise server setup, cloud hosting migration, and automated DevOps workflows.",
+    "service": [
+      {
+        "id": 1,
+        "icon": "Cpu",
+        "title": "Cloud Automation",
+        "description": "Define and manage your infrastructure via code (IaC) using Terraform and Ansible to ensure consistent, error-free environments.",
+        "features": [
+          "Infrastructure as Code (IaC)",
+          "Automated VM Provisioning",
+          "Policy-driven Scaling Rules",
+          "Configuration Auditing"
+        ]
+      },
+      {
+        "id": 2,
+        "icon": "CloudCog",
+        "title": "Cloud Management",
+        "description": "Continuous monitoring and optimization of your public or private cloud environments to control costs and maintain peak performance.",
+        "features": [
+          "Resource Utilization Metrics",
+          "Cloud Spending Optimization",
+          "Access Control Policies",
+          "Automated Patch Management"
+        ]
+      },
+      {
+        "id": 3,
+        "icon": "Boxes",
+        "title": "Cloud Migration",
+        "description": "Seamlessly transfer your physical servers, databases, and application workloads to the cloud with zero operational downtime.",
+        "features": [
+          "Lift-and-Shift Migrations",
+          "Application Refactoring",
+          "Database Schema Replication",
+          "Post-Migration Validation"
+        ]
+      },
+      {
+        "id": 4,
+        "icon": "Activity",
+        "title": "DevOps Integration",
+        "description": "Accelerate software delivery by building automated CI/CD pipelines, container environments, and centralized log servers.",
+        "features": [
+          "CI/CD Pipeline Construction",
+          "Docker & Kubernetes Config",
+          "Centralized Log Tracking",
+          "Microservices Optimization"
+        ]
+      },
+      {
+        "id": 5,
+        "icon": "Lock",
+        "title": "Cloud Security",
+        "description": "Protect your cloud workloads, storage buckets, and virtual machines against unauthorized access and digital exploits.",
+        "features": [
+          "Identity & Access Management",
+          "VPC Configuration & Peering",
+          "Data-at-Rest Encryption",
+          "Security Compliance Scans"
+        ]
+      },
+      {
+        "id": 6,
+        "icon": "Server",
+        "title": "Private Cloud Infrastructure",
+        "description": "Deploy dedicated, on-premises private cloud clusters using VMware, Hyper-V, or OpenStack for ultimate security and control.",
+        "features": [
+          "Hyperconverged Setups",
+          "Virtual Machine Tuning",
+          "Dedicated Hardware Racks",
+          "Intranet Network Routing"
+        ]
+      },
+      {
+        "id": 7,
+        "icon": "DatabaseBackup",
+        "title": "Disaster Recovery (DC-DR)",
+        "description": "Set up real-time geographic data replication and hot-failover targets to protect your organization from catastrophic system failures.",
+        "features": [
+          "Geo-Redundant Backups",
+          "RTO & RPO Performance Goals",
+          "Failover & Failback Drills",
+          "Bare-Metal Restore Maps"
+        ]
+      }
+    ],
+    "cta": {
+      "badge": "Tailored Cloud Blueprints",
+      "title": "Ready to Migrate",
+      "highlight": "to the Cloud?",
+      "subtitle": "Successful cloud adoption requires careful performance planning. Our cloud engineers audit your legacy code, measure compute requirements, estimate monthly cloud spends, and map out a step-by-step migration blueprint.",
+      "checks": [
+        "Infrastructure Cost Analysis",
+        "Workload Dependency Mapping",
+        "SLA Resiliency Strategy"
+      ],
+      "primaryButton": "Request Cloud Strategy Call",
+      "secondaryButton": "Talk to a Cloud Architect",
+      "imageSrc": "/images/tailored-server-cloud-solutions.png"
+    }
+  },
+  "whychoose": {
+    "badge": "Why Choose Us",
+    "title": "Why Clients Trust Our",
+    "highlight": "Cloud Engineers",
+    "subtitle": "We combine platform knowledge with automation to deliver robust, high-performance cloud environments.",
+    "items": [
+      {
+        "icon": "Compass",
+        "title": "Strategic Migration Strategy",
+        "description": "We evaluate cost, security, and workload dependencies to choose the ideal public, private, or hybrid cloud mix."
+      },
+      {
+        "icon": "BadgeCheck",
+        "title": "Certified Platform Experts",
+        "description": "Certified cloud professionals across AWS, Microsoft Azure, Google Cloud, VMware, and Kubernetes."
+      },
+      {
+        "icon": "Activity",
+        "title": "Continuous Resource Optimization",
+        "description": "Ongoing reviews of sizing, billing plans, and data tiers to reduce unnecessary cloud spending."
+      },
+      {
+        "icon": "FileCheck2",
+        "title": "Compliance & Security Audits",
+        "description": "Configuring access rules and databases to comply with ISO 27001, HIPAA, and corporate safety policies."
+      },
+      {
+        "icon": "Zap",
+        "title": "Infrastructure Automation First",
+        "description": "We write deployable code for all virtual resources, facilitating rapid recovery and consistent environments."
+      },
+      {
+        "icon": "Handshake",
+        "title": "Active SLA Management",
+        "description": "Support agreements providing incident escalation, backup verifications, and optimization reviews."
+      }
+    ],
+    "stats": [
+      {
+        "number": "100+",
+        "label": "Migrations Completed"
+      },
+      {
+        "number": "99.99%",
+        "label": "Uptime Maintained"
+      },
+      {
+        "number": "8+",
+        "label": "Industry Certifications"
+      },
+      {
+        "number": "24×7",
+        "label": "Cloud Operations Monitor"
+      }
+    ]
+  },
+  "timeline": {
+    "badge": "Our Process",
+    "title": "Our",
+    "highlight": "Server & Cloud",
+    "titleend": "Framework",
+    "subtitle": "Our structured lifecycle framework ensures your virtual platforms are mapped accurately, deployed cleanly, and monitored continuously.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Assess & Strategy",
+        "description": "Audit legacy server dependencies, measure database sizes, and calculate cloud cost estimations to define migration roadmaps.",
+        "icon": "SearchCheck"
+      },
+      {
+        "number": "02",
+        "title": "Migrate & Build",
+        "description": "Set up virtual networks, synchronize databases, deploy VM instances, and move workloads with minimal cutover interruption.",
+        "icon": "ShieldCheck"
+      },
+      {
+        "number": "03",
+        "title": "Automate & Optimize",
+        "description": "Implement Infrastructure as Code, set auto-scaling rules, build CI/CD pipelines, and prune idle resources.",
+        "icon": "Radar"
+      },
+      {
+        "number": "04",
+        "title": "Monitor & Protect",
+        "description": "Connect resources to cloud logs, verify automated snapshot backup routines, and configure failover targets.",
+        "icon": "Siren"
+      }
+    ]
+  },
+  "industries": {
+    "badge": "Industries",
+    "title": "Cloud Implementations",
+    "highlight": "Across Industries",
+    "subtitle": "We configure virtualized host layers to meet the processing speeds, security clearances, and scalability demands of specific sectors.",
+    "items": [
+      {
+        "icon": "HeartPulse",
+        "title": "Healthcare",
+        "desc": "HIPAA-compliant hosting solutions, secure patient database clustering, and high-performance EHR syncing.",
+        "color": "--color-blue-500",
+        "from": "--color-blue-500",
+        "to": "--color-blue-600"
+      },
+      {
+        "icon": "PiggyBank",
+        "title": "Banking & Finance",
+        "desc": "Highly secure private clouds, real-time transaction processing networks, and geo-redundant database backups.",
+        "color": "--color-purple-500",
+        "from": "--color-purple-500",
+        "to": "--color-purple-600"
+      },
+      {
+        "icon": "Factory",
+        "title": "Manufacturing",
+        "desc": "Edge compute servers, IoT data ingestion systems, and cloud integration for supply chain applications.",
+        "color": "--color-green-500",
+        "from": "--color-green-500",
+        "to": "--color-green-600"
+      },
+      {
+        "icon": "GraduationCap",
+        "title": "Education",
+        "desc": "Scalable virtual learning environments, student database clustering, and cost-efficient cloud storage.",
+        "color": "--color-orange-500",
+        "from": "--color-orange-500",
+        "to": "--color-orange-600"
+      },
+      {
+        "icon": "ShoppingBag",
+        "title": "Retail",
+        "desc": "Auto-scaling web servers for traffic surges, PCI-compliant POS databases, and centralized logistics tracking.",
+        "color": "--color-pink-500",
+        "from": "--color-pink-500",
+        "to": "--color-pink-600"
+      },
+      {
+        "icon": "Building2",
+        "title": "Enterprise",
+        "desc": "Centralized active directories, hybrid cloud integration, employee collaboration nodes, and secure SaaS hosting.",
+        "color": "--color-cyan-500",
+        "from": "--color-cyan-500",
+        "to": "--color-cyan-600"
+      },
+      {
+        "icon": "Truck",
+        "title": "Logistics",
+        "desc": "Real-time dispatch processing databases, routing optimization APIs, and redundant location-tracking storage.",
+        "color": "--color-indigo-500",
+        "from": "--color-indigo-500",
+        "to": "--color-indigo-600"
+      },
+      {
+        "icon": "Landmark",
+        "title": "Government",
+        "desc": "Air-gapped private storage platforms, strict access credentials, and highly secure compliant web server systems.",
+        "color": "--color-red-500",
+        "from": "--color-red-500",
+        "to": "--color-red-600"
+      }
+    ],
+    "cta": {
+      "title": "Establish a Resilient and",
+      "highlight": "Highly Agile Platform",
+      "subtitle": "From SaaS products and e-commerce websites to private enterprise datacenters and branch networks, our engineers design virtual environments that improve reliability and performance.",
+      "primaryButton": "Schedule Infrastructure Audit",
+      "secondaryButton": "Speak to an Engineer"
+    }
+  },
+  "faqSection": {
+    "badge": "Frequently Asked Questions",
+    "title": "Server & Cloud Solutions",
+    "subtitle": "Answers to common questions regarding server deployment, DevOps automation, and cloud migrations.",
+    "items": [
+      {
+        "question": "Which public cloud platforms do you manage?",
+        "answer": "We manage and deploy workloads across all three major public cloud providers: Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP)."
+      },
+      {
+        "question": "What is Infrastructure as Code (IaC)?",
+        "answer": "Infrastructure as Code is the practice of managing and provisioning server environments through machine-readable configuration files (like Terraform or CloudFormation) rather than manual GUI setups, ensuring rapid and error-free deployments."
+      },
+      {
+        "question": "Can you migrate an on-premises physical server to the cloud?",
+        "answer": "Yes. We perform full migrations of physical, bare-metal legacy servers and virtual machines (VMware/Hyper-V) to cloud platforms, planning database cutovers carefully to avoid business disruption."
+      },
+      {
+        "question": "How do you help optimize our monthly cloud bill?",
+        "answer": "We audit your resources to find idle VM instances, downsize over-provisioned memory or storage, recommend reserved capacity plans, and set up auto-scaling policies that shut down resources when traffic decreases."
+      },
+      {
+        "question": "What is the difference between RTO and RPO in disaster recovery?",
+        "answer": "RTO (Recovery Time Objective) is the maximum acceptable duration of downtime before recovery is complete. RPO (Recovery Point Objective) is the maximum age of files that must be recovered from backup storage for operations to resume."
+      },
+      {
+        "question": "How do we get started with your server and cloud services?",
+        "answer": "Contact our engineering team using our online form. We will coordinate a discovery session to evaluate your workloads, estimate migration timescales, and design a custom virtualization strategy."
+      }
+    ]
+  }
+}

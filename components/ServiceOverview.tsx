@@ -18,6 +18,9 @@ import {
   FileCheck2,
   BrainCircuit,
   ClipboardCheck,
+  Network,
+  Server,
+  Globe,
 } from "lucide-react";
 
 import { Overview } from "@/types/service";
@@ -26,6 +29,14 @@ import Upliner from "./ui/upliner";
 interface Props {
   overview: Overview;
 }
+const iconMapOverview = {
+  ShieldCheck,
+  Network,
+  Server,
+  Globe,
+  Lock,
+} as const;
+
 const iconsOverview = [
   ShieldAlert,
   LockKeyhole,
@@ -39,6 +50,9 @@ const iconsOverview = [
   FileCheck2,
   BrainCircuit,
   ClipboardCheck,
+  Network,
+  Server,
+  Globe,
 ];
 const ctaColor = [
   "--color-blue-500",
@@ -49,6 +63,9 @@ const ctaColor = [
 const icons = [ShieldAlert, Radar, Zap, FileCheck2];
 
 export default function ServiceOverview({ overview }: Props) {
+  const RightIcon = (overview.iconRight && iconMapOverview[overview.iconRight as keyof typeof iconMapOverview]) || ShieldCheck;
+  const BottomIcon = (overview.iconRight === "Network" ? Network : Lock);
+
   return (
     <section className="relative bg-white pt-16 pb-8 lg:py-24 xl:py-32">
       <div className="absolute -translate-x-1/4 -translate-y-1/4 top-0 left-0 size-40 lg:size-96 bg-blue-500 rounded-full blur-3xl opacity-20"></div>
@@ -80,7 +97,7 @@ export default function ServiceOverview({ overview }: Props) {
 
             <div className="grid grid-cols-2 xl:grid-cols-4 gap-3 mt-5 md:mt-10">
               {overview.features.map((item, index) => {
-                const Icon = icons[index];
+                const Icon = icons[index] || Zap;
 
                 return (
                   <div
@@ -119,7 +136,7 @@ export default function ServiceOverview({ overview }: Props) {
                 <div className="relative p-4 xl:p-6 ">
                   <div className="flex gap-3 items-center mb-3">
                     <div className="size-14 rounded flex items-center justify-center bg-linear-to-br from-blue-500 to-blue-700 text-white relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44] before:blur before:opacity-50 overflow-hidden">
-                      <ShieldCheck className={`size-8 relative`} />
+                      <RightIcon className={`size-8 relative`} />
                     </div>
 
                     <h3 className="text-xl xl:text-2xl font-medium text-white leading-tight">
@@ -134,7 +151,7 @@ export default function ServiceOverview({ overview }: Props) {
                   <div className="mt-5 grid gap-4 sm:grid-cols-2">
                     {overview.cyberRiskReduction.map((item, index) => {
                       const color = ctaColor[index % 4];
-                      const Icon = iconsOverview[index];
+                      const Icon = iconsOverview[index % iconsOverview.length];
                       return (
                         <div
                           key={item}
@@ -159,12 +176,11 @@ export default function ServiceOverview({ overview }: Props) {
                   </div>
                   <div className="border-t border-white/10 flex gap-4 pt-5 mt-5">
                     <div className="size-10 rounded flex items-center justify-center bg-linear-to-br from-cyan-500 to-cyan-600 text-white relative before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44] before:blur before:opacity-50 overflow-hidden shrink-0">
-                      <Lock className="size-5 relative" />
+                      <BottomIcon className="size-5 relative" />
                     </div>
 
                     <p className="text-slate-400 text-sm">
-                      Comprehensive security capabilities designed to protect
-                      every layer of your business.
+                      {overview.descRightCard || "Comprehensive security capabilities designed to protect every layer of your business."}
                     </p>
                   </div>
                 </div>

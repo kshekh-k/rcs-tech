@@ -31,7 +31,7 @@
         "Network Automation",
         "NOC Room"
       ],
-      "url":"/cybersecurity"
+      "url":"/network-solutions"
     },
     {
       "id": "03",
@@ -47,7 +47,7 @@
         "Private Cloud",
         "DC-DR"
       ],
-      "url":"/cybersecurity"
+      "url":"/server-cloud-solutions"
     },
     {
       "id": "04",
@@ -61,7 +61,7 @@
         "SEO Services",
         "Digital Marketing"
       ],
-      "url":"/cybersecurity"
+      "url":"/web-app-development"
     },
     {
       "id": "05",
@@ -76,7 +76,7 @@
         "Tally",
         "ERP/CRM Solutions"
       ],
-      "url":"/cybersecurity"
+      "url":"/saas-products"
     },
     {
       "id": "06",
@@ -90,7 +90,7 @@
         "Servers",
         "Accessories"
       ],
-       "url":"/cybersecurity"
+       "url":"/hardware-solutions"
     }
   ],
   "bottomFeatures": [

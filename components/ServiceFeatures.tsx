@@ -14,6 +14,19 @@ import {
   Radar,
   CloudCog,
   Check,
+  Network,
+  Wifi,
+  Router,
+  Lock,
+  PhoneCall,
+  Settings,
+  Globe,
+  Server,
+  Boxes,
+  MonitorSmartphone,
+  Shield,
+  Activity,
+  Zap,
 } from "lucide-react";
 
 import { ServiceFeature, ServiceSection } from "@/types/service";
@@ -36,6 +49,19 @@ const iconMap = {
   Fingerprint,
   Radar,
   CloudCog,
+  Network,
+  Wifi,
+  Router,
+  Lock,
+  PhoneCall,
+  Settings,
+  Globe,
+  Server,
+  Boxes,
+  MonitorSmartphone,
+  Shield,
+  Activity,
+  Zap,
 } as const;
  
 
@@ -118,7 +144,7 @@ export default function ServiceFeatures({ services }: Props) {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <Upliner upline={"Security Solutions"} />
+          <Upliner upline={services.upline || "Security Solutions"} />
           <h2 className="text-3xl sm:text-4xl md:text-5xl text-slate-900 font-extrabold leading-tight sm:mb-3">
             {services.title}{" "}
             <span className="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent ">
@@ -132,7 +158,7 @@ export default function ServiceFeatures({ services }: Props) {
         </motion.div>
         <div className="grid gap-4 lg:gap-8 md:grid-cols-2 xl:grid-cols-3 mt-5 md:mt-10">
           {services.service.map((service, index) => {
-            const Icon = iconMap[service.icon as keyof typeof iconMap];
+            const Icon = iconMap[service.icon as keyof typeof iconMap] || ShieldCheck;
 
             const color = useColors[index % useColors.length];
             const colors = colorMap[index % colorMap.length];
@@ -270,7 +296,7 @@ export default function ServiceFeatures({ services }: Props) {
                       href="/#contact"
                       className="rounded bg-secondary bg-linear-to-r from-secondary to-accent text-xs sm:text-sm px-3 py-2 sm:px-5 sm:py-3 font-semibold text-white shadow-lg shadow-secondary/30 transition hover:to-transparent flex justify-center gap-2 items-center w-full sm:w-auto"
                     >
-                      Request Security Assessment
+                      {services.cta.primaryButton || "Request Security Assessment"}
                       <ArrowRight className="size-4" />
                     </Link>
 
@@ -278,7 +304,7 @@ export default function ServiceFeatures({ services }: Props) {
                       href="https://wa.me/919122116041"
                       className="rounded bg-white/5 hover:bg-secondary text-xs sm:text-sm px-3 py-2 sm:px-5 sm:py-3 font-semibold text-white backdrop-blur transition-colors text-center w-full sm:w-auto flex justify-center"
                     >
-                      Talk to a Security Expert
+                      {services.cta.secondaryButton || "Talk to a Security Expert"}
                     </Link>
                   </div>
                 </div>
@@ -296,7 +322,7 @@ export default function ServiceFeatures({ services }: Props) {
 
                     <div className="relative max-w-full">
                       <Image
-                        src={"/images/tailored-security-solutions-2.png"}
+                        src={services.cta.imageSrc || "/images/tailored-security-solutions-2.png"}
                         alt=""
                         width={500}
                         height={500}
