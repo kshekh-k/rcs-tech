@@ -1,0 +1,343 @@
+{
+  "seo": {
+    "title": "Enterprise Web & App Development | Custom Next.js, Mobile & SaaS | RCS Infra Tech",
+    "description": "Transform your business with custom web and mobile applications designed for performance, security, and scalability. We build Next.js applications, mobile apps, and SaaS platforms.",
+    "keywords": [
+      "Web Development",
+      "App Development",
+      "Next.js Development Company",
+      "Mobile Applications",
+      "SaaS Development",
+      "SEO Services",
+      "Digital Marketing Solutions",
+      "React Native Apps"
+    ]
+  },
+  "hero": {
+    "badge": "Web & App Development",
+    "title": "Build Scalable and High-Performance",
+    "highlight": "Digital Applications",
+    "description": "Develop custom software solutions, responsive websites, multi-tenant SaaS products, and native mobile apps engineered to drive growth and deliver outstanding user experiences.",
+    "primaryButton": "Schedule Project Discovery",
+    "secondaryButton": "Talk to a Solution Architect",
+    "highlights": [
+      "Modern Web Tech Stack",
+      "App Store Ready Mobile Apps",
+      "Multi-tenant SaaS Frameworks",
+      "Technical SEO Optimized"
+    ],
+    "image": "/images/web-app-development-hero.png"
+  },
+  "overview": {
+    "badge": "Overview",
+    "title": "Custom Software Solutions Built for",
+    "highlight": "Performance and Scale",
+    "description": "In the modern economy, generic software limits your organization's potential. RCS Infra Tech designs, develops, and optimizes custom web assets, mobile apps, and enterprise SaaS solutions. We build applications with React, Next.js, Node.js, Flutter, and cloud-native database architectures. Our mission is to make your applications highly responsive, visually stunning, secure, and ready to convert visitors into loyal clients.",
+    "titleRight": "Full-Stack Development Capabilities",
+    "DescRight": "Building a premium app requires strategic UI/UX design, clean modular coding, reliable third-party API integrations, and robust cloud configurations to ensure seamless rendering speeds and secure customer transactions.",
+    "cyberRiskReduction": [
+      "Custom Web Development",
+      "iOS & Android Mobile Apps",
+      "SaaS Architecture & Tenant Setup",
+      "API Integrations & Custom Webhooks",
+      "Responsive UI/UX Design",
+      "Search Engine Optimization (SEO)",
+      "Continuous Deployment (CI/CD)",
+      "Database Optimization (SQL/NoSQL)",
+      "Secure Authentication (OAuth/JWT)",
+      "Performance Tuning & Caching",
+      "Digital Marketing & Lead Gen",
+      "24/7 Application Maintenance"
+    ],
+    "features": [
+      "High-Performance Tech Stack",
+      "Mobile-First Responsive Layouts",
+      "Scalable Cloud Hosting",
+      "Technical SEO Optimization"
+    ],
+    "iconRight": "Globe",
+    "descRightCard": "Comprehensive web and app capabilities designed to ensure peak performance, secure database transactions, and smooth client operations."
+  },
+  "services": {
+    "title": "Next-Generation",
+    "highlight": "Development",
+    "titleend": "Solutions",
+    "upline": "Web & App Development",
+    "subtitle": "Maximize user engagement, improve speed, and secure your platforms with our custom web design, mobile app construction, and performance-tuned SaaS architectures.",
+    "service": [
+      {
+        "id": 1,
+        "icon": "Globe",
+        "title": "Web Development",
+        "description": "Design and build fast, responsive, and secure web applications using Next.js, React, and Tailwind CSS to guarantee maximum user retention.",
+        "features": [
+          "React & Next.js Frameworks",
+          "Mobile-first Responsive Design",
+          "Headless CMS Integration",
+          "W3C Web Standards Compliance"
+        ]
+      },
+      {
+        "id": 2,
+        "icon": "MonitorSmartphone",
+        "title": "Mobile Application",
+        "description": "Develop native iOS and Android experiences using Flutter or React Native to deliver fluid performance on all screens.",
+        "features": [
+          "iOS & Android App Store Ready",
+          "Cross-Platform Performance",
+          "Offline Data Synchronization",
+          "Secure Device API Integration"
+        ]
+      },
+      {
+        "id": 3,
+        "icon": "Boxes",
+        "title": "SaaS Application",
+        "description": "Construct scalable multi-tenant software-as-a-service platforms with secure database partitions and subscription billing integrations.",
+        "features": [
+          "Multi-tenant Database Setup",
+          "Stripe/Payment Gateway Sync",
+          "Role-based Access Control (RBAC)",
+          "Elastic Cloud Infrastructure"
+        ]
+      },
+      {
+        "id": 4,
+        "icon": "Activity",
+        "title": "SEO Services",
+        "description": "Optimize structural code, page speed, meta schemas, and site navigation to significantly increase your organic search visibility.",
+        "features": [
+          "Technical SEO Auditing",
+          "PageSpeed & Core Web Vitals",
+          "Structured Schema Markup",
+          "Keyword Tracking & Reports"
+        ]
+      },
+      {
+        "id": 5,
+        "icon": "Zap",
+        "title": "Digital Marketing",
+        "description": "Create high-converting landing pages, track user journeys, and set up analytics dashboards to optimize customer acquisitions.",
+        "features": [
+          "High-Conversion Landing Pages",
+          "Google Analytics Integration",
+          "Conversion Funnel Optimization",
+          "A/B Campaign Performance Tracking"
+        ]
+      }
+    ],
+    "cta": {
+      "badge": "Tailored Application Blueprint",
+      "title": "Ready to Launch Your",
+      "highlight": "New Project?",
+      "subtitle": "Launching a successful app requires detailed technical planning. Our engineers audit your requirements, design database architectures, define user flows, and outline a step-by-step development roadmap.",
+      "checks": [
+        "Interactive UI/UX Wireframes",
+        "Scalable Database Architecture",
+        "SEO-friendly Tech Audits"
+      ],
+      "primaryButton": "Request Project Discovery Call",
+      "secondaryButton": "Talk to a Developer",
+      "imageSrc": "/images/tailored-web-app-solutions.png"
+    }
+  },
+  "whychoose": {
+    "badge": "Why Choose Us",
+    "title": "Why Clients Trust Our",
+    "highlight": "Software Engineers",
+    "subtitle": "We combine modern coding patterns, performance optimization, and business logic to build reliable digital assets.",
+    "items": [
+      {
+        "icon": "Compass",
+        "title": "Strategic Solution Design",
+        "description": "We analyze your workflows and goals to choose the optimal tech stack, minimizing technical debt."
+      },
+      {
+        "icon": "BadgeCheck",
+        "title": "Experienced Full-Stack Developers",
+        "description": "Our developers are experts in Next.js, Node.js, Flutter, and secure cloud system administrations."
+      },
+      {
+        "icon": "Activity",
+        "title": "Performance Tuning First",
+        "description": "We optimize images, assets, and SQL queries to ensure your applications load under 1.5 seconds."
+      },
+      {
+        "icon": "FileCheck2",
+        "title": "Agile Sprints & Transparency",
+        "description": "Get weekly updates, demo links, and absolute transparency throughout your development lifecycle."
+      },
+      {
+        "icon": "Zap",
+        "title": "SEO-friendly Architectures",
+        "description": "We build with server-side rendering (SSR) and dynamic meta structures to optimize search indexing."
+      },
+      {
+        "icon": "Handshake",
+        "title": "Post-Launch SLA Support",
+        "description": "Our commitment continues after deployment with prompt code maintenance, patch applications, and scaling audits."
+      }
+    ],
+    "stats": [
+      {
+        "number": "250+",
+        "label": "Web & Mobile Assets"
+      },
+      {
+        "number": "1.5s",
+        "label": "Average Load Speed"
+      },
+      {
+        "number": "100%",
+        "label": "Mobile Responsive"
+      },
+      {
+        "number": "24×7",
+        "label": "Active Support Operations"
+      }
+    ]
+  },
+  "timeline": {
+    "badge": "Our Process",
+    "title": "Our",
+    "highlight": "Development",
+    "titleend": "Framework",
+    "subtitle": "Our structured development lifecycle ensures your custom application is mapped correctly, coded cleanly, and launched securely.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Discovery & Architecture",
+        "description": "Audit business specifications, map database schemas, build UX wireframes, and outline the technical design document.",
+        "icon": "SearchCheck"
+      },
+      {
+        "number": "02",
+        "title": "Sprint Development",
+        "description": "Develop components using clean, modular code, integrate external APIs, and construct the responsive user interfaces.",
+        "icon": "ShieldCheck"
+      },
+      {
+        "number": "03",
+        "title": "QA & Performance Tuning",
+        "description": "Run strict automated tests, audit page load times, resolve responsiveness issues, and finalize technical SEO compliance.",
+        "icon": "Radar"
+      },
+      {
+        "number": "04",
+        "title": "Deploy & Maintain",
+        "description": "Launch on production hosts, connect monitoring tools, submit to app stores, and deliver continuous security patches.",
+        "icon": "Siren"
+      }
+    ]
+  },
+  "industries": {
+    "badge": "Industries",
+    "title": "Custom Applications",
+    "highlight": "Across Industries",
+    "subtitle": "We develop industry-specific software to address operational bottlenecks, user engagement goals, and platform security demands.",
+    "items": [
+      {
+        "icon": "HeartPulse",
+        "title": "Healthcare",
+        "desc": "HIPAA-compliant doctor-patient portals, telehealth web apps, and secure electronic health records integrations.",
+        "color": "--color-blue-500",
+        "from": "--color-blue-500",
+        "to": "--color-blue-600"
+      },
+      {
+        "icon": "PiggyBank",
+        "title": "Banking & Finance",
+        "desc": "Secure wallet dashboards, investment analysis portals, payment gateways, and highly authenticated fintech portals.",
+        "color": "--color-purple-500",
+        "from": "--color-purple-500",
+        "to": "--color-purple-600"
+      },
+      {
+        "icon": "Factory",
+        "title": "Manufacturing",
+        "desc": "IoT inventory dashboards, production workflow software, supply chain visibility web applications, and order trackers.",
+        "color": "--color-green-500",
+        "from": "--color-green-500",
+        "to": "--color-green-600"
+      },
+      {
+        "icon": "GraduationCap",
+        "title": "Education",
+        "desc": "Interactive LMS, online learning platforms, student admission portals, and custom web-based classrooms.",
+        "color": "--color-orange-500",
+        "from": "--color-orange-500",
+        "to": "--color-orange-600"
+      },
+      {
+        "icon": "ShoppingBag",
+        "title": "Retail",
+        "desc": "Omnichannel e-commerce web systems, custom cart integrations, vendor-admin consoles, and product recommendations.",
+        "color": "--color-pink-500",
+        "from": "--color-pink-500",
+        "to": "--color-pink-600"
+      },
+      {
+        "icon": "Building2",
+        "title": "Enterprise",
+        "desc": "Custom ERP integrations, employee attendance trackers, workflow automation tools, and secure client-admin setups.",
+        "color": "--color-cyan-500",
+        "from": "--color-cyan-500",
+        "to": "--color-cyan-600"
+      },
+      {
+        "icon": "Truck",
+        "title": "Logistics",
+        "desc": "Real-time fleet tracking databases, driver coordination apps, route planning portals, and shipping rate APIs.",
+        "color": "--color-indigo-500",
+        "from": "--color-indigo-500",
+        "to": "--color-indigo-600"
+      },
+      {
+        "icon": "Landmark",
+        "title": "Government",
+        "desc": "Secure civic service web systems, citizen portal logins, compliant public information feeds, and access registries.",
+        "color": "--color-red-500",
+        "from": "--color-red-500",
+        "to": "--color-red-600"
+      }
+    ],
+    "cta": {
+      "title": "Establish an Engaging and",
+      "highlight": "Highly Secure Platform",
+      "subtitle": "From SaaS products and e-commerce websites to private enterprise datacenters and branch networks, our engineers design virtual environments that improve reliability and performance.",
+      "primaryButton": "Schedule Web Audit",
+      "secondaryButton": "Speak to a Developer"
+    }
+  },
+  "faqSection": {
+    "badge": "Frequently Asked Questions",
+    "title": "Web & App Development",
+    "subtitle": "Common answers regarding our programming tech stack, mobile platform releases, and long-term application support.",
+    "items": [
+      {
+        "question": "Which tech stacks do you recommend for modern web development?",
+        "answer": "We highly recommend React and Next.js for high-performance frontend interfaces due to server-side rendering (SSR), and Node.js/Python/Go for scalable backend microservices, along with PostgreSQL or MongoDB databases."
+      },
+      {
+        "question": "Do you develop native mobile apps or cross-platform solutions?",
+        "answer": "We develop both. For most applications, cross-platform frameworks like Flutter and React Native offer exceptional native-like speeds while keeping build budgets and deployment timelines optimized. For graphics-intensive tasks, we deploy native Swift (iOS) and Kotlin (Android) code."
+      },
+      {
+        "question": "How do you ensure our application is SEO friendly?",
+        "answer": "We construct web assets using Next.js server-side rendering, ensuring crawlers receive pre-rendered HTML content. We also optimize Core Web Vitals, implement structured Schema markup, build clean sitemaps, and design responsive page layouts."
+      },
+      {
+        "question": "Will we own the custom source code after deployment?",
+        "answer": "Yes. Upon project completion and payment settlement, full ownership rights of the source code, repository control, and deployment environments are transferred directly to your organization."
+      },
+      {
+        "question": "What kind of post-launch maintenance do you offer?",
+        "answer": "We offer structured Service Level Agreements (SLAs) including weekly security updates, cloud database backups, API version monitoring, layout repairs, and feature upgrades to adapt to operating system shifts."
+      },
+      {
+        "question": "How can we start a discovery session with your team?",
+        "answer": "Please complete our contact form. A solution architect will contact you within 24 hours to schedule a Zoom or Google Meet call to discuss project goals, user personas, and budget estimates."
+      }
+    ]
+  }
+}

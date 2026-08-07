@@ -12,6 +12,7 @@ export interface Hero {
   primaryButton: string;
   secondaryButton: string;
   highlights: string[];
+  image?: string;
 }
 
 export interface Overview {
@@ -23,6 +24,8 @@ export interface Overview {
   DescRight: string;
   cyberRiskReduction: string[];
   features: string[];
+  iconRight?: string;
+  descRightCard?: string;
 }
 
 export interface ServiceFeature {
@@ -38,6 +41,9 @@ export interface ServiceCTA {
   highlight: string;
   subtitle: string;
   checks: string[];
+  primaryButton?: string;
+  secondaryButton?: string;
+  imageSrc?: string;
 }
 
 export interface ServiceSection {
@@ -47,6 +53,7 @@ export interface ServiceSection {
   subtitle: string;
   service: ServiceFeature[];
   cta: ServiceCTA;
+  upline?: string;
 }
 
 export interface WhychooseItem {
@@ -101,6 +108,8 @@ export interface IndustryCTA {
   title: string;
   highlight: string;
   subtitle: string;
+  primaryButton?: string;
+  secondaryButton?: string;
 }
 
 export interface Industries {

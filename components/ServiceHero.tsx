@@ -118,7 +118,7 @@ export default function ServiceHero({ hero }: Props) {
             {/* Background Glow */}
 
             <Image
-              src={"/images/cybersecurity-hero-5.png"}
+              src={hero.image || "/images/cybersecurity-hero-5.png"}
               alt=""
               width={500}
               height={500}

@@ -1,0 +1,354 @@
+{
+  "seo": {
+    "title": "Enterprise IT Hardware Solutions | Corporate Laptops, Servers & Panels | RCS Infra Tech",
+    "description": "Equip your business with high-performance IT hardware. We specialize in corporate laptops, workstations, interactive smart panels, server builds, and structured cabling.",
+    "keywords": [
+      "IT Hardware Solutions",
+      "Corporate laptops and desktops",
+      "Interactive smart panels",
+      "Rack mount servers",
+      "Network switches and routers",
+      "IT hardware procurement",
+      "Annual Maintenance Contract AMC"
+    ]
+  },
+  "hero": {
+    "badge": "Hardware Solutions",
+    "title": "Equip Your Business with Reliable, High-Performance",
+    "highlight": "IT Hardware",
+    "description": "Procure and manage corporate laptops, enterprise server rooms, smart boards, and network accessories. We provide direct OEM sourcing, OS imaging, and onsite warranty support.",
+    "primaryButton": "Request Hardware Quote",
+    "secondaryButton": "Speak to IT Architect",
+    "highlights": [
+      "Corporate Laptop Fleets",
+      "Enterprise Server Cabinets",
+      "Interactive Touch Panels",
+      "Onsite SLA Repair Support"
+    ],
+    "image": "/images/hardware-solutions-hero.png"
+  },
+  "overview": {
+    "badge": "Overview",
+    "title": "Empower Your Workspace with Premium",
+    "highlight": "Infrastructure Hardware",
+    "description": "Running operations on slow computers or unmanaged networking gear creates severe production lags and exposes your data to cyber risks. RCS Infra Tech acts as a single-source partner for IT hardware sourcing, configuration, and ongoing servicing. We procure desktops, travel laptops, interactive digital boards, rack servers, and network switches directly from global brand distributors. Every device is asset-tagged, pre-imaged with corporate security software, and backed by comprehensive onsite replacement warranties.",
+    "titleRight": "End-to-End Fleet Procurement",
+    "DescRight": "Setting up modern workspaces requires matching employee workloads with optimal specifications, cabling server rooms neatly, and signing reliable AMC support agreements.",
+    "cyberRiskReduction": [
+      "Enterprise Desktop Procurement",
+      "Corporate Laptop Fleets",
+      "Interactive Smart Board Setup",
+      "Rack & Tower Server Builds",
+      "Network Switches & Routers",
+      "OEM Spares & Memory Upgrades",
+      "Hardware Assets Tagging",
+      "Operating System Pre-Imaging",
+      "Onsite SLA Hardware Support",
+      "Authorized Brand Warranties",
+      "Storage Array Configurations",
+      "Conference Room A/V Setup"
+    ],
+    "features": [
+      "Authorized OEM Procurement",
+      "Pre-Configured Operating Systems",
+      "Fast Onsite SLA Replacements",
+      "Annual Maintenance Contracts"
+    ],
+    "iconRight": "Server",
+    "descRightCard": "Enterprise hardware solutions managed by certified engineers to ensure zero system downtime, robust build setups, and authorized factory warranty coverages."
+  },
+  "services": {
+    "title": "Enterprise IT",
+    "highlight": "Hardware",
+    "titleend": "& Accessories",
+    "upline": "Hardware Solutions",
+    "subtitle": "Get genuine workspace machines, powerful server room nodes, and interactive display assets tailored to your operational specifications.",
+    "service": [
+      {
+        "id": 1,
+        "icon": "MonitorSmartphone",
+        "title": "Corporate Desktops",
+        "description": "Procure and configure high-performance office workstations, dual-monitor desks, and space-saving mini-PCs customized for daily admin use.",
+        "features": [
+          "Intel/AMD Workstations",
+          "Dual-Monitor Admin Desks",
+          "Mini-PC Deployment Fleets",
+          "Secure Local BIOS Configurations"
+        ]
+      },
+      {
+        "id": 2,
+        "icon": "LaptopMinimalCheck",
+        "title": "Business Laptops",
+        "description": "Equip remote developers and traveling managers with reliable business ultrabooks pre-loaded with secure corporate profiles.",
+        "features": [
+          "Premium Development Laptops",
+          "Lightweight Executive Ultrabooks",
+          "Remote Management (vPro) Chips",
+          "Pre-Imaged Security Settings"
+        ]
+      },
+      {
+        "id": 3,
+        "icon": "Cpu",
+        "title": "Interactive Smart Panels",
+        "description": "Transform conference rooms with touch-sensitive 4K interactive smart panels, built-in camera systems, and wireless sharing capabilities.",
+        "features": [
+          "4K Touch-Sensitive Displays",
+          "Built-in Video Conferencing",
+          "Wireless Screen Casting Sets",
+          "Secure Wall-Mount Installation"
+        ]
+      },
+      {
+        "id": 4,
+        "icon": "Server",
+        "title": "Enterprise Servers",
+        "description": "Deploy rack-mounted and tower database servers, high-capacity NAS/SAN storage arrays, and robust RAID controller cards.",
+        "features": [
+          "Multi-Core Rack Server Builds",
+          "NAS & SAN Storage Arrays",
+          "Hardware RAID Configurations",
+          "Server Cabinets Structured Cabling"
+        ]
+      },
+      {
+        "id": 5,
+        "icon": "Boxes",
+        "title": "Network Accessories",
+        "description": "Acquire managed PoE switches, high-speed wireless routers, server cabinets, network patch panels, and battery UPS units.",
+        "features": [
+          "Managed PoE Network Switches",
+          "Wireless Enterprise Access Points",
+          "Server Cabinet Server Enclosures",
+          "Uninterruptible Power Supply (UPS)"
+        ]
+      },
+      {
+        "id": 6,
+        "icon": "Settings",
+        "title": "Support & Maintenance (AMC)",
+        "description": "Secure your machines with Annual Maintenance Contracts that include preventive health checks, dust cleanings, and emergency part replacements.",
+        "features": [
+          "Annual Maintenance Contracts",
+          "Onsite Part Replacements",
+          "RAM & SSD Performance Upgrades",
+          "Secure E-Waste Hardware Recycling"
+        ]
+      }
+    ],
+    "cta": {
+      "badge": "Infrastructure Blueprint",
+      "title": "Ready to Upgrade Your",
+      "highlight": "Workspace Hardware?",
+      "subtitle": "Using mismatched hardware components causes database failures and network downtime. Our hardware architects run audits to calculate power loads, database usage, and user specs to map out your infrastructure blueprint.",
+      "checks": [
+        "Workload Hardware Spec Calculations",
+        "Server Room Thermal & Power Analysis",
+        "Unified Onsite SLA Maintenance (AMC)"
+      ],
+      "primaryButton": "Request Hardware Sourcing Review",
+      "secondaryButton": "Speak to an Expert",
+      "imageSrc": "/images/tailored-hardware-solutions.png"
+    }
+  },
+  "whychoose": {
+    "badge": "Why Partner With Us",
+    "title": "Why Businesses Trust Our",
+    "highlight": "Hardware Procurement",
+    "subtitle": "We combine direct brand alliances with onsite engineering support to deliver a turn-key workplace procurement experience.",
+    "items": [
+      {
+        "icon": "Compass",
+        "title": "Genuine OEM Partnerships",
+        "description": "Authorized supply relationships with major brands like Dell, HP, Lenovo, Cisco, and BenQ, guaranteeing 100% genuine equipment."
+      },
+      {
+        "icon": "BadgeCheck",
+        "title": "Pre-Configured Out of the Box",
+        "description": "We install operational software, active antivirus systems, and corporate user profiles prior to delivering hardware."
+      },
+      {
+        "icon": "Activity",
+        "title": "Onsite SLA Emergency Repairs",
+        "description": "Our team of technicians is dispatched immediately to troubleshoot system errors, swap drives, or restore network connections."
+      },
+      {
+        "icon": "FileCheck2",
+        "title": "Workload-Optimized Procurements",
+        "description": "We match your employee tasks (designers, software developers, finance teams) with exact performance configurations, avoiding overspending."
+      },
+      {
+        "icon": "Zap",
+        "title": "Flexible Sourcing Agreements",
+        "description": "Acquire top-end corporate hardware through outright purchasing, bulk leasing agreements, or custom AMC services."
+      },
+      {
+        "icon": "Handshake",
+        "title": "Secure Hardware Decommissioning",
+        "description": "We help you decommission old storage arrays with certified file-wiping algorithms and carry out eco-friendly IT disposal."
+      }
+    ],
+    "stats": [
+      {
+        "number": "10K+",
+        "label": "Devices Configured"
+      },
+      {
+        "number": "100%",
+        "label": "Genuine OEM Sourced"
+      },
+      {
+        "number": "4 Hours",
+        "label": "Average Onsite SLA Response"
+      },
+      {
+        "number": "50+",
+        "label": "Corporate Brands Supported"
+      }
+    ]
+  },
+  "timeline": {
+    "badge": "Deployment Flow",
+    "title": "Our Hardware",
+    "highlight": "Procurement & Setup",
+    "titleend": "Lifecycle",
+    "subtitle": "Our structured lifecycle process guarantees perfect specification matching, structured setups, and active manufacturer warranties.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Workflow Spec Mapping",
+        "description": "Review workflow tasks, count active personnel, analyze power backup levels, and draft exact system configurations.",
+        "icon": "SearchCheck"
+      },
+      {
+        "number": "02",
+        "title": "Authorized Sourcing & Setup",
+        "description": "Procure machines directly from manufacturers, label corporate asset tags, install operating systems, and apply security rules.",
+        "icon": "ShieldCheck"
+      },
+      {
+        "number": "03",
+        "title": "Onsite Installation & Tests",
+        "description": "Deliver computers and servers, perform rack-mount setups, connect structured networking cables, and conduct hardware diagnostics.",
+        "icon": "Radar"
+      },
+      {
+        "number": "04",
+        "title": "Warranty & Support Handover",
+        "description": "Provide tracking documents, deliver administrator guidelines, and activate Annual Maintenance SLA support.",
+        "icon": "Siren"
+      }
+    ]
+  },
+  "industries": {
+    "badge": "Industries We Serve",
+    "title": "Hardware Infrastructure",
+    "highlight": "Tailored for Every Sector",
+    "subtitle": "We deploy specialized hardware configurations to meet processing demands, clean cabling compliance, and industrial durability.",
+    "items": [
+      {
+        "icon": "HeartPulse",
+        "title": "Healthcare",
+        "desc": "Medical-grade display panels, clean server partitions for patient directories, and fanless PC builds for critical rooms.",
+        "color": "--color-blue-500",
+        "from": "--color-blue-500",
+        "to": "--color-blue-600"
+      },
+      {
+        "icon": "PiggyBank",
+        "title": "Banking & Finance",
+        "desc": "High-performance broker desktops, highly encrypted secure storage arrays, and automatic network-switch fallbacks.",
+        "color": "--color-purple-500",
+        "from": "--color-purple-500",
+        "to": "--color-purple-600"
+      },
+      {
+        "icon": "Factory",
+        "title": "Manufacturing",
+        "desc": "Industrial touch panels for shop floors, dust-resistant rack enclosures, and network cabling across large factory warehouses.",
+        "color": "--color-green-500",
+        "from": "--color-green-500",
+        "to": "--color-green-600"
+      },
+      {
+        "icon": "GraduationCap",
+        "title": "Education",
+        "desc": "Large interactive smart boards for lecture rooms, student computer lab setups, and campus-wide Wi-Fi routers.",
+        "color": "--color-orange-500",
+        "from": "--color-orange-500",
+        "to": "--color-orange-600"
+      },
+      {
+        "icon": "ShoppingBag",
+        "title": "Retail",
+        "desc": "Barcode printers, touch-screen billing terminals, secure back-office servers, and camera DVR recording units.",
+        "color": "--color-pink-500",
+        "from": "--color-pink-500",
+        "to": "--color-pink-600"
+      },
+      {
+        "icon": "Building2",
+        "title": "Enterprise",
+        "desc": "Multi-floor structured ethernet cabling, server cabinets, executive laptop fleets, and board room conferencing A/V setups.",
+        "color": "--color-cyan-500",
+        "from": "--color-cyan-500",
+        "to": "--color-cyan-600"
+      },
+      {
+        "icon": "Truck",
+        "title": "Logistics",
+        "desc": "Handheld inventory scanners, rugged tablets for delivery drivers, and multi-display dispatch office workstations.",
+        "color": "--color-indigo-500",
+        "from": "--color-indigo-500",
+        "to": "--color-indigo-600"
+      },
+      {
+        "icon": "Landmark",
+        "title": "Government",
+        "desc": "Highly secure server storage racks, biometric access control scanners, and heavy-duty print station peripherals.",
+        "color": "--color-red-500",
+        "from": "--color-red-500",
+        "to": "--color-red-600"
+      }
+    ],
+    "cta": {
+      "title": "Equip Your Workspace with the",
+      "highlight": "Right IT Hardware",
+      "subtitle": "From multi-floor corporate office desktop fleets and 4K interactive boards to complex datacenter server arrays, our certified engineers source, set up, and maintain systems that drive success.",
+      "primaryButton": "Book Sourcing Assessment",
+      "secondaryButton": "Speak to an Expert"
+    }
+  },
+  "faqSection": {
+    "badge": "Frequently Asked Questions",
+    "title": "IT Hardware Solutions & AMCs",
+    "subtitle": "Common answers regarding brand authorizations, warranty handling, bulk order timelines, and maintenance contracts.",
+    "items": [
+      {
+        "question": "Are all hardware products sourced directly from authorized brand distributors?",
+        "answer": "Yes. RCS Infra Tech maintains partner relationships with major OEMs (Dell, HP, Lenovo, Cisco, BenQ, APC). All laptops, servers, panels, and parts are 100% genuine and carry full brand warranty certificates."
+      },
+      {
+        "question": "What is included in an Annual Maintenance Contract (AMC) for hardware?",
+        "answer": "Our hardware AMC includes periodic physical dustings, operating system health checks, temperature checks, antivirus updates, and immediate onsite troubleshooting with priority access to replacement parts."
+      },
+      {
+        "question": "Do you pre-load custom operating systems and security profiles on laptops?",
+        "answer": "Yes. We operate a staging facility where we pre-install your choice of operating systems (Windows Pro, macOS, Linux), configure local user directories, pre-load corporate antivirus tools, and apply asset tracking tags."
+      },
+      {
+        "question": "What is the typical delivery timeline for bulk corporate laptop orders?",
+        "answer": "Standard configurations are typically delivered and set up within 5 to 7 business days. Custom configurations (upgraded RAM, SSDs, or specialized server CPUs) depend on distributor stock and may take 10 to 14 business days."
+      },
+      {
+        "question": "How do you handle warranty replacements for failed components?",
+        "answer": "Under our AMC or standard setup agreements, you contact our helpdesk first. We dispatch a technician to verify the failure. If it is under warranty, we coordinate directly with the OEM manufacturer to secure the replacement part."
+      },
+      {
+        "question": "Do you provide rental or leasing options for corporate office setups?",
+        "answer": "Yes. We offer flexible leasing agreements for desktops, laptops, and networking switches for periods starting from 12 months up to 36 months, allowing you to reduce initial capital expenditure (CAPEX)."
+      }
+    ]
+  }
+}
