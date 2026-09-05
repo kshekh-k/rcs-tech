@@ -26,7 +26,7 @@ export default function ServiceHero({ hero }: Props) {
       <div className="absolute -left-20 top-20 size-96 rounded-full bg-blue-500/20 blur-[120px] hidden lg:block" />
       <div className="absolute -right-20 -bottom-20 size-112 rounded-full bg-dark blur-[140px] hidden lg:block" />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-3 lg:px-6 overflow-hidden">
+      <div className="relative z-10 mx-auto max-w-7xl px-3 lg:px-6 ">
         <div className="flex flex-col-reverse items-center gap-4 lg:gap-8 xl:gap-16 md:grid md:grid-cols-2  ">
           {/* LEFT CONTENT */}
 
@@ -75,7 +75,7 @@ export default function ServiceHero({ hero }: Props) {
 
               {/* Highlights */}
               <div className="overflow-x-auto max-w-full relative ">
-             
+
                 <div className="mt-4 grid gap-4 grid-cols-4 sm:grid-cols-2 min-w-5xl sm:min-w-[inherit]">
                   {hero.highlights.map((item, index) => {
                     const color = ctaColor[index];
@@ -116,40 +116,21 @@ export default function ServiceHero({ hero }: Props) {
             className="flex justify-end "
           >
             {/* Background Glow */}
-
-            <Image
-              src={hero.image || "/images/cybersecurity-hero-5.png"}
-              alt=""
-              width={500}
-              height={500}
-              className="w-full h-auto border-8 border-white "
-            />
+            <div className="rounded-2xl overflow-hidden bg-linear-to-br from-secondary to-accent shadow-lg shadow-accent/30 p-1">
+              <div className="rounded-xl overflow-hidden">
+                <Image
+                  src={hero.image || "/images/cybersecurity-hero-5.png"}
+                  alt={`${hero.badge} - ${hero.title} ${hero.highlight}`}
+                  width={500}
+                  height={500}
+                  className="w-full h-auto "
+                /></div></div>
           </motion.div>
         </div>
       </div>
-    </section>
+    </section >
   );
 }
 
-interface FloatingCardProps {
-  title: string;
-  position: string;
-}
 
-function FloatingCard({ title, position }: FloatingCardProps) {
-  return (
-    <div
-      className={`absolute ${position} rounded-2xl border border-white/10 bg-white/10 px-5 py-3 backdrop-blur-xl shadow-xl`}
-    >
-      <div className="flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500">
-          <ShieldCheck className="h-5 w-5 text-white" />
-        </div>
 
-        <span className="text-sm font-semibold text-white whitespace-nowrap">
-          {title}
-        </span>
-      </div>
-    </div>
-  );
-}

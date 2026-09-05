@@ -17,7 +17,7 @@
     "badge": "Web & App Development",
     "title": "Build Scalable and High-Performance",
     "highlight": "Digital Applications",
-    "description": "Develop custom software solutions, responsive websites, multi-tenant SaaS products, and native mobile apps engineered to drive growth and deliver outstanding user experiences.",
+    "description": "Develop scalable web and mobile applications that turn business requirements into reliable, user-focused digital experiences.",
     "primaryButton": "Schedule Project Discovery",
     "secondaryButton": "Talk to a Solution Architect",
     "highlights": [
@@ -35,7 +35,7 @@
     "description": "In the modern economy, generic software limits your organization's potential. RCS Infra Tech designs, develops, and optimizes custom web assets, mobile apps, and enterprise SaaS solutions. We build applications with React, Next.js, Node.js, Flutter, and cloud-native database architectures. Our mission is to make your applications highly responsive, visually stunning, secure, and ready to convert visitors into loyal clients.",
     "titleRight": "Full-Stack Development Capabilities",
     "DescRight": "Building a premium app requires strategic UI/UX design, clean modular coding, reliable third-party API integrations, and robust cloud configurations to ensure seamless rendering speeds and secure customer transactions.",
-    "cyberRiskReduction": [
+    "cloudCapabilities": [
       "Custom Web Development",
       "iOS & Android Mobile Apps",
       "SaaS Architecture & Tenant Setup",

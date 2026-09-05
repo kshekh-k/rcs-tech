@@ -2,16 +2,27 @@ import { Metadata } from "next";
 import terms from "@/data/terms.json";
 import PolicyPage from "@/components/PolicyPage";
 import Layout from "@/components/Layout";
+import JsonLd from "@/components/JsonLd";
+import { constructMetadata } from "@/lib/seo";
+import { getBreadcrumbSchema } from "@/lib/schema";
 
-export const metadata: Metadata = {
-  title: "Terms & Conditions | RCS Infra Tech",
+export const metadata: Metadata = constructMetadata({
+  title: "RCS Infra Tech | Terms & Conditions",
   description:
-    "Read the Terms & Conditions governing the use of the RCS Infra Tech website and services.",
-  alternates: {
-    canonical: "/terms-and-conditions",
-  },
-};
+    "Read the terms and conditions governing the use of RCS Infra Tech web services, enterprise software, IT consulting, and infrastructure contracts.",
+  path: "/terms-and-conditions",
+});
 
 export default function TermsPage() {
-  return <Layout showCTA={false}><PolicyPage data={terms} /></Layout>;
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: "Home", item: "/" },
+    { name: "Terms & Conditions", item: "/terms-and-conditions" },
+  ]);
+
+  return (
+    <Layout showCTA={false}>
+      <JsonLd id="terms-breadcrumb-schema" data={breadcrumbSchema} />
+      <PolicyPage data={terms} />
+    </Layout>
+  );
 }

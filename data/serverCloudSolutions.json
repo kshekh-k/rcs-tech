@@ -17,11 +17,11 @@
     "badge": "Server & Cloud Solutions",
     "title": "Modernize and Scale Your",
     "highlight": "Cloud Infrastructure",
-    "description": "Deploy secure, high-performance virtual environments and automated server architectures to accelerate application deployment and reduce infrastructure overhead.",
+    "description": "Deploy, migrate, and manage server and cloud environments that improve workload performance, scalability, availability, and operational efficiency.",
     "primaryButton": "Request Cloud Assessment",
     "secondaryButton": "Speak to a Cloud Architect",
     "highlights": [
-      "99.99% Uptime SLA",
+      "High Availability Architecture",
       "Certified Cloud Architects",
       "Automated DevOps Pipelines",
       "Robust Disaster Recovery"
@@ -35,7 +35,7 @@
     "description": "In the modern digital economy, legacy hardware limits speed and scalability. RCS Infra Tech designs, deploys, and optimizes enterprise-grade server and cloud architectures. We migrate your legacy workloads to hybrid or public clouds (AWS, Microsoft Azure, Google Cloud), configure continuous integration/deployment (CI/CD) pipelines, and implement robust disaster recovery blueprints. Our mission is to make your infrastructure flexible, cost-efficient, and highly resilient.",
     "titleRight": "Server & Cloud Capabilities",
     "DescRight": "Building a resilient cloud infrastructure requires strategic virtualization, cost optimization, automated scripting, and geo-redundant backups to keep your core business databases available and protected under all circumstances.",
-    "cyberRiskReduction": [
+    "cloudCapabilities": [
       "AWS/Azure Administration",
       "Kubernetes & Docker Setup",
       "CI/CD Pipeline Automation",
@@ -50,7 +50,7 @@
       "Hybrid Cloud Integration"
     ],
     "features": [
-      "Zero-Downtime Migration",
+      "Minimal-Downtime Migration",
       "Automated Scalability",
       "Cost Control Strategies",
       "Secure Encrypted Backups"
@@ -93,7 +93,7 @@
         "id": 3,
         "icon": "Boxes",
         "title": "Cloud Migration",
-        "description": "Seamlessly transfer your physical servers, databases, and application workloads to the cloud with zero operational downtime.",
+        "description": "Seamlessly transfer physical servers, databases, and application workloads to the cloud with carefully planned migration and minimal business disruption.",
         "features": [
           "Lift-and-Shift Migrations",
           "Application Refactoring",
@@ -178,8 +178,8 @@
       },
       {
         "icon": "BadgeCheck",
-        "title": "Certified Platform Experts",
-        "description": "Certified cloud professionals across AWS, Microsoft Azure, Google Cloud, VMware, and Kubernetes."
+        "title": "Multi-Platform Cloud Expertise",
+        "description": "Experience across AWS, Microsoft Azure, Google Cloud, VMware, and Kubernetes environments."
       },
       {
         "icon": "Activity",
@@ -188,8 +188,8 @@
       },
       {
         "icon": "FileCheck2",
-        "title": "Compliance & Security Audits",
-        "description": "Configuring access rules and databases to comply with ISO 27001, HIPAA, and corporate safety policies."
+        "title": "Security & Compliance Audits",
+        "description": "Reviewing cloud configurations, access controls, and workloads against applicable security standards and organizational policies."
       },
       {
         "icon": "Zap",
@@ -263,7 +263,7 @@
       {
         "icon": "HeartPulse",
         "title": "Healthcare",
-        "desc": "HIPAA-compliant hosting solutions, secure patient database clustering, and high-performance EHR syncing.",
+        "desc": "Security-focused hosting, patient database infrastructure, and reliable EHR workloads.",
         "color": "--color-blue-500",
         "from": "--color-blue-500",
         "to": "--color-blue-600"
@@ -295,7 +295,7 @@
       {
         "icon": "ShoppingBag",
         "title": "Retail",
-        "desc": "Auto-scaling web servers for traffic surges, PCI-compliant POS databases, and centralized logistics tracking.",
+        "desc": "Auto-scaling web servers, secure POS infrastructure, and centralized logistics tracking.",
         "color": "--color-pink-500",
         "from": "--color-pink-500",
         "to": "--color-pink-600"
@@ -319,7 +319,7 @@
       {
         "icon": "Landmark",
         "title": "Government",
-        "desc": "Air-gapped private storage platforms, strict access credentials, and highly secure compliant web server systems.",
+        "desc": "Secure private storage platforms, strict access controls, and standards-aligned web server infrastructure.",
         "color": "--color-red-500",
         "from": "--color-red-500",
         "to": "--color-red-600"
@@ -340,7 +340,7 @@
     "items": [
       {
         "question": "Which public cloud platforms do you manage?",
-        "answer": "We manage and deploy workloads across all three major public cloud providers: Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP)."
+        "answer": "We support cloud deployments and management across AWS, Microsoft Azure, and Google Cloud Platform (GCP), based on workload and business requirements."
       },
       {
         "question": "What is Infrastructure as Code (IaC)?",

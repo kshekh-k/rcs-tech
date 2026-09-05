@@ -16,7 +16,7 @@
     "badge": "Hardware Solutions",
     "title": "Equip Your Business with Reliable, High-Performance",
     "highlight": "IT Hardware",
-    "description": "Procure and manage corporate laptops, enterprise server rooms, smart boards, and network accessories. We provide direct OEM sourcing, OS imaging, and onsite warranty support.",
+    "description": "Source and deploy enterprise IT hardware across servers, storage, networking, workspaces, security, and infrastructure.",
     "primaryButton": "Request Hardware Quote",
     "secondaryButton": "Speak to IT Architect",
     "highlights": [
@@ -34,7 +34,7 @@
     "description": "Running operations on slow computers or unmanaged networking gear creates severe production lags and exposes your data to cyber risks. RCS Infra Tech acts as a single-source partner for IT hardware sourcing, configuration, and ongoing servicing. We procure desktops, travel laptops, interactive digital boards, rack servers, and network switches directly from global brand distributors. Every device is asset-tagged, pre-imaged with corporate security software, and backed by comprehensive onsite replacement warranties.",
     "titleRight": "End-to-End Fleet Procurement",
     "DescRight": "Setting up modern workspaces requires matching employee workloads with optimal specifications, cabling server rooms neatly, and signing reliable AMC support agreements.",
-    "cyberRiskReduction": [
+    "cloudCapabilities": [
       "Enterprise Desktop Procurement",
       "Corporate Laptop Fleets",
       "Interactive Smart Board Setup",

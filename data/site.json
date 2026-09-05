@@ -290,32 +290,32 @@
     ],
     "servicesLinks": [
       {
-        "label": "Cybersecurity",
+        "label": "Cybersecurity Services",
         "href": "/cybersecurity"
+      },
+      {
+        "label": "Network Solutions",
+        "href": "/network-solutions"
+      },
+      {
+        "label": "Server  & Cloud Solutions",
+        "href": "/server-cloud-solutions"
       },
       {
         "label": "Web Development",
         "href": "/web-app-development"
       },
       {
-        "label": "ERP Solutions",
-        "href": "/saas-products"
-      },
-      {
-        "label": "Hardware",
-        "href": "/hardware-solutions"
-      },
-      {
         "label": "SaaS Products",
         "href": "/saas-products"
       },
       {
-        "label": "Servers & Cloud",
-        "href": "/server-cloud-solutions"
+        "label": "Hardware Solutions",
+        "href": "/hardware-solutions"
       },
       {
-        "label": "Networking",
-        "href": "/network-solutions"
+        "label": "All Services",
+        "href": "/#services"
       }
     ],
     "call": {

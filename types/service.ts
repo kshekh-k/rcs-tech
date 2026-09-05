@@ -22,7 +22,7 @@ export interface Overview {
   description: string;
   titleRight: string;
   DescRight: string;
-  cyberRiskReduction: string[];
+  cloudCapabilities: string[];
   features: string[];
   iconRight?: string;
   descRightCard?: string;

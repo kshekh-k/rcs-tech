@@ -81,7 +81,7 @@ export default function About() {
               <div className="relative lg:max-w-md">
                 <Image
                   src="/images/about-building-new.png"
-                  alt="About"
+                  alt="RCS Infra Tech Corporate Office Building"
                   width={1000}
                   height={500}
                   className="object-cover h-auto max-w-full max-h-full "

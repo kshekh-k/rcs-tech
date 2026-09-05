@@ -17,7 +17,7 @@
     "badge": "Network Solutions",
     "title": "Connect and Scale Your",
     "highlight": "Business Infrastructure",
-    "description": "Build high-speed, secure, and resilient network architectures that ensure seamless collaboration, peak performance, and zero-downtime business continuity.",
+    "description": "Design and manage secure network infrastructure across LAN, WAN, Wi-Fi, and enterprise connectivity to keep your teams and systems connected.",
     "primaryButton": "Schedule Network Audit",
     "secondaryButton": "Speak to a Network Engineer",
     "highlights": [
@@ -32,10 +32,10 @@
     "badge": "Overview",
     "title": "Networking Designed for",
     "highlight": "Maximum Uptime",
-    "description": "Modern business operations rely entirely on fast, secure, and uninterrupted connectivity. RCS Infra Tech designs and deploys next-generation networking architectures that support data, voice, and video traffic. From initial design to active switch configuration and continuous NOC monitoring, our end-to-end solutions keep your employees connected, your applications responsive, and your critical business operations running smoothly.",
+    "description": "Modern businesses depend on secure, reliable connectivity across users, applications, locations, and devices. RCS Infra Tech designs and manages network infrastructure that supports data, voice, and video while improving performance, reliability, and business continuity.",
     "titleRight": "Enterprise Networking Capabilities",
-    "DescRight": "A robust network is the backbone of digital transformation. Creating a scalable networking environment requires expert path configuration, hardware optimization, and continuous monitoring to eliminate bottlenecks and protect business communications.",
-    "cyberRiskReduction": [
+    "DescRight": "A robust network is the backbone of digital transformation. Creating a scalable networking environment requires expert network configuration, hardware optimization, and continuous monitoring to eliminate bottlenecks and protect business communications.",
+    "cloudCapabilities": [
       "LAN/WAN Optimization",
       "High-Density WiFi",
       "Redundant Link Setup",
@@ -45,9 +45,9 @@
       "Bandwidth Management",
       "SD-WAN Deployment",
       "Structured Cabling",
-      "Firewall Routing integration",
+      "Firewall & Routing Integration",
       "Load Balancing",
-      "Hardware Lifecyle Management"
+      "Hardware Lifecycle Management"
     ],
     "features": [
       "Zero-Downtime Migration",
@@ -93,7 +93,7 @@
         "id": 3,
         "icon": "Router",
         "title": "Switch & Router Configuration",
-        "description": "Optimize traffic routing, policy enforcement, and bandwidth controls using enterprise switches and routers from Cisco, Sophos, Ubiquiti, and Aruba.",
+        "description": "Optimize traffic routing, policy enforcement, and bandwidth controls using enterprise-grade switches and routers.",
         "features": [
           "L2/L3 Routing Configuration",
           "Quality of Service (QoS)",
@@ -179,7 +179,7 @@
       {
         "icon": "BadgeCheck",
         "title": "Certified Hardware Specialists",
-        "description": "Certified professionals with deep expertise across Cisco, Fortinet, Ubiquiti, Sophos, and HPE Aruba."
+        "description": "Certified professionals with deep expertise across leading enterprise networking hardware."
       },
       {
         "icon": "Activity",
@@ -193,8 +193,8 @@
       },
       {
         "icon": "Zap",
-        "title": "Rapid SLA Troubleshooting",
-        "description": "Guaranteed response times and remote support to restore connectivity rapidly in case of outages."
+        "title": "Rapid Network Troubleshooting",
+        "description": "Responsive technical support to diagnose and resolve connectivity issues quickly."
       },
       {
         "icon": "Handshake",
@@ -202,24 +202,7 @@
         "description": "Ongoing support agreements to assist with moves, additions, and updates as your physical workspace scales."
       }
     ],
-    "stats": [
-      {
-        "number": "500+",
-        "label": "Networks Engineered"
-      },
-      {
-        "number": "98%",
-        "label": "Uptime Maintained"
-      },
-      {
-        "number": "10+",
-        "label": "Years Experience"
-      },
-      {
-        "number": "24×7",
-        "label": "NOC Operations Support"
-      }
-    ]
+    "stats": []
   },
   "timeline": {
     "badge": "Our Process",
@@ -340,7 +323,7 @@
     "items": [
       {
         "question": "What brands of network hardware do you configure?",
-        "answer": "We work with top-tier hardware brands including Cisco, Ubiquiti UniFi, Sophos, Aruba, Ruckus, and TP-Link, depending on your company's performance needs and budget."
+        "answer": "We work with top-tier enterprise hardware OEMs depending on your company's performance needs, security requirements, and budget."
       },
       {
         "question": "What is included in a network audit?",

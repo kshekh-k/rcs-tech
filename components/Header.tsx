@@ -127,17 +127,25 @@ export default function Header() {
               </div>
 
               <ul className="flex flex-col px-3 divide-y divide-white/10 flex-1 overflow-y-auto max-h-full">
-                {siteData.nav.map((item) => (
-                  <li key={item.href}>
-                    <Link
-                      href={item.href}
-                      onClick={() => setMobileOpen(false)}
-                      className="block py-3.5 text-sm font-medium text-slate-400 transition-colors hover:bg-secondary/10 hover:text-secondary"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
+                {siteData.nav.map((item) => {
+                  const href =
+                    pathname === "/"
+                      ? item.href
+                      : item.href.startsWith("#")
+                        ? `/${item.href}`
+                        : item.href;
+                  return (
+                    <li key={item.label}>
+                      <Link
+                        href={href}
+                        onClick={() => setMobileOpen(false)}
+                        className="block py-3.5 text-sm font-medium text-slate-400 transition-colors hover:bg-secondary/10 hover:text-secondary"
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
               <div
                 className={`px-3 flex flex-col ${scrolled ? "pb-0" : "pb-4"}`}

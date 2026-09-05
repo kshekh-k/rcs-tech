@@ -149,7 +149,7 @@ export default function ServiceOverview({ overview }: Props) {
                   </p>
 
                   <div className="mt-5 grid gap-4 sm:grid-cols-2">
-                    {overview.cyberRiskReduction.map((item, index) => {
+                    {(overview.cloudCapabilities || []).map((item, index) => {
                       const color = ctaColor[index % 4];
                       const Icon = iconsOverview[index % iconsOverview.length];
                       return (
