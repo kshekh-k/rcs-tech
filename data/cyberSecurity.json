@@ -5,22 +5,23 @@
         "keywords": [
             "Cybersecurity Services",
             "Enterprise Security",
-            "Firewall Management",
             "Endpoint Security",
             "Email Security",
-            "Data Loss Prevention",
-            "Penetration Testing",
-            "VAPT",
-            "SOC Services",
-            "Identity Access Management",
-            "IoT Security"
+            "Firewall Management",
+            "Data Loss Prevention (DLP)",
+            "IoT Security",
+            "Penetration Testing (VAPT)",
+            "Identity & Access Management",
+            "SOC Monitoring",
+            "Cloud Security"
         ]
     },
     "hero": {
+        "image": "/images/cybersecurity-hero-7.png",
         "badge": "Cybersecurity Services",
         "title": "Secure Every Layer of",
         "highlight": "Digital Assets",
-        "description": "Protect your business with enterprise cybersecurity solutions that proactively identify vulnerabilities, defend critical infrastructure, and ensure operational resilience against evolving cyber threats.",
+        "description": "Strengthen your security posture with integrated cybersecurity solutions covering threat prevention, vulnerability assessment, endpoint protection, identity security, and continuous monitoring.",
         "primaryButton": "Schedule Security Assessment",
         "secondaryButton": "Talk to a Security Expert",
         "highlights": [
@@ -37,7 +38,7 @@
         "description": "Cyber threats are becoming more sophisticated, targeting businesses of every size and industry. RCS Infra Tech delivers comprehensive cybersecurity solutions that secure networks, cloud environments, endpoints, applications, and sensitive business data. Our proactive, security-first approach helps organisations minimise risk, maintain compliance, and operate with confidence in an increasingly connected world.",
         "titleRight": "Enterprise Security Capabilities",
         "DescRight": "Modern cyberattacks evolve rapidly. Building a resilient cybersecurity strategy requires continuous visibility, proactive defence, and rapid response to minimise business disruption and protect critical assets.",
-        "cyberRiskReduction": [
+        "cloudCapabilities": [
             "Advanced Threat Protection",
             "Zero Trust Architecture",
             "Identity & Access Management",
@@ -300,7 +301,7 @@
             {
                 "icon": "GraduationCap",
                 "title": "Education",
-                "desc": "Secure payment systems, customer data, and omnichannel retail operations.",
+                "desc": "Protect student records, learning platforms, campus networks, and digital identities from evolving cyber threats.",
                 "color": "--color-orange-500",
                 "from": "--color-orange-500",
                 "to": "--color-orange-600"

@@ -17,6 +17,7 @@ import {
   Network,
   ChevronRight,
   ArrowRight,
+  MonitorCog
 } from "lucide-react";
 import {
   LinkedInIcon,
@@ -38,12 +39,13 @@ const socialIconMap: Record<string, typeof LinkedInIcon> = {
 
 const serviceIcons: (typeof Shield)[] = [
   Shield,
+  MonitorCog,
+  Server,
   Code2,
   Grid2X2,
   Monitor,
-  Cloud,
-  Server,
   Network,
+
 ];
 
 export default function Footer() {
@@ -110,7 +112,7 @@ export default function Footer() {
                   </div>
                 </div>
 
-                 {/* Stats */}
+                {/* Stats */}
                 <div className="grid grid-cols-2 bg-white/5 rounded w-full">
                   {footer.stats.map((item, index) => {
                     return (

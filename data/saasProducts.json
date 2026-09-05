@@ -17,7 +17,7 @@
     "badge": "SaaS Products",
     "title": "Unify and Secure Your Business with Modern",
     "highlight": "SaaS & Cloud Solutions",
-    "description": "Integrate and manage enterprise applications like Microsoft Azure, M365, Google Workspace, Zoho, and remote Tally cloud hosts to enhance staff productivity and safeguard business data.",
+    "description": "Implement business-ready SaaS and enterprise applications that simplify workflows, improve collaboration, and support operational efficiency.",
     "primaryButton": "Talk to a Cloud Architect",
     "secondaryButton": "Request Workspace Audit",
     "highlights": [
@@ -35,7 +35,7 @@
     "description": "Managing multiple software licenses, employee mailboxes, and cloud databases can create security vulnerabilities and operational bottlenecks. RCS Infra Tech specializes in deploying, migrating, and audit-securing market-leading SaaS suites. Whether you require Azure server setups, Google Workspace productivity tools, Zoho automation, or secure cloud-hosted Tally databases, our certified architects ensure high uptime, complete security compliance, and optimized software licensing costs.",
     "titleRight": "Centralized SaaS Administration",
     "DescRight": "Transforming your company's software footprint requires proper DNS setup, Multi-Factor Authentication (MFA), automated data backups, and cost optimization audits to eliminate unused licenses.",
-    "cyberRiskReduction": [
+    "cloudCapabilities": [
       "Microsoft Azure Setup",
       "Microsoft 365 Administration",
       "Google Workspace Migration",

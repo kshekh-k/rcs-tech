@@ -32,7 +32,7 @@ import {
 import { ServiceFeature, ServiceSection } from "@/types/service";
 import Upliner from "./ui/upliner";
 import Image from "next/image";
- 
+
 
 interface Props {
   services: ServiceSection;
@@ -63,7 +63,7 @@ const iconMap = {
   Activity,
   Zap,
 } as const;
- 
+
 
 
 
@@ -182,9 +182,7 @@ export default function ServiceFeatures({ services }: Props) {
                 <div className="relative p-4 ">
                   {/* Service Number */}
 
-                  <span className="text-sm font-bold text-(--this-color) absolute top-3 right-3">
-                    {String(service.id).padStart(2, "0")}
-                  </span>
+
 
                   <div className="flex gap-3 items-start mb-3">
                     {/* Icon */}
@@ -231,7 +229,7 @@ export default function ServiceFeatures({ services }: Props) {
 
                   {/* Learn More */}
 
-                  <div className="pt-4">
+                  <div className="pt-4 flex justify-between gap-2">
                     <Link
                       href="#contact"
                       className="font-semibold text-(--this-color) text-sm flex cursor-pointer items-center gap-2 transition-all group-hover:translate-x-1"
@@ -239,6 +237,9 @@ export default function ServiceFeatures({ services }: Props) {
                       Contact now
                       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Link>
+                    <span className="text-sm font-bold text-(--this-color) ">
+                      {String(service.id).padStart(2, "0")}
+                    </span>
                   </div>
                 </div>
               </motion.article>

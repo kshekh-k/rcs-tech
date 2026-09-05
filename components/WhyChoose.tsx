@@ -11,7 +11,7 @@ import {
   Handshake,
   ArrowRight,
   BriefcaseBusiness,
-  ShieldCheck 
+  ShieldCheck
 } from "lucide-react";
 
 import { Whychoose } from "@/types/service";
@@ -155,38 +155,40 @@ export default function WhyChoose({ whychoose }: Props) {
         </div>
 
         {/* Bottom Stats */}
- {/* Stats */}
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6, delay: 0.15 }}
-          className="mt-5 md:mt-10 bg-linear-to-r from-[#081B44] to-[#0A2D6B] rounded  relative before:absolute before:inset-0 before:opacity-80 before:bg-(image:--bg-grid-2) before:bg-[size:5px_5px]"
-        >
-          <div className="overflow-x-auto max-w-full p-4 md:p-6 relative">
-            <div className="grid grid-cols-4 gap-4 lg:gap-8 text-left min-w-5xl">
-              {whychoose.stats.map((stat, index) => {
-                const Icon = statsIcons[index];
-                return (
-                  <div key={index} className="flex gap-2 items-center">
-                    <div className="relative flex items-center justify-center size-14 rounded-full bg-radial from-blue-500 to-blue-900 shadow-xl before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded-full before:bg-[#081B44] before:blur shrink-0">
-                      <Icon className="size-7 text-white relative z-10" />
+        {/* Stats */}
+        {whychoose.stats.length > 0 && (
+
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="mt-5 md:mt-10 bg-linear-to-r from-[#081B44] to-[#0A2D6B] rounded  relative before:absolute before:inset-0 before:opacity-80 before:bg-(image:--bg-grid-2) before:bg-[size:5px_5px]"
+          >
+            <div className="overflow-x-auto max-w-full p-4 md:p-6 relative">
+              <div className="grid grid-cols-4 gap-4 lg:gap-8 text-left min-w-5xl">
+                {whychoose.stats.map((stat, index) => {
+                  const Icon = statsIcons[index];
+                  return (
+                    <div key={index} className="flex gap-2 items-center">
+                      <div className="relative flex items-center justify-center size-14 rounded-full bg-radial from-blue-500 to-blue-900 shadow-xl before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded-full before:bg-[#081B44] before:blur shrink-0">
+                        <Icon className="size-7 text-white relative z-10" />
+                      </div>
+                      <div>
+                        <h3 className="text-base lg:text-xl font-medium text-white">
+                          {stat.number}
+                        </h3>
+                        <p className="text-sm xl:text-base text-blue-100">
+                          {stat.label}
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="text-base lg:text-xl font-medium text-white">
-                        {stat.number}
-                      </h3>
-                      <p className="text-sm xl:text-base text-blue-100">
-                        {stat.label}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        </motion.div>
-         
+          </motion.div>
+        )}
       </div>
     </section>
   );

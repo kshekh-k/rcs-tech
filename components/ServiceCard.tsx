@@ -80,53 +80,57 @@ export default function ServiceCard({
       </div>
       {/* Glow Effect */}
       <div className="absolute inset-0 rounded bg-radial from-white/50 to-transparent pointer-events-none blur opacity-5"></div>
-    <div className="p-5 relative" >
-      {/* Service Number */}
-      <div
-        className={`absolute right-3 top-3 py-1 text-sm font-semibold mb-6 ${colors.badge}`}
-      >
-        {service.id}
-      </div>
+      <div className="p-5 relative flex flex-col h-full" >
 
-      <div className="flex gap-3 items-center mb-3">
-        {/* Icon */}
-        <div
-          className={`size-12 relative rounded bg-linear-to-br ${colors.icon} flex items-center justify-center shadow-xl before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44] before:blur before:opacity-50`}
-        >
-          <Icon className="size-6 text-white relative " />
+
+        <div className="flex gap-3 items-center mb-3">
+          {/* Icon */}
+          <div
+            className={`size-12 relative rounded bg-linear-to-br ${colors.icon} flex items-center justify-center shadow-xl before:absolute before:top-1/2 before:left-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:size-14 before:rounded before:bg-[#081B44] before:blur before:opacity-50`}
+          >
+            <Icon className="size-6 text-white relative " />
+          </div>
+
+          {/* Title */}
+          <h3 className="text-xl font-medium text-white leading-tight">
+            {service.title}
+          </h3>
         </div>
 
-        {/* Title */}
-        <h3 className="text-xl font-medium text-white leading-tight">
-          {service.title}
-        </h3>
-      </div>
+        {/* Description */}
+        <p className="text-slate-400 mb-3 text-sm leading-snug line-clamp-3">
+          {service.description}
+        </p>
 
-      {/* Description */}
-      <p className="text-slate-400 mb-3 text-sm leading-snug line-clamp-3">
-        {service.description}
-      </p>
-
-      {/* Items */}
-      <ul className="gap-2 mb-3 flex flex-col xl:grid xl:grid-cols-2">
-        {service.items.map((item, index) => (
-          <li
-            key={index}
-            className="flex items-start gap-2 text-sm text-slate-4 text-slate-400"
+        {/* Items */}
+        <div className="flex-1">
+          <ul className="gap-2 mb-3 flex flex-col xl:grid xl:grid-cols-2 ">
+            {service.items.map((item, index) => (
+              <li
+                key={index}
+                className="flex items-start gap-2 text-sm text-slate-4 text-slate-400"
+              >
+                <div className={`size-2 rounded-full ${colors.text} bg-current shrink-0 relative top-1.75`} />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="flex justify-between gap-2">
+          {/* Button */}
+          <span
+            className={`font-semibold ${colors.text} text-sm flex cursor-pointer items-center gap-2 transition-all group-hover:translate-x-1`}
           >
-            <div className={`size-2 rounded-full ${colors.text} bg-current shrink-0 relative top-1.75`} />
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
-
-      {/* Button */}
-      <span 
-        className={`font-semibold ${colors.text} text-sm flex cursor-pointer items-center gap-2 transition-all group-hover:translate-x-1`}
-      >
-        Learn More <ArrowRight className="size-4" />
-      </span>
-      <Link href={service.url} className="absolute inset-0 opacity-0"><span className="sr-only">Go to Services</span></Link>
+            Learn More <ArrowRight className="size-4" />
+          </span>
+          {/* Service Number */}
+          <div
+            className={`py-1 text-sm font-semibold ${colors.badge}`}
+          >
+            {service.id}
+          </div>
+        </div>
+        <Link href={service.url} className="absolute inset-0 opacity-0"><span className="sr-only">Go to Services</span></Link>
       </div>
     </div>
   );

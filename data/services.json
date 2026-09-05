@@ -3,24 +3,25 @@
     {
       "id": "01",
       "title": "Cybersecurity Services",
-      "description": "Safeguard your business with advanced cybersecurity solutions that proactively detect, prevent, and respond to evolving digital threats.",
+      "description": "Protect your business with proactive cybersecurity solutions that reduce risk and strengthen digital resilience.",
       "color": "blue",
       "items": [
         "Firewall Management",
         "Data Loss Prevention (DLP)",
         "Endpoint Security",
         "Email Security",
-        "IOT Security",
+        "IoT Security",
         "Penetration Testing (VAPT)",
-        "Identity & Access Management (IAM)",
-        "SOC Room"
+        "Identity & Access Management",
+        "SOC Monitoring",
+        "Cloud Security"
       ],
-      "url":"/cybersecurity"
+      "url": "/cybersecurity"
     },
     {
       "id": "02",
       "title": "Network Solutions",
-      "description": "Build a secure, scalable, and high-performance network infrastructure with end-to-end networking solutions designed to ensure seamless connectivity, reliability, and business continuity.",
+      "description": "Build reliable, secure connectivity with enterprise networking solutions designed for seamless communication and business continuity.",
       "color": "cyan",
       "items": [
         "Network Setup & Deployment",
@@ -29,14 +30,14 @@
         "VPN Solutions",
         "Unified Communications",
         "Network Automation",
-        "NOC Room"
+        "NOC Monitoring"
       ],
-      "url":"/network-solutions"
+      "url": "/network-solutions"
     },
     {
       "id": "03",
       "title": "Server  & Cloud Solutions",
-      "description": "Modernize your IT infrastructure with secure, scalable, and high-performance server and cloud solutions that improve agility, optimize workloads, and ensure business continuity.",
+      "description": "Modernize your infrastructure with secure server and cloud solutions built for performance, flexibility, and continuity.",
       "color": "purple",
       "items": [
         "Cloud Automation",
@@ -47,12 +48,12 @@
         "Private Cloud",
         "DC-DR"
       ],
-      "url":"/server-cloud-solutions"
+      "url": "/server-cloud-solutions"
     },
     {
       "id": "04",
       "title": "Web & App Development",
-      "description": "Transform your ideas into powerful digital experiences with custom web and mobile applications designed for performance, scalability, and long-term business growth.",
+      "description": "Build powerful web and mobile applications tailored to your business needs, workflows, and digital goals.",
       "color": "pink",
       "items": [
         "Web Development",
@@ -61,12 +62,12 @@
         "SEO Services",
         "Digital Marketing"
       ],
-      "url":"/web-app-development"
+      "url": "/web-app-development"
     },
     {
       "id": "05",
       "title": "SaaS Products",
-      "description": "Empower your workforce with trusted SaaS solutions that enhance collaboration, productivity, and business efficiency through secure cloud-based applications and enterprise software.",
+      "description": "Streamline business operations with secure SaaS solutions that improve collaboration, productivity, and efficiency.",
       "color": "teal",
       "items": [
         "Microsoft Azure",
@@ -76,12 +77,12 @@
         "Tally",
         "ERP/CRM Solutions"
       ],
-      "url":"/saas-products"
+      "url": "/saas-products"
     },
     {
       "id": "06",
       "title": "Hardware Solutions",
-      "description": "Equip your business with reliable, high-performance IT hardware solutions designed to enhance productivity, ensure operational efficiency, and support long-term business growth.",
+      "description": "Equip your business with reliable IT hardware designed for performance, productivity, and seamless operations.",
       "color": "orange",
       "items": [
         "Computers",
@@ -90,7 +91,7 @@
         "Servers",
         "Accessories"
       ],
-       "url":"/hardware-solutions"
+      "url": "/hardware-solutions"
     }
   ],
   "bottomFeatures": [
